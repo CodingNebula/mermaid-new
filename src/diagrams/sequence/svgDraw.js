@@ -9,7 +9,7 @@ export const drawRect = function(elem, rectData) {
   rectElem.attr('width', rectData.width);
   rectElem.attr('height', rectData.height);
   rectElem.attr('rx', rectData.rx);
-  rectElem.attr('onclick', 'javascript:addUMLListener()');
+  rectElem.attr('onclick', 'javascript:addUMLListener(' + rectData.class + ')');
   rectElem.attr('ry', rectData.ry);
 
   if (typeof rectData.class !== 'undefined') {
