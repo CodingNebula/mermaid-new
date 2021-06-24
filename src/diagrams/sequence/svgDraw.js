@@ -193,7 +193,7 @@ export const drawActor = function(elem, actor, conf, id) {
 
   const g = elem.append('g');
   if (actor.y === 0) {
-    actorCnt++;
+    // actorCnt++;
     g.append('line')
       .attr('id', 'actor_' + id)
       .attr('x1', center)
