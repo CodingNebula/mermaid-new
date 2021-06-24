@@ -9,6 +9,7 @@ export const drawRect = function(elem, rectData) {
   rectElem.attr('width', rectData.width);
   rectElem.attr('height', rectData.height);
   rectElem.attr('rx', rectData.rx);
+  rectElem.attr('onclick', 'javascript:addUMLListener()');
   rectElem.attr('ry', rectData.ry);
 
   if (typeof rectData.class !== 'undefined') {
@@ -201,6 +202,7 @@ export const drawActor = function(elem, actor, conf, id) {
       .attr('y2', 2000)
       .attr('class', 'actor-line ' + id)
       .attr('stroke-width', '0.5px')
+      .attr('onclick', 'javascript:addUMLListener()')
       .attr('stroke', '#999');
   }
 
