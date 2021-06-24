@@ -181,7 +181,7 @@ export const drawLabel = function(elem, txtObject) {
   return polygon;
 };
 
-let actorCnt = -1;
+// let actorCnt = -1;
 /**
  * Draws an actor in the diagram with the attached line
  * @param elem - The diagram we'll draw to.
