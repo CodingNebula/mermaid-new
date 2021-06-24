@@ -10,7 +10,6 @@ export const drawRect = function(elem, rectData) {
   rectElem.attr('height', rectData.height);
   rectElem.attr('rx', rectData.rx);
   rectElem.attr('ry', rectData.ry);
-  rectElem.attr('id', 1);
 
   if (typeof rectData.class !== 'undefined') {
     rectElem.attr('class', rectData.class);
@@ -181,7 +180,7 @@ export const drawLabel = function(elem, txtObject) {
   return polygon;
 };
 
-// let actorCnt = -1;
+let actorCnt = -1;
 /**
  * Draws an actor in the diagram with the attached line
  * @param elem - The diagram we'll draw to.
@@ -193,14 +192,14 @@ export const drawActor = function(elem, actor, conf, id) {
 
   const g = elem.append('g');
   if (actor.y === 0) {
-    // actorCnt++;
+    actorCnt++;
     g.append('line')
-      .attr('id', 'actor_' + id)
+      .attr('id', 'actor' + actorCnt)
       .attr('x1', center)
       .attr('y1', 5)
       .attr('x2', center)
       .attr('y2', 2000)
-      .attr('class', 'actor-line')
+      .attr('class', 'actor-line ' + id)
       .attr('stroke-width', '0.5px')
       .attr('stroke', '#999');
   }
@@ -211,7 +210,7 @@ export const drawActor = function(elem, actor, conf, id) {
   rect.fill = '#eaeaea';
   rect.width = actor.width;
   rect.height = actor.height;
-  rect.class = 'actor';
+  rect.class = 'actor ' + id;
   rect.rx = 3;
   rect.ry = 3;
   drawRect(g, rect);
