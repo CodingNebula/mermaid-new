@@ -418,6 +418,7 @@ export const drawActors = function(diagram, actors, actorKeys, verticalPos) {
   // Draw the actors
   let prevWidth = 0;
   let prevMargin = 0;
+  const actorIds = ['producer', 'cloud', 'application', 'reader', 'endpoint'];
 
   for (let i = 0; i < actorKeys.length; i++) {
     const actor = actors[actorKeys[i]];
@@ -431,7 +432,7 @@ export const drawActors = function(diagram, actors, actorKeys, verticalPos) {
     actor.y = verticalPos;
 
     // Draw the box with the attached line
-    svgDraw.drawActor(diagram, actor, conf);
+    svgDraw.drawActor(diagram, actor, conf, actorIds[i]);
     bounds.insert(actor.x, verticalPos, actor.x + actor.width, actor.height);
 
     prevWidth += actor.width;

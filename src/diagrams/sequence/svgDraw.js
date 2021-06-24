@@ -10,6 +10,7 @@ export const drawRect = function(elem, rectData) {
   rectElem.attr('height', rectData.height);
   rectElem.attr('rx', rectData.rx);
   rectElem.attr('ry', rectData.ry);
+  rectElem.attr('id', 1);
 
   if (typeof rectData.class !== 'undefined') {
     rectElem.attr('class', rectData.class);
@@ -187,14 +188,14 @@ let actorCnt = -1;
  * @param actor - The actor to draw.
  * @param conf - drawText implementation discriminator object
  */
-export const drawActor = function(elem, actor, conf) {
+export const drawActor = function(elem, actor, conf, id) {
   const center = actor.x + actor.width / 2;
 
   const g = elem.append('g');
   if (actor.y === 0) {
     actorCnt++;
     g.append('line')
-      .attr('id', 'actor' + actorCnt)
+      .attr('id', 'actor_' + id)
       .attr('x1', center)
       .attr('y1', 5)
       .attr('x2', center)
