@@ -418,7 +418,7 @@ export const drawActors = function(diagram, actors, actorKeys, verticalPos) {
   // Draw the actors
   let prevWidth = 0;
   let prevMargin = 0;
-  const actorIds = ['producer', 'cloud', 'application', 'reader', 'endpoint'];
+  const actorIds = ['PRODUCER', 'CLOUD', 'APPLICATION', 'READER', 'ENDPOINT'];
 
   for (let i = 0; i < actorKeys.length; i++) {
     const actor = actors[actorKeys[i]];
