@@ -494,7 +494,6 @@ const _drawTextCandidateFunc = (function() {
       .attr('y', y + height / 2 + 5)
       .style('text-anchor', 'middle')
       .text(content);
-    text.attr('onclick', 'javascript:addUMLListener("' + textAttrs.id + '")');
     _setTextAttrs(text, textAttrs);
   }
 
@@ -509,6 +508,7 @@ const _drawTextCandidateFunc = (function() {
         .attr('x', x + width / 2)
         .attr('y', y)
         .style('text-anchor', 'middle')
+        .attr('onclick', 'javascript:addUMLListener("' + textAttrs.id + '")')
         .style('font-size', actorFontSize)
         .style('font-weight', actorFontWeight)
         .style('font-family', actorFontFamily);
