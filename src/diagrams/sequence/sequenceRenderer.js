@@ -366,7 +366,7 @@ const drawMessage = function(g, msgModel) {
     line.style('stroke-dasharray', '3, 3');
     line.attr('class', 'messageLine1');
   } else {
-    line.attr('class', 'messageLine0');
+    line.attr('class', 'messageLine0').attr('onclick', 'javascript:umlLineText("' + message + '")');
   }
 
   let url = '';
