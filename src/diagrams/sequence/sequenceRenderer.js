@@ -285,7 +285,6 @@ const drawMessage = function(g, msgModel) {
   textObj.class = 'messageText';
   textObj.dy = '1em';
   textObj.text = message;
-  textObj.onclick = 'javascript:umlLineText()';
   textObj.fontFamily = conf.messageFontFamily;
   textObj.fontSize = conf.messageFontSize;
   textObj.fontWeight = conf.messageFontWeight;

@@ -99,6 +99,7 @@ export const drawText = function(elem, textData) {
     if (typeof textData.anchor !== 'undefined') {
       textElem
         .attr('text-anchor', textData.anchor)
+        .attr('onclick', 'javascript:umlLineText()')
         .attr('dominant-baseline', textData.dominantBaseline)
         .attr('alignment-baseline', textData.alignmentBaseline);
     }
