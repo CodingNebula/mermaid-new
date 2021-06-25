@@ -490,11 +490,11 @@ const _drawTextCandidateFunc = (function() {
   function byText(content, g, x, y, width, height, textAttrs) {
     const text = g
       .append('text')
-      .attr('onclick', 'javascript:addUMLListener("' + textAttrs.id + '")')
       .attr('x', x + width / 2)
       .attr('y', y + height / 2 + 5)
       .style('text-anchor', 'middle')
       .text(content);
+    text.attr('onclick', 'javascript:addUMLListener("' + textAttrs.id + '")');
     _setTextAttrs(text, textAttrs);
   }
 
