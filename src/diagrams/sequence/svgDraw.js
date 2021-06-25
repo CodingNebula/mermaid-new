@@ -220,14 +220,13 @@ export const drawActor = function(elem, actor, conf, id) {
   drawRect(g, rect);
 
   _drawTextCandidateFunc(conf)(
-    id,
     actor.description,
     g,
     rect.x,
     rect.y,
     rect.width,
     rect.height,
-    { class: 'actor' },
+    { class: 'actor', id: id },
     conf
   );
 };
@@ -488,10 +487,10 @@ export const getNoteRect = function() {
 };
 
 const _drawTextCandidateFunc = (function() {
-  function byText(id, content, g, x, y, width, height, textAttrs) {
+  function byText(content, g, x, y, width, height, textAttrs) {
     const text = g
       .append('text')
-      .attr('onclick', 'javascript:addUMLListener("' + id + '")')
+      .attr('onclick', 'javascript:addUMLListener("' + textAttrs.id + '")')
       .attr('x', x + width / 2)
       .attr('y', y + height / 2 + 5)
       .style('text-anchor', 'middle')
