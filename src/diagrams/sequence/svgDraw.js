@@ -4,12 +4,13 @@ export const drawRect = function(elem, rectData) {
   const rectElem = elem.append('rect');
   rectElem.attr('x', rectData.x);
   rectElem.attr('y', rectData.y);
+  rectElem.attr('id', rectData.id);
   rectElem.attr('fill', rectData.fill);
   rectElem.attr('stroke', rectData.stroke);
   rectElem.attr('width', rectData.width);
   rectElem.attr('height', rectData.height);
   rectElem.attr('rx', rectData.rx);
-  rectElem.attr('onclick', 'javascript:addUMLListener("' + rectData.class + '")');
+  rectElem.attr('onclick', 'javascript:addUMLListener("' + rectData.id + '")');
   rectElem.attr('ry', rectData.ry);
 
   if (typeof rectData.class !== 'undefined') {
@@ -202,7 +203,7 @@ export const drawActor = function(elem, actor, conf, id) {
       .attr('y2', 2000)
       .attr('class', 'actor-line ' + id)
       .attr('stroke-width', '0.5px')
-      .attr('onclick', 'javascript:addUMLListener()')
+      .attr('onclick', 'javascript:addUMLListener("' + id + '")')
       .attr('stroke', '#999');
   }
 
@@ -212,12 +213,14 @@ export const drawActor = function(elem, actor, conf, id) {
   rect.fill = '#eaeaea';
   rect.width = actor.width;
   rect.height = actor.height;
-  rect.class = 'actor ' + id;
+  rect.class = 'actor ';
+  rect.id = id;
   rect.rx = 3;
   rect.ry = 3;
   drawRect(g, rect);
 
   _drawTextCandidateFunc(conf)(
+    id,
     actor.description,
     g,
     rect.x,
@@ -485,9 +488,10 @@ export const getNoteRect = function() {
 };
 
 const _drawTextCandidateFunc = (function() {
-  function byText(content, g, x, y, width, height, textAttrs) {
+  function byText(id, content, g, x, y, width, height, textAttrs) {
     const text = g
       .append('text')
+      .attr('onclick', 'javascript:addUMLListener("' + id + '")')
       .attr('x', x + width / 2)
       .attr('y', y + height / 2 + 5)
       .style('text-anchor', 'middle')
