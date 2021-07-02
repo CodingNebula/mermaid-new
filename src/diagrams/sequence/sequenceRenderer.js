@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { select, selectAll } from 'd3';
 import svgDraw, { drawText } from './svgDraw';
 import { log } from '../../logger';
