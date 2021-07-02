@@ -434,7 +434,7 @@ export const drawActors = function(diagram, actors, actorKeys, verticalPos, acto
     actor.y = verticalPos;
 
     // Draw the box with the attached line
-    svgDraw.drawActor(diagram, actor, conf, actorsIds.length > 0 ? actorIds[i] : 'unknown');
+    svgDraw.drawActor(diagram, actor, conf, actorIds.length > 0 ? actorIds[i] : 'unknown');
     bounds.insert(actor.x, verticalPos, actor.x + actor.width, actor.height);
 
     prevWidth += actor.width;
@@ -688,7 +688,7 @@ export const draw = function(text, id, participants = []) {
   if (conf.mirrorActors) {
     // Draw actors below diagram
     bounds.bumpVerticalPos(conf.boxMargin * 2);
-    drawActors(diagram, actors, actorKeys, bounds.getVerticalPos());
+    drawActors(diagram, actors, actorKeys, bounds.getVerticalPos(), []);
   }
 
   const { bounds: box } = bounds.getBounds();
