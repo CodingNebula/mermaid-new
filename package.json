@@ -58,7 +58,8 @@
     "khroma": "^1.1.0",
     "minify": "^4.1.1",
     "moment-mini": "^2.22.1",
-    "stylis": "^3.5.2"
+    "stylis": "^3.5.2",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

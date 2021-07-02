@@ -19882,7 +19882,7 @@ var drawMessage = function drawMessage(g, msgModel) {
     line.style('stroke-dasharray', '3, 3');
     line.attr('class', 'messageLine1');
   } else {
-    line.attr('class', 'messageLine0');
+    line.attr('class', 'messageLine0').attr('onclick', 'javascript:umlLineText("' + message + '")');
   }
 
   var url = '';
@@ -19923,10 +19923,10 @@ var drawMessage = function drawMessage(g, msgModel) {
 };
 
 var drawActors = function drawActors(diagram, actors, actorKeys, verticalPos) {
+  var actorIds = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : [];
   // Draw the actors
   var prevWidth = 0;
-  var prevMargin = 0;
-  var actorIds = ['producer', 'cloud', 'application', 'reader', 'endpoint'];
+  var prevMargin = 0; // const actorIds = ['PRODUCER', 'CLOUD', 'APPLICATION', 'READER', 'ENDPOINT'];
 
   for (var i = 0; i < actorKeys.length; i++) {
     var actor = actors[actorKeys[i]]; // Add some rendering data to the object
@@ -19937,7 +19937,7 @@ var drawActors = function drawActors(diagram, actors, actorKeys, verticalPos) {
     actor.x = prevWidth + prevMargin;
     actor.y = verticalPos; // Draw the box with the attached line
 
-    _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].drawActor(diagram, actor, conf, actorIds[i]);
+    _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].drawActor(diagram, actor, conf, actorsIds.length > 0 ? actorIds[i] : 'unknown');
     bounds.insert(actor.x, verticalPos, actor.x + actor.width, actor.height);
     prevWidth += actor.width;
     prevMargin += actor.margin;
@@ -20009,7 +20009,7 @@ function adjustLoopHeightForWrap(loopWidths, msg, preMargin, postMargin, addLoop
  */
 
 
-var draw = function draw(text, id) {
+var draw = function draw(text, id, participants) {
   conf = _config__WEBPACK_IMPORTED_MODULE_6__["getConfig"]().sequence;
   _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.clear();
   _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.setWrap(conf.wrap);
@@ -20024,7 +20024,7 @@ var draw = function draw(text, id) {
   var title = _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.getTitle();
   var maxMessageWidthPerActor = getMaxMessageWidthPerActor(actors, messages);
   conf.height = calculateActorMargins(actors, maxMessageWidthPerActor);
-  drawActors(diagram, actors, actorKeys, 0);
+  drawActors(diagram, actors, actorKeys, 0, participants);
   var loopWidths = calculateLoopBounds(messages, actors, maxMessageWidthPerActor); // The arrow head definition is attached to the svg once
 
   _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].insertArrowHead(diagram);
@@ -20549,13 +20549,14 @@ var drawRect = function drawRect(elem, rectData) {
   var rectElem = elem.append('rect');
   rectElem.attr('x', rectData.x);
   rectElem.attr('y', rectData.y);
+  rectElem.attr('id', rectData.id);
   rectElem.attr('fill', rectData.fill);
   rectElem.attr('stroke', rectData.stroke);
   rectElem.attr('width', rectData.width);
   rectElem.attr('height', rectData.height);
   rectElem.attr('rx', rectData.rx);
+  rectElem.attr('onclick', 'javascript:addUMLListener("' + rectData.id + '")');
   rectElem.attr('ry', rectData.ry);
-  rectElem.attr('id', 1);
 
   if (typeof rectData.class !== 'undefined') {
     rectElem.attr('class', rectData.class);
@@ -20642,7 +20643,7 @@ var drawText = function drawText(elem, textData) {
     textElem.attr('y', yfunc());
 
     if (typeof textData.anchor !== 'undefined') {
-      textElem.attr('text-anchor', textData.anchor).attr('dominant-baseline', textData.dominantBaseline).attr('alignment-baseline', textData.alignmentBaseline);
+      textElem.attr('text-anchor', textData.anchor).attr('onclick', 'javascript:umlLineText("' + textData.text + '")').attr('dominant-baseline', textData.dominantBaseline).attr('alignment-baseline', textData.alignmentBaseline);
     }
 
     if (typeof textData.fontFamily !== 'undefined') {
@@ -20705,8 +20706,8 @@ var drawLabel = function drawLabel(elem, txtObject) {
   txtObject.y = txtObject.y + txtObject.height / 2;
   drawText(elem, txtObject);
   return polygon;
-}; // let actorCnt = -1;
-
+};
+var actorCnt = -1;
 /**
  * Draws an actor in the diagram with the attached line
  * @param elem - The diagram we'll draw to.
@@ -20719,8 +20720,8 @@ var drawActor = function drawActor(elem, actor, conf, id) {
   var g = elem.append('g');
 
   if (actor.y === 0) {
-    // actorCnt++;
-    g.append('line').attr('id', 'actor_' + id).attr('x1', center).attr('y1', 5).attr('x2', center).attr('y2', 2000).attr('class', 'actor-line').attr('stroke-width', '0.5px').attr('stroke', '#999');
+    actorCnt++;
+    g.append('line').attr('id', 'actor' + actorCnt).attr('x1', center).attr('y1', 5).attr('x2', center).attr('y2', 2000).attr('class', 'actor-line ' + id).attr('stroke-width', '0.5px').attr('onclick', 'javascript:addUMLListener("' + id + '")').attr('stroke', '#999');
   }
 
   var rect = getNoteRect();
@@ -20729,13 +20730,15 @@ var drawActor = function drawActor(elem, actor, conf, id) {
   rect.fill = '#eaeaea';
   rect.width = actor.width;
   rect.height = actor.height;
-  rect.class = 'actor';
+  rect.class = 'actor ';
+  rect.id = id;
   rect.rx = 3;
   rect.ry = 3;
   drawRect(g, rect);
 
   _drawTextCandidateFunc(conf)(actor.description, g, rect.x, rect.y, rect.width, rect.height, {
-    class: 'actor'
+    class: 'actor',
+    id: id
   }, conf);
 };
 var anchorElement = function anchorElement(elem) {
@@ -20946,7 +20949,7 @@ var _drawTextCandidateFunc = function () {
 
     for (var i = 0; i < lines.length; i++) {
       var dy = i * actorFontSize - actorFontSize * (lines.length - 1) / 2;
-      var text = g.append('text').attr('x', x + width / 2).attr('y', y).style('text-anchor', 'middle').style('font-size', actorFontSize).style('font-weight', actorFontWeight).style('font-family', actorFontFamily);
+      var text = g.append('text').attr('x', x + width / 2).attr('y', y).style('text-anchor', 'middle').attr('onclick', 'javascript:addUMLListener("' + textAttrs.id + '")').style('font-size', actorFontSize).style('font-weight', actorFontWeight).style('font-family', actorFontFamily);
       text.append('tspan').attr('x', x + width / 2).attr('dy', dy).text(lines[i]);
       text.attr('y', y + height / 2.0).attr('dominant-baseline', 'central').attr('alignment-baseline', 'central');
 
@@ -25340,7 +25343,7 @@ var decodeEntities = function decodeEntities(text) {
  * completed.
  */
 
-var render = function render(id, _txt, cb, container) {
+var render = function render(id, _txt, cb, container, participants) {
   _config__WEBPACK_IMPORTED_MODULE_3__["reset"]();
   var txt = _txt;
   var graphInit = _utils__WEBPACK_IMPORTED_MODULE_44__["default"].detectInit(txt);
@@ -25473,7 +25476,7 @@ var render = function render(id, _txt, cb, container) {
           _diagrams_sequence_sequenceRenderer__WEBPACK_IMPORTED_MODULE_32__["default"].setConf(cnf.sequence);
         }
 
-        _diagrams_sequence_sequenceRenderer__WEBPACK_IMPORTED_MODULE_32__["default"].draw(txt, id);
+        _diagrams_sequence_sequenceRenderer__WEBPACK_IMPORTED_MODULE_32__["default"].draw(txt, id, participants);
         break;
 
       case 'gantt':
