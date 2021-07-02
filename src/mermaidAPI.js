@@ -218,7 +218,7 @@ export const decodeEntities = function(text) {
  * provided a hidden div will be inserted in the body of the page instead. The element will be removed when rendering is
  * completed.
  */
-const render = function(id, _txt, cb, container) {
+const render = function(id, _txt, cb, container, participants) {
   configApi.reset();
   let txt = _txt;
   const graphInit = utils.detectInit(txt);
@@ -380,7 +380,7 @@ const render = function(id, _txt, cb, container) {
         } else {
           sequenceRenderer.setConf(cnf.sequence);
         }
-        sequenceRenderer.draw(txt, id);
+        sequenceRenderer.draw(txt, id, participants);
         break;
       case 'gantt':
         cnf.gantt.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
