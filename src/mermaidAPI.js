@@ -217,8 +217,9 @@ export const decodeEntities = function(text) {
  * @param container selector to element in which a div with the graph temporarily will be inserted. In one is
  * provided a hidden div will be inserted in the body of the page instead. The element will be removed when rendering is
  * completed.
+ * @param participants
  */
-const render = function(id, _txt, cb, container, participants) {
+const render = function(id, _txt, cb, container, participants = []) {
   configApi.reset();
   let txt = _txt;
   const graphInit = utils.detectInit(txt);
