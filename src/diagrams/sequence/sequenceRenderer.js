@@ -504,8 +504,9 @@ function adjustLoopHeightForWrap(loopWidths, msg, preMargin, postMargin, addLoop
  * Draws a sequenceDiagram in the tag with id: id based on the graph definition in text.
  * @param text
  * @param id
+ * @param participants
  */
-export const draw = function(text, id, participants) {
+export const draw = function(text, id, participants = []) {
   conf = configApi.getConfig().sequence;
   parser.yy.clear();
   parser.yy.setWrap(conf.wrap);
