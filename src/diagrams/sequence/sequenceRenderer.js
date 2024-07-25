@@ -701,6 +701,7 @@ export const draw = function(text, id, participants = []) {
 
   let height = box.stopy - box.starty + 2 * conf.diagramMarginY;
   if (conf.mirrorActors) {
+
     height = height - conf.boxMargin + conf.bottomMarginAdj;
   }
 
