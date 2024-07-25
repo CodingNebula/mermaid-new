@@ -688,7 +688,8 @@ export const draw = function(text, id, participants = []) {
   if (conf.mirrorActors) {
     // Draw actors below diagram
     bounds.bumpVerticalPos(conf.boxMargin * 2);
-    drawActors(diagram, actors, actorKeys, bounds.getVerticalPos(), []);
+    // drawActors(diagram, actors, actorKeys, bounds.getVerticalPos(), []);
+    drawActors(diagram, actors, actorKeys, bounds.getVerticalPos(), participants);
   }
 
   const { bounds: box } = bounds.getBounds();
