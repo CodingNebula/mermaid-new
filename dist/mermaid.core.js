@@ -656,7 +656,7 @@ module.exports = function(module) {
 /*! exports provided: name, version, description, main, keywords, scripts, repository, author, license, standard, dependencies, devDependencies, files, yarn-upgrade-all, sideEffects, husky, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"name\":\"mermaid\",\"version\":\"8.10.2\",\"description\":\"Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.\",\"main\":\"dist/mermaid.core.js\",\"keywords\":[\"diagram\",\"markdown\",\"flowchart\",\"sequence diagram\",\"gantt\",\"class diagram\",\"git graph\"],\"scripts\":{\"build:development\":\"webpack --progress --colors\",\"build:production\":\"yarn build:development -p --config webpack.config.prod.babel.js\",\"build\":\"yarn build:development && yarn build:production\",\"postbuild\":\"documentation build src/mermaidAPI.js src/config.js src/defaultConfig.js --shallow -f md --markdown-toc false > docs/Setup.md\",\"build:watch\":\"yarn build --watch\",\"minify\":\"minify ./dist/mermaid.js > ./dist/mermaid.min.js\",\"release\":\"yarn build\",\"lint\":\"eslint src\",\"e2e:depr\":\"yarn lint && jest e2e --config e2e/jest.config.js\",\"cypress\":\"percy exec -- cypress run\",\"e2e\":\"start-server-and-test dev http://localhost:9000/ cypress\",\"e2e-upd\":\"yarn lint && jest e2e -u --config e2e/jest.config.js\",\"dev\":\"webpack-dev-server --config webpack.config.e2e.js\",\"test\":\"yarn lint && jest src/.*\",\"test:watch\":\"jest --watch src\",\"prepublishOnly\":\"yarn build && yarn test\",\"prepare\":\"yarn build\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/knsv/mermaid\"},\"author\":\"Knut Sveidqvist\",\"license\":\"MIT\",\"standard\":{\"ignore\":[\"**/parser/*.js\",\"dist/**/*.js\",\"cypress/**/*.js\"],\"globals\":[\"page\"]},\"dependencies\":{\"@braintree/sanitize-url\":\"^3.1.0\",\"d3\":\"^5.7.0\",\"dagre\":\"^0.8.4\",\"dagre-d3\":\"^0.6.4\",\"entity-decode\":\"^2.0.2\",\"graphlib\":\"^2.1.7\",\"he\":\"^1.2.0\",\"khroma\":\"^1.1.0\",\"minify\":\"^4.1.1\",\"moment-mini\":\"^2.22.1\",\"stylis\":\"^3.5.2\",\"yarn\":\"^1.22.10\"},\"devDependencies\":{\"@babel/core\":\"^7.2.2\",\"@babel/preset-env\":\"^7.8.4\",\"@babel/register\":\"^7.0.0\",\"@percy/cypress\":\"*\",\"babel-core\":\"7.0.0-bridge.0\",\"babel-eslint\":\"^10.1.0\",\"babel-jest\":\"^24.9.0\",\"babel-loader\":\"^8.0.4\",\"coveralls\":\"^3.0.2\",\"css-loader\":\"^2.0.1\",\"css-to-string-loader\":\"^0.1.3\",\"cypress\":\"4.0.1\",\"documentation\":\"^12.0.1\",\"eslint\":\"^6.3.0\",\"eslint-config-prettier\":\"^6.3.0\",\"eslint-plugin-prettier\":\"^3.1.0\",\"husky\":\"^1.2.1\",\"identity-obj-proxy\":\"^3.0.0\",\"jest\":\"^24.9.0\",\"jison\":\"^0.4.18\",\"moment\":\"^2.23.0\",\"node-sass\":\"^5.0.0\",\"prettier\":\"^1.18.2\",\"puppeteer\":\"^1.17.0\",\"sass-loader\":\"^7.1.0\",\"start-server-and-test\":\"^1.10.6\",\"terser-webpack-plugin\":\"^2.2.2\",\"webpack\":\"^4.41.2\",\"webpack-bundle-analyzer\":\"^3.7.0\",\"webpack-cli\":\"^3.1.2\",\"webpack-dev-server\":\"^3.4.1\",\"webpack-node-externals\":\"^1.7.2\",\"yarn-upgrade-all\":\"^0.5.0\"},\"files\":[\"dist\"],\"yarn-upgrade-all\":{\"ignore\":[\"babel-core\"]},\"sideEffects\":[\"**/*.css\",\"**/*.scss\"],\"husky\":{\"hooks\":{\"pre-push\":\"yarn test\"}}}");
+module.exports = JSON.parse("{\"name\":\"mermaid\",\"version\":\"8.10.2\",\"description\":\"Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.\",\"main\":\"dist/mermaid.core.js\",\"keywords\":[\"diagram\",\"markdown\",\"flowchart\",\"sequence diagram\",\"gantt\",\"class diagram\",\"git graph\"],\"scripts\":{\"build:development\":\"webpack --progress --colors\",\"build:production\":\"yarn build:development -p --config webpack.config.prod.babel.js\",\"build\":\"yarn build:development && yarn build:production\",\"postbuild\":\"documentation build src/mermaidAPI.js src/config.js src/defaultConfig.js --shallow -f md --markdown-toc false > docs/Setup.md\",\"build:watch\":\"yarn build --watch\",\"minify\":\"minify ./dist/mermaid.js > ./dist/mermaid.min.js\",\"release\":\"yarn build\",\"lint\":\"eslint src\",\"e2e:depr\":\"yarn lint && jest e2e --config e2e/jest.config.js\",\"cypress\":\"percy exec -- cypress run\",\"e2e\":\"start-server-and-test dev http://localhost:9000/ cypress\",\"e2e-upd\":\"yarn lint && jest e2e -u --config e2e/jest.config.js\",\"dev\":\"webpack-dev-server --config webpack.config.e2e.js\",\"test\":\"yarn lint && jest src/.*\",\"test:watch\":\"jest --watch src\",\"prepublishOnly\":\"yarn build && yarn test\",\"prepare\":\"yarn build\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/knsv/mermaid\"},\"author\":\"Knut Sveidqvist\",\"license\":\"MIT\",\"standard\":{\"ignore\":[\"**/parser/*.js\",\"dist/**/*.js\",\"cypress/**/*.js\"],\"globals\":[\"page\"]},\"dependencies\":{\"@braintree/sanitize-url\":\"^3.1.0\",\"d3\":\"^5.7.0\",\"dagre\":\"^0.8.4\",\"dagre-d3\":\"^0.6.4\",\"entity-decode\":\"^2.0.2\",\"graphlib\":\"^2.1.7\",\"he\":\"^1.2.0\",\"khroma\":\"^1.1.0\",\"minify\":\"^4.1.1\",\"moment-mini\":\"^2.22.1\",\"stylis\":\"^3.5.2\",\"yarn\":\"^1.22.10\"},\"devDependencies\":{\"@babel/core\":\"^7.2.2\",\"@babel/preset-env\":\"^7.8.4\",\"@babel/register\":\"^7.0.0\",\"@percy/cypress\":\"*\",\"babel-core\":\"7.0.0-bridge.0\",\"babel-eslint\":\"^10.1.0\",\"babel-jest\":\"^24.9.0\",\"babel-loader\":\"^8.0.4\",\"coveralls\":\"^3.0.2\",\"css-loader\":\"^2.0.1\",\"css-to-string-loader\":\"^0.1.3\",\"cypress\":\"4.0.1\",\"documentation\":\"^12.0.1\",\"eslint\":\"^6.3.0\",\"eslint-config-prettier\":\"^6.3.0\",\"eslint-plugin-prettier\":\"^3.1.0\",\"husky\":\"^1.2.1\",\"identity-obj-proxy\":\"^3.0.0\",\"jest\":\"^24.9.0\",\"jison\":\"^0.4.18\",\"moment\":\"^2.23.0\",\"node-sass\":\"^5.0.0\",\"prettier\":\"^1.18.2\",\"puppeteer\":\"^1.17.0\",\"sass-loader\":\"^7.1.0\",\"start-server-and-test\":\"^1.10.6\",\"terser-webpack-plugin\":\"^2.2.2\",\"webpack\":\"^4.41.2\",\"webpack-bundle-analyzer\":\"^3.7.0\",\"webpack-cli\":\"^3.1.2\",\"webpack-dev-server\":\"^3.4.1\",\"webpack-node-externals\":\"^1.7.2\",\"yarn-upgrade-all\":\"^0.5.0\"},\"files\":[\"dist\"],\"yarn-upgrade-all\":{\"ignore\":[\"babel-core\"]},\"sideEffects\":[\"**/*.css\",\"**/*.scss\"],\"husky\":{\"hooks\":{}}}");
 
 /***/ }),
 
@@ -684,12 +684,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./logger */ "./src/logger.js");
 /* harmony import */ var _themes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./themes */ "./src/themes/index.js");
 /* harmony import */ var _defaultConfig__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defaultConfig */ "./src/defaultConfig.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 
 
 
 
- // debugger;
+
+// debugger;
 
 var defaultConfig = Object.freeze(_defaultConfig__WEBPACK_IMPORTED_MODULE_3__["default"]);
 var siteConfig = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])({}, defaultConfig);
@@ -698,26 +699,24 @@ var directives = [];
 var currentConfig = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])({}, defaultConfig);
 var updateCurrentConfig = function updateCurrentConfig(siteCfg, _directives) {
   // start with config beeing the siteConfig
-  var cfg = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])({}, siteCfg); // let sCfg = assignWithDepth(defaultConfig, siteConfigDelta);
+  var cfg = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])({}, siteCfg);
+  // let sCfg = assignWithDepth(defaultConfig, siteConfigDelta);
+
   // Join directives
-
   var sumOfDirectives = {};
-
   for (var i = 0; i < _directives.length; i++) {
     var d = _directives[i];
-    sanitize(d); // Apply the data from the directive where the the overrides the themeVaraibles
+    sanitize(d);
 
+    // Apply the data from the directive where the the overrides the themeVaraibles
     sumOfDirectives = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])(sumOfDirectives, d);
   }
-
   cfg = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])(cfg, sumOfDirectives);
-
   if (sumOfDirectives.theme) {
     var tmpConfigFromInitialize = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])({}, configFromInitialize);
     var themeVariables = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])(tmpConfigFromInitialize.themeVariables || {}, sumOfDirectives.themeVariables);
     cfg.themeVariables = _themes__WEBPACK_IMPORTED_MODULE_2__["default"][cfg.theme].getThemeVariables(themeVariables);
   }
-
   currentConfig = cfg;
   return cfg;
 };
@@ -735,15 +734,12 @@ var updateCurrentConfig = function updateCurrentConfig(siteCfg, _directives) {
  * @param conf - the base currentConfig to use as siteConfig
  * @returns {*} - the siteConfig
  */
-
 var setSiteConfig = function setSiteConfig(conf) {
   siteConfig = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])({}, defaultConfig);
   siteConfig = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])(siteConfig, conf);
-
   if (conf.theme) {
     siteConfig.themeVariables = _themes__WEBPACK_IMPORTED_MODULE_2__["default"][conf.theme].getThemeVariables(conf.themeVariables);
   }
-
   currentConfig = updateCurrentConfig(siteConfig, directives);
   return siteConfig;
 };
@@ -764,7 +760,6 @@ var updateSiteConfig = function updateSiteConfig(conf) {
  *Returns **any** values in siteConfig.
  * @returns {*}
  */
-
 var getSiteConfig = function getSiteConfig() {
   return Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])({}, siteConfig);
 };
@@ -780,16 +775,17 @@ var getSiteConfig = function getSiteConfig() {
  * @param conf - the potential currentConfig
  * @returns {*} - the currentConfig merged with the sanitized conf
  */
-
 var setConfig = function setConfig(conf) {
   // sanitize(conf);
   // Object.keys(conf).forEach(key => {
   //   const manipulator = manipulators[key];
   //   conf[key] = manipulator ? manipulator(conf[key]) : conf[key];
   // });
+
   Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])(currentConfig, conf);
   return getConfig();
 };
+
 /**
  *   ## getConfig
  *| Function  | Description         | Type    | Return Values            |
@@ -799,7 +795,6 @@ var setConfig = function setConfig(conf) {
  *Returns **any** the currentConfig
  * @returns {*} - the currentConfig
  */
-
 var getConfig = function getConfig() {
   return Object(_utils__WEBPACK_IMPORTED_MODULE_0__["assignWithDepth"])({}, currentConfig);
 };
@@ -812,7 +807,6 @@ var getConfig = function getConfig() {
  *Note: modifies options in-place
  * @param options - the potential setConfig parameter
  */
-
 var sanitize = function sanitize(options) {
   // Checking that options are not in the list of excluded options
   Object.keys(siteConfig.secure).forEach(function (key) {
@@ -822,22 +816,22 @@ var sanitize = function sanitize(options) {
       _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug("Denied attempt to modify a secure key ".concat(siteConfig.secure[key]), options[siteConfig.secure[key]]);
       delete options[siteConfig.secure[key]];
     }
-  }); // Check that there no attempts of prototype pollution
+  });
 
+  // Check that there no attempts of prototype pollution
   Object.keys(options).forEach(function (key) {
     if (key.indexOf('__') === 0) {
       delete options[key];
     }
-  }); // Check that there no attempts of xss, there should be no tags at all in the directive
+  });
+  // Check that there no attempts of xss, there should be no tags at all in the directive
   // blocking data urls as base64 urls can contain svgs with inline script tags
-
   Object.keys(options).forEach(function (key) {
     if (typeof options[key] === 'string') {
       if (options[key].indexOf('<') > -1 || options[key].indexOf('>') > -1 || options[key].indexOf('url(data:') > -1) {
         delete options[key];
       }
     }
-
     if (_typeof(options[key]) === 'object') {
       sanitize(options[key]);
     }
@@ -857,10 +851,10 @@ var addDirective = function addDirective(directive) {
       }
     }
   }
-
   directives.push(directive);
   updateCurrentConfig(siteConfig, directives);
 };
+
 /**
  *## reset
  *| Function | Description         | Type    | Required | Values             |
@@ -875,7 +869,6 @@ var addDirective = function addDirective(directive) {
  (default: current siteConfig ) (optional, default `getSiteConfig()`)
  * @param conf  the base currentConfig to reset to (default: current siteConfig ) (optional, default `getSiteConfig()`)
  */
-
 var reset = function reset() {
   // Replace current config with siteConfig
   directives = [];
@@ -910,19 +903,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 var rect = function rect(parent, node) {
-  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].trace('Creating subgraph rect for ', node.id, node); // Add outer g element
+  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].trace('Creating subgraph rect for ', node.id, node);
 
-  var shapeSvg = parent.insert('g').attr('class', 'cluster' + (node.class ? ' ' + node.class : '')).attr('id', node.id); // add the rect
+  // Add outer g element
+  var shapeSvg = parent.insert('g').attr('class', 'cluster' + (node.class ? ' ' + node.class : '')).attr('id', node.id);
 
-  var rect = shapeSvg.insert('rect', ':first-child'); // Create the label and insert it after the rect
+  // add the rect
+  var rect = shapeSvg.insert('rect', ':first-child');
 
+  // Create the label and insert it after the rect
   var label = shapeSvg.insert('g').attr('class', 'cluster-label');
-  var text = label.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_2__["default"])(node.labelText, node.labelStyle, undefined, true)); // Get the size of the label
+  var text = label.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_2__["default"])(node.labelText, node.labelStyle, undefined, true));
 
+  // Get the size of the label
   var bbox = text.getBBox();
-
   if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_5__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels)) {
     var div = text.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_3__["select"])(text);
@@ -930,69 +925,65 @@ var rect = function rect(parent, node) {
     dv.attr('width', bbox.width);
     dv.attr('height', bbox.height);
   }
-
   var padding = 0 * node.padding;
   var halfPadding = padding / 2;
   var width = node.width <= bbox.width + padding ? bbox.width + padding : node.width;
-
   if (node.width <= bbox.width + padding) {
     node.diff = (bbox.width - node.width) / 2;
   } else {
     node.diff = -node.padding / 2;
   }
+  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].trace('Data ', node, JSON.stringify(node));
+  // center the rect around its coordinate
+  rect.attr('style', node.style).attr('rx', node.rx).attr('ry', node.ry).attr('x', node.x - width / 2).attr('y', node.y - node.height / 2 - halfPadding).attr('width', width).attr('height', node.height + padding);
 
-  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].trace('Data ', node, JSON.stringify(node)); // center the rect around its coordinate
-
-  rect.attr('style', node.style).attr('rx', node.rx).attr('ry', node.ry).attr('x', node.x - width / 2).attr('y', node.y - node.height / 2 - halfPadding).attr('width', width).attr('height', node.height + padding); // Center the label
-
+  // Center the label
   label.attr('transform', 'translate(' + (node.x - bbox.width / 2) + ', ' + (node.y - node.height / 2 + node.padding / 3) + ')');
   var rectBox = rect.node().getBBox();
   node.width = rectBox.width;
   node.height = rectBox.height;
-
   node.intersect = function (point) {
     return Object(_intersect_intersect_rect__WEBPACK_IMPORTED_MODULE_0__["default"])(node, point);
   };
-
   return shapeSvg;
 };
+
 /**
  * Non visiable cluster where the note is group with its
  */
-
-
 var noteGroup = function noteGroup(parent, node) {
   // Add outer g element
-  var shapeSvg = parent.insert('g').attr('class', 'note-cluster').attr('id', node.id); // add the rect
+  var shapeSvg = parent.insert('g').attr('class', 'note-cluster').attr('id', node.id);
 
+  // add the rect
   var rect = shapeSvg.insert('rect', ':first-child');
   var padding = 0 * node.padding;
-  var halfPadding = padding / 2; // center the rect around its coordinate
+  var halfPadding = padding / 2;
 
+  // center the rect around its coordinate
   rect.attr('rx', node.rx).attr('ry', node.ry).attr('x', node.x - node.width / 2 - halfPadding).attr('y', node.y - node.height / 2 - halfPadding).attr('width', node.width + padding).attr('height', node.height + padding).attr('fill', 'none');
   var rectBox = rect.node().getBBox();
   node.width = rectBox.width;
   node.height = rectBox.height;
-
   node.intersect = function (point) {
     return Object(_intersect_intersect_rect__WEBPACK_IMPORTED_MODULE_0__["default"])(node, point);
   };
-
   return shapeSvg;
 };
-
 var roundedWithTitle = function roundedWithTitle(parent, node) {
   // Add outer g element
-  var shapeSvg = parent.insert('g').attr('class', node.classes).attr('id', node.id); // add the rect
+  var shapeSvg = parent.insert('g').attr('class', node.classes).attr('id', node.id);
 
-  var rect = shapeSvg.insert('rect', ':first-child'); // Create the label and insert it after the rect
+  // add the rect
+  var rect = shapeSvg.insert('rect', ':first-child');
 
+  // Create the label and insert it after the rect
   var label = shapeSvg.insert('g').attr('class', 'cluster-label');
   var innerRect = shapeSvg.append('rect');
-  var text = label.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_2__["default"])(node.labelText, node.labelStyle, undefined, true)); // Get the size of the label
+  var text = label.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_2__["default"])(node.labelText, node.labelStyle, undefined, true));
 
+  // Get the size of the label
   var bbox = text.getBBox();
-
   if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_5__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels)) {
     var div = text.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_3__["select"])(text);
@@ -1000,53 +991,48 @@ var roundedWithTitle = function roundedWithTitle(parent, node) {
     dv.attr('width', bbox.width);
     dv.attr('height', bbox.height);
   }
-
   bbox = text.getBBox();
   var padding = 0 * node.padding;
   var halfPadding = padding / 2;
   var width = node.width <= bbox.width + node.padding ? bbox.width + node.padding : node.width;
-
   if (node.width <= bbox.width + node.padding) {
     node.diff = (bbox.width + node.padding - node.width) / 2;
   } else {
     node.diff = -node.padding / 2;
-  } // center the rect around its coordinate
+  }
 
-
+  // center the rect around its coordinate
   rect.attr('class', 'outer').attr('x', node.x - width / 2 - halfPadding).attr('y', node.y - node.height / 2 - halfPadding).attr('width', width + padding).attr('height', node.height + padding);
-  innerRect.attr('class', 'inner').attr('x', node.x - width / 2 - halfPadding).attr('y', node.y - node.height / 2 - halfPadding + bbox.height - 1).attr('width', width + padding).attr('height', node.height + padding - bbox.height - 3); // Center the label
+  innerRect.attr('class', 'inner').attr('x', node.x - width / 2 - halfPadding).attr('y', node.y - node.height / 2 - halfPadding + bbox.height - 1).attr('width', width + padding).attr('height', node.height + padding - bbox.height - 3);
 
+  // Center the label
   label.attr('transform', 'translate(' + (node.x - bbox.width / 2) + ', ' + (node.y - node.height / 2 - node.padding / 3 + (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_5__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels) ? 5 : 3)) + ')');
   var rectBox = rect.node().getBBox();
   node.height = rectBox.height;
-
   node.intersect = function (point) {
     return Object(_intersect_intersect_rect__WEBPACK_IMPORTED_MODULE_0__["default"])(node, point);
   };
-
   return shapeSvg;
 };
-
 var divider = function divider(parent, node) {
   // Add outer g element
-  var shapeSvg = parent.insert('g').attr('class', node.classes).attr('id', node.id); // add the rect
+  var shapeSvg = parent.insert('g').attr('class', node.classes).attr('id', node.id);
 
+  // add the rect
   var rect = shapeSvg.insert('rect', ':first-child');
   var padding = 0 * node.padding;
-  var halfPadding = padding / 2; // center the rect around its coordinate
+  var halfPadding = padding / 2;
 
+  // center the rect around its coordinate
   rect.attr('class', 'divider').attr('x', node.x - node.width / 2 - halfPadding).attr('y', node.y - node.height / 2).attr('width', node.width + padding).attr('height', node.height + padding);
   var rectBox = rect.node().getBBox();
   node.width = rectBox.width;
   node.height = rectBox.height;
-
   node.intersect = function (point) {
     return Object(_intersect_intersect_rect__WEBPACK_IMPORTED_MODULE_0__["default"])(node, point);
   };
-
   return shapeSvg;
 };
-
 var shapes = {
   rect: rect,
   roundedWithTitle: roundedWithTitle,
@@ -1091,12 +1077,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../logger */ "./src/logger.js");
 /* harmony import */ var _diagrams_common_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../diagrams/common/common */ "./src/diagrams/common/common.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./src/config.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 
  // eslint-disable-line
 
- // let vertexNode;
+// let vertexNode;
 // if (evaluate(getConfig().flowchart.htmlLabels)) {
 //   // TODO: addHtmlLabel accepts a labelStyle. Do we possibly have that?
 //   const node = {
@@ -1107,7 +1092,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 // } else {
 //   const svgLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
 //   svgLabel.setAttribute('style', styles.labelStyle.replace('color:', 'fill:'));
+
 //   const rows = vertexText.split(common.lineBreakRegex);
+
 //   for (let j = 0; j < rows.length; j++) {
 //     const tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
 //     tspan.setAttributeNS('http://www.w3.org/XML/1998/namespace', 'xml:space', 'preserve');
@@ -1119,18 +1106,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 //   vertexNode = svgLabel;
 // }
 
-
-
 function applyStyle(dom, styleFn) {
   if (styleFn) {
     dom.attr('style', styleFn);
   }
 }
-
 function addHtmlLabel(node) {
   // var fo = root.append('foreignObject').attr('width', '100000');
+
   // var div = fo.append('xhtml:div');
   // div.attr('xmlns', 'http://www.w3.org/1999/xhtml');
+
   // var label = node.label;
   // switch (typeof label) {
   //   case 'function':
@@ -1145,10 +1131,12 @@ function addHtmlLabel(node) {
   //   default:
   //     div.html(label);
   // }
+
   // applyStyle(div, node.labelStyle);
   // div.style('display', 'inline-block');
   // // Fix for firefox
   // div.style('white-space', 'nowrap');
+
   // var client = div.node().getBoundingClientRect();
   // fo.attr('width', client.width).attr('height', client.height);
   var fo = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject'));
@@ -1157,17 +1145,15 @@ function addHtmlLabel(node) {
   var labelClass = node.isNode ? 'nodeLabel' : 'edgeLabel';
   div.html('<span class="' + labelClass + '" ' + (node.labelStyle ? 'style="' + node.labelStyle + '"' : '') + '>' + label + '</span>');
   applyStyle(div, node.labelStyle);
-  div.style('display', 'inline-block'); // Fix for firefox
-
+  div.style('display', 'inline-block');
+  // Fix for firefox
   div.style('white-space', 'nowrap');
   div.attr('xmlns', 'http://www.w3.org/1999/xhtml');
   return fo.node();
 }
-
 var createLabel = function createLabel(_vertexText, style, isTitle, isNode) {
   var vertexText = _vertexText || '';
   if (_typeof(vertexText) === 'object') vertexText = vertexText[0];
-
   if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_2__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     // TODO: addHtmlLabel accepts a labelStyle. Do we possibly have that?
     vertexText = vertexText.replace(/\\n|\n/g, '<br />');
@@ -1179,14 +1165,13 @@ var createLabel = function createLabel(_vertexText, style, isTitle, isNode) {
       }),
       labelStyle: style.replace('fill:', 'color:')
     };
-    var vertexNode = addHtmlLabel(node); // vertexNode.parentNode.removeChild(vertexNode);
-
+    var vertexNode = addHtmlLabel(node);
+    // vertexNode.parentNode.removeChild(vertexNode);
     return vertexNode;
   } else {
     var svgLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
     svgLabel.setAttribute('style', style.replace('color:', 'fill:'));
     var rows = [];
-
     if (typeof vertexText === 'string') {
       rows = vertexText.split(/\\n|\n|<br\s*\/?>/gi);
     } else if (Array.isArray(vertexText)) {
@@ -1194,27 +1179,22 @@ var createLabel = function createLabel(_vertexText, style, isTitle, isNode) {
     } else {
       rows = [];
     }
-
     for (var j = 0; j < rows.length; j++) {
       var tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
       tspan.setAttributeNS('http://www.w3.org/XML/1998/namespace', 'xml:space', 'preserve');
       tspan.setAttribute('dy', '1em');
       tspan.setAttribute('x', '0');
-
       if (isTitle) {
         tspan.setAttribute('class', 'title-row');
       } else {
         tspan.setAttribute('class', 'row');
       }
-
       tspan.textContent = rows[j].trim();
       svgLabel.appendChild(tspan);
     }
-
     return svgLabel;
   }
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (createLabel);
 
 /***/ }),
@@ -1242,8 +1222,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _diagrams_common_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../diagrams/common/common */ "./src/diagrams/common/common.js");
  // eslint-disable-line
 
- // import { line, curveBasis, curveLinear, select } from 'd3';
-
+// import { line, curveBasis, curveLinear, select } from 'd3';
 
 
 
@@ -1256,15 +1235,17 @@ var clear = function clear() {
 };
 var insertEdgeLabel = function insertEdgeLabel(elem, edge) {
   // Create the actual text element
-  var labelElement = Object(_createLabel__WEBPACK_IMPORTED_MODULE_1__["default"])(edge.label, edge.labelStyle); // Create outer g, edgeLabel, this will be positioned after graph layout
+  var labelElement = Object(_createLabel__WEBPACK_IMPORTED_MODULE_1__["default"])(edge.label, edge.labelStyle);
 
-  var edgeLabel = elem.insert('g').attr('class', 'edgeLabel'); // Create inner g, label, this will be positioned now for centering the text
+  // Create outer g, edgeLabel, this will be positioned after graph layout
+  var edgeLabel = elem.insert('g').attr('class', 'edgeLabel');
 
+  // Create inner g, label, this will be positioned now for centering the text
   var label = edgeLabel.insert('g').attr('class', 'label');
-  label.node().appendChild(labelElement); // Center the label
+  label.node().appendChild(labelElement);
 
+  // Center the label
   var bbox = labelElement.getBBox();
-
   if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_5__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     var div = labelElement.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_2__["select"])(labelElement);
@@ -1272,14 +1253,14 @@ var insertEdgeLabel = function insertEdgeLabel(elem, edge) {
     dv.attr('width', bbox.width);
     dv.attr('height', bbox.height);
   }
+  label.attr('transform', 'translate(' + -bbox.width / 2 + ', ' + -bbox.height / 2 + ')');
 
-  label.attr('transform', 'translate(' + -bbox.width / 2 + ', ' + -bbox.height / 2 + ')'); // Make element accessible by id for positioning
+  // Make element accessible by id for positioning
+  edgeLabels[edge.id] = edgeLabel;
 
-  edgeLabels[edge.id] = edgeLabel; // Update the abstract data of the edge with the new information about its width and height
-
+  // Update the abstract data of the edge with the new information about its width and height
   edge.width = bbox.width;
   edge.height = bbox.height;
-
   if (edge.startLabelLeft) {
     // Create the actual text element
     var startLabelElement = Object(_createLabel__WEBPACK_IMPORTED_MODULE_1__["default"])(edge.startLabelLeft, edge.labelStyle);
@@ -1288,166 +1269,123 @@ var insertEdgeLabel = function insertEdgeLabel(elem, edge) {
     inner.node().appendChild(startLabelElement);
     var slBox = startLabelElement.getBBox();
     inner.attr('transform', 'translate(' + -slBox.width / 2 + ', ' + -slBox.height / 2 + ')');
-
     if (!terminalLabels[edge.id]) {
       terminalLabels[edge.id] = {};
     }
-
     terminalLabels[edge.id].startLeft = startEdgeLabelLeft;
   }
-
   if (edge.startLabelRight) {
     // Create the actual text element
     var _startLabelElement = Object(_createLabel__WEBPACK_IMPORTED_MODULE_1__["default"])(edge.startLabelRight, edge.labelStyle);
-
     var startEdgeLabelRight = elem.insert('g').attr('class', 'edgeTerminals');
-
     var _inner = startEdgeLabelRight.insert('g').attr('class', 'inner');
-
     startEdgeLabelRight.node().appendChild(_startLabelElement);
-
     _inner.node().appendChild(_startLabelElement);
-
     var _slBox = _startLabelElement.getBBox();
-
     _inner.attr('transform', 'translate(' + -_slBox.width / 2 + ', ' + -_slBox.height / 2 + ')');
-
     if (!terminalLabels[edge.id]) {
       terminalLabels[edge.id] = {};
     }
-
     terminalLabels[edge.id].startRight = startEdgeLabelRight;
   }
-
   if (edge.endLabelLeft) {
     // Create the actual text element
     var endLabelElement = Object(_createLabel__WEBPACK_IMPORTED_MODULE_1__["default"])(edge.endLabelLeft, edge.labelStyle);
     var endEdgeLabelLeft = elem.insert('g').attr('class', 'edgeTerminals');
-
     var _inner2 = endEdgeLabelLeft.insert('g').attr('class', 'inner');
-
     _inner2.node().appendChild(endLabelElement);
-
     var _slBox2 = endLabelElement.getBBox();
-
     _inner2.attr('transform', 'translate(' + -_slBox2.width / 2 + ', ' + -_slBox2.height / 2 + ')');
-
     endEdgeLabelLeft.node().appendChild(endLabelElement);
-
     if (!terminalLabels[edge.id]) {
       terminalLabels[edge.id] = {};
     }
-
     terminalLabels[edge.id].endLeft = endEdgeLabelLeft;
   }
-
   if (edge.endLabelRight) {
     // Create the actual text element
     var _endLabelElement = Object(_createLabel__WEBPACK_IMPORTED_MODULE_1__["default"])(edge.endLabelRight, edge.labelStyle);
-
     var endEdgeLabelRight = elem.insert('g').attr('class', 'edgeTerminals');
-
     var _inner3 = endEdgeLabelRight.insert('g').attr('class', 'inner');
-
     _inner3.node().appendChild(_endLabelElement);
-
     var _slBox3 = _endLabelElement.getBBox();
-
     _inner3.attr('transform', 'translate(' + -_slBox3.width / 2 + ', ' + -_slBox3.height / 2 + ')');
-
     endEdgeLabelRight.node().appendChild(_endLabelElement);
-
     if (!terminalLabels[edge.id]) {
       terminalLabels[edge.id] = {};
     }
-
     terminalLabels[edge.id].endRight = endEdgeLabelRight;
   }
 };
 var positionEdgeLabel = function positionEdgeLabel(edge, paths) {
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Moving label abc78 ', edge.id, edge.label, edgeLabels[edge.id]);
   var path = paths.updatedPath ? paths.updatedPath : paths.originalPath;
-
   if (edge.label) {
     var el = edgeLabels[edge.id];
     var x = edge.x;
     var y = edge.y;
-
     if (path) {
       //   // debugger;
       var pos = _utils__WEBPACK_IMPORTED_MODULE_4__["default"].calcLabelPosition(path);
-      _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Moving label from (', x, ',', y, ') to (', pos.x, ',', pos.y, ') abc78'); // x = pos.x;
+      _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Moving label from (', x, ',', y, ') to (', pos.x, ',', pos.y, ') abc78');
+      // x = pos.x;
       // y = pos.y;
     }
-
     el.attr('transform', 'translate(' + x + ', ' + y + ')');
-  } //let path = paths.updatedPath ? paths.updatedPath : paths.originalPath;
+  }
 
-
+  //let path = paths.updatedPath ? paths.updatedPath : paths.originalPath;
   if (edge.startLabelLeft) {
     var _el = terminalLabels[edge.id].startLeft;
     var _x2 = edge.x;
     var _y2 = edge.y;
-
     if (path) {
       // debugger;
       var _pos = _utils__WEBPACK_IMPORTED_MODULE_4__["default"].calcTerminalLabelPosition(0, 'start_left', path);
-
       _x2 = _pos.x;
       _y2 = _pos.y;
     }
-
     _el.attr('transform', 'translate(' + _x2 + ', ' + _y2 + ')');
   }
-
   if (edge.startLabelRight) {
     var _el2 = terminalLabels[edge.id].startRight;
     var _x3 = edge.x;
     var _y3 = edge.y;
-
     if (path) {
       // debugger;
       var _pos2 = _utils__WEBPACK_IMPORTED_MODULE_4__["default"].calcTerminalLabelPosition(0, 'start_right', path);
-
       _x3 = _pos2.x;
       _y3 = _pos2.y;
     }
-
     _el2.attr('transform', 'translate(' + _x3 + ', ' + _y3 + ')');
   }
-
   if (edge.endLabelLeft) {
     var _el3 = terminalLabels[edge.id].endLeft;
     var _x4 = edge.x;
     var _y4 = edge.y;
-
     if (path) {
       // debugger;
       var _pos3 = _utils__WEBPACK_IMPORTED_MODULE_4__["default"].calcTerminalLabelPosition(0, 'end_left', path);
-
       _x4 = _pos3.x;
       _y4 = _pos3.y;
     }
-
     _el3.attr('transform', 'translate(' + _x4 + ', ' + _y4 + ')');
   }
-
   if (edge.endLabelRight) {
     var _el4 = terminalLabels[edge.id].endRight;
     var _x5 = edge.x;
     var _y5 = edge.y;
-
     if (path) {
       // debugger;
       var _pos4 = _utils__WEBPACK_IMPORTED_MODULE_4__["default"].calcTerminalLabelPosition(0, 'end_right', path);
-
       _x5 = _pos4.x;
       _y5 = _pos4.y;
     }
-
     _el4.attr('transform', 'translate(' + _x5 + ', ' + _y5 + ')');
   }
-}; // const getRelationType = function(type) {
+};
+
+// const getRelationType = function(type) {
 //   switch (type) {
 //     case stateDb.relationType.AGGREGATION:
 //       return 'aggregation';
@@ -1468,28 +1406,28 @@ var outsideNode = function outsideNode(node, point) {
   var dy = Math.abs(point.y - y);
   var w = node.width / 2;
   var h = node.height / 2;
-
   if (dx >= w || dy >= h) {
     return true;
   }
-
   return false;
 };
-
 var intersection = function intersection(node, outsidePoint, insidePoint) {
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn("intersection calc abc89:\n  outsidePoint: ".concat(JSON.stringify(outsidePoint), "\n  insidePoint : ").concat(JSON.stringify(insidePoint), "\n  node        : x:").concat(node.x, " y:").concat(node.y, " w:").concat(node.width, " h:").concat(node.height));
   var x = node.x;
   var y = node.y;
-  var dx = Math.abs(x - insidePoint.x); // const dy = Math.abs(y - insidePoint.y);
-
+  var dx = Math.abs(x - insidePoint.x);
+  // const dy = Math.abs(y - insidePoint.y);
   var w = node.width / 2;
   var r = insidePoint.x < outsidePoint.x ? w - dx : w + dx;
-  var h = node.height / 2; // const edges = {
+  var h = node.height / 2;
+
+  // const edges = {
   //   x1: x - w,
   //   x2: x + w,
   //   y1: y - h,
   //   y2: y + h
   // };
+
   // if (
   //   outsidePoint.x === edges.x1 ||
   //   outsidePoint.x === edges.x2 ||
@@ -1501,8 +1439,8 @@ var intersection = function intersection(node, outsidePoint, insidePoint) {
   // }
 
   var Q = Math.abs(outsidePoint.y - insidePoint.y);
-  var R = Math.abs(outsidePoint.x - insidePoint.x); // log.warn();
-
+  var R = Math.abs(outsidePoint.x - insidePoint.x);
+  // log.warn();
   if (Math.abs(y - outsidePoint.y) * w > Math.abs(x - outsidePoint.x) * h) {
     // eslint-disable-line
     // Intersection is top or bottom of rect.
@@ -1513,20 +1451,16 @@ var intersection = function intersection(node, outsidePoint, insidePoint) {
       x: insidePoint.x < outsidePoint.x ? insidePoint.x + r : insidePoint.x - R + r,
       y: insidePoint.y < outsidePoint.y ? insidePoint.y + Q - q : insidePoint.y - Q + q
     };
-
     if (r === 0) {
       res.x = outsidePoint.x;
       res.y = outsidePoint.y;
     }
-
     if (R === 0) {
       res.x = outsidePoint.x;
     }
-
     if (Q === 0) {
       res.y = outsidePoint.y;
     }
-
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn("abc89 topp/bott calc, Q ".concat(Q, ", q ").concat(q, ", R ").concat(R, ", r ").concat(r), res);
     return res;
   } else {
@@ -1537,34 +1471,26 @@ var intersection = function intersection(node, outsidePoint, insidePoint) {
       // r = outsidePoint.x - w - x;
       r = x - w - outsidePoint.x;
     }
-
-    var _q = Q * r / R; //  OK let _x = insidePoint.x < outsidePoint.x ? insidePoint.x + R - r : insidePoint.x + dx - w;
+    var _q = Q * r / R;
+    //  OK let _x = insidePoint.x < outsidePoint.x ? insidePoint.x + R - r : insidePoint.x + dx - w;
     // OK let _x = insidePoint.x < outsidePoint.x ? insidePoint.x + R - r : outsidePoint.x + r;
-
-
-    var _x = insidePoint.x < outsidePoint.x ? insidePoint.x + R - r : insidePoint.x - R + r; // let _x = insidePoint.x < outsidePoint.x ? insidePoint.x + R - r : outsidePoint.x + r;
-
-
+    var _x = insidePoint.x < outsidePoint.x ? insidePoint.x + R - r : insidePoint.x - R + r;
+    // let _x = insidePoint.x < outsidePoint.x ? insidePoint.x + R - r : outsidePoint.x + r;
     var _y = insidePoint.y < outsidePoint.y ? insidePoint.y + _q : insidePoint.y - _q;
-
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn("sides calc abc89, Q ".concat(Q, ", q ").concat(_q, ", R ").concat(R, ", r ").concat(r), {
       _x: _x,
       _y: _y
     });
-
     if (r === 0) {
       _x = outsidePoint.x;
       _y = outsidePoint.y;
     }
-
     if (R === 0) {
       _x = outsidePoint.x;
     }
-
     if (Q === 0) {
       _y = outsidePoint.y;
     }
-
     return {
       x: _x,
       y: _y
@@ -1578,80 +1504,80 @@ var intersection = function intersection(node, outsidePoint, insidePoint) {
  * @param {*} boundryNode
  * @returns
  */
-
 var cutPathAtIntersect = function cutPathAtIntersect(_points, boundryNode) {
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('abc88 cutPathAtIntersect', _points, boundryNode);
   var points = [];
   var lastPointOutside = _points[0];
   var isInside = false;
-
   _points.forEach(function (point) {
     // const node = clusterDb[edge.toCluster].node;
-    _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('abc88 checking point', point, boundryNode); // check if point is inside the boundry rect
+    _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('abc88 checking point', point, boundryNode);
 
+    // check if point is inside the boundry rect
     if (!outsideNode(boundryNode, point) && !isInside) {
       // First point inside the rect found
       // Calc the intersection coord between the point anf the last opint ouside the rect
       var inter = intersection(boundryNode, lastPointOutside, point);
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('abc88 inside', point, lastPointOutside, inter);
-      _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('abc88 intersection', inter); // // Check case where the intersection is the same as the last point
+      _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('abc88 intersection', inter);
 
+      // // Check case where the intersection is the same as the last point
       var pointPresent = false;
       points.forEach(function (p) {
         pointPresent = pointPresent || p.x === inter.x && p.y === inter.y;
-      }); // // if (!pointPresent) {
-
+      });
+      // // if (!pointPresent) {
       if (!points.find(function (e) {
         return e.x === inter.x && e.y === inter.y;
       })) {
         points.push(inter);
       } else {
         _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('abc88 no intersect', inter, points);
-      } // points.push(inter);
-
-
+      }
+      // points.push(inter);
       isInside = true;
     } else {
       // Outside
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('abc88 outside', point, lastPointOutside);
-      lastPointOutside = point; // points.push(point);
-
+      lastPointOutside = point;
+      // points.push(point);
       if (!isInside) points.push(point);
     }
   });
-
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('abc88 returning points', points);
   return points;
-}; //(edgePaths, e, edge, clusterDb, diagramtype, graph)
+};
 
-
+//(edgePaths, e, edge, clusterDb, diagramtype, graph)
 var insertEdge = function insertEdge(elem, e, edge, clusterDb, diagramType, graph) {
   var points = edge.points;
   var pointsHasChanged = false;
   var tail = graph.node(e.v);
   var head = graph.node(e.w);
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('abc88 InsertEdge: ', edge);
-
   if (head.intersect && tail.intersect) {
     points = points.slice(1, edge.points.length - 1);
     points.unshift(tail.intersect(points[0]));
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Last point', points[points.length - 1], head, head.intersect(points[points.length - 1]));
     points.push(head.intersect(points[points.length - 1]));
   }
-
   if (edge.toCluster) {
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('to cluster abc88', clusterDb[edge.toCluster]);
-    points = cutPathAtIntersect(edge.points, clusterDb[edge.toCluster].node); // log.trace('edge', edge);
+    points = cutPathAtIntersect(edge.points, clusterDb[edge.toCluster].node);
+    // log.trace('edge', edge);
     // points = [];
     // let lastPointOutside; // = edge.points[0];
     // let isInside = false;
     // edge.points.forEach(point => {
     //   const node = clusterDb[edge.toCluster].node;
     //   log.warn('checking from', edge.fromCluster, point, node);
+
     //   if (!outsideNode(node, point) && !isInside) {
     //     log.trace('inside', edge.toCluster, point, lastPointOutside);
+
     //     // First point inside the rect
     //     const inter = intersection(node, lastPointOutside, point);
+
     //     let pointPresent = false;
     //     points.forEach(p => {
     //       pointPresent = pointPresent || (p.x === inter.x && p.y === inter.y);
@@ -1669,13 +1595,12 @@ var insertEdge = function insertEdge(elem, e, edge, clusterDb, diagramType, grap
     //   if (!isInside) points.push(point);
     // }
     // });
-
     pointsHasChanged = true;
   }
-
   if (edge.fromCluster) {
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('from cluster abc88', clusterDb[edge.fromCluster]);
-    points = cutPathAtIntersect(points.reverse(), clusterDb[edge.fromCluster].node).reverse(); // log.warn('edge', edge);
+    points = cutPathAtIntersect(points.reverse(), clusterDb[edge.fromCluster].node).reverse();
+    // log.warn('edge', edge);
     // log.warn('from cluster', clusterDb[edge.fromCluster], points);
     // const updatedPoints = [];
     // let lastPointOutside = edge.points[edge.points.length - 1];
@@ -1684,8 +1609,10 @@ var insertEdge = function insertEdge(elem, e, edge, clusterDb, diagramType, grap
     //   const point = points[i];
     //   const node = clusterDb[edge.fromCluster].node;
     //   log.warn('checking to', edge.fromCluster, point, node);
+
     //   if (!outsideNode(node, point) && !isInside) {
     //     log.warn('inside', edge.fromCluster, point, node);
+
     //     // First point inside the rect
     //     const inter = intersection(node, lastPointOutside, point);
     //     log.warn('intersect', intersection(node, lastPointOutside, point));
@@ -1712,62 +1639,57 @@ var insertEdge = function insertEdge(elem, e, edge, clusterDb, diagramType, grap
     // }
     // points = updatedPoints;
     // points = edge.points;
-
     pointsHasChanged = true;
-  } // The data for our line
+  }
 
-
+  // The data for our line
   var lineData = points.filter(function (p) {
     return !Number.isNaN(p.y);
-  }); // This is the accessor function we talked about above
+  });
 
-  var curve; // Currently only flowcharts get the curve from the settings, perhaps this should
+  // This is the accessor function we talked about above
+  var curve;
+  // Currently only flowcharts get the curve from the settings, perhaps this should
   // be expanded to a common setting? Restricting it for now in order not to cause side-effects that
   // have not been thought through
-
   if (diagramType === 'graph' || diagramType === 'flowchart') {
     curve = edge.curve || d3__WEBPACK_IMPORTED_MODULE_2__["curveBasis"];
   } else {
     curve = d3__WEBPACK_IMPORTED_MODULE_2__["curveBasis"];
-  } // curve = curveLinear;
-
-
+  }
+  // curve = curveLinear;
   var lineFunction = Object(d3__WEBPACK_IMPORTED_MODULE_2__["line"])().x(function (d) {
     return d.x;
   }).y(function (d) {
     return d.y;
-  }).curve(curve); // Contruct stroke classes based on properties
+  }).curve(curve);
 
+  // Contruct stroke classes based on properties
   var strokeClasses;
-
   switch (edge.thickness) {
     case 'normal':
       strokeClasses = 'edge-thickness-normal';
       break;
-
     case 'thick':
       strokeClasses = 'edge-thickness-thick';
       break;
-
     default:
       strokeClasses = '';
   }
-
   switch (edge.pattern) {
     case 'solid':
       strokeClasses += ' edge-pattern-solid';
       break;
-
     case 'dotted':
       strokeClasses += ' edge-pattern-dotted';
       break;
-
     case 'dashed':
       strokeClasses += ' edge-pattern-dashed';
       break;
   }
+  var svgPath = elem.append('path').attr('d', lineFunction(lineData)).attr('id', edge.id).attr('class', ' ' + strokeClasses + (edge.classes ? ' ' + edge.classes : '')).attr('style', edge.style);
 
-  var svgPath = elem.append('path').attr('d', lineFunction(lineData)).attr('id', edge.id).attr('class', ' ' + strokeClasses + (edge.classes ? ' ' + edge.classes : '')).attr('style', edge.style); // DEBUG code, adds a red circle at each edge coordinate
+  // DEBUG code, adds a red circle at each edge coordinate
   // edge.points.forEach(point => {
   //   elem
   //     .append('circle')
@@ -1779,94 +1701,71 @@ var insertEdge = function insertEdge(elem, e, edge, clusterDb, diagramType, grap
   // });
 
   var url = '';
-
   if (Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().state.arrowMarkerAbsolute) {
     url = window.location.protocol + '//' + window.location.host + window.location.pathname + window.location.search;
     url = url.replace(/\(/g, '\\(');
     url = url.replace(/\)/g, '\\)');
   }
-
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('arrowTypeStart', edge.arrowTypeStart);
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('arrowTypeEnd', edge.arrowTypeEnd);
-
   switch (edge.arrowTypeStart) {
     case 'arrow_cross':
       svgPath.attr('marker-start', 'url(' + url + '#' + diagramType + '-crossStart' + ')');
       break;
-
     case 'arrow_point':
       svgPath.attr('marker-start', 'url(' + url + '#' + diagramType + '-pointStart' + ')');
       break;
-
     case 'arrow_barb':
       svgPath.attr('marker-start', 'url(' + url + '#' + diagramType + '-barbStart' + ')');
       break;
-
     case 'arrow_circle':
       svgPath.attr('marker-start', 'url(' + url + '#' + diagramType + '-circleStart' + ')');
       break;
-
     case 'aggregation':
       svgPath.attr('marker-start', 'url(' + url + '#' + diagramType + '-aggregationStart' + ')');
       break;
-
     case 'extension':
       svgPath.attr('marker-start', 'url(' + url + '#' + diagramType + '-extensionStart' + ')');
       break;
-
     case 'composition':
       svgPath.attr('marker-start', 'url(' + url + '#' + diagramType + '-compositionStart' + ')');
       break;
-
     case 'dependency':
       svgPath.attr('marker-start', 'url(' + url + '#' + diagramType + '-dependencyStart' + ')');
       break;
-
     default:
   }
-
   switch (edge.arrowTypeEnd) {
     case 'arrow_cross':
       svgPath.attr('marker-end', 'url(' + url + '#' + diagramType + '-crossEnd' + ')');
       break;
-
     case 'arrow_point':
       svgPath.attr('marker-end', 'url(' + url + '#' + diagramType + '-pointEnd' + ')');
       break;
-
     case 'arrow_barb':
       svgPath.attr('marker-end', 'url(' + url + '#' + diagramType + '-barbEnd' + ')');
       break;
-
     case 'arrow_circle':
       svgPath.attr('marker-end', 'url(' + url + '#' + diagramType + '-circleEnd' + ')');
       break;
-
     case 'aggregation':
       svgPath.attr('marker-end', 'url(' + url + '#' + diagramType + '-aggregationEnd' + ')');
       break;
-
     case 'extension':
       svgPath.attr('marker-end', 'url(' + url + '#' + diagramType + '-extensionEnd' + ')');
       break;
-
     case 'composition':
       svgPath.attr('marker-end', 'url(' + url + '#' + diagramType + '-compositionEnd' + ')');
       break;
-
     case 'dependency':
       svgPath.attr('marker-end', 'url(' + url + '#' + diagramType + '-dependencyEnd' + ')');
       break;
-
     default:
   }
-
   var paths = {};
-
   if (pointsHasChanged) {
     paths.updatedPath = points;
   }
-
   paths.originalPath = edge.points;
   return paths;
 };
@@ -1903,49 +1802,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 var recursiveRender = function recursiveRender(_elem, graph, diagramtype, parentCluster) {
   _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Graph in recursive render: XXX', graphlib__WEBPACK_IMPORTED_MODULE_1___default.a.json.write(graph), parentCluster);
   var dir = graph.graph().rankdir;
   _logger__WEBPACK_IMPORTED_MODULE_8__["log"].trace('Dir in recursive render - dir:', dir);
-
   var elem = _elem.insert('g').attr('class', 'root'); // eslint-disable-line
-
-
   if (!graph.nodes()) {
     _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('No nodes found for', graph);
   } else {
     _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Recursive render XXX', graph.nodes());
   }
-
   if (graph.edges().length > 0) {
     _logger__WEBPACK_IMPORTED_MODULE_8__["log"].trace('Recursive edges', graph.edge(graph.edges()[0]));
   }
-
   var clusters = elem.insert('g').attr('class', 'clusters'); // eslint-disable-line
-
   var edgePaths = elem.insert('g').attr('class', 'edgePaths');
   var edgeLabels = elem.insert('g').attr('class', 'edgeLabels');
-  var nodes = elem.insert('g').attr('class', 'nodes'); // Insert nodes, this will insert them into the dom and each node will get a size. The size is updated
-  // to the abstract node and is later used by dagre for the layout
+  var nodes = elem.insert('g').attr('class', 'nodes');
 
+  // Insert nodes, this will insert them into the dom and each node will get a size. The size is updated
+  // to the abstract node and is later used by dagre for the layout
   graph.nodes().forEach(function (v) {
     var node = graph.node(v);
-
     if (typeof parentCluster !== 'undefined') {
-      var data = JSON.parse(JSON.stringify(parentCluster.clusterData)); // data.clusterPositioning = true;
-
+      var data = JSON.parse(JSON.stringify(parentCluster.clusterData));
+      // data.clusterPositioning = true;
       _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Setting data for cluster XXX (', v, ') ', data, parentCluster);
       graph.setNode(parentCluster.id, data);
-
       if (!graph.parent(v)) {
         _logger__WEBPACK_IMPORTED_MODULE_8__["log"].trace('Setting parent', v, parentCluster.id);
         graph.setParent(v, parentCluster.id, data);
       }
     }
-
     _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('(Insert) Node XXX' + v + ': ' + JSON.stringify(graph.node(v)));
-
     if (node && node.clusterNode) {
       // const children = graph.children(v);
       _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Cluster identified', v, node.width, graph.node(v));
@@ -1965,22 +1854,25 @@ var recursiveRender = function recursiveRender(_elem, graph, diagramtype, parent
         _mermaid_graphlib__WEBPACK_IMPORTED_MODULE_4__["clusterDb"][node.id] = {
           id: Object(_mermaid_graphlib__WEBPACK_IMPORTED_MODULE_4__["findNonClusterChild"])(node.id, graph),
           node: node
-        }; // insertCluster(clusters, graph.node(v));
+        };
+        // insertCluster(clusters, graph.node(v));
       } else {
         _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Node - the non recursive path', v, node.id, node);
         Object(_nodes__WEBPACK_IMPORTED_MODULE_5__["insertNode"])(nodes, graph.node(v), dir);
       }
     }
-  }); // Insert labels, this will insert them into the dom so that the width can be calculated
+  });
+
+  // Insert labels, this will insert them into the dom so that the width can be calculated
   // Also figure out which edges point to/from clusters and adjust them accordingly
   // Edges from/to clusters really points to the first child in the cluster.
   // TODO: pick optimal child in the cluster to us as link anchor
-
   graph.edges().forEach(function (e) {
     var edge = graph.edge(e.v, e.w, e.name);
     _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Edge ' + e.v + ' -> ' + e.w + ': ' + JSON.stringify(e));
-    _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Edge ' + e.v + ' -> ' + e.w + ': ', e, ' ', JSON.stringify(graph.edge(e))); // Check if link is either from or to a cluster
+    _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Edge ' + e.v + ' -> ' + e.w + ': ', e, ' ', JSON.stringify(graph.edge(e)));
 
+    // Check if link is either from or to a cluster
     _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Fix', _mermaid_graphlib__WEBPACK_IMPORTED_MODULE_4__["clusterDb"], 'ids:', e.v, e.w, 'Translateing: ', _mermaid_graphlib__WEBPACK_IMPORTED_MODULE_4__["clusterDb"][e.v], _mermaid_graphlib__WEBPACK_IMPORTED_MODULE_4__["clusterDb"][e.w]);
     Object(_edges__WEBPACK_IMPORTED_MODULE_7__["insertEdgeLabel"])(edgeLabels, edge);
   });
@@ -1992,16 +1884,16 @@ var recursiveRender = function recursiveRender(_elem, graph, diagramtype, parent
   _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('#############################################');
   _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info(graph);
   dagre__WEBPACK_IMPORTED_MODULE_0___default.a.layout(graph);
-  _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Graph after layout:', graphlib__WEBPACK_IMPORTED_MODULE_1___default.a.json.write(graph)); // Move the nodes to the correct place
-
+  _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Graph after layout:', graphlib__WEBPACK_IMPORTED_MODULE_1___default.a.json.write(graph));
+  // Move the nodes to the correct place
   var diff = 0;
   Object(_mermaid_graphlib__WEBPACK_IMPORTED_MODULE_4__["sortNodesByHierarchy"])(graph).forEach(function (v) {
     var node = graph.node(v);
     _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Position ' + v + ': ' + JSON.stringify(graph.node(v)));
     _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Position ' + v + ': (' + node.x, ',' + node.y, ') width: ', node.width, ' height: ', node.height);
-
     if (node && node.clusterNode) {
       // clusterDb[node.id].node = node;
+
       Object(_nodes__WEBPACK_IMPORTED_MODULE_5__["positionNode"])(node);
     } else {
       // Non cluster node
@@ -2014,8 +1906,9 @@ var recursiveRender = function recursiveRender(_elem, graph, diagramtype, parent
         Object(_nodes__WEBPACK_IMPORTED_MODULE_5__["positionNode"])(node);
       }
     }
-  }); // Move the edge labels to the correct place after layout
+  });
 
+  // Move the edge labels to the correct place after layout
   graph.edges().forEach(function (e) {
     var edge = graph.edge(e);
     _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Edge ' + e.v + ' -> ' + e.w + ': ' + JSON.stringify(edge), edge);
@@ -2025,7 +1918,6 @@ var recursiveRender = function recursiveRender(_elem, graph, diagramtype, parent
   graph.nodes().forEach(function (v) {
     var n = graph.node(v);
     _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info(v, n.type, n.diff);
-
     if (n.type === 'group') {
       diff = n.diff;
     }
@@ -2035,7 +1927,6 @@ var recursiveRender = function recursiveRender(_elem, graph, diagramtype, parent
     diff: diff
   };
 };
-
 var render = function render(elem, graph, markers, diagramtype, id) {
   Object(_markers__WEBPACK_IMPORTED_MODULE_2__["default"])(elem, markers, diagramtype, id);
   Object(_nodes__WEBPACK_IMPORTED_MODULE_5__["clear"])();
@@ -2044,13 +1935,16 @@ var render = function render(elem, graph, markers, diagramtype, id) {
   Object(_mermaid_graphlib__WEBPACK_IMPORTED_MODULE_4__["clear"])();
   _logger__WEBPACK_IMPORTED_MODULE_8__["log"].warn('Graph at first:', graphlib__WEBPACK_IMPORTED_MODULE_1___default.a.json.write(graph));
   Object(_mermaid_graphlib__WEBPACK_IMPORTED_MODULE_4__["adjustClustersAndEdges"])(graph);
-  _logger__WEBPACK_IMPORTED_MODULE_8__["log"].warn('Graph after:', graphlib__WEBPACK_IMPORTED_MODULE_1___default.a.json.write(graph)); // log.warn('Graph ever  after:', graphlib.json.write(graph.node('A').graph));
-
+  _logger__WEBPACK_IMPORTED_MODULE_8__["log"].warn('Graph after:', graphlib__WEBPACK_IMPORTED_MODULE_1___default.a.json.write(graph));
+  // log.warn('Graph ever  after:', graphlib.json.write(graph.node('A').graph));
   recursiveRender(elem, graph, diagramtype);
-}; // const shapeDefinitions = {};
+};
+
+// const shapeDefinitions = {};
 // export const addShape = ({ shapeType: fun }) => {
 //   shapeDefinitions[shapeType] = fun;
 // };
+
 // const arrowDefinitions = {};
 // export const addArrow = ({ arrowType: fun }) => {
 //   arrowDefinitions[arrowType] = fun;
@@ -2081,6 +1975,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   node: _intersect_node_js__WEBPACK_IMPORTED_MODULE_0___default.a,
   circle: _intersect_circle_js__WEBPACK_IMPORTED_MODULE_1__["default"],
@@ -2102,11 +1997,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _intersect_ellipse__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./intersect-ellipse */ "./src/dagre-wrapper/intersect/intersect-ellipse.js");
 
-
 function intersectCircle(node, rx, point) {
   return Object(_intersect_ellipse__WEBPACK_IMPORTED_MODULE_0__["default"])(node, rx, rx, point);
 }
-
 /* harmony default export */ __webpack_exports__["default"] = (intersectCircle);
 
 /***/ }),
@@ -2122,29 +2015,25 @@ function intersectCircle(node, rx, point) {
 __webpack_require__.r(__webpack_exports__);
 function intersectEllipse(node, rx, ry, point) {
   // Formulae from: http://mathworld.wolfram.com/Ellipse-LineIntersection.html
+
   var cx = node.x;
   var cy = node.y;
   var px = cx - point.x;
   var py = cy - point.y;
   var det = Math.sqrt(rx * rx * py * py + ry * ry * px * px);
   var dx = Math.abs(rx * ry * px / det);
-
   if (point.x < cx) {
     dx = -dx;
   }
-
   var dy = Math.abs(rx * ry * py / det);
-
   if (point.y < cy) {
     dy = -dy;
   }
-
   return {
     x: cx + dx,
     y: cy + dy
   };
 }
-
 /* harmony default export */ __webpack_exports__["default"] = (intersectEllipse);
 
 /***/ }),
@@ -2165,49 +2054,54 @@ __webpack_require__.r(__webpack_exports__);
 function intersectLine(p1, p2, q1, q2) {
   // Algorithm from J. Avro, (ed.) Graphics Gems, No 2, Morgan Kaufmann, 1994,
   // p7 and p473.
+
   var a1, a2, b1, b2, c1, c2;
   var r1, r2, r3, r4;
   var denom, offset, num;
-  var x, y; // Compute a1, b1, c1, where line joining points 1 and 2 is F(x,y) = a1 x +
-  // b1 y + c1 = 0.
+  var x, y;
 
+  // Compute a1, b1, c1, where line joining points 1 and 2 is F(x,y) = a1 x +
+  // b1 y + c1 = 0.
   a1 = p2.y - p1.y;
   b1 = p1.x - p2.x;
-  c1 = p2.x * p1.y - p1.x * p2.y; // Compute r3 and r4.
+  c1 = p2.x * p1.y - p1.x * p2.y;
 
+  // Compute r3 and r4.
   r3 = a1 * q1.x + b1 * q1.y + c1;
-  r4 = a1 * q2.x + b1 * q2.y + c1; // Check signs of r3 and r4. If both point 3 and point 4 lie on
+  r4 = a1 * q2.x + b1 * q2.y + c1;
+
+  // Check signs of r3 and r4. If both point 3 and point 4 lie on
   // same side of line 1, the line segments do not intersect.
-
   if (r3 !== 0 && r4 !== 0 && sameSign(r3, r4)) {
-    return;
-  } // Compute a2, b2, c2 where line joining points 3 and 4 is G(x,y) = a2 x + b2 y + c2 = 0
-
-
-  a2 = q2.y - q1.y;
-  b2 = q1.x - q2.x;
-  c2 = q2.x * q1.y - q1.x * q2.y; // Compute r1 and r2
-
-  r1 = a2 * p1.x + b2 * p1.y + c2;
-  r2 = a2 * p2.x + b2 * p2.y + c2; // Check signs of r1 and r2. If both point 1 and point 2 lie
-  // on same side of second line segment, the line segments do
-  // not intersect.
-
-  if (r1 !== 0 && r2 !== 0 && sameSign(r1, r2)) {
-    return;
-  } // Line segments intersect: compute intersection point.
-
-
-  denom = a1 * b2 - a2 * b1;
-
-  if (denom === 0) {
-    return;
+    return; /*DONT_INTERSECT*/
   }
 
-  offset = Math.abs(denom / 2); // The denom/2 is to get rounding instead of truncating. It
+  // Compute a2, b2, c2 where line joining points 3 and 4 is G(x,y) = a2 x + b2 y + c2 = 0
+  a2 = q2.y - q1.y;
+  b2 = q1.x - q2.x;
+  c2 = q2.x * q1.y - q1.x * q2.y;
+
+  // Compute r1 and r2
+  r1 = a2 * p1.x + b2 * p1.y + c2;
+  r2 = a2 * p2.x + b2 * p2.y + c2;
+
+  // Check signs of r1 and r2. If both point 1 and point 2 lie
+  // on same side of second line segment, the line segments do
+  // not intersect.
+  if (r1 !== 0 && r2 !== 0 && sameSign(r1, r2)) {
+    return; /*DONT_INTERSECT*/
+  }
+
+  // Line segments intersect: compute intersection point.
+  denom = a1 * b2 - a2 * b1;
+  if (denom === 0) {
+    return; /*COLLINEAR*/
+  }
+  offset = Math.abs(denom / 2);
+
+  // The denom/2 is to get rounding instead of truncating. It
   // is added or subtracted to the numerator, depending upon the
   // sign of the numerator.
-
   num = b1 * c2 - b2 * c1;
   x = num < 0 ? (num - offset) / denom : (num + offset) / denom;
   num = a2 * c1 - a1 * c2;
@@ -2217,11 +2111,9 @@ function intersectLine(p1, p2, q1, q2) {
     y: y
   };
 }
-
 function sameSign(r1, r2) {
   return r1 * r2 > 0;
 }
-
 /* harmony default export */ __webpack_exports__["default"] = (intersectLine);
 
 /***/ }),
@@ -2234,7 +2126,6 @@ function sameSign(r1, r2) {
 /***/ (function(module, exports) {
 
 module.exports = intersectNode;
-
 function intersectNode(node, point) {
   // console.info('Intersect Node');
   return node.intersect(point);
@@ -2254,19 +2145,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _intersect_line__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./intersect-line */ "./src/dagre-wrapper/intersect/intersect-line.js");
 /* eslint "no-console": off */
 
+
 /* harmony default export */ __webpack_exports__["default"] = (intersectPolygon);
+
 /*
  * Returns the point ({x, y}) at which the point argument intersects with the
  * node argument assuming that it has the shape specified by polygon.
  */
-
 function intersectPolygon(node, polyPoints, point) {
   var x1 = node.x;
   var y1 = node.y;
   var intersections = [];
   var minX = Number.POSITIVE_INFINITY;
   var minY = Number.POSITIVE_INFINITY;
-
   if (typeof polyPoints.forEach === 'function') {
     polyPoints.forEach(function (entry) {
       minX = Math.min(minX, entry.x);
@@ -2276,10 +2167,8 @@ function intersectPolygon(node, polyPoints, point) {
     minX = Math.min(minX, polyPoints.x);
     minY = Math.min(minY, polyPoints.y);
   }
-
   var left = x1 - node.width / 2 - minX;
   var top = y1 - node.height / 2 - minY;
-
   for (var i = 0; i < polyPoints.length; i++) {
     var p1 = polyPoints[i];
     var p2 = polyPoints[i < polyPoints.length - 1 ? i + 1 : 0];
@@ -2290,17 +2179,14 @@ function intersectPolygon(node, polyPoints, point) {
       x: left + p2.x,
       y: top + p2.y
     });
-
     if (intersect) {
       intersections.push(intersect);
     }
   }
-
   if (!intersections.length) {
     // console.log('NO INTERSECTION FOUND, RETURN NODE CENTER', node);
     return node;
   }
-
   if (intersections.length > 1) {
     // More intersections, find the one nearest to edge end point
     intersections.sort(function (p, q) {
@@ -2313,7 +2199,6 @@ function intersectPolygon(node, polyPoints, point) {
       return distp < distq ? -1 : distp === distq ? 0 : 1;
     });
   }
-
   return intersections[0];
 }
 
@@ -2330,21 +2215,20 @@ function intersectPolygon(node, polyPoints, point) {
 __webpack_require__.r(__webpack_exports__);
 var intersectRect = function intersectRect(node, point) {
   var x = node.x;
-  var y = node.y; // Rectangle intersection algorithm from:
-  // http://math.stackexchange.com/questions/108113/find-edge-between-two-boxes
+  var y = node.y;
 
+  // Rectangle intersection algorithm from:
+  // http://math.stackexchange.com/questions/108113/find-edge-between-two-boxes
   var dx = point.x - x;
   var dy = point.y - y;
   var w = node.width / 2;
   var h = node.height / 2;
   var sx, sy;
-
   if (Math.abs(dy) * w > Math.abs(dx) * h) {
     // Intersection is top or bottom of rect.
     if (dy < 0) {
       h = -h;
     }
-
     sx = dy === 0 ? 0 : h * dx / dy;
     sy = h;
   } else {
@@ -2352,17 +2236,14 @@ var intersectRect = function intersectRect(node, point) {
     if (dx < 0) {
       w = -w;
     }
-
     sx = w;
     sy = dx === 0 ? 0 : w * dy / dx;
   }
-
   return {
     x: x + sx,
     y: y + sy
   };
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (intersectRect);
 
 /***/ }),
@@ -2380,57 +2261,53 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Setup arrow head and define the marker. The result is appended to the svg.
  */
- // Only add the number of markers that the diagram needs
 
+
+
+// Only add the number of markers that the diagram needs
 var insertMarkers = function insertMarkers(elem, markerArray, type, id) {
   markerArray.forEach(function (markerName) {
     markers[markerName](elem, type, id);
   });
 };
-
 var extension = function extension(elem, type, id) {
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace('Making markers for ', id);
   elem.append('defs').append('marker').attr('id', type + '-extensionStart').attr('class', 'marker extension ' + type).attr('refX', 0).attr('refY', 7).attr('markerWidth', 190).attr('markerHeight', 240).attr('orient', 'auto').append('path').attr('d', 'M 1,7 L18,13 V 1 Z');
   elem.append('defs').append('marker').attr('id', type + '-extensionEnd').attr('class', 'marker extension ' + type).attr('refX', 19).attr('refY', 7).attr('markerWidth', 20).attr('markerHeight', 28).attr('orient', 'auto').append('path').attr('d', 'M 1,1 V 13 L18,7 Z'); // this is actual shape for arrowhead
 };
-
 var composition = function composition(elem, type) {
   elem.append('defs').append('marker').attr('id', type + '-compositionStart').attr('class', 'marker composition ' + type).attr('refX', 0).attr('refY', 7).attr('markerWidth', 190).attr('markerHeight', 240).attr('orient', 'auto').append('path').attr('d', 'M 18,7 L9,13 L1,7 L9,1 Z');
   elem.append('defs').append('marker').attr('id', type + '-compositionEnd').attr('class', 'marker composition ' + type).attr('refX', 19).attr('refY', 7).attr('markerWidth', 20).attr('markerHeight', 28).attr('orient', 'auto').append('path').attr('d', 'M 18,7 L9,13 L1,7 L9,1 Z');
 };
-
 var aggregation = function aggregation(elem, type) {
   elem.append('defs').append('marker').attr('id', type + '-aggregationStart').attr('class', 'marker aggregation ' + type).attr('refX', 0).attr('refY', 7).attr('markerWidth', 190).attr('markerHeight', 240).attr('orient', 'auto').append('path').attr('d', 'M 18,7 L9,13 L1,7 L9,1 Z');
   elem.append('defs').append('marker').attr('id', type + '-aggregationEnd').attr('class', 'marker aggregation ' + type).attr('refX', 19).attr('refY', 7).attr('markerWidth', 20).attr('markerHeight', 28).attr('orient', 'auto').append('path').attr('d', 'M 18,7 L9,13 L1,7 L9,1 Z');
 };
-
 var dependency = function dependency(elem, type) {
   elem.append('defs').append('marker').attr('id', type + '-dependencyStart').attr('class', 'marker dependency ' + type).attr('refX', 0).attr('refY', 7).attr('markerWidth', 190).attr('markerHeight', 240).attr('orient', 'auto').append('path').attr('d', 'M 5,7 L9,13 L1,7 L9,1 Z');
   elem.append('defs').append('marker').attr('id', type + '-dependencyEnd').attr('class', 'marker dependency ' + type).attr('refX', 19).attr('refY', 7).attr('markerWidth', 20).attr('markerHeight', 28).attr('orient', 'auto').append('path').attr('d', 'M 18,7 L9,13 L14,7 L9,1 Z');
 };
-
 var point = function point(elem, type) {
   elem.append('marker').attr('id', type + '-pointEnd').attr('class', 'marker ' + type).attr('viewBox', '0 0 10 10').attr('refX', 9).attr('refY', 5).attr('markerUnits', 'userSpaceOnUse').attr('markerWidth', 12).attr('markerHeight', 12).attr('orient', 'auto').append('path').attr('d', 'M 0 0 L 10 5 L 0 10 z').attr('class', 'arrowMarkerPath').style('stroke-width', 1).style('stroke-dasharray', '1,0');
   elem.append('marker').attr('id', type + '-pointStart').attr('class', 'marker ' + type).attr('viewBox', '0 0 10 10').attr('refX', 0).attr('refY', 5).attr('markerUnits', 'userSpaceOnUse').attr('markerWidth', 12).attr('markerHeight', 12).attr('orient', 'auto').append('path').attr('d', 'M 0 5 L 10 10 L 10 0 z').attr('class', 'arrowMarkerPath').style('stroke-width', 1).style('stroke-dasharray', '1,0');
 };
-
 var circle = function circle(elem, type) {
   elem.append('marker').attr('id', type + '-circleEnd').attr('class', 'marker ' + type).attr('viewBox', '0 0 10 10').attr('refX', 11).attr('refY', 5).attr('markerUnits', 'userSpaceOnUse').attr('markerWidth', 11).attr('markerHeight', 11).attr('orient', 'auto').append('circle').attr('cx', '5').attr('cy', '5').attr('r', '5').attr('class', 'arrowMarkerPath').style('stroke-width', 1).style('stroke-dasharray', '1,0');
   elem.append('marker').attr('id', type + '-circleStart').attr('class', 'marker ' + type).attr('viewBox', '0 0 10 10').attr('refX', -1).attr('refY', 5).attr('markerUnits', 'userSpaceOnUse').attr('markerWidth', 11).attr('markerHeight', 11).attr('orient', 'auto').append('circle').attr('cx', '5').attr('cy', '5').attr('r', '5').attr('class', 'arrowMarkerPath').style('stroke-width', 1).style('stroke-dasharray', '1,0');
 };
-
 var cross = function cross(elem, type) {
-  elem.append('marker').attr('id', type + '-crossEnd').attr('class', 'marker cross ' + type).attr('viewBox', '0 0 11 11').attr('refX', 12).attr('refY', 5.2).attr('markerUnits', 'userSpaceOnUse').attr('markerWidth', 11).attr('markerHeight', 11).attr('orient', 'auto').append('path') // .attr('stroke', 'black')
+  elem.append('marker').attr('id', type + '-crossEnd').attr('class', 'marker cross ' + type).attr('viewBox', '0 0 11 11').attr('refX', 12).attr('refY', 5.2).attr('markerUnits', 'userSpaceOnUse').attr('markerWidth', 11).attr('markerHeight', 11).attr('orient', 'auto').append('path')
+  // .attr('stroke', 'black')
   .attr('d', 'M 1,1 l 9,9 M 10,1 l -9,9').attr('class', 'arrowMarkerPath').style('stroke-width', 2).style('stroke-dasharray', '1,0');
-  elem.append('marker').attr('id', type + '-crossStart').attr('class', 'marker cross ' + type).attr('viewBox', '0 0 11 11').attr('refX', -1).attr('refY', 5.2).attr('markerUnits', 'userSpaceOnUse').attr('markerWidth', 11).attr('markerHeight', 11).attr('orient', 'auto').append('path') // .attr('stroke', 'black')
+  elem.append('marker').attr('id', type + '-crossStart').attr('class', 'marker cross ' + type).attr('viewBox', '0 0 11 11').attr('refX', -1).attr('refY', 5.2).attr('markerUnits', 'userSpaceOnUse').attr('markerWidth', 11).attr('markerHeight', 11).attr('orient', 'auto').append('path')
+  // .attr('stroke', 'black')
   .attr('d', 'M 1,1 l 9,9 M 10,1 l -9,9').attr('class', 'arrowMarkerPath').style('stroke-width', 2).style('stroke-dasharray', '1,0');
 };
-
 var barb = function barb(elem, type) {
   elem.append('defs').append('marker').attr('id', type + '-barbEnd').attr('refX', 19).attr('refY', 7).attr('markerWidth', 20).attr('markerHeight', 14).attr('markerUnits', 'strokeWidth').attr('orient', 'auto').append('path').attr('d', 'M 19,7 L9,13 L14,7 L9,1 Z');
-}; // TODO rename the class diagram markers to something shape descriptive and semanitc free
+};
 
-
+// TODO rename the class diagram markers to something shape descriptive and semanitc free
 var markers = {
   extension: extension,
   composition: composition,
@@ -2478,26 +2355,23 @@ var clear = function clear() {
   parents = {};
   clusterDb = {};
 };
-
 var isDecendant = function isDecendant(id, ancenstorId) {
   // if (id === ancenstorId) return true;
+
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace('In isDecendant', ancenstorId, ' ', id, ' = ', decendants[ancenstorId].indexOf(id) >= 0);
   if (decendants[ancenstorId].indexOf(id) >= 0) return true;
   return false;
 };
-
 var edgeInCluster = function edgeInCluster(edge, clusterId) {
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Decendants of ', clusterId, ' is ', decendants[clusterId]);
-  _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Edge is ', edge); // Edges to/from the cluster is not in the cluster, they are in the parent
-
+  _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Edge is ', edge);
+  // Edges to/from the cluster is not in the cluster, they are in the parent
   if (edge.v === clusterId) return false;
   if (edge.w === clusterId) return false;
-
   if (!decendants[clusterId]) {
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Tilt, ', clusterId, ',not in decendants');
     return false;
   }
-
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Here ');
   if (decendants[clusterId].indexOf(edge.v) >= 0) return true;
   if (isDecendant(edge.v, clusterId)) return true;
@@ -2505,15 +2379,14 @@ var edgeInCluster = function edgeInCluster(edge, clusterId) {
   if (decendants[clusterId].indexOf(edge.w) >= 0) return true;
   return false;
 };
-
 var copy = function copy(clusterId, graph, newGraph, rootId) {
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Copying children of ', clusterId, 'root', rootId, 'data', graph.node(clusterId), rootId);
-  var nodes = graph.children(clusterId) || []; // Include cluster node if it is not the root
+  var nodes = graph.children(clusterId) || [];
 
+  // Include cluster node if it is not the root
   if (clusterId !== rootId) {
     nodes.push(clusterId);
   }
-
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Copying (nodes) clusterId', clusterId, 'nodes', nodes);
   nodes.forEach(function (node) {
     if (graph.children(node).length > 0) {
@@ -2521,14 +2394,11 @@ var copy = function copy(clusterId, graph, newGraph, rootId) {
     } else {
       var data = graph.node(node);
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('cp ', node, ' to ', rootId, ' with parent ', clusterId); //,node, data, ' parent is ', clusterId);
-
       newGraph.setNode(node, data);
-
       if (rootId !== graph.parent(node)) {
         _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Setting parent', node, graph.parent(node));
         newGraph.setParent(node, graph.parent(node));
       }
-
       if (clusterId !== rootId && node !== clusterId) {
         _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Setting parent', node, clusterId);
         newGraph.setParent(node, clusterId);
@@ -2536,14 +2406,12 @@ var copy = function copy(clusterId, graph, newGraph, rootId) {
         _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('In copy ', clusterId, 'root', rootId, 'data', graph.node(clusterId), rootId);
         _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Not Setting parent for node=', node, 'cluster!==rootId', clusterId !== rootId, 'node!==clusterId', node !== clusterId);
       }
-
       var edges = graph.edges(node);
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Copying Edges', edges);
       edges.forEach(function (edge) {
         _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Edge', edge);
         var data = graph.edge(edge.v, edge.w, edge.name);
         _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Edge data', data, rootId);
-
         try {
           // Do not copy edges in and out of the root cluster, they belong to the parent graph
           if (edgeInCluster(edge, rootId)) {
@@ -2558,108 +2426,91 @@ var copy = function copy(clusterId, graph, newGraph, rootId) {
         }
       });
     }
-
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Removing node', node);
     graph.removeNode(node);
   });
 };
-
 var extractDecendants = function extractDecendants(id, graph) {
   // log.debug('Extracting ', id);
   var children = graph.children(id);
   var res = [].concat(children);
-
   for (var i = 0; i < children.length; i++) {
     parents[children[i]] = id;
     res = res.concat(extractDecendants(children[i], graph));
   }
-
   return res;
 };
+
 /**
  * Validates the graph, checking that all parent child relation points to existing nodes and that
  * edges between nodes also ia correct. When not correct the function logs the discrepancies.
  * @param {graphlib graph} g
  */
-
 var validate = function validate(graph) {
   var edges = graph.edges();
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace('Edges: ', edges);
-
   for (var i = 0; i < edges.length; i++) {
     if (graph.children(edges[i].v).length > 0) {
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace('The node ', edges[i].v, ' is part of and edge even though it has children');
       return false;
     }
-
     if (graph.children(edges[i].w).length > 0) {
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace('The node ', edges[i].w, ' is part of and edge even though it has children');
       return false;
     }
   }
-
   return true;
 };
+
 /**
  * Finds a child that is not a cluster. When faking a edge between a node and a cluster.
  * @param {Finds a } id
  * @param {*} graph
  */
-
 var findNonClusterChild = function findNonClusterChild(id, graph) {
   // const node = graph.node(id);
-  _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace('Searching', id); // const children = graph.children(id).reverse();
-
+  _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace('Searching', id);
+  // const children = graph.children(id).reverse();
   var children = graph.children(id); //.reverse();
-
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace('Searching children of id ', id, children);
-
   if (children.length < 1) {
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace('This is a valid node', id);
     return id;
   }
-
   for (var i = 0; i < children.length; i++) {
     var _id = findNonClusterChild(children[i], graph);
-
     if (_id) {
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace('Found replacement for', id, ' => ', _id);
       return _id;
     }
   }
 };
-
 var getAnchorId = function getAnchorId(id) {
   if (!clusterDb[id]) {
     return id;
-  } // If the cluster has no external connections
-
-
+  }
+  // If the cluster has no external connections
   if (!clusterDb[id].externalConnections) {
     return id;
-  } // Return the replacement node
+  }
 
-
+  // Return the replacement node
   if (clusterDb[id]) {
     return clusterDb[id].id;
   }
-
   return id;
 };
-
 var adjustClustersAndEdges = function adjustClustersAndEdges(graph, depth) {
   if (!graph || depth > 10) {
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Opting out, no graph ');
     return;
   } else {
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Opting in, graph ');
-  } // Go through the nodes and for each cluster found, save a replacment node, this can be used when
+  }
+  // Go through the nodes and for each cluster found, save a replacment node, this can be used when
   // faking a link to a cluster
-
-
   graph.nodes().forEach(function (id) {
     var children = graph.children(id);
-
     if (children.length > 0) {
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Cluster identified', id, ' Replacement id in edges: ', findNonClusterChild(id, graph));
       decendants[id] = extractDecendants(id, graph);
@@ -2668,23 +2519,26 @@ var adjustClustersAndEdges = function adjustClustersAndEdges(graph, depth) {
         clusterData: graph.node(id)
       };
     }
-  }); // Check incoming and outgoing edges for each cluster
+  });
 
+  // Check incoming and outgoing edges for each cluster
   graph.nodes().forEach(function (id) {
     var children = graph.children(id);
     var edges = graph.edges();
-
     if (children.length > 0) {
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Cluster identified', id, decendants);
       edges.forEach(function (edge) {
         // log.debug('Edge, decendants: ', edge, decendants[id]);
+
         // Check if any edge leaves the cluster (not the actual cluster, thats a link from the box)
         if (edge.v !== id && edge.w !== id) {
           // Any edge where either the one of the nodes is decending to the cluster but not the other
           // if (decendants[id].indexOf(edge.v) < 0 && decendants[id].indexOf(edge.w) < 0) {
-          var d1 = isDecendant(edge.v, id);
-          var d2 = isDecendant(edge.w, id); // d1 xor d2 - if either d1 is true and d2 is false or the other way around
 
+          var d1 = isDecendant(edge.v, id);
+          var d2 = isDecendant(edge.w, id);
+
+          // d1 xor d2 - if either d1 is true and d2 is false or the other way around
           if (d1 ^ d2) {
             _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Edge: ', edge, ' leaves cluster ', id);
             _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Decendants of XXX ', id, ': ', decendants[id]);
@@ -2695,18 +2549,18 @@ var adjustClustersAndEdges = function adjustClustersAndEdges(graph, depth) {
     } else {
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Not a cluster ', id, decendants);
     }
-  }); // For clusters with incoming and/or outgoing edges translate those edges to a real node
-  // in the cluster inorder to fake the edge
+  });
 
+  // For clusters with incoming and/or outgoing edges translate those edges to a real node
+  // in the cluster inorder to fake the edge
   graph.edges().forEach(function (e) {
     var edge = graph.edge(e);
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Edge ' + e.v + ' -> ' + e.w + ': ' + JSON.stringify(e));
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Edge ' + e.v + ' -> ' + e.w + ': ' + JSON.stringify(graph.edge(e)));
     var v = e.v;
-    var w = e.w; // Check if link is either from or to a cluster
-
+    var w = e.w;
+    // Check if link is either from or to a cluster
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Fix XXX', clusterDb, 'ids:', e.v, e.w, 'Translateing: ', clusterDb[e.v], ' --- ', clusterDb[e.w]);
-
     if (clusterDb[e.v] || clusterDb[e.w]) {
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Fixing and trixing - removing XXX', e.v, e.w, e.name);
       v = getAnchorId(e.v);
@@ -2720,7 +2574,9 @@ var adjustClustersAndEdges = function adjustClustersAndEdges(graph, depth) {
   });
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Adjusted Graph', graphlib__WEBPACK_IMPORTED_MODULE_1___default.a.json.write(graph));
   extractor(graph, 0);
-  _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace(clusterDb); // Remove references to extracted cluster
+  _logger__WEBPACK_IMPORTED_MODULE_0__["log"].trace(clusterDb);
+
+  // Remove references to extracted cluster
   // graph.edges().forEach(edge => {
   //   if (isDecendant(edge.v, clusterId) || isDecendant(edge.w, clusterId)) {
   //     graph.removeEdge(edge);
@@ -2729,54 +2585,48 @@ var adjustClustersAndEdges = function adjustClustersAndEdges(graph, depth) {
 };
 var extractor = function extractor(graph, depth) {
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('extractor - ', depth, graphlib__WEBPACK_IMPORTED_MODULE_1___default.a.json.write(graph), graph.children('D'));
-
   if (depth > 10) {
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].error('Bailing out');
     return;
-  } // For clusters without incoming and/or outgoing edges, create a new cluster-node
+  }
+  // For clusters without incoming and/or outgoing edges, create a new cluster-node
   // containing the nodes and edges in the custer in a new graph
   // for (let i = 0;)
-
-
   var nodes = graph.nodes();
   var hasChildren = false;
-
   for (var i = 0; i < nodes.length; i++) {
     var node = nodes[i];
     var children = graph.children(node);
     hasChildren = hasChildren || children.length > 0;
   }
-
   if (!hasChildren) {
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Done, no node has children', graph.nodes());
     return;
-  } // const clusters = Object.keys(clusterDb);
+  }
+  // const clusters = Object.keys(clusterDb);
   // clusters.forEach(clusterId => {
-
-
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Nodes = ', nodes, depth);
-
   for (var _i = 0; _i < nodes.length; _i++) {
     var _node = nodes[_i];
-    _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Extracting node', _node, clusterDb, clusterDb[_node] && !clusterDb[_node].externalConnections, !graph.parent(_node), graph.node(_node), graph.children('D'), ' Depth ', depth); // Note that the node might have been removed after the Object.keys call so better check
+    _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Extracting node', _node, clusterDb, clusterDb[_node] && !clusterDb[_node].externalConnections, !graph.parent(_node), graph.node(_node), graph.children('D'), ' Depth ', depth);
+    // Note that the node might have been removed after the Object.keys call so better check
     // that it still is in the game
-
     if (!clusterDb[_node]) {
       // Skip if the node is not a cluster
-      _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Not a cluster', _node, depth); // break;
-    } else if (!clusterDb[_node].externalConnections && // !graph.parent(node) &&
+      _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Not a cluster', _node, depth);
+      // break;
+    } else if (!clusterDb[_node].externalConnections &&
+    // !graph.parent(node) &&
     graph.children(_node) && graph.children(_node).length > 0) {
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Cluster without external connections, without a parent and with children', _node, depth);
       var graphSettings = graph.graph();
       var dir = graphSettings.rankdir === 'TB' ? 'LR' : 'TB';
-
       if (clusterDb[_node]) {
         if (clusterDb[_node].clusterData && clusterDb[_node].clusterData.dir) {
           dir = clusterDb[_node].clusterData.dir;
           _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Fixing dir', clusterDb[_node].clusterData.dir, dir);
         }
       }
-
       var clusterGraph = new graphlib__WEBPACK_IMPORTED_MODULE_1___default.a.Graph({
         multigraph: true,
         compound: true
@@ -2806,21 +2656,17 @@ var extractor = function extractor(graph, depth) {
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug(clusterDb);
     }
   }
-
   nodes = graph.nodes();
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('New list of nodes', nodes);
-
   for (var _i2 = 0; _i2 < nodes.length; _i2++) {
     var _node2 = nodes[_i2];
     var data = graph.node(_node2);
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn(' Now next level', _node2, data);
-
     if (data.clusterNode) {
       extractor(data.graph, depth + 1);
     }
   }
 };
-
 var sorter = function sorter(graph, nodes) {
   if (nodes.length === 0) return [];
   var result = Object.assign(nodes);
@@ -2831,7 +2677,6 @@ var sorter = function sorter(graph, nodes) {
   });
   return result;
 };
-
 var sortNodesByHierarchy = function sortNodesByHierarchy(graph) {
   return sorter(graph, graph.children());
 };
@@ -2861,8 +2706,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shapes_note__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shapes/note */ "./src/dagre-wrapper/shapes/note.js");
 /* harmony import */ var _diagrams_class_svgDraw__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../diagrams/class/svgDraw */ "./src/diagrams/class/svgDraw.js");
 /* harmony import */ var _diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../diagrams/common/common */ "./src/diagrams/common/common.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 
  // eslint-disable-line
 
@@ -2872,13 +2716,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 
 
-
-
 var question = function question(parent, node) {
   var _labelHelper = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper.shapeSvg,
-      bbox = _labelHelper.bbox;
-
+    shapeSvg = _labelHelper.shapeSvg,
+    bbox = _labelHelper.bbox;
   var w = bbox.width + node.padding;
   var h = bbox.height + node.padding;
   var s = w + h;
@@ -2899,15 +2740,12 @@ var question = function question(parent, node) {
   var questionElem = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["insertPolygonShape"])(shapeSvg, s, s, points);
   questionElem.attr('style', node.style);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, questionElem);
-
   node.intersect = function (point) {
     _logger__WEBPACK_IMPORTED_MODULE_1__["log"].warn('Intersect called');
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].polygon(node, points, point);
   };
-
   return shapeSvg;
 };
-
 var choice = function choice(parent, node) {
   var shapeSvg = parent.insert('g').attr('class', 'node default').attr('id', node.domId || node.id);
   var s = 28;
@@ -2926,24 +2764,20 @@ var choice = function choice(parent, node) {
   }];
   var choice = shapeSvg.insert('polygon', ':first-child').attr('points', points.map(function (d) {
     return d.x + ',' + d.y;
-  }).join(' ')); // center the circle around its coordinate
-
+  }).join(' '));
+  // center the circle around its coordinate
   choice.attr('class', 'state-start').attr('r', 7).attr('width', 28).attr('height', 28);
   node.width = 28;
   node.height = 28;
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].circle(node, 14, point);
   };
-
   return shapeSvg;
 };
-
 var hexagon = function hexagon(parent, node) {
   var _labelHelper2 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper2.shapeSvg,
-      bbox = _labelHelper2.bbox;
-
+    shapeSvg = _labelHelper2.shapeSvg,
+    bbox = _labelHelper2.bbox;
   var f = 4;
   var h = bbox.height + node.padding;
   var m = h / f;
@@ -2970,19 +2804,15 @@ var hexagon = function hexagon(parent, node) {
   var hex = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["insertPolygonShape"])(shapeSvg, w, h, points);
   hex.attr('style', node.style);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, hex);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].polygon(node, points, point);
   };
-
   return shapeSvg;
 };
-
 var rect_left_inv_arrow = function rect_left_inv_arrow(parent, node) {
   var _labelHelper3 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper3.shapeSvg,
-      bbox = _labelHelper3.bbox;
-
+    shapeSvg = _labelHelper3.shapeSvg,
+    bbox = _labelHelper3.bbox;
   var w = bbox.width + node.padding;
   var h = bbox.height + node.padding;
   var points = [{
@@ -3005,19 +2835,15 @@ var rect_left_inv_arrow = function rect_left_inv_arrow(parent, node) {
   el.attr('style', node.style);
   node.width = w + h;
   node.height = h;
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].polygon(node, points, point);
   };
-
   return shapeSvg;
 };
-
 var lean_right = function lean_right(parent, node) {
   var _labelHelper4 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper4.shapeSvg,
-      bbox = _labelHelper4.bbox;
-
+    shapeSvg = _labelHelper4.shapeSvg,
+    bbox = _labelHelper4.bbox;
   var w = bbox.width + node.padding;
   var h = bbox.height + node.padding;
   var points = [{
@@ -3036,19 +2862,15 @@ var lean_right = function lean_right(parent, node) {
   var el = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["insertPolygonShape"])(shapeSvg, w, h, points);
   el.attr('style', node.style);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, el);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].polygon(node, points, point);
   };
-
   return shapeSvg;
 };
-
 var lean_left = function lean_left(parent, node) {
   var _labelHelper5 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper5.shapeSvg,
-      bbox = _labelHelper5.bbox;
-
+    shapeSvg = _labelHelper5.shapeSvg,
+    bbox = _labelHelper5.bbox;
   var w = bbox.width + node.padding;
   var h = bbox.height + node.padding;
   var points = [{
@@ -3067,19 +2889,15 @@ var lean_left = function lean_left(parent, node) {
   var el = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["insertPolygonShape"])(shapeSvg, w, h, points);
   el.attr('style', node.style);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, el);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].polygon(node, points, point);
   };
-
   return shapeSvg;
 };
-
 var trapezoid = function trapezoid(parent, node) {
   var _labelHelper6 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper6.shapeSvg,
-      bbox = _labelHelper6.bbox;
-
+    shapeSvg = _labelHelper6.shapeSvg,
+    bbox = _labelHelper6.bbox;
   var w = bbox.width + node.padding;
   var h = bbox.height + node.padding;
   var points = [{
@@ -3098,19 +2916,15 @@ var trapezoid = function trapezoid(parent, node) {
   var el = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["insertPolygonShape"])(shapeSvg, w, h, points);
   el.attr('style', node.style);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, el);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].polygon(node, points, point);
   };
-
   return shapeSvg;
 };
-
 var inv_trapezoid = function inv_trapezoid(parent, node) {
   var _labelHelper7 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper7.shapeSvg,
-      bbox = _labelHelper7.bbox;
-
+    shapeSvg = _labelHelper7.shapeSvg,
+    bbox = _labelHelper7.bbox;
   var w = bbox.width + node.padding;
   var h = bbox.height + node.padding;
   var points = [{
@@ -3129,19 +2943,15 @@ var inv_trapezoid = function inv_trapezoid(parent, node) {
   var el = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["insertPolygonShape"])(shapeSvg, w, h, points);
   el.attr('style', node.style);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, el);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].polygon(node, points, point);
   };
-
   return shapeSvg;
 };
-
 var rect_right_inv_arrow = function rect_right_inv_arrow(parent, node) {
   var _labelHelper8 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper8.shapeSvg,
-      bbox = _labelHelper8.bbox;
-
+    shapeSvg = _labelHelper8.shapeSvg,
+    bbox = _labelHelper8.bbox;
   var w = bbox.width + node.padding;
   var h = bbox.height + node.padding;
   var points = [{
@@ -3163,19 +2973,15 @@ var rect_right_inv_arrow = function rect_right_inv_arrow(parent, node) {
   var el = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["insertPolygonShape"])(shapeSvg, w, h, points);
   el.attr('style', node.style);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, el);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].polygon(node, points, point);
   };
-
   return shapeSvg;
 };
-
 var cylinder = function cylinder(parent, node) {
   var _labelHelper9 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper9.shapeSvg,
-      bbox = _labelHelper9.bbox;
-
+    shapeSvg = _labelHelper9.shapeSvg,
+    bbox = _labelHelper9.bbox;
   var w = bbox.width + node.padding;
   var rx = w / 2;
   var ry = rx / (2.5 + w / 50);
@@ -3183,11 +2989,9 @@ var cylinder = function cylinder(parent, node) {
   var shape = 'M 0,' + ry + ' a ' + rx + ',' + ry + ' 0,0,0 ' + w + ' 0 a ' + rx + ',' + ry + ' 0,0,0 ' + -w + ' 0 l 0,' + h + ' a ' + rx + ',' + ry + ' 0,0,0 ' + w + ' 0 l 0,' + -h;
   var el = shapeSvg.attr('label-offset-y', ry).insert('path', ':first-child').attr('style', node.style).attr('d', shape).attr('transform', 'translate(' + -w / 2 + ',' + -(h / 2 + ry) + ')');
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, el);
-
   node.intersect = function (point) {
     var pos = _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].rect(node, point);
     var x = pos.x - node.x;
-
     if (rx != 0 && (Math.abs(x) < node.width / 2 || Math.abs(x) == node.width / 2 && Math.abs(pos.y - node.y) > node.height / 2 - ry)) {
       // ellipsis equation: x*x / a*a + y*y / b*b = 1
       // solve for y to get adjustion value for pos.y
@@ -3197,63 +3001,54 @@ var cylinder = function cylinder(parent, node) {
       if (point.y - node.y > 0) y = -y;
       pos.y += y;
     }
-
     return pos;
   };
-
   return shapeSvg;
 };
-
 var rect = function rect(parent, node) {
   var _labelHelper10 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, 'node ' + node.classes, true),
-      shapeSvg = _labelHelper10.shapeSvg,
-      bbox = _labelHelper10.bbox,
-      halfPadding = _labelHelper10.halfPadding;
-
-  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].trace('Classes = ', node.classes); // add the rect
-
+    shapeSvg = _labelHelper10.shapeSvg,
+    bbox = _labelHelper10.bbox,
+    halfPadding = _labelHelper10.halfPadding;
+  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].trace('Classes = ', node.classes);
+  // add the rect
   var rect = shapeSvg.insert('rect', ':first-child');
   rect.attr('class', 'basic label-container').attr('style', node.style).attr('rx', node.rx).attr('ry', node.ry).attr('x', -bbox.width / 2 - halfPadding).attr('y', -bbox.height / 2 - halfPadding).attr('width', bbox.width + node.padding).attr('height', bbox.height + node.padding);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, rect);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].rect(node, point);
   };
-
   return shapeSvg;
 };
-
 var rectWithTitle = function rectWithTitle(parent, node) {
   // const { shapeSvg, bbox, halfPadding } = labelHelper(parent, node, 'node ' + node.classes);
-  var classes;
 
+  var classes;
   if (!node.classes) {
     classes = 'node default';
   } else {
     classes = 'node ' + node.classes;
-  } // Add outer g element
+  }
+  // Add outer g element
+  var shapeSvg = parent.insert('g').attr('class', classes).attr('id', node.domId || node.id);
 
-
-  var shapeSvg = parent.insert('g').attr('class', classes).attr('id', node.domId || node.id); // Create the title label and insert it after the rect
-
-  var rect = shapeSvg.insert('rect', ':first-child'); // const innerRect = shapeSvg.insert('rect');
-
+  // Create the title label and insert it after the rect
+  var rect = shapeSvg.insert('rect', ':first-child');
+  // const innerRect = shapeSvg.insert('rect');
   var innerLine = shapeSvg.insert('line');
   var label = shapeSvg.insert('g').attr('class', 'label');
-  var text2 = node.labelText.flat ? node.labelText.flat() : node.labelText; // const text2 = typeof text2prim === 'object' ? text2prim[0] : text2prim;
+  var text2 = node.labelText.flat ? node.labelText.flat() : node.labelText;
+  // const text2 = typeof text2prim === 'object' ? text2prim[0] : text2prim;
 
   var title = '';
-
   if (_typeof(text2) === 'object') {
     title = text2[0];
   } else {
     title = text2;
   }
-
   _logger__WEBPACK_IMPORTED_MODULE_1__["log"].info('Label text abc79', title, text2, _typeof(text2) === 'object');
   var text = label.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_5__["default"])(title, node.labelStyle, true, true));
   var bbox;
-
   if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     var div = text.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(text);
@@ -3261,90 +3056,77 @@ var rectWithTitle = function rectWithTitle(parent, node) {
     dv.attr('width', bbox.width);
     dv.attr('height', bbox.height);
   }
-
   _logger__WEBPACK_IMPORTED_MODULE_1__["log"].info('Text 2', text2);
   var textRows = text2.slice(1, text2.length);
   var titleBox = text.getBBox();
   var descr = label.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_5__["default"])(textRows.join ? textRows.join('<br/>') : textRows, node.labelStyle, true, true));
-
   if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     var _div = descr.children[0];
-
     var _dv = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(descr);
-
     bbox = _div.getBoundingClientRect();
-
     _dv.attr('width', bbox.width);
-
     _dv.attr('height', bbox.height);
-  } // bbox = label.getBBox();
+  }
+  // bbox = label.getBBox();
   // log.info(descr);
-
-
   var halfPadding = node.padding / 2;
-  Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(descr).attr('transform', 'translate( ' + ( // (titleBox.width - bbox.width) / 2 +
+  Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(descr).attr('transform', 'translate( ' + (
+  // (titleBox.width - bbox.width) / 2 +
   bbox.width > titleBox.width ? 0 : (titleBox.width - bbox.width) / 2) + ', ' + (titleBox.height + halfPadding + 5) + ')');
-  Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(text).attr('transform', 'translate( ' + ( // (titleBox.width - bbox.width) / 2 +
-  bbox.width < titleBox.width ? 0 : -(titleBox.width - bbox.width) / 2) + ', ' + 0 + ')'); // Get the size of the label
+  Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(text).attr('transform', 'translate( ' + (
+  // (titleBox.width - bbox.width) / 2 +
+  bbox.width < titleBox.width ? 0 : -(titleBox.width - bbox.width) / 2) + ', ' + 0 + ')');
+  // Get the size of the label
+
   // Bounding box for title and text
+  bbox = label.node().getBBox();
 
-  bbox = label.node().getBBox(); // Center the label
-
+  // Center the label
   label.attr('transform', 'translate(' + -bbox.width / 2 + ', ' + (-bbox.height / 2 - halfPadding + 3) + ')');
   rect.attr('class', 'outer title-state').attr('x', -bbox.width / 2 - halfPadding).attr('y', -bbox.height / 2 - halfPadding).attr('width', bbox.width + node.padding).attr('height', bbox.height + node.padding);
   innerLine.attr('class', 'divider').attr('x1', -bbox.width / 2 - halfPadding).attr('x2', bbox.width / 2 + halfPadding).attr('y1', -bbox.height / 2 - halfPadding + titleBox.height + halfPadding).attr('y2', -bbox.height / 2 - halfPadding + titleBox.height + halfPadding);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, rect);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].rect(node, point);
   };
-
   return shapeSvg;
 };
-
 var stadium = function stadium(parent, node) {
   var _labelHelper11 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper11.shapeSvg,
-      bbox = _labelHelper11.bbox;
-
+    shapeSvg = _labelHelper11.shapeSvg,
+    bbox = _labelHelper11.bbox;
   var h = bbox.height + node.padding;
-  var w = bbox.width + h / 4 + node.padding; // add the rect
+  var w = bbox.width + h / 4 + node.padding;
 
+  // add the rect
   var rect = shapeSvg.insert('rect', ':first-child').attr('style', node.style).attr('rx', h / 2).attr('ry', h / 2).attr('x', -w / 2).attr('y', -h / 2).attr('width', w).attr('height', h);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, rect);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].rect(node, point);
   };
-
   return shapeSvg;
 };
-
 var circle = function circle(parent, node) {
   var _labelHelper12 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper12.shapeSvg,
-      bbox = _labelHelper12.bbox,
-      halfPadding = _labelHelper12.halfPadding;
+    shapeSvg = _labelHelper12.shapeSvg,
+    bbox = _labelHelper12.bbox,
+    halfPadding = _labelHelper12.halfPadding;
+  var circle = shapeSvg.insert('circle', ':first-child');
 
-  var circle = shapeSvg.insert('circle', ':first-child'); // center the circle around its coordinate
-
+  // center the circle around its coordinate
   circle.attr('style', node.style).attr('rx', node.rx).attr('ry', node.ry).attr('r', bbox.width / 2 + halfPadding).attr('width', bbox.width + node.padding).attr('height', bbox.height + node.padding);
   _logger__WEBPACK_IMPORTED_MODULE_1__["log"].info('Circle main');
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, circle);
-
   node.intersect = function (point) {
     _logger__WEBPACK_IMPORTED_MODULE_1__["log"].info('Circle intersect', node, bbox.width / 2 + halfPadding, point);
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].circle(node, bbox.width / 2 + halfPadding, point);
   };
-
   return shapeSvg;
 };
-
 var subroutine = function subroutine(parent, node) {
   var _labelHelper13 = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["labelHelper"])(parent, node, undefined, true),
-      shapeSvg = _labelHelper13.shapeSvg,
-      bbox = _labelHelper13.bbox;
-
+    shapeSvg = _labelHelper13.shapeSvg,
+    bbox = _labelHelper13.bbox;
   var w = bbox.width + node.padding;
   var h = bbox.height + node.padding;
   var points = [{
@@ -3381,50 +3163,40 @@ var subroutine = function subroutine(parent, node) {
   var el = Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["insertPolygonShape"])(shapeSvg, w, h, points);
   el.attr('style', node.style);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, el);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].polygon(node, points, point);
   };
-
   return shapeSvg;
 };
-
 var start = function start(parent, node) {
   var shapeSvg = parent.insert('g').attr('class', 'node default').attr('id', node.domId || node.id);
-  var circle = shapeSvg.insert('circle', ':first-child'); // center the circle around its coordinate
+  var circle = shapeSvg.insert('circle', ':first-child');
 
+  // center the circle around its coordinate
   circle.attr('class', 'state-start').attr('r', 7).attr('width', 14).attr('height', 14);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, circle);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].circle(node, 7, point);
   };
-
   return shapeSvg;
 };
-
 var forkJoin = function forkJoin(parent, node, dir) {
   var shapeSvg = parent.insert('g').attr('class', 'node default').attr('id', node.domId || node.id);
   var width = 70;
   var height = 10;
-
   if (dir === 'LR') {
     width = 10;
     height = 70;
   }
-
   var shape = shapeSvg.append('rect').attr('x', -1 * width / 2).attr('y', -1 * height / 2).attr('width', width).attr('height', height).attr('class', 'fork-join');
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, shape);
   node.height = node.height + node.padding / 2;
   node.width = node.width + node.padding / 2;
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].rect(node, point);
   };
-
   return shapeSvg;
 };
-
 var end = function end(parent, node) {
   var shapeSvg = parent.insert('g').attr('class', 'node default').attr('id', node.domId || node.id);
   var innerCircle = shapeSvg.insert('circle', ':first-child');
@@ -3432,29 +3204,25 @@ var end = function end(parent, node) {
   circle.attr('class', 'state-start').attr('r', 7).attr('width', 14).attr('height', 14);
   innerCircle.attr('class', 'state-end').attr('r', 5).attr('width', 10).attr('height', 10);
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, circle);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].circle(node, 7, point);
   };
-
   return shapeSvg;
 };
-
 var class_box = function class_box(parent, node) {
   var halfPadding = node.padding / 2;
   var rowPadding = 4;
   var lineHeight = 8;
   var classes;
-
   if (!node.classes) {
     classes = 'node default';
   } else {
     classes = 'node ' + node.classes;
-  } // Add outer g element
+  }
+  // Add outer g element
+  var shapeSvg = parent.insert('g').attr('class', classes).attr('id', node.domId || node.id);
 
-
-  var shapeSvg = parent.insert('g').attr('class', classes).attr('id', node.domId || node.id); // Create the title label and insert it after the rect
-
+  // Create the title label and insert it after the rect
   var rect = shapeSvg.insert('rect', ':first-child');
   var topLine = shapeSvg.insert('line');
   var bottomLine = shapeSvg.insert('line');
@@ -3462,12 +3230,12 @@ var class_box = function class_box(parent, node) {
   var maxHeight = rowPadding;
   var labelContainer = shapeSvg.insert('g').attr('class', 'label');
   var verticalPos = 0;
-  var hasInterface = node.classData.annotations && node.classData.annotations[0]; // 1. Create the labels
+  var hasInterface = node.classData.annotations && node.classData.annotations[0];
 
+  // 1. Create the labels
   var interfaceLabelText = node.classData.annotations[0] ? '«' + node.classData.annotations[0] + '»' : '';
   var interfaceLabel = labelContainer.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_5__["default"])(interfaceLabelText, node.labelStyle, true, true));
   var interfaceBBox = interfaceLabel.getBBox();
-
   if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     var div = interfaceLabel.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(interfaceLabel);
@@ -3475,62 +3243,43 @@ var class_box = function class_box(parent, node) {
     dv.attr('width', interfaceBBox.width);
     dv.attr('height', interfaceBBox.height);
   }
-
   if (node.classData.annotations[0]) {
     maxHeight += interfaceBBox.height + rowPadding;
     maxWidth += interfaceBBox.width;
   }
-
   var classTitleString = node.classData.id;
-
   if (node.classData.type !== undefined && node.classData.type !== '') {
     classTitleString += '<' + node.classData.type + '>';
   }
-
   var classTitleLabel = labelContainer.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_5__["default"])(classTitleString, node.labelStyle, true, true));
   Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(classTitleLabel).attr('class', 'classTitle');
   var classTitleBBox = classTitleLabel.getBBox();
-
   if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     var _div2 = classTitleLabel.children[0];
-
     var _dv2 = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(classTitleLabel);
-
     classTitleBBox = _div2.getBoundingClientRect();
-
     _dv2.attr('width', classTitleBBox.width);
-
     _dv2.attr('height', classTitleBBox.height);
   }
-
   maxHeight += classTitleBBox.height + rowPadding;
-
   if (classTitleBBox.width > maxWidth) {
     maxWidth = classTitleBBox.width;
   }
-
   var classAttributes = [];
   node.classData.members.forEach(function (str) {
     var parsedText = Object(_diagrams_class_svgDraw__WEBPACK_IMPORTED_MODULE_7__["parseMember"])(str).displayText;
     var lbl = labelContainer.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_5__["default"])(parsedText, node.labelStyle, true, true));
     var bbox = lbl.getBBox();
-
     if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
       var _div3 = lbl.children[0];
-
       var _dv3 = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(lbl);
-
       bbox = _div3.getBoundingClientRect();
-
       _dv3.attr('width', bbox.width);
-
       _dv3.attr('height', bbox.height);
     }
-
     if (bbox.width > maxWidth) {
       maxWidth = bbox.width;
     }
-
     maxHeight += bbox.height + rowPadding;
     classAttributes.push(lbl);
   });
@@ -3540,37 +3289,30 @@ var class_box = function class_box(parent, node) {
     var parsedText = Object(_diagrams_class_svgDraw__WEBPACK_IMPORTED_MODULE_7__["parseMember"])(str).displayText;
     var lbl = labelContainer.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_5__["default"])(parsedText, node.labelStyle, true, true));
     var bbox = lbl.getBBox();
-
     if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
       var _div4 = lbl.children[0];
-
       var _dv4 = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(lbl);
-
       bbox = _div4.getBoundingClientRect();
-
       _dv4.attr('width', bbox.width);
-
       _dv4.attr('height', bbox.height);
     }
-
     if (bbox.width > maxWidth) {
       maxWidth = bbox.width;
     }
-
     maxHeight += bbox.height + rowPadding;
     classMethods.push(lbl);
   });
-  maxHeight += lineHeight; // 2. Position the labels
-  // position the interface label
+  maxHeight += lineHeight;
 
+  // 2. Position the labels
+
+  // position the interface label
   if (hasInterface) {
     var _diffX = (maxWidth - interfaceBBox.width) / 2;
-
     Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(interfaceLabel).attr('transform', 'translate( ' + (-1 * maxWidth / 2 + _diffX) + ', ' + -1 * maxHeight / 2 + ')');
     verticalPos = interfaceBBox.height + rowPadding;
-  } // Positin the class title label
-
-
+  }
+  // Positin the class title label
   var diffX = (maxWidth - classTitleBBox.width) / 2;
   Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(classTitleLabel).attr('transform', 'translate( ' + (-1 * maxWidth / 2 + diffX) + ', ' + (-1 * maxHeight / 2 + verticalPos) + ')');
   verticalPos += classTitleBBox.height + rowPadding;
@@ -3586,7 +3328,8 @@ var class_box = function class_box(parent, node) {
   classMethods.forEach(function (lbl) {
     Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(lbl).attr('transform', 'translate( ' + -maxWidth / 2 + ', ' + (-1 * maxHeight / 2 + verticalPos) + ')');
     verticalPos += classTitleBBox.height + rowPadding;
-  }); //
+  });
+  //
   // let bbox;
   // if (evaluate(getConfig().flowchart.htmlLabels)) {
   //   const div = interfaceLabel.children[0];
@@ -3596,12 +3339,14 @@ var class_box = function class_box(parent, node) {
   //   dv.attr('height', bbox.height);
   // }
   // bbox = labelContainer.getBBox();
+
   // log.info('Text 2', text2);
   // const textRows = text2.slice(1, text2.length);
   // let titleBox = text.getBBox();
   // const descr = label
   //   .node()
   //   .appendChild(createLabel(textRows.join('<br/>'), node.labelStyle, true, true));
+
   // if (evaluate(getConfig().flowchart.htmlLabels)) {
   //   const div = descr.children[0];
   //   const dv = select(descr);
@@ -3630,15 +3375,19 @@ var class_box = function class_box(parent, node) {
   //     ')'
   // );
   // // Get the size of the label
+
   // // Bounding box for title and text
   // bbox = label.node().getBBox();
+
   // // Center the label
   // label.attr(
   //   'transform',
   //   'translate(' + -bbox.width / 2 + ', ' + (-bbox.height / 2 - halfPadding + 3) + ')'
   // );
 
-  rect.attr('class', 'outer title-state').attr('x', -maxWidth / 2 - halfPadding).attr('y', -(maxHeight / 2) - halfPadding).attr('width', maxWidth + node.padding).attr('height', maxHeight + node.padding); // innerLine
+  rect.attr('class', 'outer title-state').attr('x', -maxWidth / 2 - halfPadding).attr('y', -(maxHeight / 2) - halfPadding).attr('width', maxWidth + node.padding).attr('height', maxHeight + node.padding);
+
+  // innerLine
   //   .attr('class', 'divider')
   //   .attr('x1', -bbox.width / 2 - halfPadding)
   //   .attr('x2', bbox.width / 2 + halfPadding)
@@ -3646,14 +3395,11 @@ var class_box = function class_box(parent, node) {
   //   .attr('y2', -bbox.height / 2 - halfPadding + titleBox.height + halfPadding);
 
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, rect);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_4__["default"].rect(node, point);
   };
-
   return shapeSvg;
 };
-
 var shapes = {
   question: question,
   rect: rect,
@@ -3680,8 +3426,9 @@ var shapes = {
 var nodeElems = {};
 var insertNode = function insertNode(elem, node, dir) {
   var newEl;
-  var el; // Add link when appropriate
+  var el;
 
+  // Add link when appropriate
   if (node.link) {
     newEl = elem.insert('svg:a').attr('xlink:href', node.link).attr('target', node.linkTarget || '_blank');
     el = shapes[node.shape](newEl, node, dir);
@@ -3689,17 +3436,13 @@ var insertNode = function insertNode(elem, node, dir) {
     el = shapes[node.shape](elem, node, dir);
     newEl = el;
   }
-
   if (node.tooltip) {
     el.attr('title', node.tooltip);
   }
-
   if (node.class) {
     el.attr('class', 'node default ' + node.class);
   }
-
   nodeElems[node.id] = newEl;
-
   if (node.haveCallback) {
     nodeElems[node.id].attr('class', nodeElems[node.id].attr('class') + ' clickable');
   }
@@ -3715,13 +3458,11 @@ var positionNode = function positionNode(node) {
   _logger__WEBPACK_IMPORTED_MODULE_1__["log"].trace('Transforming node', node.diff, node, 'translate(' + (node.x - node.width / 2 - 5) + ', ' + node.width / 2 + ')');
   var padding = 8;
   var diff = node.diff || 0;
-
   if (node.clusterNode) {
     el.attr('transform', 'translate(' + (node.x + diff - node.width / 2) + ', ' + (node.y - node.height / 2 - padding) + ')');
   } else {
     el.attr('transform', 'translate(' + node.x + ', ' + node.y + ')');
   }
-
   return diff;
 };
 
@@ -3742,27 +3483,21 @@ __webpack_require__.r(__webpack_exports__);
 
  // eslint-disable-line
 
-
-
 var note = function note(parent, node) {
   var _labelHelper = Object(_util__WEBPACK_IMPORTED_MODULE_0__["labelHelper"])(parent, node, 'node ' + node.classes, true),
-      shapeSvg = _labelHelper.shapeSvg,
-      bbox = _labelHelper.bbox,
-      halfPadding = _labelHelper.halfPadding;
-
-  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].info('Classes = ', node.classes); // add the rect
-
+    shapeSvg = _labelHelper.shapeSvg,
+    bbox = _labelHelper.bbox,
+    halfPadding = _labelHelper.halfPadding;
+  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].info('Classes = ', node.classes);
+  // add the rect
   var rect = shapeSvg.insert('rect', ':first-child');
   rect.attr('rx', node.rx).attr('ry', node.ry).attr('x', -bbox.width / 2 - halfPadding).attr('y', -bbox.height / 2 - halfPadding).attr('width', bbox.width + node.padding).attr('height', bbox.height + node.padding);
   Object(_util__WEBPACK_IMPORTED_MODULE_0__["updateNodeBounds"])(node, rect);
-
   node.intersect = function (point) {
     return _intersect_index_js__WEBPACK_IMPORTED_MODULE_2__["default"].rect(node, point);
   };
-
   return shapeSvg;
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (note);
 
 /***/ }),
@@ -3790,21 +3525,20 @@ __webpack_require__.r(__webpack_exports__);
 
 var labelHelper = function labelHelper(parent, node, _classes, isNode) {
   var classes;
-
   if (!_classes) {
     classes = 'node default';
   } else {
     classes = _classes;
-  } // Add outer g element
+  }
+  // Add outer g element
+  var shapeSvg = parent.insert('g').attr('class', classes).attr('id', node.domId || node.id);
 
-
-  var shapeSvg = parent.insert('g').attr('class', classes).attr('id', node.domId || node.id); // Create the label and insert it after the rect
-
+  // Create the label and insert it after the rect
   var label = shapeSvg.insert('g').attr('class', 'label').attr('style', node.labelStyle);
-  var text = label.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_0__["default"])(node.labelText, node.labelStyle, false, isNode)); // Get the size of the label
+  var text = label.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_0__["default"])(node.labelText, node.labelStyle, false, isNode));
 
+  // Get the size of the label
   var bbox = text.getBBox();
-
   if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_3__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_1__["getConfig"])().flowchart.htmlLabels)) {
     var div = text.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_2__["select"])(text);
@@ -3812,9 +3546,9 @@ var labelHelper = function labelHelper(parent, node, _classes, isNode) {
     dv.attr('width', bbox.width);
     dv.attr('height', bbox.height);
   }
+  var halfPadding = node.padding / 2;
 
-  var halfPadding = node.padding / 2; // Center the label
-
+  // Center the label
   label.attr('transform', 'translate(' + -bbox.width / 2 + ', ' + -bbox.height / 2 + ')');
   return {
     shapeSvg: shapeSvg,
@@ -3883,7 +3617,6 @@ __webpack_require__.r(__webpack_exports__);
  *
  * @name Configuration
  */
-
 var config = {
   /**
    * theme , the CSS style sheet
@@ -3902,10 +3635,8 @@ var config = {
   theme: 'default',
   themeVariables: _themes__WEBPACK_IMPORTED_MODULE_0__["default"]['default'].getThemeVariables(),
   themeCSS: undefined,
-
   /* **maxTextSize** - The maximum allowed size of the users text diamgram */
   maxTextSize: 50000,
-
   /**
    * | Parameter | Description | Type | Required | Values |
    * | --- | --- | --- | --- | --- |
@@ -3915,7 +3646,6 @@ var config = {
    * Default value: '"trebuchet ms", verdana, arial, sans-serif;'.
    */
   fontFamily: '"trebuchet ms", verdana, arial, sans-serif;',
-
   /**
    * | Parameter | Description | Type | Required | Values |
    * | --- | --- | --- | --- | --- |
@@ -3931,7 +3661,6 @@ var config = {
    * - fatal: 5 (default)
    */
   logLevel: 5,
-
   /**
    * | Parameter | Description | Type | Required | Values |
    * | --- | --- | --- | --- | --- |
@@ -3944,7 +3673,6 @@ var config = {
    * - **antiscript**: html tags in text are allowed, (only script element is removed), click functionality is enabled
    */
   securityLevel: 'strict',
-
   /**
    * | Parameter | Description | Type | Required | Values |
    * | --- | --- | --- | --- | --- |
@@ -3953,7 +3681,6 @@ var config = {
    * **Notes:** Default value: true
    */
   startOnLoad: true,
-
   /**
    * | Parameter | Description |Type | Required |Values|
    * | --- | --- | --- | --- | --- |
@@ -3967,7 +3694,6 @@ var config = {
    * Default value: false
    */
   arrowMarkerAbsolute: false,
-
   /**
    * This option controls which currentConfig keys are considered _secure_ and can only be changed via
    * call to mermaidAPI.initialize. Calls to mermaidAPI.reinitialize cannot make changes to
@@ -3978,7 +3704,6 @@ var config = {
    * Default value: ['secure', 'securityLevel', 'startOnLoad', 'maxTextSize']
    */
   secure: ['secure', 'securityLevel', 'startOnLoad', 'maxTextSize'],
-
   /**
    * This option controls if the generated ids of nodes in the SVG are generated randomly or based on a seed.
    * If set to false, the IDs are generated based on the current date and thus are not deterministic. This is the default behaviour.
@@ -3990,13 +3715,11 @@ var config = {
    * Default value: false
    */
   deterministicIds: false,
-
   /**
    * This option is the optional seed for deterministic ids. if set to undefined but deterministicIds is true, a simple number iterator is used.
    * You can set this attribute to base the seed on a static string.
    */
   deterministicIDSeed: undefined,
-
   /**
    * The object containing configurations specific for flowcharts
    */
@@ -4013,7 +3736,6 @@ var config = {
      * Default value: 8
      */
     diagramPadding: 8,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4022,7 +3744,6 @@ var config = {
      * **Notes:** Default value: true.
      */
     htmlLabels: true,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4035,7 +3756,6 @@ var config = {
      * Default value: 50
      */
     nodeSpacing: 50,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4048,7 +3768,6 @@ var config = {
      * Default value 50
      */
     rankSpacing: 50,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4062,7 +3781,6 @@ var config = {
     // Only used in new experimental rendering
     // represents the padding between the labels and the shape
     padding: 15,
-
     /**
      * | Parameter | Description | Type | Required | Values|
      * | --- | --- | --- | --- | --- |
@@ -4076,7 +3794,6 @@ var config = {
      * Default value: true
      */
     useMaxWidth: true,
-
     /**
      * | Parameter | Description | Type | Required | Values|
      * | --- | --- | --- | --- | --- |
@@ -4092,7 +3809,6 @@ var config = {
      */
     defaultRenderer: 'dagre-d3'
   },
-
   /**
    * The object containing configurations specific for sequence diagrams
    */
@@ -4106,7 +3822,6 @@ var config = {
      * **Notes:** Default value :10
      */
     activationWidth: 10,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4115,7 +3830,6 @@ var config = {
      * **Notes:** Default value: 50
      */
     diagramMarginX: 50,
-
     /**
      *| Parameter | Description | Type | Required | Values |
      *| --- | --- | --- | --- | --- |
@@ -4124,7 +3838,6 @@ var config = {
      * **Notes:** Default value: 10
      */
     diagramMarginY: 10,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4134,7 +3847,6 @@ var config = {
      * Default value: 50
      */
     actorMargin: 50,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4144,7 +3856,6 @@ var config = {
      * Default value: 150
      */
     width: 150,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4154,7 +3865,6 @@ var config = {
      * Default value: 65
      */
     height: 65,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4164,7 +3874,6 @@ var config = {
      * Default value: 10
      */
     boxMargin: 10,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4174,7 +3883,6 @@ var config = {
      * Default value: 5
      */
     boxTextMargin: 5,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4184,7 +3892,6 @@ var config = {
      * Default value: 10
      */
     noteMargin: 10,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4194,7 +3901,6 @@ var config = {
      * Default value: 35
      */
     messageMargin: 35,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4204,7 +3910,6 @@ var config = {
      * Default value: 'center'
      */
     messageAlign: 'center',
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4214,7 +3919,6 @@ var config = {
      * Default value: true
      */
     mirrorActors: true,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4227,7 +3931,6 @@ var config = {
      * Default value: 1
      */
     bottomMarginAdj: 1,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4240,7 +3943,6 @@ var config = {
      * Default value: true
      */
     useMaxWidth: true,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4253,7 +3955,6 @@ var config = {
      * Default value: false
      */
     rightAngles: false,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4263,7 +3964,6 @@ var config = {
      * Default value: false
      */
     showSequenceNumbers: false,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4273,7 +3973,6 @@ var config = {
      ***Default value 14**..
      */
     actorFontSize: 14,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4283,7 +3982,6 @@ var config = {
      * Default value: "'Open-Sans", "sans-serif"'
      */
     actorFontFamily: '"Open-Sans", "sans-serif"',
-
     /**
      * This sets the font weight of the actor's description
      *
@@ -4291,7 +3989,6 @@ var config = {
      * Default value: 400.
      */
     actorFontWeight: 400,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4301,7 +3998,6 @@ var config = {
      * Default value: 14
      */
     noteFontSize: 14,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4311,7 +4007,6 @@ var config = {
      * Default value: ''"trebuchet ms", verdana, arial, sans-serif'
      */
     noteFontFamily: '"trebuchet ms", verdana, arial, sans-serif',
-
     /**
      * This sets the font weight of the note's description
      *
@@ -4319,7 +4014,6 @@ var config = {
      * Default value: 400
      */
     noteFontWeight: 400,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4329,7 +4023,6 @@ var config = {
      * Default value: 'center'
      */
     noteAlign: 'center',
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4339,7 +4032,6 @@ var config = {
      * Default value: 16
      */
     messageFontSize: 16,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4349,7 +4041,6 @@ var config = {
      * Default value: '"trebuchet ms", verdana, arial, sans-serif'
      */
     messageFontFamily: '"trebuchet ms", verdana, arial, sans-serif',
-
     /**
      * This sets the font weight of the message's description
      *
@@ -4357,7 +4048,6 @@ var config = {
      * Default value: 400.
      */
     messageFontWeight: 400,
-
     /**
      * This sets the auto-wrap state for the diagram
      *
@@ -4365,7 +4055,6 @@ var config = {
      * Default value: false.
      */
     wrap: false,
-
     /**
      * This sets the auto-wrap padding for the diagram (sides only)
      *
@@ -4373,7 +4062,6 @@ var config = {
      * Default value: 0.
      */
     wrapPadding: 10,
-
     /**
      * This sets the width of the loop-box (loop, alt, opt, par)
      *
@@ -4381,7 +4069,6 @@ var config = {
      * Default value: 50.
      */
     labelBoxWidth: 50,
-
     /**
      * This sets the height of the loop-box (loop, alt, opt, par)
      *
@@ -4411,7 +4098,6 @@ var config = {
       };
     }
   },
-
   /**
    * The object containing configurations specific for gantt diagrams
    */
@@ -4427,7 +4113,6 @@ var config = {
      * Default value: 25
      */
     titleTopMargin: 25,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4437,7 +4122,6 @@ var config = {
      * Default value: 20
      */
     barHeight: 20,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4447,7 +4131,6 @@ var config = {
      * Default value: 4
      */
     barGap: 4,
-
     /**
      * | Parameter | Description | Type | Required | Values|
      * | --- | --- | --- | --- | --- |
@@ -4457,7 +4140,6 @@ var config = {
      * Default value: 50
      */
     topPadding: 50,
-
     /**
      * | Parameter | Description | Type | Required | Values|
      * | --- | --- | --- | --- | --- |
@@ -4467,7 +4149,6 @@ var config = {
      * Default value: 75
      */
     rightPadding: 75,
-
     /**
      * | Parameter | Description | Type | Required | Values|
      * | --- | --- | --- | --- | --- |
@@ -4477,7 +4158,6 @@ var config = {
      * Default value: 75
      */
     leftPadding: 75,
-
     /**
      * | Parameter | Description | Type | Required | Values|
      * | --- | --- | --- | --- | --- |
@@ -4487,7 +4167,6 @@ var config = {
      * Default value: 35
      */
     gridLineStartPadding: 35,
-
     /**
      * | Parameter | Description | Type | Required | Values|
      * | --- | --- | --- | --- | --- |
@@ -4497,7 +4176,6 @@ var config = {
      * Default value: 11
      */
     fontSize: 11,
-
     /**
      * | Parameter | Description | Type | Required | Values|
      * | --- | --- | --- | --- | --- |
@@ -4507,7 +4185,6 @@ var config = {
      * Default value: 11
      */
     sectionFontSize: 11,
-
     /**
      * | Parameter | Description | Type | Required | Values|
      * | --- | --- | --- | --- | --- |
@@ -4517,7 +4194,6 @@ var config = {
      * Default value: 4
      */
     numberSectionStyles: 4,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4530,7 +4206,6 @@ var config = {
      * Default value: '%Y-%m-%d'.
      */
     axisFormat: '%Y-%m-%d',
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4544,7 +4219,6 @@ var config = {
      * Default value: true
      */
     useMaxWidth: true,
-
     /**
      *| Parameter | Description |Type | Required | Values|
      *| --- | --- | --- | --- | --- |
@@ -4558,7 +4232,6 @@ var config = {
     topAxis: false,
     useWidth: undefined
   },
-
   /**
    * The object containing configurations specific for journey diagrams
    */
@@ -4572,7 +4245,6 @@ var config = {
      * Default value: 50
      */
     diagramMarginX: 50,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4582,7 +4254,6 @@ var config = {
      * Default value: 10
      */
     diagramMarginY: 10,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4592,7 +4263,6 @@ var config = {
      * Default value: 50
      */
     leftMargin: 150,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4602,7 +4272,6 @@ var config = {
      * Default value: 150
      */
     width: 150,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4612,7 +4281,6 @@ var config = {
      * Default value: 65
      */
     height: 50,
-
     /**
      *| Parameter | Description |Type | Required | Values|
      *| --- | --- | --- | --- | --- |
@@ -4622,7 +4290,6 @@ var config = {
      * Default value: 10
      */
     boxMargin: 10,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4632,7 +4299,6 @@ var config = {
      * Default value: 5
      */
     boxTextMargin: 5,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4642,7 +4308,6 @@ var config = {
      * Default value: 10
      */
     noteMargin: 10,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4655,7 +4320,6 @@ var config = {
      * Default value: 35
      */
     messageMargin: 35,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4665,7 +4329,6 @@ var config = {
      * Default value: 'center'
      */
     messageAlign: 'center',
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4678,7 +4341,6 @@ var config = {
      * Default value: 1
      */
     bottomMarginAdj: 1,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4692,7 +4354,6 @@ var config = {
      * Default value: true
      */
     useMaxWidth: true,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4718,7 +4379,6 @@ var config = {
   },
   class: {
     arrowMarkerAbsolute: false,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4732,7 +4392,6 @@ var config = {
      * Default value: true
      */
     useMaxWidth: true,
-
     /**
      * | Parameter | Description | Type | Required | Values|
      * | --- | --- | --- | --- | --- |
@@ -4751,7 +4410,6 @@ var config = {
   git: {
     arrowMarkerAbsolute: false,
     useWidth: undefined,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4785,7 +4443,6 @@ var config = {
     edgeLengthFactor: '20',
     compositTitleSize: 35,
     radius: 5,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4799,7 +4456,6 @@ var config = {
      * Default value: true
      */
     useMaxWidth: true,
-
     /**
      * | Parameter | Description | Type | Required | Values|
      * | --- | --- | --- | --- | --- |
@@ -4815,7 +4471,6 @@ var config = {
      */
     defaultRenderer: 'dagre-d3'
   },
-
   /**
    * The object containing configurations specific for entity relationship diagrams
    */
@@ -4832,7 +4487,6 @@ var config = {
      * Default value: 20
      */
     diagramPadding: 20,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4847,7 +4501,6 @@ var config = {
      * Default value: 'TB'
      */
     layoutDirection: 'TB',
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4858,7 +4511,6 @@ var config = {
      * Default value: 100
      */
     minEntityWidth: 100,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4869,7 +4521,6 @@ var config = {
      * Default value: 75
      */
     minEntityHeight: 75,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4882,7 +4533,6 @@ var config = {
      * Default value: 15
      */
     entityPadding: 15,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4892,7 +4542,6 @@ var config = {
      * Default value: 'gray'
      */
     stroke: 'gray',
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4902,7 +4551,6 @@ var config = {
      * Default value: 'honeydew'
      */
     fill: 'honeydew',
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4914,7 +4562,6 @@ var config = {
      * Default value: 12
      */
     fontSize: 12,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4930,13 +4577,11 @@ var config = {
      */
     useMaxWidth: true
   },
-
   /**
    * The object containing configurations specific for pie diagrams
    */
   pie: {
     useWidth: undefined,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -4952,13 +4597,11 @@ var config = {
      */
     useMaxWidth: true
   },
-
   /**
    * The object containing configurations specific for req diagrams
    */
   requirement: {
     useWidth: undefined,
-
     /**
      * | Parameter | Description | Type | Required | Values |
      * | --- | --- | --- | --- | --- |
@@ -5024,18 +4667,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/common */ "./src/diagrams/common/common.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils */ "./src/utils.js");
 /* harmony import */ var _mermaidAPI__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../mermaidAPI */ "./src/mermaidAPI.js");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
 
 
@@ -5050,32 +4687,28 @@ var funs = [];
 var parseDirective = function parseDirective(statement, context, type) {
   _mermaidAPI__WEBPACK_IMPORTED_MODULE_5__["default"].parseDirective(this, statement, context, type);
 };
-
 var splitClassNameAndType = function splitClassNameAndType(id) {
   var genericType = '';
   var className = id;
-
   if (id.indexOf('~') > 0) {
     var split = id.split('~');
     className = split[0];
     genericType = split[1];
   }
-
   return {
     className: className,
     type: genericType
   };
 };
+
 /**
  * Function called by parser when a node definition has been found.
  * @param id
  * @public
  */
-
-
 var addClass = function addClass(id) {
-  var classId = splitClassNameAndType(id); // Only add class if not exists
-
+  var classId = splitClassNameAndType(id);
+  // Only add class if not exists
   if (typeof classes[classId.className] !== 'undefined') return;
   classes[classId.className] = {
     id: classId.className,
@@ -5088,15 +4721,14 @@ var addClass = function addClass(id) {
   };
   classCounter++;
 };
+
 /**
  * Function to lookup domId from id in the graph definition.
  * @param id
  * @public
  */
-
 var lookUpDomId = function lookUpDomId(id) {
   var classKeys = Object.keys(classes);
-
   for (var i = 0; i < classKeys.length; i++) {
     if (classes[classKeys[i]].id === id) {
       return classes[classKeys[i]].domId;
@@ -5126,6 +4758,7 @@ var addRelation = function addRelation(relation) {
   relation.id2 = splitClassNameAndType(relation.id2).className;
   relations.push(relation);
 };
+
 /**
  * Adds an annotation to the specified class
  * Annotations mark special properties of the given type (like 'interface' or 'service')
@@ -5133,11 +4766,11 @@ var addRelation = function addRelation(relation) {
  * @param annotation The name of the annotation without any brackets
  * @public
  */
-
 var addAnnotation = function addAnnotation(className, annotation) {
   var validatedClassName = splitClassNameAndType(className).className;
   classes[validatedClassName].annotations.push(annotation);
 };
+
 /**
  * Adds a member to the specified class
  * @param className The class name
@@ -5147,15 +4780,12 @@ var addAnnotation = function addAnnotation(className, annotation) {
  * Otherwise the member will be treated as a normal property
  * @public
  */
-
 var addMember = function addMember(className, member) {
   var validatedClassName = splitClassNameAndType(className).className;
   var theClass = classes[validatedClassName];
-
   if (typeof member === 'string') {
     // Member can contain white spaces, we trim them out
     var memberString = member.trim();
-
     if (memberString.startsWith('<<') && memberString.endsWith('>>')) {
       // Remove leading and trailing brackets
       theClass.annotations.push(memberString.substring(2, memberString.length - 2));
@@ -5181,28 +4811,27 @@ var cleanupLabel = function cleanupLabel(label) {
     return label.trim();
   }
 };
+
 /**
  * Called by parser when a special node is found, e.g. a clickable element.
  * @param ids Comma separated list of ids
  * @param className Class to add
  */
-
 var setCssClass = function setCssClass(ids, className) {
   ids.split(',').forEach(function (_id) {
     var id = _id;
     if (_id[0].match(/\d/)) id = MERMAID_DOM_ID_PREFIX + id;
-
     if (typeof classes[id] !== 'undefined') {
       classes[id].cssClasses.push(className);
     }
   });
 };
+
 /**
  * Called by parser when a tooltip is found, e.g. a clickable element.
  * @param ids Comma separated list of ids
  * @param tooltip Tooltip to add
  */
-
 var setTooltip = function setTooltip(ids, tooltip) {
   var config = _config__WEBPACK_IMPORTED_MODULE_2__["getConfig"]();
   ids.split(',').forEach(function (id) {
@@ -5211,23 +4840,20 @@ var setTooltip = function setTooltip(ids, tooltip) {
     }
   });
 };
+
 /**
  * Called by parser when a link is found. Adds the URL to the vertex data.
  * @param ids Comma separated list of ids
  * @param linkStr URL to create a link for
  * @param target Target of the link, _blank by default as originally defined in the svgDraw.js file
  */
-
-
 var setLink = function setLink(ids, linkStr, target) {
   var config = _config__WEBPACK_IMPORTED_MODULE_2__["getConfig"]();
   ids.split(',').forEach(function (_id) {
     var id = _id;
     if (_id[0].match(/\d/)) id = MERMAID_DOM_ID_PREFIX + id;
-
     if (typeof classes[id] !== 'undefined') {
       classes[id].link = _utils__WEBPACK_IMPORTED_MODULE_4__["default"].formatUrl(linkStr, config);
-
       if (typeof target === 'string') {
         classes[id].linkTarget = target;
       } else {
@@ -5237,13 +4863,13 @@ var setLink = function setLink(ids, linkStr, target) {
   });
   setCssClass(ids, 'clickable');
 };
+
 /**
  * Called by parser when a click definition is found. Registers an event handler.
  * @param ids Comma separated list of ids
  * @param functionName Function to be called on click
  * @param functionArgs Function args the function should be called with
  */
-
 var setClickEvent = function setClickEvent(ids, functionName, functionArgs) {
   ids.split(',').forEach(function (id) {
     setClickFunc(id, functionName, functionArgs);
@@ -5251,50 +4877,38 @@ var setClickEvent = function setClickEvent(ids, functionName, functionArgs) {
   });
   setCssClass(ids, 'clickable');
 };
-
 var setClickFunc = function setClickFunc(domId, functionName, functionArgs) {
   var config = _config__WEBPACK_IMPORTED_MODULE_2__["getConfig"]();
   var id = domId;
   var elemId = lookUpDomId(id);
-
   if (config.securityLevel !== 'loose') {
     return;
   }
-
   if (typeof functionName === 'undefined') {
     return;
   }
-
   if (typeof classes[id] !== 'undefined') {
     var argList = [];
-
     if (typeof functionArgs === 'string') {
       /* Splits functionArgs by ',', ignoring all ',' in double quoted strings */
       argList = functionArgs.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
-
       for (var i = 0; i < argList.length; i++) {
         var item = argList[i].trim();
         /* Removes all double quotes at the start and end of an argument */
-
         /* This preserves all starting and ending whitespace inside */
-
         if (item.charAt(0) === '"' && item.charAt(item.length - 1) === '"') {
           item = item.substr(1, item.length - 2);
         }
-
         argList[i] = item;
       }
     }
+
     /* if no arguments passed into callback, default to passing in id */
-
-
     if (argList.length === 0) {
       argList.push(elemId);
     }
-
     funs.push(function () {
       var elem = document.querySelector("[id=\"".concat(elemId, "\"]"));
-
       if (elem !== null) {
         elem.addEventListener('click', function () {
           _utils__WEBPACK_IMPORTED_MODULE_4__["default"].runFunc.apply(_utils__WEBPACK_IMPORTED_MODULE_4__["default"], [functionName].concat(_toConsumableArray(argList)));
@@ -5303,7 +4917,6 @@ var setClickFunc = function setClickFunc(domId, functionName, functionArgs) {
     });
   }
 };
-
 var bindFunctions = function bindFunctions(element) {
   funs.forEach(function (fun) {
     fun(element);
@@ -5319,24 +4932,20 @@ var relationType = {
   COMPOSITION: 2,
   DEPENDENCY: 3
 };
-
 var setupToolTips = function setupToolTips(element) {
   var tooltipElem = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('.mermaidTooltip');
-
   if ((tooltipElem._groups || tooltipElem)[0][0] === null) {
     tooltipElem = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('body').append('div').attr('class', 'mermaidTooltip').style('opacity', 0);
   }
-
   var svg = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(element).select('svg');
   var nodes = svg.selectAll('g.node');
   nodes.on('mouseover', function () {
     var el = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(this);
-    var title = el.attr('title'); // Dont try to draw a tooltip if no data is provided
-
+    var title = el.attr('title');
+    // Dont try to draw a tooltip if no data is provided
     if (title === null) {
       return;
     }
-
     var rect = this.getBoundingClientRect();
     tooltipElem.transition().duration(200).style('opacity', '.9');
     tooltipElem.html(el.attr('title')).style('left', window.scrollX + rect.left + (rect.right - rect.left) / 2 + 'px').style('top', window.scrollY + rect.top - 14 + document.body.scrollTop + 'px');
@@ -5347,7 +4956,6 @@ var setupToolTips = function setupToolTips(element) {
     el.classed('hover', false);
   });
 };
-
 funs.push(setupToolTips);
 /* harmony default export */ __webpack_exports__["default"] = ({
   parseDirective: parseDirective,
@@ -5413,8 +5021,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import addHtmlLabel from 'dagre-d3/lib/label/add-html-label.js';
 
+// import addHtmlLabel from 'dagre-d3/lib/label/add-html-label.js';
 
 
 
@@ -5426,40 +5034,42 @@ var conf = {
   padding: 5,
   textHeight: 10
 };
+
 /**
  * Function that adds the vertices found during parsing to the graph to be rendered.
  * @param vert Object containing the vertices.
  * @param g The graph that is to be drawn.
  */
-
 var addClasses = function addClasses(classes, g) {
   // const svg = select(`[id="${svgId}"]`);
   var keys = Object.keys(classes);
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('keys:', keys);
-  _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info(classes); // Iterate through each item in the vertex object (containing all the vertices found) in the graph definition
+  _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info(classes);
 
+  // Iterate through each item in the vertex object (containing all the vertices found) in the graph definition
   keys.forEach(function (id) {
     var vertex = classes[id];
+
     /**
      * Variable for storing the classes for the vertex
      * @type {string}
      */
-
     var cssClassStr = '';
-
     if (vertex.cssClasses.length > 0) {
       cssClassStr = cssClassStr + ' ' + vertex.cssClasses.join(' ');
-    } // if (vertex.classes.length > 0) {
+    }
+    // if (vertex.classes.length > 0) {
     //   classStr = vertex.classes.join(' ');
     // }
-
 
     var styles = {
       labelStyle: ''
     }; //getStylesFromArray(vertex.styles);
-    // Use vertex id as text in the box if no text is provided by the graph definition
 
-    var vertexText = vertex.text !== undefined ? vertex.text : vertex.id; // We create a SVG label, either by delegating to addHtmlLabel or manually
+    // Use vertex id as text in the box if no text is provided by the graph definition
+    var vertexText = vertex.text !== undefined ? vertex.text : vertex.id;
+
+    // We create a SVG label, either by delegating to addHtmlLabel or manually
     // let vertexNode;
     // if (evaluate(getConfig().flowchart.htmlLabels)) {
     //   const node = {
@@ -5473,7 +5083,9 @@ var addClasses = function addClasses(classes, g) {
     // } else {
     //   const svgLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
     //   svgLabel.setAttribute('style', styles.labelStyle.replace('color:', 'fill:'));
+
     //   const rows = vertexText.split(common.lineBreakRegex);
+
     //   for (let j = 0; j < rows.length; j++) {
     //     const tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
     //     tspan.setAttributeNS('http://www.w3.org/XML/1998/namespace', 'xml:space', 'preserve');
@@ -5486,18 +5098,16 @@ var addClasses = function addClasses(classes, g) {
     // }
 
     var radious = 0;
-    var _shape = ''; // Set the shape based parameters
-
+    var _shape = '';
+    // Set the shape based parameters
     switch (vertex.type) {
       case 'class':
         _shape = 'class_box';
         break;
-
       default:
         _shape = 'class_box';
-    } // Add the node
-
-
+    }
+    // Add the node
     g.setNode(vertex.id, {
       labelStyle: styles.labelStyle,
       shape: _shape,
@@ -5530,16 +5140,18 @@ var addClasses = function addClasses(classes, g) {
     });
   });
 };
+
 /**
  * Add edges to graph based on parsed graph defninition
  * @param {Object} edges The edges to add to the graph
  * @param {Object} g The graph object
  */
-
 var addRelations = function addRelations(relations, g) {
   var cnt = 0;
   var defaultStyle;
-  var defaultLabelStyle; // if (typeof relations.defaultStyle !== 'undefined') {
+  var defaultLabelStyle;
+
+  // if (typeof relations.defaultStyle !== 'undefined') {
   //   const defaultStyles = getStylesFromArray(relations.defaultStyle);
   //   defaultStyle = defaultStyles.style;
   //   defaultLabelStyle = defaultStyles.labelStyle;
@@ -5547,49 +5159,44 @@ var addRelations = function addRelations(relations, g) {
 
   relations.forEach(function (edge) {
     cnt++;
-    var edgeData = {}; //Set relationship style and line type
-
+    var edgeData = {};
+    //Set relationship style and line type
     edgeData.classes = 'relation';
     edgeData.pattern = edge.relation.lineType == 1 ? 'dashed' : 'solid';
-    edgeData.id = 'id' + cnt; // Set link type for rendering
-
+    edgeData.id = 'id' + cnt;
+    // Set link type for rendering
     if (edge.type === 'arrow_open') {
       edgeData.arrowhead = 'none';
     } else {
       edgeData.arrowhead = 'normal';
     }
-
-    _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info(edgeData, edge); //Set edge extra labels
+    _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info(edgeData, edge);
+    //Set edge extra labels
     //edgeData.startLabelLeft = edge.relationTitle1;
-
     edgeData.startLabelRight = edge.relationTitle1 === 'none' ? '' : edge.relationTitle1;
-    edgeData.endLabelLeft = edge.relationTitle2 === 'none' ? '' : edge.relationTitle2; //edgeData.endLabelRight = edge.relationTitle2;
-    //Set relation arrow types
+    edgeData.endLabelLeft = edge.relationTitle2 === 'none' ? '' : edge.relationTitle2;
+    //edgeData.endLabelRight = edge.relationTitle2;
 
+    //Set relation arrow types
     edgeData.arrowTypeStart = getArrowMarker(edge.relation.type1);
     edgeData.arrowTypeEnd = getArrowMarker(edge.relation.type2);
     var style = '';
     var labelStyle = '';
-
     if (typeof edge.style !== 'undefined') {
       var styles = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["getStylesFromArray"])(edge.style);
       style = styles.style;
       labelStyle = styles.labelStyle;
     } else {
       style = 'fill:none';
-
       if (typeof defaultStyle !== 'undefined') {
         style = defaultStyle;
       }
-
       if (typeof defaultLabelStyle !== 'undefined') {
         labelStyle = defaultLabelStyle;
       }
     }
-
     edgeData.style = style;
     edgeData.labelStyle = labelStyle;
-
     if (typeof edge.interpolate !== 'undefined') {
       edgeData.curve = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["interpolateToCurve"])(edge.interpolate, d3__WEBPACK_IMPORTED_MODULE_0__["curveLinear"]);
     } else if (typeof relations.defaultInterpolate !== 'undefined') {
@@ -5597,9 +5204,7 @@ var addRelations = function addRelations(relations, g) {
     } else {
       edgeData.curve = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["interpolateToCurve"])(conf.curve, d3__WEBPACK_IMPORTED_MODULE_0__["curveLinear"]);
     }
-
     edge.text = edge.title;
-
     if (typeof edge.text === 'undefined') {
       if (typeof edge.style !== 'undefined') {
         edgeData.arrowheadStyle = 'fill: #333';
@@ -5607,7 +5212,6 @@ var addRelations = function addRelations(relations, g) {
     } else {
       edgeData.arrowheadStyle = 'fill: #333';
       edgeData.labelpos = 'c';
-
       if (Object(_config__WEBPACK_IMPORTED_MODULE_7__["getConfig"])().flowchart.htmlLabels && false) {
         // eslint-disable-line
         edgeData.labelType = 'html';
@@ -5615,61 +5219,60 @@ var addRelations = function addRelations(relations, g) {
       } else {
         edgeData.labelType = 'text';
         edgeData.label = edge.text.replace(_common_common__WEBPACK_IMPORTED_MODULE_10__["default"].lineBreakRegex, '\n');
-
         if (typeof edge.style === 'undefined') {
           edgeData.style = edgeData.style || 'stroke: #333; stroke-width: 1.5px;fill:none';
         }
-
         edgeData.labelStyle = edgeData.labelStyle.replace('color:', 'fill:');
       }
-    } // Add the edge to the graph
-
-
+    }
+    // Add the edge to the graph
     g.setEdge(edge.id1, edge.id2, edgeData, cnt);
   });
-}; // Todo optimize
+};
 
+// Todo optimize
 var getGraphId = function getGraphId(label) {
   var keys = Object.keys(idCache);
-
   for (var i = 0; i < keys.length; i++) {
     if (idCache[keys[i]].label === label) {
       return keys[i];
     }
   }
-
   return undefined;
 };
-
 var setConf = function setConf(cnf) {
   var keys = Object.keys(cnf);
   keys.forEach(function (key) {
     conf[key] = cnf[key];
   });
 };
+
 /**
  * Draws a flowchart in the tag with id: id based on the graph definition in text.
  * @param text
  * @param id
  */
-
 var drawOld = function drawOld(text, id) {
   idCache = {};
   _parser_classDiagram__WEBPACK_IMPORTED_MODULE_5__["parser"].yy.clear();
   _parser_classDiagram__WEBPACK_IMPORTED_MODULE_5__["parser"].parse(text);
-  _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('Rendering diagram ' + text); // Fetch the default direction, use TD if none was found
+  _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('Rendering diagram ' + text);
 
-  var diagram = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id='".concat(id, "']")); // insertMarkers(diagram);
+  // Fetch the default direction, use TD if none was found
+  var diagram = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id='".concat(id, "']"));
+  // insertMarkers(diagram);
+
   // Layout graph, Create a new directed graph
-
   var g = new graphlib__WEBPACK_IMPORTED_MODULE_2___default.a.Graph({
     multigraph: true
-  }); // Set an object for the graph label
+  });
 
+  // Set an object for the graph label
   g.setGraph({
     isMultiGraph: true
-  }); // Default to assigning a new object as a label for each new edge.
+  });
 
+  // Default to assigning a new object as a label for each new edge.
   g.setDefaultEdgeLabel(function () {
     return {};
   });
@@ -5677,18 +5280,17 @@ var drawOld = function drawOld(text, id) {
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('classes:');
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info(classes);
   var keys = Object.keys(classes);
-
   for (var i = 0; i < keys.length; i++) {
     var classDef = classes[keys[i]];
     var node = _svgDraw__WEBPACK_IMPORTED_MODULE_6__["default"].drawClass(diagram, classDef, conf);
-    idCache[node.id] = node; // Add nodes to the graph. The first argument is the node id. The second is
+    idCache[node.id] = node;
+
+    // Add nodes to the graph. The first argument is the node id. The second is
     // metadata about the node. In this case we're going to add labels to each of
     // our nodes.
-
     g.setNode(node.id, node);
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('Org height: ' + node.height);
   }
-
   var relations = _classDb__WEBPACK_IMPORTED_MODULE_4__["default"].getRelations();
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('relations:', relations);
   relations.forEach(function (relation) {
@@ -5713,30 +5315,34 @@ var drawOld = function drawOld(text, id) {
   var svgBounds = diagram.node().getBBox();
   var width = svgBounds.width + padding * 2;
   var height = svgBounds.height + padding * 2;
-  Object(_utils__WEBPACK_IMPORTED_MODULE_9__["configureSvgSize"])(diagram, height, width, conf.useMaxWidth); // Ensure the viewBox includes the whole svgBounds area with extra space for padding
+  Object(_utils__WEBPACK_IMPORTED_MODULE_9__["configureSvgSize"])(diagram, height, width, conf.useMaxWidth);
 
+  // Ensure the viewBox includes the whole svgBounds area with extra space for padding
   var vBox = "".concat(svgBounds.x - padding, " ").concat(svgBounds.y - padding, " ").concat(width, " ").concat(height);
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug("viewBox ".concat(vBox));
   diagram.attr('viewBox', vBox);
 };
 var draw = function draw(text, id) {
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('Drawing class');
-  _classDb__WEBPACK_IMPORTED_MODULE_4__["default"].clear(); // const parser = classDb.parser;
+  _classDb__WEBPACK_IMPORTED_MODULE_4__["default"].clear();
+  // const parser = classDb.parser;
   // parser.yy = classDb;
+
   // Parse the graph definition
   // try {
-
-  _parser_classDiagram__WEBPACK_IMPORTED_MODULE_5__["parser"].parse(text); // } catch (err) {
+  _parser_classDiagram__WEBPACK_IMPORTED_MODULE_5__["parser"].parse(text);
+  // } catch (err) {
   // log.debug('Parsing failed');
   // }
-  // Fetch the default direction, use TD if none was found
 
+  // Fetch the default direction, use TD if none was found
   var dir = 'TD';
   var conf = Object(_config__WEBPACK_IMPORTED_MODULE_7__["getConfig"])().flowchart;
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('config:', conf);
   var nodeSpacing = conf.nodeSpacing || 50;
-  var rankSpacing = conf.rankSpacing || 50; // Create the input mermaid.graph
+  var rankSpacing = conf.rankSpacing || 50;
 
+  // Create the input mermaid.graph
   var g = new graphlib__WEBPACK_IMPORTED_MODULE_2___default.a.Graph({
     multigraph: true,
     compound: true
@@ -5748,7 +5354,9 @@ var draw = function draw(text, id) {
     marginy: 8
   }).setDefaultEdgeLabel(function () {
     return {};
-  }); // let subG;
+  });
+
+  // let subG;
   // const subGraphs = flowDb.getSubGraphs();
   // log.info('Subgraphs - ', subGraphs);
   // for (let i = subGraphs.length - 1; i >= 0; i--) {
@@ -5756,29 +5364,36 @@ var draw = function draw(text, id) {
   //   log.info('Subgraph - ', subG);
   //   flowDb.addVertex(subG.id, subG.title, 'group', undefined, subG.classes);
   // }
-  // Fetch the verices/nodes and edges/links from the parsed graph definition
 
+  // Fetch the verices/nodes and edges/links from the parsed graph definition
   var classes = _classDb__WEBPACK_IMPORTED_MODULE_4__["default"].getClasses();
   var relations = _classDb__WEBPACK_IMPORTED_MODULE_4__["default"].getRelations();
-  _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info(relations); // let i = 0;
+  _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info(relations);
+  // let i = 0;
   // for (i = subGraphs.length - 1; i >= 0; i--) {
   //   subG = subGraphs[i];
+
   //   selectAll('cluster').append('text');
+
   //   for (let j = 0; j < subG.nodes.length; j++) {
   //     g.setParent(subG.nodes[j], subG.id);
   //   }
   // }
-
   addClasses(classes, g, id);
-  addRelations(relations, g); // Add custom shapes
+  addRelations(relations, g);
+
+  // Add custom shapes
   // flowChartShapes.addToRenderV2(addShape);
+
   // Set up an SVG group so that we can translate the final graph.
-
   var svg = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id=\"".concat(id, "\"]"));
-  svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink'); // Run the renderer. This is what draws the final graph.
+  svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink');
 
+  // Run the renderer. This is what draws the final graph.
   var element = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('#' + id + ' g');
-  Object(_dagre_wrapper_index_js__WEBPACK_IMPORTED_MODULE_8__["render"])(element, g, ['aggregation', 'extension', 'composition', 'dependency'], 'classDiagram', id); // element.selectAll('g.node').attr('title', function() {
+  Object(_dagre_wrapper_index_js__WEBPACK_IMPORTED_MODULE_8__["render"])(element, g, ['aggregation', 'extension', 'composition', 'dependency'], 'classDiagram', id);
+
+  // element.selectAll('g.node').attr('title', function() {
   //   return flowDb.getTooltip(this.id);
   // });
 
@@ -5789,16 +5404,18 @@ var draw = function draw(text, id) {
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug("new ViewBox 0 0 ".concat(width, " ").concat(height), "translate(".concat(padding - g._label.marginx, ", ").concat(padding - g._label.marginy, ")"));
   Object(_utils__WEBPACK_IMPORTED_MODULE_9__["configureSvgSize"])(svg, height, width, conf.useMaxWidth);
   svg.attr('viewBox', "0 0 ".concat(width, " ").concat(height));
-  svg.select('g').attr('transform', "translate(".concat(padding - g._label.marginx, ", ").concat(padding - svgBounds.y, ")")); // Index nodes
-  // flowDb.indexNodes('subGraph' + i);
-  // Add label rects for non html labels
+  svg.select('g').attr('transform', "translate(".concat(padding - g._label.marginx, ", ").concat(padding - svgBounds.y, ")"));
 
+  // Index nodes
+  // flowDb.indexNodes('subGraph' + i);
+
+  // Add label rects for non html labels
   if (!conf.htmlLabels) {
     var labels = document.querySelectorAll('[id="' + id + '"] .edgeLabel .label');
-
     for (var k = 0; k < labels.length; k++) {
-      var label = labels[k]; // Get dimensions of label
+      var label = labels[k];
 
+      // Get dimensions of label
       var dim = label.getBBox();
       var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
       rect.setAttribute('rx', 0);
@@ -5808,10 +5425,13 @@ var draw = function draw(text, id) {
       rect.setAttribute('style', 'fill:#e8e8e8;');
       label.insertBefore(rect, label.firstChild);
     }
-  } // If node has a link, wrap it in an anchor SVG object.
+  }
+
+  // If node has a link, wrap it in an anchor SVG object.
   // const keys = Object.keys(classes);
   // keys.forEach(function(key) {
   //   const vertex = classes[key];
+
   //   if (vertex.link) {
   //     const node = select('#' + id + ' [id="' + key + '"]');
   //     if (node) {
@@ -5819,15 +5439,18 @@ var draw = function draw(text, id) {
   //       link.setAttributeNS('http://www.w3.org/2000/svg', 'class', vertex.classes.join(' '));
   //       link.setAttributeNS('http://www.w3.org/2000/svg', 'href', vertex.link);
   //       link.setAttributeNS('http://www.w3.org/2000/svg', 'rel', 'noopener');
+
   //       const linkNode = node.insert(function() {
   //         return link;
   //       }, ':first-child');
+
   //       const shape = node.select('.label-container');
   //       if (shape) {
   //         linkNode.append(function() {
   //           return shape.node();
   //         });
   //       }
+
   //       const label = node.select('.label');
   //       if (label) {
   //         linkNode.append(function() {
@@ -5837,37 +5460,29 @@ var draw = function draw(text, id) {
   //     }
   //   }
   // });
-
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
   setConf: setConf,
   draw: draw
 });
-
 function getArrowMarker(type) {
   var marker;
-
   switch (type) {
     case 0:
       marker = 'aggregation';
       break;
-
     case 1:
       marker = 'extension';
       break;
-
     case 2:
       marker = 'composition';
       break;
-
     case 3:
       marker = 'dependency';
       break;
-
     default:
       marker = 'none';
   }
-
   return marker;
 }
 
@@ -5911,24 +5526,22 @@ var conf = {
   dividerMargin: 10,
   padding: 5,
   textHeight: 10
-}; // Todo optimize
+};
 
+// Todo optimize
 var getGraphId = function getGraphId(label) {
   var keys = Object.keys(idCache);
-
   for (var i = 0; i < keys.length; i++) {
     if (idCache[keys[i]].label === label) {
       return keys[i];
     }
   }
-
   return undefined;
 };
+
 /**
  * Setup arrow head and define the marker. The result is appended to the svg.
  */
-
-
 var insertMarkers = function insertMarkers(elem) {
   elem.append('defs').append('marker').attr('id', 'extensionStart').attr('class', 'extension').attr('refX', 0).attr('refY', 7).attr('markerWidth', 190).attr('markerHeight', 240).attr('orient', 'auto').append('path').attr('d', 'M 1,7 L18,13 V 1 Z');
   elem.append('defs').append('marker').attr('id', 'extensionEnd').attr('refX', 19).attr('refY', 7).attr('markerWidth', 20).attr('markerHeight', 28).attr('orient', 'auto').append('path').attr('d', 'M 1,1 V 13 L18,7 Z'); // this is actual shape for arrowhead
@@ -5940,54 +5553,56 @@ var insertMarkers = function insertMarkers(elem) {
   elem.append('defs').append('marker').attr('id', 'dependencyStart').attr('class', 'extension').attr('refX', 0).attr('refY', 7).attr('markerWidth', 190).attr('markerHeight', 240).attr('orient', 'auto').append('path').attr('d', 'M 5,7 L9,13 L1,7 L9,1 Z');
   elem.append('defs').append('marker').attr('id', 'dependencyEnd').attr('refX', 19).attr('refY', 7).attr('markerWidth', 20).attr('markerHeight', 28).attr('orient', 'auto').append('path').attr('d', 'M 18,7 L9,13 L14,7 L9,1 Z');
 };
-
 var setConf = function setConf(cnf) {
   var keys = Object.keys(cnf);
   keys.forEach(function (key) {
     conf[key] = cnf[key];
   });
 };
+
 /**
  * Draws a flowchart in the tag with id: id based on the graph definition in text.
  * @param text
  * @param id
  */
-
 var draw = function draw(text, id) {
   idCache = {};
   _parser_classDiagram__WEBPACK_IMPORTED_MODULE_5__["parser"].yy.clear();
   _parser_classDiagram__WEBPACK_IMPORTED_MODULE_5__["parser"].parse(text);
-  _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('Rendering diagram ' + text); // Fetch the default direction, use TD if none was found
+  _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('Rendering diagram ' + text);
 
+  // Fetch the default direction, use TD if none was found
   var diagram = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id='".concat(id, "']"));
   diagram.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink');
-  insertMarkers(diagram); // Layout graph, Create a new directed graph
+  insertMarkers(diagram);
 
+  // Layout graph, Create a new directed graph
   var g = new graphlib__WEBPACK_IMPORTED_MODULE_2___default.a.Graph({
     multigraph: true
-  }); // Set an object for the graph label
+  });
 
+  // Set an object for the graph label
   g.setGraph({
     isMultiGraph: true
-  }); // Default to assigning a new object as a label for each new edge.
+  });
 
+  // Default to assigning a new object as a label for each new edge.
   g.setDefaultEdgeLabel(function () {
     return {};
   });
   var classes = _classDb__WEBPACK_IMPORTED_MODULE_4__["default"].getClasses();
   var keys = Object.keys(classes);
-
   for (var i = 0; i < keys.length; i++) {
     var classDef = classes[keys[i]];
     var node = _svgDraw__WEBPACK_IMPORTED_MODULE_6__["default"].drawClass(diagram, classDef, conf);
-    idCache[node.id] = node; // Add nodes to the graph. The first argument is the node id. The second is
+    idCache[node.id] = node;
+
+    // Add nodes to the graph. The first argument is the node id. The second is
     // metadata about the node. In this case we're going to add labels to each of
     // our nodes.
-
     g.setNode(node.id, node);
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('Org height: ' + node.height);
   }
-
   var relations = _classDb__WEBPACK_IMPORTED_MODULE_4__["default"].getRelations();
   relations.forEach(function (relation) {
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('tjoho' + getGraphId(relation.id1) + getGraphId(relation.id2) + JSON.stringify(relation));
@@ -6011,8 +5626,9 @@ var draw = function draw(text, id) {
   var svgBounds = diagram.node().getBBox();
   var width = svgBounds.width + padding * 2;
   var height = svgBounds.height + padding * 2;
-  Object(_utils__WEBPACK_IMPORTED_MODULE_7__["configureSvgSize"])(diagram, height, width, conf.useMaxWidth); // Ensure the viewBox includes the whole svgBounds area with extra space for padding
+  Object(_utils__WEBPACK_IMPORTED_MODULE_7__["configureSvgSize"])(diagram, height, width, conf.useMaxWidth);
 
+  // Ensure the viewBox includes the whole svgBounds area with extra space for padding
   var vBox = "".concat(svgBounds.x - padding, " ").concat(svgBounds.y - padding, " ").concat(width, " ").concat(height);
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug("viewBox ".concat(vBox));
   diagram.attr('viewBox', vBox);
@@ -6914,7 +6530,6 @@ __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
   return "g.classGroup text {\n  fill: ".concat(options.nodeBorder, ";\n  fill: ").concat(options.classText, ";\n  stroke: none;\n  font-family: ").concat(options.fontFamily, ";\n  font-size: 10px;\n\n  .title {\n    font-weight: bolder;\n  }\n\n}\n\n.classTitle {\n  font-weight: bolder;\n}\n.node rect,\n  .node circle,\n  .node ellipse,\n  .node polygon,\n  .node path {\n    fill: ").concat(options.mainBkg, ";\n    stroke: ").concat(options.nodeBorder, ";\n    stroke-width: 1px;\n  }\n\n\n.divider {\n  stroke: ").concat(options.nodeBorder, ";\n  stroke: 1;\n}\n\ng.clickable {\n  cursor: pointer;\n}\n\ng.classGroup rect {\n  fill: ").concat(options.mainBkg, ";\n  stroke: ").concat(options.nodeBorder, ";\n}\n\ng.classGroup line {\n  stroke: ").concat(options.nodeBorder, ";\n  stroke-width: 1;\n}\n\n.classLabel .box {\n  stroke: none;\n  stroke-width: 0;\n  fill: ").concat(options.mainBkg, ";\n  opacity: 0.5;\n}\n\n.classLabel .label {\n  fill: ").concat(options.nodeBorder, ";\n  font-size: 10px;\n}\n\n.relation {\n  stroke: ").concat(options.lineColor, ";\n  stroke-width: 1;\n  fill: none;\n}\n\n.dashed-line{\n  stroke-dasharray: 3;\n}\n\n#compositionStart, .composition {\n  fill: ").concat(options.lineColor, " !important;\n  stroke: ").concat(options.lineColor, " !important;\n  stroke-width: 1;\n}\n\n#compositionEnd, .composition {\n  fill: ").concat(options.lineColor, " !important;\n  stroke: ").concat(options.lineColor, " !important;\n  stroke-width: 1;\n}\n\n#dependencyStart, .dependency {\n  fill: ").concat(options.lineColor, " !important;\n  stroke: ").concat(options.lineColor, " !important;\n  stroke-width: 1;\n}\n\n#dependencyStart, .dependency {\n  fill: ").concat(options.lineColor, " !important;\n  stroke: ").concat(options.lineColor, " !important;\n  stroke-width: 1;\n}\n\n#extensionStart, .extension {\n  fill: ").concat(options.lineColor, " !important;\n  stroke: ").concat(options.lineColor, " !important;\n  stroke-width: 1;\n}\n\n#extensionEnd, .extension {\n  fill: ").concat(options.lineColor, " !important;\n  stroke: ").concat(options.lineColor, " !important;\n  stroke-width: 1;\n}\n\n#aggregationStart, .aggregation {\n  fill: ").concat(options.mainBkg, " !important;\n  stroke: ").concat(options.lineColor, " !important;\n  stroke-width: 1;\n}\n\n#aggregationEnd, .aggregation {\n  fill: ").concat(options.mainBkg, " !important;\n  stroke: ").concat(options.lineColor, " !important;\n  stroke-width: 1;\n}\n\n.edgeTerminals {\n  font-size: 11px;\n}\n\n");
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -6946,24 +6561,22 @@ var drawEdge = function drawEdge(elem, path, relation, conf) {
     switch (type) {
       case _classDb__WEBPACK_IMPORTED_MODULE_1__["relationType"].AGGREGATION:
         return 'aggregation';
-
       case _classDb__WEBPACK_IMPORTED_MODULE_1__["relationType"].EXTENSION:
         return 'extension';
-
       case _classDb__WEBPACK_IMPORTED_MODULE_1__["relationType"].COMPOSITION:
         return 'composition';
-
       case _classDb__WEBPACK_IMPORTED_MODULE_1__["relationType"].DEPENDENCY:
         return 'dependency';
     }
   };
-
   path.points = path.points.filter(function (p) {
     return !Number.isNaN(p.y);
-  }); // The data for our line
+  });
 
-  var lineData = path.points; // This is the accessor function we talked about above
+  // The data for our line
+  var lineData = path.points;
 
+  // This is the accessor function we talked about above
   var lineFunction = Object(d3__WEBPACK_IMPORTED_MODULE_0__["line"])().x(function (d) {
     return d.x;
   }).y(function (d) {
@@ -6971,34 +6584,28 @@ var drawEdge = function drawEdge(elem, path, relation, conf) {
   }).curve(d3__WEBPACK_IMPORTED_MODULE_0__["curveBasis"]);
   var svgPath = elem.append('path').attr('d', lineFunction(lineData)).attr('id', 'edge' + edgeCount).attr('class', 'relation');
   var url = '';
-
   if (conf.arrowMarkerAbsolute) {
     url = window.location.protocol + '//' + window.location.host + window.location.pathname + window.location.search;
     url = url.replace(/\(/g, '\\(');
     url = url.replace(/\)/g, '\\)');
   }
-
   if (relation.relation.lineType == 1) {
     svgPath.attr('class', 'relation dashed-line');
   }
-
   if (relation.relation.type1 !== 'none') {
     svgPath.attr('marker-start', 'url(' + url + '#' + getRelationType(relation.relation.type1) + 'Start' + ')');
   }
-
   if (relation.relation.type2 !== 'none') {
     svgPath.attr('marker-end', 'url(' + url + '#' + getRelationType(relation.relation.type2) + 'End' + ')');
   }
-
   var x, y;
-  var l = path.points.length; // Calculate Label position
-
+  var l = path.points.length;
+  // Calculate Label position
   var labelPosition = _utils__WEBPACK_IMPORTED_MODULE_2__["default"].calcLabelPosition(path.points);
   x = labelPosition.x;
   y = labelPosition.y;
   var p1_card_x, p1_card_y;
   var p2_card_x, p2_card_y;
-
   if (l % 2 !== 0 && l > 1) {
     var cardinality_1_point = _utils__WEBPACK_IMPORTED_MODULE_2__["default"].calcCardinalityPosition(relation.relation.type1 !== 'none', path.points, path.points[0]);
     var cardinality_2_point = _utils__WEBPACK_IMPORTED_MODULE_2__["default"].calcCardinalityPosition(relation.relation.type2 !== 'none', path.points, path.points[l - 1]);
@@ -7009,7 +6616,6 @@ var drawEdge = function drawEdge(elem, path, relation, conf) {
     p2_card_x = cardinality_2_point.x;
     p2_card_y = cardinality_2_point.y;
   }
-
   if (typeof relation.title !== 'undefined') {
     var g = elem.append('g').attr('class', 'classLabel');
     var label = g.append('text').attr('class', 'label').attr('x', x).attr('y', y).attr('fill', 'red').attr('text-anchor', 'middle').text(relation.title);
@@ -7017,21 +6623,15 @@ var drawEdge = function drawEdge(elem, path, relation, conf) {
     var bounds = label.node().getBBox();
     g.insert('rect', ':first-child').attr('class', 'box').attr('x', bounds.x - conf.padding / 2).attr('y', bounds.y - conf.padding / 2).attr('width', bounds.width + conf.padding).attr('height', bounds.height + conf.padding);
   }
-
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('Rendering relation ' + JSON.stringify(relation));
-
   if (typeof relation.relationTitle1 !== 'undefined' && relation.relationTitle1 !== 'none') {
     var _g = elem.append('g').attr('class', 'cardinality');
-
     _g.append('text').attr('class', 'type1').attr('x', p1_card_x).attr('y', p1_card_y).attr('fill', 'black').attr('font-size', '6').text(relation.relationTitle1);
   }
-
   if (typeof relation.relationTitle2 !== 'undefined' && relation.relationTitle2 !== 'none') {
     var _g2 = elem.append('g').attr('class', 'cardinality');
-
     _g2.append('text').attr('class', 'type2').attr('x', p2_card_x).attr('y', p2_card_y).attr('fill', 'black').attr('font-size', '6').text(relation.relationTitle2);
   }
-
   edgeCount++;
 };
 var drawClass = function drawClass(elem, classDef, conf) {
@@ -7042,19 +6642,20 @@ var drawClass = function drawClass(elem, classDef, conf) {
     label: classDef.id,
     width: 0,
     height: 0
-  }; // add class group
+  };
 
-  var g = elem.append('g').attr('id', Object(_classDb__WEBPACK_IMPORTED_MODULE_1__["lookUpDomId"])(id)).attr('class', 'classGroup'); // add title
+  // add class group
+  var g = elem.append('g').attr('id', Object(_classDb__WEBPACK_IMPORTED_MODULE_1__["lookUpDomId"])(id)).attr('class', 'classGroup');
 
+  // add title
   var title;
-
   if (classDef.link) {
     title = g.append('svg:a').attr('xlink:href', classDef.link).attr('target', classDef.linkTarget).append('text').attr('y', conf.textHeight + conf.padding).attr('x', 0);
   } else {
     title = g.append('text').attr('y', conf.textHeight + conf.padding).attr('x', 0);
-  } // add annotations
+  }
 
-
+  // add annotations
   var isFirst = true;
   classDef.annotations.forEach(function (member) {
     var titleText2 = title.append('tspan').text('«' + member + '»');
@@ -7062,13 +6663,12 @@ var drawClass = function drawClass(elem, classDef, conf) {
     isFirst = false;
   });
   var classTitleString = classDef.id;
-
   if (classDef.type !== undefined && classDef.type !== '') {
     classTitleString += '<' + classDef.type + '>';
   }
+  var classTitle = title.append('tspan').text(classTitleString).attr('class', 'title');
 
-  var classTitle = title.append('tspan').text(classTitleString).attr('class', 'title'); // If class has annotations the title needs to have an offset of the text height
-
+  // If class has annotations the title needs to have an offset of the text height
   if (!isFirst) classTitle.attr('dy', conf.textHeight);
   var titleHeight = title.node().getBBox().height;
   var membersLine = g.append('line') // text label for the x axis
@@ -7092,23 +6692,20 @@ var drawClass = function drawClass(elem, classDef, conf) {
   });
   var classBox = g.node().getBBox();
   var cssClassStr = ' ';
-
   if (classDef.cssClasses.length > 0) {
     cssClassStr = cssClassStr + classDef.cssClasses.join(' ');
   }
-
   var rect = g.insert('rect', ':first-child').attr('x', 0).attr('y', 0).attr('width', classBox.width + 2 * conf.padding).attr('height', classBox.height + conf.padding + 0.5 * conf.dividerMargin).attr('class', cssClassStr);
-  var rectWidth = rect.node().getBBox().width; // Center title
-  // We subtract the width of each text element from the class box width and divide it by 2
+  var rectWidth = rect.node().getBBox().width;
 
+  // Center title
+  // We subtract the width of each text element from the class box width and divide it by 2
   title.node().childNodes.forEach(function (x) {
     x.setAttribute('x', (rectWidth - x.getBBox().width) / 2);
   });
-
   if (classDef.tooltip) {
     title.insert('title').text(classDef.tooltip);
   }
-
   membersLine.attr('x2', rectWidth);
   methodsLine.attr('x2', rectWidth);
   classInfo.width = rectWidth;
@@ -7120,7 +6717,6 @@ var parseMember = function parseMember(text) {
   var methodRegEx = /^([+|\-|~|#])?(\w+) *\( *(.*)\) *(\*|\$)? *(\w*[~|[\]]*\s*\w*~?)$/;
   var fieldMatch = text.match(fieldRegEx);
   var methodMatch = text.match(methodRegEx);
-
   if (fieldMatch && !methodMatch) {
     return buildFieldDisplay(fieldMatch);
   } else if (methodMatch) {
@@ -7129,10 +6725,8 @@ var parseMember = function parseMember(text) {
     return buildLegacyDisplay(text);
   }
 };
-
 var buildFieldDisplay = function buildFieldDisplay(parsedText) {
   var displayText = '';
-
   try {
     var visibility = parsedText[1] ? parsedText[1].trim() : '';
     var fieldType = parsedText[2] ? parsedText[2].trim() : '';
@@ -7142,17 +6736,14 @@ var buildFieldDisplay = function buildFieldDisplay(parsedText) {
   } catch (err) {
     displayText = parsedText;
   }
-
   return {
     displayText: displayText,
     cssStyle: ''
   };
 };
-
 var buildMethodDisplay = function buildMethodDisplay(parsedText) {
   var cssStyle = '';
   var displayText = '';
-
   try {
     var visibility = parsedText[1] ? parsedText[1].trim() : '';
     var methodName = parsedText[2] ? parsedText[2].trim() : '';
@@ -7164,13 +6755,11 @@ var buildMethodDisplay = function buildMethodDisplay(parsedText) {
   } catch (err) {
     displayText = parsedText;
   }
-
   return {
     displayText: displayText,
     cssStyle: cssStyle
   };
 };
-
 var buildLegacyDisplay = function buildLegacyDisplay(text) {
   // if for some reason we dont have any match, use old format to parse text
   var displayText = '';
@@ -7179,30 +6768,24 @@ var buildLegacyDisplay = function buildLegacyDisplay(text) {
   var returnType = '';
   var methodStart = text.indexOf('(');
   var methodEnd = text.indexOf(')');
-
   if (methodStart > 1 && methodEnd > methodStart && methodEnd <= text.length) {
     var visibility = '';
     var methodName = '';
     var firstChar = text.substring(0, 1);
-
     if (firstChar.match(/\w/)) {
       methodName = text.substring(0, methodStart).trim();
     } else {
       if (firstChar.match(/\+|-|~|#/)) {
         visibility = firstChar;
       }
-
       methodName = text.substring(1, methodStart).trim();
     }
-
     var parameters = text.substring(methodStart + 1, methodEnd);
     var classifier = text.substring(methodEnd + 1, 1);
     cssStyle = parseClassifier(classifier);
     displayText = visibility + methodName + '(' + parseGenericTypes(parameters.trim()) + ')';
-
     if (methodEnd < memberText.length) {
       returnType = text.substring(methodEnd + 2).trim();
-
       if (returnType !== '') {
         returnType = ' : ' + parseGenericTypes(returnType);
       }
@@ -7211,29 +6794,23 @@ var buildLegacyDisplay = function buildLegacyDisplay(text) {
     // finally - if all else fails, just send the text back as written (other than parsing for generic types)
     displayText = parseGenericTypes(text);
   }
-
   return {
     displayText: displayText,
     cssStyle: cssStyle
   };
 };
-
 var addTspan = function addTspan(textEl, txt, isFirst, conf) {
   var member = parseMember(txt);
   var tSpan = textEl.append('tspan').attr('x', conf.padding).text(member.displayText);
-
   if (member.cssStyle !== '') {
     tSpan.attr('style', member.cssStyle);
   }
-
   if (!isFirst) {
     tSpan.attr('dy', conf.textHeight);
   }
 };
-
 var parseGenericTypes = function parseGenericTypes(text) {
   var cleanedText = text;
-
   if (text.indexOf('~') != -1) {
     cleanedText = cleanedText.replace('~', '<');
     cleanedText = cleanedText.replace('~', '>');
@@ -7242,20 +6819,16 @@ var parseGenericTypes = function parseGenericTypes(text) {
     return cleanedText;
   }
 };
-
 var parseClassifier = function parseClassifier(classifier) {
   switch (classifier) {
     case '*':
       return 'font-style:italic;';
-
     case '$':
       return 'text-decoration:underline;';
-
     default:
       return '';
   }
 };
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   drawClass: drawClass,
   drawEdge: drawEdge,
@@ -7289,15 +6862,12 @@ var getRows = function getRows(s) {
 var removeScript = function removeScript(txt) {
   var rs = '';
   var idx = 0;
-
   while (idx >= 0) {
     idx = txt.indexOf('<script');
-
     if (idx >= 0) {
       rs += txt.substr(0, idx);
       txt = txt.substr(idx + 1);
       idx = txt.indexOf('</script>');
-
       if (idx >= 0) {
         idx += 9;
         txt = txt.substr(idx);
@@ -7308,20 +6878,16 @@ var removeScript = function removeScript(txt) {
       break;
     }
   }
-
   return rs;
 };
 var sanitizeText = function sanitizeText(text, config) {
   var txt = text;
   var htmlLabels = true;
-
   if (config.flowchart && (config.flowchart.htmlLabels === false || config.flowchart.htmlLabels === 'false')) {
     htmlLabels = false;
   }
-
   if (htmlLabels) {
     var level = config.securityLevel;
-
     if (level === 'antiscript') {
       txt = removeScript(txt);
     } else if (level !== 'loose') {
@@ -7332,7 +6898,6 @@ var sanitizeText = function sanitizeText(text, config) {
       txt = placeholderToBreak(txt);
     }
   }
-
   return txt;
 };
 var lineBreakRegex = /<br\s*\/?>/gi;
@@ -7342,27 +6907,21 @@ var hasBreaks = function hasBreaks(text) {
 var splitBreaks = function splitBreaks(text) {
   return text.split(/<br\s*[/]?>/gi);
 };
-
 var breakToPlaceholder = function breakToPlaceholder(s) {
   return s.replace(lineBreakRegex, '#br#');
 };
-
 var placeholderToBreak = function placeholderToBreak(s) {
   return s.replace(/#br#/g, '<br/>');
 };
-
 var getUrl = function getUrl(useAbsolute) {
   var url = '';
-
   if (useAbsolute) {
     url = window.location.protocol + '//' + window.location.host + window.location.pathname + window.location.search;
     url = url.replace(/\(/g, '\\(');
     url = url.replace(/\)/g, '\\)');
   }
-
   return url;
 };
-
 var evaluate = function evaluate(val) {
   return val === 'false' || val === false ? false : true;
 };
@@ -7414,7 +6973,6 @@ var Identification = {
 var parseDirective = function parseDirective(statement, context, type) {
   _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].parseDirective(this, statement, context, type);
 };
-
 var addEntity = function addEntity(name) {
   if (typeof entities[name] === 'undefined') {
     entities[name] = {
@@ -7422,25 +6980,22 @@ var addEntity = function addEntity(name) {
     };
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Added new entity :', name);
   }
-
   return entities[name];
 };
-
 var getEntities = function getEntities() {
   return entities;
 };
-
 var addAttributes = function addAttributes(entityName, attribs) {
   var entity = addEntity(entityName); // May do nothing (if entity has already been added)
+
   // Process attribs in reverse order due to effect of recursive construction (last attribute is first)
-
   var i;
-
   for (i = attribs.length - 1; i >= 0; i--) {
     entity.attributes.push(attribs[i]);
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Added attribute ', attribs[i].attributeName);
   }
 };
+
 /**
  * Add a relationship
  * @param entA The first entity in the relationship
@@ -7448,8 +7003,6 @@ var addAttributes = function addAttributes(entityName, attribs) {
  * @param entB The second entity in the relationship
  * @param rSpec The details of the relationship between the two entities
  */
-
-
 var addRelationship = function addRelationship(entA, rolA, entB, rSpec) {
   var rel = {
     entityA: entA,
@@ -7460,26 +7013,22 @@ var addRelationship = function addRelationship(entA, rolA, entB, rSpec) {
   relationships.push(rel);
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Added new relationship :', rel);
 };
-
 var getRelationships = function getRelationships() {
   return relationships;
-}; // Keep this - TODO: revisit...allow the diagram to have a title
+};
 
-
+// Keep this - TODO: revisit...allow the diagram to have a title
 var setTitle = function setTitle(txt) {
   title = txt;
 };
-
 var getTitle = function getTitle() {
   return title;
 };
-
 var clear = function clear() {
   entities = {};
   relationships = [];
   title = '';
 };
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   Cardinality: Cardinality,
   Identification: Identification,
@@ -7518,10 +7067,10 @@ var ERMarkers = {
   ZERO_OR_MORE_START: 'ZERO_OR_MORE_START',
   ZERO_OR_MORE_END: 'ZERO_OR_MORE_END'
 };
+
 /**
  * Put the markers into the svg DOM for later use with edge paths
  */
-
 var insertMarkers = function insertMarkers(elem, conf) {
   var marker;
   elem.append('defs').append('marker').attr('id', ERMarkers.ONLY_ONE_START).attr('refX', 0).attr('refY', 9).attr('markerWidth', 18).attr('markerHeight', 18).attr('orient', 'auto').append('path').attr('stroke', conf.stroke).attr('fill', 'none').attr('d', 'M9,0 L9,18 M15,0 L15,18');
@@ -7542,7 +7091,6 @@ var insertMarkers = function insertMarkers(elem, conf) {
   marker.append('path').attr('stroke', conf.stroke).attr('fill', 'none').attr('d', 'M21,18 Q39,0 57,18 Q39,36 21,18');
   return;
 };
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   ERMarkers: ERMarkers,
   insertMarkers: insertMarkers
@@ -7584,19 +7132,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var conf = {};
+
 /**
  * Allows the top-level API module to inject config specific to this renderer,
  * storing it in the local conf object. Note that generic config still needs to be
  * retrieved using getConfig() imported from the config module
  */
-
 var setConf = function setConf(cnf) {
   var keys = Object.keys(cnf);
-
   for (var i = 0; i < keys.length; i++) {
     conf[keys[i]] = cnf[keys[i]];
   }
 };
+
 /**
  * Draw attributes for an entity
  * @param groupNode the svg group node for the entity
@@ -7604,27 +7152,26 @@ var setConf = function setConf(cnf) {
  * @param attributes an array of attributes defined for the entity (each attribute has a type and a name)
  * @return the bounding box of the entity, after attributes have been added
  */
-
 var drawAttributes = function drawAttributes(groupNode, entityTextNode, attributes) {
   var heightPadding = conf.entityPadding / 3; // Padding internal to attribute boxes
-
   var widthPadding = conf.entityPadding / 3; // Ditto
-
   var attrFontSize = conf.fontSize * 0.85;
   var labelBBox = entityTextNode.node().getBBox();
   var attributeNodes = []; // Intermediate storage for attribute nodes created so that we can do a second pass
-
   var maxTypeWidth = 0;
   var maxNameWidth = 0;
   var cumulativeHeight = labelBBox.height + heightPadding * 2;
   var attrNum = 1;
   attributes.forEach(function (item) {
-    var attrPrefix = "".concat(entityTextNode.node().id, "-attr-").concat(attrNum); // Add a text node for the attribute type
+    var attrPrefix = "".concat(entityTextNode.node().id, "-attr-").concat(attrNum);
 
-    var typeNode = groupNode.append('text').attr('class', 'er entityLabel').attr('id', "".concat(attrPrefix, "-type")).attr('x', 0).attr('y', 0).attr('dominant-baseline', 'middle').attr('text-anchor', 'left').attr('style', 'font-family: ' + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().fontFamily + '; font-size: ' + attrFontSize + 'px').text(item.attributeType); // Add a text node for the attribute name
+    // Add a text node for the attribute type
+    var typeNode = groupNode.append('text').attr('class', 'er entityLabel').attr('id', "".concat(attrPrefix, "-type")).attr('x', 0).attr('y', 0).attr('dominant-baseline', 'middle').attr('text-anchor', 'left').attr('style', 'font-family: ' + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().fontFamily + '; font-size: ' + attrFontSize + 'px').text(item.attributeType);
 
-    var nameNode = groupNode.append('text').attr('class', 'er entityLabel').attr('id', "".concat(attrPrefix, "-name")).attr('x', 0).attr('y', 0).attr('dominant-baseline', 'middle').attr('text-anchor', 'left').attr('style', 'font-family: ' + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().fontFamily + '; font-size: ' + attrFontSize + 'px').text(item.attributeName); // Keep a reference to the nodes so that we can iterate through them later
+    // Add a text node for the attribute name
+    var nameNode = groupNode.append('text').attr('class', 'er entityLabel').attr('id', "".concat(attrPrefix, "-name")).attr('x', 0).attr('y', 0).attr('dominant-baseline', 'middle').attr('text-anchor', 'left').attr('style', 'font-family: ' + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().fontFamily + '; font-size: ' + attrFontSize + 'px').text(item.attributeName);
 
+    // Keep a reference to the nodes so that we can iterate through them later
     attributeNodes.push({
       tn: typeNode,
       nn: nameNode
@@ -7635,49 +7182,58 @@ var drawAttributes = function drawAttributes(groupNode, entityTextNode, attribut
     maxNameWidth = Math.max(maxNameWidth, nameBBox.width);
     cumulativeHeight += Math.max(typeBBox.height, nameBBox.height) + heightPadding * 2;
     attrNum += 1;
-  }); // Calculate the new bounding box of the overall entity, now that attributes have been added
+  });
 
+  // Calculate the new bounding box of the overall entity, now that attributes have been added
   var bBox = {
     width: Math.max(conf.minEntityWidth, Math.max(labelBBox.width + conf.entityPadding * 2, maxTypeWidth + maxNameWidth + widthPadding * 4)),
     height: attributes.length > 0 ? cumulativeHeight : Math.max(conf.minEntityHeight, labelBBox.height + conf.entityPadding * 2)
-  }; // There might be some spare width for padding out attributes if the entity name is very long
+  };
 
+  // There might be some spare width for padding out attributes if the entity name is very long
   var spareWidth = Math.max(0, bBox.width - (maxTypeWidth + maxNameWidth) - widthPadding * 4);
-
   if (attributes.length > 0) {
     // Position the entity label near the top of the entity bounding box
-    entityTextNode.attr('transform', 'translate(' + bBox.width / 2 + ',' + (heightPadding + labelBBox.height / 2) + ')'); // Add rectangular boxes for the attribute types/names
+    entityTextNode.attr('transform', 'translate(' + bBox.width / 2 + ',' + (heightPadding + labelBBox.height / 2) + ')');
 
+    // Add rectangular boxes for the attribute types/names
     var heightOffset = labelBBox.height + heightPadding * 2; // Start at the bottom of the entity label
-
     var attribStyle = 'attributeBoxOdd'; // We will flip the style on alternate rows to achieve a banded effect
 
     attributeNodes.forEach(function (nodePair) {
       // Calculate the alignment y co-ordinate for the type/name of the attribute
-      var alignY = heightOffset + heightPadding + Math.max(nodePair.tn.node().getBBox().height, nodePair.nn.node().getBBox().height) / 2; // Position the type of the attribute
+      var alignY = heightOffset + heightPadding + Math.max(nodePair.tn.node().getBBox().height, nodePair.nn.node().getBBox().height) / 2;
 
-      nodePair.tn.attr('transform', 'translate(' + widthPadding + ',' + alignY + ')'); // Insert a rectangle for the type
+      // Position the type of the attribute
+      nodePair.tn.attr('transform', 'translate(' + widthPadding + ',' + alignY + ')');
 
-      var typeRect = groupNode.insert('rect', '#' + nodePair.tn.node().id).attr('class', "er ".concat(attribStyle)).attr('fill', conf.fill).attr('fill-opacity', '100%').attr('stroke', conf.stroke).attr('x', 0).attr('y', heightOffset).attr('width', maxTypeWidth + widthPadding * 2 + spareWidth / 2).attr('height', nodePair.tn.node().getBBox().height + heightPadding * 2); // Position the name of the attribute
+      // Insert a rectangle for the type
+      var typeRect = groupNode.insert('rect', '#' + nodePair.tn.node().id).attr('class', "er ".concat(attribStyle)).attr('fill', conf.fill).attr('fill-opacity', '100%').attr('stroke', conf.stroke).attr('x', 0).attr('y', heightOffset).attr('width', maxTypeWidth + widthPadding * 2 + spareWidth / 2).attr('height', nodePair.tn.node().getBBox().height + heightPadding * 2);
 
-      nodePair.nn.attr('transform', 'translate(' + (parseFloat(typeRect.attr('width')) + widthPadding) + ',' + alignY + ')'); // Insert a rectangle for the name
+      // Position the name of the attribute
+      nodePair.nn.attr('transform', 'translate(' + (parseFloat(typeRect.attr('width')) + widthPadding) + ',' + alignY + ')');
 
-      groupNode.insert('rect', '#' + nodePair.nn.node().id).attr('class', "er ".concat(attribStyle)).attr('fill', conf.fill).attr('fill-opacity', '100%').attr('stroke', conf.stroke).attr('x', "".concat(typeRect.attr('x') + typeRect.attr('width'))) //.attr('x', maxTypeWidth + (widthPadding * 2))
-      .attr('y', heightOffset).attr('width', maxNameWidth + widthPadding * 2 + spareWidth / 2).attr('height', nodePair.nn.node().getBBox().height + heightPadding * 2); // Increment the height offset to move to the next row
+      // Insert a rectangle for the name
+      groupNode.insert('rect', '#' + nodePair.nn.node().id).attr('class', "er ".concat(attribStyle)).attr('fill', conf.fill).attr('fill-opacity', '100%').attr('stroke', conf.stroke).attr('x', "".concat(typeRect.attr('x') + typeRect.attr('width')))
+      //.attr('x', maxTypeWidth + (widthPadding * 2))
+      .attr('y', heightOffset).attr('width', maxNameWidth + widthPadding * 2 + spareWidth / 2).attr('height', nodePair.nn.node().getBBox().height + heightPadding * 2);
 
-      heightOffset += Math.max(nodePair.tn.node().getBBox().height, nodePair.nn.node().getBBox().height) + heightPadding * 2; // Flip the attribute style for row banding
+      // Increment the height offset to move to the next row
+      heightOffset += Math.max(nodePair.tn.node().getBBox().height, nodePair.nn.node().getBBox().height) + heightPadding * 2;
 
+      // Flip the attribute style for row banding
       attribStyle = attribStyle == 'attributeBoxOdd' ? 'attributeBoxEven' : 'attributeBoxOdd';
     });
   } else {
     // Ensure the entity box is a decent size without any attributes
-    bBox.height = Math.max(conf.minEntityHeight, cumulativeHeight); // Position the entity label in the middle of the box
+    bBox.height = Math.max(conf.minEntityHeight, cumulativeHeight);
 
+    // Position the entity label in the middle of the box
     entityTextNode.attr('transform', 'translate(' + bBox.width / 2 + ',' + bBox.height / 2 + ')');
   }
-
   return bBox;
 };
+
 /**
  * Use D3 to construct the svg elements for the entities
  * @param svgNode the svg node that contains the diagram
@@ -7685,28 +7241,27 @@ var drawAttributes = function drawAttributes(groupNode, entityTextNode, attribut
  * @param graph The graph that contains the vertex and edge definitions post-layout
  * @return The first entity that was inserted
  */
-
-
 var drawEntities = function drawEntities(svgNode, entities, graph) {
   var keys = Object.keys(entities);
   var firstOne;
   keys.forEach(function (id) {
     // Create a group for each entity
     var groupNode = svgNode.append('g').attr('id', id);
-    firstOne = firstOne === undefined ? id : firstOne; // Label the entity - this is done first so that we can get the bounding box
-    // which then determines the size of the rectangle
+    firstOne = firstOne === undefined ? id : firstOne;
 
+    // Label the entity - this is done first so that we can get the bounding box
+    // which then determines the size of the rectangle
     var textId = 'entity-' + id;
     var textNode = groupNode.append('text').attr('class', 'er entityLabel').attr('id', textId).attr('x', 0).attr('y', 0).attr('dominant-baseline', 'middle').attr('text-anchor', 'middle').attr('style', 'font-family: ' + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().fontFamily + '; font-size: ' + conf.fontSize + 'px').text(id);
-
     var _drawAttributes = drawAttributes(groupNode, textNode, entities[id].attributes),
-        entityWidth = _drawAttributes.width,
-        entityHeight = _drawAttributes.height; // Draw the rectangle - insert it before the text so that the text is not obscured
+      entityWidth = _drawAttributes.width,
+      entityHeight = _drawAttributes.height;
 
-
+    // Draw the rectangle - insert it before the text so that the text is not obscured
     var rectNode = groupNode.insert('rect', '#' + textId).attr('class', 'er entityBox').attr('fill', conf.fill).attr('fill-opacity', '100%').attr('stroke', conf.stroke).attr('x', 0).attr('y', 0).attr('width', entityWidth).attr('height', entityHeight);
-    var rectBBox = rectNode.node().getBBox(); // Add the entity to the graph
+    var rectBBox = rectNode.node().getBBox();
 
+    // Add the entity to the graph
     graph.setNode(id, {
       width: rectBBox.width,
       height: rectBBox.height,
@@ -7717,7 +7272,6 @@ var drawEntities = function drawEntities(svgNode, entities, graph) {
   return firstOne;
 }; // drawEntities
 
-
 var adjustEntities = function adjustEntities(svgNode, graph) {
   graph.nodes().forEach(function (v) {
     if (typeof v !== 'undefined' && typeof graph.node(v) !== 'undefined') {
@@ -7726,18 +7280,16 @@ var adjustEntities = function adjustEntities(svgNode, graph) {
   });
   return;
 };
-
 var getEdgeName = function getEdgeName(rel) {
   return (rel.entityA + rel.roleA + rel.entityB).replace(/\s/g, '');
 };
+
 /**
  * Add each relationship to the graph
  * @param relationships the relationships to be added
  * @param g the graph
  * @return {Array} The array of relationships
  */
-
-
 var addRelationships = function addRelationships(relationships, g) {
   relationships.forEach(function (r) {
     g.setEdge(r.entityA, r.entityB, {
@@ -7747,7 +7299,6 @@ var addRelationships = function addRelationships(relationships, g) {
   return relationships;
 }; // addRelationships
 
-
 var relCnt = 0;
 /**
  * Draw a relationship using edge information from the graph
@@ -7756,108 +7307,111 @@ var relCnt = 0;
  * @param g the graph containing the edge information
  * @param insert the insertion point in the svg DOM (because relationships have markers that need to sit 'behind' opaque entity boxes)
  */
-
 var drawRelationshipFromLayout = function drawRelationshipFromLayout(svg, rel, g, insert) {
-  relCnt++; // Find the edge relating to this relationship
+  relCnt++;
 
-  var edge = g.edge(rel.entityA, rel.entityB, getEdgeName(rel)); // Get a function that will generate the line path
+  // Find the edge relating to this relationship
+  var edge = g.edge(rel.entityA, rel.entityB, getEdgeName(rel));
 
+  // Get a function that will generate the line path
   var lineFunction = Object(d3__WEBPACK_IMPORTED_MODULE_1__["line"])().x(function (d) {
     return d.x;
   }).y(function (d) {
     return d.y;
-  }).curve(d3__WEBPACK_IMPORTED_MODULE_1__["curveBasis"]); // Insert the line at the right place
+  }).curve(d3__WEBPACK_IMPORTED_MODULE_1__["curveBasis"]);
 
-  var svgPath = svg.insert('path', '#' + insert).attr('class', 'er relationshipLine').attr('d', lineFunction(edge.points)).attr('stroke', conf.stroke).attr('fill', 'none'); // ...and with dashes if necessary
+  // Insert the line at the right place
+  var svgPath = svg.insert('path', '#' + insert).attr('class', 'er relationshipLine').attr('d', lineFunction(edge.points)).attr('stroke', conf.stroke).attr('fill', 'none');
 
+  // ...and with dashes if necessary
   if (rel.relSpec.relType === _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].Identification.NON_IDENTIFYING) {
     svgPath.attr('stroke-dasharray', '8,8');
-  } // TODO: Understand this better
+  }
 
-
+  // TODO: Understand this better
   var url = '';
-
   if (conf.arrowMarkerAbsolute) {
     url = window.location.protocol + '//' + window.location.host + window.location.pathname + window.location.search;
     url = url.replace(/\(/g, '\\(');
     url = url.replace(/\)/g, '\\)');
-  } // Decide which start and end markers it needs. It may be possible to be more concise here
+  }
+
+  // Decide which start and end markers it needs. It may be possible to be more concise here
   // by reversing a start marker to make an end marker...but this will do for now
+
   // Note that the 'A' entity's marker is at the end of the relationship and the 'B' entity's marker is at the start
-
-
   switch (rel.relSpec.cardA) {
     case _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].Cardinality.ZERO_OR_ONE:
       svgPath.attr('marker-end', 'url(' + url + '#' + _erMarkers__WEBPACK_IMPORTED_MODULE_7__["default"].ERMarkers.ZERO_OR_ONE_END + ')');
       break;
-
     case _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].Cardinality.ZERO_OR_MORE:
       svgPath.attr('marker-end', 'url(' + url + '#' + _erMarkers__WEBPACK_IMPORTED_MODULE_7__["default"].ERMarkers.ZERO_OR_MORE_END + ')');
       break;
-
     case _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].Cardinality.ONE_OR_MORE:
       svgPath.attr('marker-end', 'url(' + url + '#' + _erMarkers__WEBPACK_IMPORTED_MODULE_7__["default"].ERMarkers.ONE_OR_MORE_END + ')');
       break;
-
     case _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].Cardinality.ONLY_ONE:
       svgPath.attr('marker-end', 'url(' + url + '#' + _erMarkers__WEBPACK_IMPORTED_MODULE_7__["default"].ERMarkers.ONLY_ONE_END + ')');
       break;
   }
-
   switch (rel.relSpec.cardB) {
     case _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].Cardinality.ZERO_OR_ONE:
       svgPath.attr('marker-start', 'url(' + url + '#' + _erMarkers__WEBPACK_IMPORTED_MODULE_7__["default"].ERMarkers.ZERO_OR_ONE_START + ')');
       break;
-
     case _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].Cardinality.ZERO_OR_MORE:
       svgPath.attr('marker-start', 'url(' + url + '#' + _erMarkers__WEBPACK_IMPORTED_MODULE_7__["default"].ERMarkers.ZERO_OR_MORE_START + ')');
       break;
-
     case _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].Cardinality.ONE_OR_MORE:
       svgPath.attr('marker-start', 'url(' + url + '#' + _erMarkers__WEBPACK_IMPORTED_MODULE_7__["default"].ERMarkers.ONE_OR_MORE_START + ')');
       break;
-
     case _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].Cardinality.ONLY_ONE:
       svgPath.attr('marker-start', 'url(' + url + '#' + _erMarkers__WEBPACK_IMPORTED_MODULE_7__["default"].ERMarkers.ONLY_ONE_START + ')');
       break;
-  } // Now label the relationship
+  }
+
+  // Now label the relationship
+
   // Find the half-way point
-
-
   var len = svgPath.node().getTotalLength();
-  var labelPoint = svgPath.node().getPointAtLength(len * 0.5); // Append a text node containing the label
+  var labelPoint = svgPath.node().getPointAtLength(len * 0.5);
 
+  // Append a text node containing the label
   var labelId = 'rel' + relCnt;
-  var labelNode = svg.append('text').attr('class', 'er relationshipLabel').attr('id', labelId).attr('x', labelPoint.x).attr('y', labelPoint.y).attr('text-anchor', 'middle').attr('dominant-baseline', 'middle').attr('style', 'font-family: ' + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().fontFamily + '; font-size: ' + conf.fontSize + 'px').text(rel.roleA); // Figure out how big the opaque 'container' rectangle needs to be
+  var labelNode = svg.append('text').attr('class', 'er relationshipLabel').attr('id', labelId).attr('x', labelPoint.x).attr('y', labelPoint.y).attr('text-anchor', 'middle').attr('dominant-baseline', 'middle').attr('style', 'font-family: ' + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().fontFamily + '; font-size: ' + conf.fontSize + 'px').text(rel.roleA);
 
-  var labelBBox = labelNode.node().getBBox(); // Insert the opaque rectangle before the text label
+  // Figure out how big the opaque 'container' rectangle needs to be
+  var labelBBox = labelNode.node().getBBox();
 
+  // Insert the opaque rectangle before the text label
   svg.insert('rect', '#' + labelId).attr('class', 'er relationshipLabelBox').attr('x', labelPoint.x - labelBBox.width / 2).attr('y', labelPoint.y - labelBBox.height / 2).attr('width', labelBBox.width).attr('height', labelBBox.height).attr('fill', 'white').attr('fill-opacity', '85%');
   return;
 };
+
 /**
  * Draw en E-R diagram in the tag with id: id based on the text definition of the diagram
  * @param text the text of the diagram
  * @param id the unique id of the DOM node that contains the diagram
  */
-
-
 var draw = function draw(text, id) {
   _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info('Drawing ER diagram');
   _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].clear();
   var parser = _parser_erDiagram__WEBPACK_IMPORTED_MODULE_3___default.a.parser;
-  parser.yy = _erDb__WEBPACK_IMPORTED_MODULE_2__["default"]; // Parse the text to populate erDb
+  parser.yy = _erDb__WEBPACK_IMPORTED_MODULE_2__["default"];
 
+  // Parse the text to populate erDb
   try {
     parser.parse(text);
   } catch (err) {
     _logger__WEBPACK_IMPORTED_MODULE_6__["log"].debug('Parsing failed');
-  } // Get a reference to the svg node that contains the text
+  }
 
+  // Get a reference to the svg node that contains the text
+  var svg = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])("[id='".concat(id, "']"));
 
-  var svg = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])("[id='".concat(id, "']")); // Add cardinality marker definitions to the svg
+  // Add cardinality marker definitions to the svg
+  _erMarkers__WEBPACK_IMPORTED_MODULE_7__["default"].insertMarkers(svg, conf);
 
-  _erMarkers__WEBPACK_IMPORTED_MODULE_7__["default"].insertMarkers(svg, conf); // Now we have to construct the diagram in a specific way:
+  // Now we have to construct the diagram in a specific way:
   // ---
   // 1. Create all the entities in the svg node at 0,0, but with the correct dimensions (allowing for text content)
   // 2. Make sure they are all added to the graph
@@ -7870,14 +7424,15 @@ var draw = function draw(text, id) {
   //    its centre point, which is obtained from the graph, and it's width and height
   // 6. And finally, create all the edges in the svg node using information from the graph
   // ---
-  // Create the graph
 
-  var g; // TODO: Explore directed vs undirected graphs, and how the layout is affected
+  // Create the graph
+  var g;
+
+  // TODO: Explore directed vs undirected graphs, and how the layout is affected
   // An E-R diagram could be said to be undirected, but there is merit in setting
   // the direction from parent to child in a one-to-many as this influences graphlib to
   // put the parent above the child (does it?), which is intuitive.  Most relationships
   // in ER diagrams are one-to-many.
-
   g = new graphlib__WEBPACK_IMPORTED_MODULE_0___default.a.Graph({
     multigraph: true,
     directed: true,
@@ -7891,18 +7446,22 @@ var draw = function draw(text, id) {
     ranksep: 100
   }).setDefaultEdgeLabel(function () {
     return {};
-  }); // Draw the entities (at 0,0), returning the first svg node that got
+  });
+
+  // Draw the entities (at 0,0), returning the first svg node that got
   // inserted - this represents the insertion point for relationship paths
+  var firstEntity = drawEntities(svg, _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].getEntities(), g);
 
-  var firstEntity = drawEntities(svg, _erDb__WEBPACK_IMPORTED_MODULE_2__["default"].getEntities(), g); // TODO: externalise the addition of entities to the graph - it's a bit 'buried' in the above
+  // TODO: externalise the addition of entities to the graph - it's a bit 'buried' in the above
+
   // Add all the relationships to the graph
-
   var relationships = addRelationships(_erDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRelationships(), g);
   dagre__WEBPACK_IMPORTED_MODULE_4___default.a.layout(g); // Node and edge positions will be updated
+
   // Adjust the positions of the entities so that they adhere to the layout
+  adjustEntities(svg, g);
 
-  adjustEntities(svg, g); // Draw the relationships
-
+  // Draw the relationships
   relationships.forEach(function (rel) {
     drawRelationshipFromLayout(svg, rel, g, firstEntity);
   });
@@ -8701,7 +8260,6 @@ __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
   return "\n  .entityBox {\n    fill: ".concat(options.mainBkg, ";\n    stroke: ").concat(options.nodeBorder, ";\n  }\n\n  .attributeBoxOdd {\n    fill: #ffffff;\n    stroke: ").concat(options.nodeBorder, ";\n  }\n\n  .attributeBoxEven {\n    fill: #f2f2f2;\n    stroke: ").concat(options.nodeBorder, ";\n  }\n\n  .relationshipLabelBox {\n    fill: ").concat(options.tertiaryColor, ";\n    opacity: 0.7;\n    background-color: ").concat(options.tertiaryColor, ";\n      rect {\n        opacity: 0.5;\n      }\n  }\n\n    .relationshipLine {\n      stroke: ").concat(options.lineColor, ";\n    }\n");
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -8719,7 +8277,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addToRenderV2", function() { return addToRenderV2; });
 /* harmony import */ var dagre_d3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! dagre-d3 */ "dagre-d3");
 /* harmony import */ var dagre_d3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(dagre_d3__WEBPACK_IMPORTED_MODULE_0__);
-
 
 function question(parent, bbox, node) {
   var w = bbox.width;
@@ -8739,14 +8296,11 @@ function question(parent, bbox, node) {
     y: -s / 2
   }];
   var shapeSvg = insertPolygonShape(parent, s, s, points);
-
   node.intersect = function (point) {
     return dagre_d3__WEBPACK_IMPORTED_MODULE_0___default.a.intersect.polygon(node, points, point);
   };
-
   return shapeSvg;
 }
-
 function hexagon(parent, bbox, node) {
   var f = 4;
   var h = bbox.height;
@@ -8772,14 +8326,11 @@ function hexagon(parent, bbox, node) {
     y: -h / 2
   }];
   var shapeSvg = insertPolygonShape(parent, w, h, points);
-
   node.intersect = function (point) {
     return dagre_d3__WEBPACK_IMPORTED_MODULE_0___default.a.intersect.polygon(node, points, point);
   };
-
   return shapeSvg;
 }
-
 function rect_left_inv_arrow(parent, bbox, node) {
   var w = bbox.width;
   var h = bbox.height;
@@ -8800,14 +8351,11 @@ function rect_left_inv_arrow(parent, bbox, node) {
     y: -h / 2
   }];
   var shapeSvg = insertPolygonShape(parent, w, h, points);
-
   node.intersect = function (point) {
     return dagre_d3__WEBPACK_IMPORTED_MODULE_0___default.a.intersect.polygon(node, points, point);
   };
-
   return shapeSvg;
 }
-
 function lean_right(parent, bbox, node) {
   var w = bbox.width;
   var h = bbox.height;
@@ -8825,14 +8373,11 @@ function lean_right(parent, bbox, node) {
     y: -h
   }];
   var shapeSvg = insertPolygonShape(parent, w, h, points);
-
   node.intersect = function (point) {
     return dagre_d3__WEBPACK_IMPORTED_MODULE_0___default.a.intersect.polygon(node, points, point);
   };
-
   return shapeSvg;
 }
-
 function lean_left(parent, bbox, node) {
   var w = bbox.width;
   var h = bbox.height;
@@ -8850,14 +8395,11 @@ function lean_left(parent, bbox, node) {
     y: -h
   }];
   var shapeSvg = insertPolygonShape(parent, w, h, points);
-
   node.intersect = function (point) {
     return dagre_d3__WEBPACK_IMPORTED_MODULE_0___default.a.intersect.polygon(node, points, point);
   };
-
   return shapeSvg;
 }
-
 function trapezoid(parent, bbox, node) {
   var w = bbox.width;
   var h = bbox.height;
@@ -8875,14 +8417,11 @@ function trapezoid(parent, bbox, node) {
     y: -h
   }];
   var shapeSvg = insertPolygonShape(parent, w, h, points);
-
   node.intersect = function (point) {
     return dagre_d3__WEBPACK_IMPORTED_MODULE_0___default.a.intersect.polygon(node, points, point);
   };
-
   return shapeSvg;
 }
-
 function inv_trapezoid(parent, bbox, node) {
   var w = bbox.width;
   var h = bbox.height;
@@ -8900,14 +8439,11 @@ function inv_trapezoid(parent, bbox, node) {
     y: -h
   }];
   var shapeSvg = insertPolygonShape(parent, w, h, points);
-
   node.intersect = function (point) {
     return dagre_d3__WEBPACK_IMPORTED_MODULE_0___default.a.intersect.polygon(node, points, point);
   };
-
   return shapeSvg;
 }
-
 function rect_right_inv_arrow(parent, bbox, node) {
   var w = bbox.width;
   var h = bbox.height;
@@ -8928,26 +8464,20 @@ function rect_right_inv_arrow(parent, bbox, node) {
     y: -h
   }];
   var shapeSvg = insertPolygonShape(parent, w, h, points);
-
   node.intersect = function (point) {
     return dagre_d3__WEBPACK_IMPORTED_MODULE_0___default.a.intersect.polygon(node, points, point);
   };
-
   return shapeSvg;
 }
-
 function stadium(parent, bbox, node) {
   var h = bbox.height;
   var w = bbox.width + h / 4;
   var shapeSvg = parent.insert('rect', ':first-child').attr('rx', h / 2).attr('ry', h / 2).attr('x', -w / 2).attr('y', -h / 2).attr('width', w).attr('height', h);
-
   node.intersect = function (point) {
     return dagre_d3__WEBPACK_IMPORTED_MODULE_0___default.a.intersect.rect(node, point);
   };
-
   return shapeSvg;
 }
-
 function subroutine(parent, bbox, node) {
   var w = bbox.width;
   var h = bbox.height;
@@ -8983,14 +8513,11 @@ function subroutine(parent, bbox, node) {
     y: 0
   }];
   var shapeSvg = insertPolygonShape(parent, w, h, points);
-
   node.intersect = function (point) {
     return dagre_d3__WEBPACK_IMPORTED_MODULE_0___default.a.intersect.polygon(node, points, point);
   };
-
   return shapeSvg;
 }
-
 function cylinder(parent, bbox, node) {
   var w = bbox.width;
   var rx = w / 2;
@@ -8998,11 +8525,9 @@ function cylinder(parent, bbox, node) {
   var h = bbox.height + ry;
   var shape = 'M 0,' + ry + ' a ' + rx + ',' + ry + ' 0,0,0 ' + w + ' 0 a ' + rx + ',' + ry + ' 0,0,0 ' + -w + ' 0 l 0,' + h + ' a ' + rx + ',' + ry + ' 0,0,0 ' + w + ' 0 l 0,' + -h;
   var shapeSvg = parent.attr('label-offset-y', ry).insert('path', ':first-child').attr('d', shape).attr('transform', 'translate(' + -w / 2 + ',' + -(h / 2 + ry) + ')');
-
   node.intersect = function (point) {
     var pos = dagre_d3__WEBPACK_IMPORTED_MODULE_0___default.a.intersect.rect(node, point);
     var x = pos.x - node.x;
-
     if (rx != 0 && (Math.abs(x) < node.width / 2 || Math.abs(x) == node.width / 2 && Math.abs(pos.y - node.y) > node.height / 2 - ry)) {
       // ellipsis equation: x*x / a*a + y*y / b*b = 1
       // solve for y to get adjustion value for pos.y
@@ -9012,30 +8537,33 @@ function cylinder(parent, bbox, node) {
       if (point.y - node.y > 0) y = -y;
       pos.y += y;
     }
-
     return pos;
   };
-
   return shapeSvg;
 }
-
 function addToRender(render) {
   render.shapes().question = question;
   render.shapes().hexagon = hexagon;
   render.shapes().stadium = stadium;
   render.shapes().subroutine = subroutine;
-  render.shapes().cylinder = cylinder; // Add custom shape for box with inverted arrow on left side
+  render.shapes().cylinder = cylinder;
 
-  render.shapes().rect_left_inv_arrow = rect_left_inv_arrow; // Add custom shape for box with inverted arrow on left side
+  // Add custom shape for box with inverted arrow on left side
+  render.shapes().rect_left_inv_arrow = rect_left_inv_arrow;
 
-  render.shapes().lean_right = lean_right; // Add custom shape for box with inverted arrow on left side
+  // Add custom shape for box with inverted arrow on left side
+  render.shapes().lean_right = lean_right;
 
-  render.shapes().lean_left = lean_left; // Add custom shape for box with inverted arrow on left side
+  // Add custom shape for box with inverted arrow on left side
+  render.shapes().lean_left = lean_left;
 
-  render.shapes().trapezoid = trapezoid; // Add custom shape for box with inverted arrow on left side
+  // Add custom shape for box with inverted arrow on left side
+  render.shapes().trapezoid = trapezoid;
 
-  render.shapes().inv_trapezoid = inv_trapezoid; // Add custom shape for box with inverted arrow on right side
+  // Add custom shape for box with inverted arrow on left side
+  render.shapes().inv_trapezoid = inv_trapezoid;
 
+  // Add custom shape for box with inverted arrow on right side
   render.shapes().rect_right_inv_arrow = rect_right_inv_arrow;
 }
 function addToRenderV2(addShape) {
@@ -9053,39 +8581,43 @@ function addToRenderV2(addShape) {
   });
   addShape({
     cylinder: cylinder
-  }); // Add custom shape for box with inverted arrow on left side
+  });
 
+  // Add custom shape for box with inverted arrow on left side
   addShape({
     rect_left_inv_arrow: rect_left_inv_arrow
-  }); // Add custom shape for box with inverted arrow on left side
+  });
 
+  // Add custom shape for box with inverted arrow on left side
   addShape({
     lean_right: lean_right
-  }); // Add custom shape for box with inverted arrow on left side
+  });
 
+  // Add custom shape for box with inverted arrow on left side
   addShape({
     lean_left: lean_left
-  }); // Add custom shape for box with inverted arrow on left side
+  });
 
+  // Add custom shape for box with inverted arrow on left side
   addShape({
     trapezoid: trapezoid
-  }); // Add custom shape for box with inverted arrow on left side
+  });
 
+  // Add custom shape for box with inverted arrow on left side
   addShape({
     inv_trapezoid: inv_trapezoid
-  }); // Add custom shape for box with inverted arrow on right side
+  });
 
+  // Add custom shape for box with inverted arrow on right side
   addShape({
     rect_right_inv_arrow: rect_right_inv_arrow
   });
 }
-
 function insertPolygonShape(parent, w, h, points) {
   return parent.insert('polygon', ':first-child').attr('points', points.map(function (d) {
     return d.x + ',' + d.y;
   }).join(' ')).attr('transform', 'translate(' + -w / 2 + ',' + h / 2 + ')');
 }
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   addToRender: addToRender,
   addToRenderV2: addToRenderV2
@@ -9135,20 +8667,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/common */ "./src/diagrams/common/common.js");
 /* harmony import */ var _mermaidAPI__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../mermaidAPI */ "./src/mermaidAPI.js");
 /* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../logger */ "./src/logger.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
 
 
@@ -9168,29 +8693,28 @@ var subCount = 0;
 var firstGraphFlag = true;
 var direction;
 var version; // As in graph
-// Functions to be run after graph rendering
 
+// Functions to be run after graph rendering
 var funs = [];
 var parseDirective = function parseDirective(statement, context, type) {
   _mermaidAPI__WEBPACK_IMPORTED_MODULE_4__["default"].parseDirective(this, statement, context, type);
 };
+
 /**
  * Function to lookup domId from id in the graph definition.
  * @param id
  * @public
  */
-
 var lookUpDomId = function lookUpDomId(id) {
   var veritceKeys = Object.keys(vertices);
-
   for (var i = 0; i < veritceKeys.length; i++) {
     if (vertices[veritceKeys[i]].id === id) {
       return vertices[veritceKeys[i]].domId;
     }
   }
-
   return id;
 };
+
 /**
  * Function called by parser when a node definition has been found
  * @param id
@@ -9199,19 +8723,17 @@ var lookUpDomId = function lookUpDomId(id) {
  * @param style
  * @param classes
  */
-
 var addVertex = function addVertex(_id, text, type, style, classes, dir) {
   var txt;
   var id = _id;
-
   if (typeof id === 'undefined') {
     return;
   }
-
   if (id.trim().length === 0) {
     return;
-  } // if (id[0].match(/\d/)) id = MERMAID_DOM_ID_PREFIX + id;
+  }
 
+  // if (id[0].match(/\d/)) id = MERMAID_DOM_ID_PREFIX + id;
 
   if (typeof vertices[id] === 'undefined') {
     vertices[id] = {
@@ -9221,28 +8743,24 @@ var addVertex = function addVertex(_id, text, type, style, classes, dir) {
       classes: []
     };
   }
-
   vertexCounter++;
-
   if (typeof text !== 'undefined') {
     config = _config__WEBPACK_IMPORTED_MODULE_2__["getConfig"]();
-    txt = _common_common__WEBPACK_IMPORTED_MODULE_3__["default"].sanitizeText(text.trim(), config); // strip quotes if string starts and ends with a quote
+    txt = _common_common__WEBPACK_IMPORTED_MODULE_3__["default"].sanitizeText(text.trim(), config);
 
+    // strip quotes if string starts and ends with a quote
     if (txt[0] === '"' && txt[txt.length - 1] === '"') {
       txt = txt.substring(1, txt.length - 1);
     }
-
     vertices[id].text = txt;
   } else {
     if (typeof vertices[id].text === 'undefined') {
       vertices[id].text = _id;
     }
   }
-
   if (typeof type !== 'undefined') {
     vertices[id].type = type;
   }
-
   if (typeof style !== 'undefined') {
     if (style !== null) {
       style.forEach(function (s) {
@@ -9250,7 +8768,6 @@ var addVertex = function addVertex(_id, text, type, style, classes, dir) {
       });
     }
   }
-
   if (typeof classes !== 'undefined') {
     if (classes !== null) {
       classes.forEach(function (s) {
@@ -9258,11 +8775,11 @@ var addVertex = function addVertex(_id, text, type, style, classes, dir) {
       });
     }
   }
-
   if (typeof dir !== 'undefined') {
     vertices[id].dir = dir;
   }
 };
+
 /**
  * Function called by parser when a link/edge definition has been found
  * @param start
@@ -9270,10 +8787,10 @@ var addVertex = function addVertex(_id, text, type, style, classes, dir) {
  * @param type
  * @param linktext
  */
-
 var addSingleLink = function addSingleLink(_start, _end, type, linktext) {
   var start = _start;
-  var end = _end; // if (start[0].match(/\d/)) start = MERMAID_DOM_ID_PREFIX + start;
+  var end = _end;
+  // if (start[0].match(/\d/)) start = MERMAID_DOM_ID_PREFIX + start;
   // if (end[0].match(/\d/)) end = MERMAID_DOM_ID_PREFIX + end;
   // log.info('Got edge...', start, end);
 
@@ -9284,38 +8801,35 @@ var addSingleLink = function addSingleLink(_start, _end, type, linktext) {
     text: ''
   };
   linktext = type.text;
-
   if (typeof linktext !== 'undefined') {
-    edge.text = _common_common__WEBPACK_IMPORTED_MODULE_3__["default"].sanitizeText(linktext.trim(), config); // strip quotes if string starts and exnds with a quote
+    edge.text = _common_common__WEBPACK_IMPORTED_MODULE_3__["default"].sanitizeText(linktext.trim(), config);
 
+    // strip quotes if string starts and exnds with a quote
     if (edge.text[0] === '"' && edge.text[edge.text.length - 1] === '"') {
       edge.text = edge.text.substring(1, edge.text.length - 1);
     }
   }
-
   if (typeof type !== 'undefined') {
     edge.type = type.type;
     edge.stroke = type.stroke;
     edge.length = type.length;
   }
-
   edges.push(edge);
 };
 var addLink = function addLink(_start, _end, type, linktext) {
   var i, j;
-
   for (i = 0; i < _start.length; i++) {
     for (j = 0; j < _end.length; j++) {
       addSingleLink(_start[i], _end[j], type, linktext);
     }
   }
 };
+
 /**
  * Updates a link's line interpolation algorithm
  * @param pos
  * @param interpolate
  */
-
 var updateLinkInterpolate = function updateLinkInterpolate(positions, interp) {
   positions.forEach(function (pos) {
     if (pos === 'default') {
@@ -9325,12 +8839,12 @@ var updateLinkInterpolate = function updateLinkInterpolate(positions, interp) {
     }
   });
 };
+
 /**
  * Updates a link with a style
  * @param pos
  * @param style
  */
-
 var updateLink = function updateLink(positions, style) {
   positions.forEach(function (pos) {
     if (pos === 'default') {
@@ -9339,7 +8853,6 @@ var updateLink = function updateLink(positions, style) {
       if (_utils__WEBPACK_IMPORTED_MODULE_1__["default"].isSubstringInArray('fill', style) === -1) {
         style.push('fill:none');
       }
-
       edges[pos].style = style;
     }
   });
@@ -9352,7 +8865,6 @@ var addClass = function addClass(id, style) {
       textStyles: []
     };
   }
-
   if (typeof style !== 'undefined') {
     if (style !== null) {
       style.forEach(function (s) {
@@ -9361,57 +8873,50 @@ var addClass = function addClass(id, style) {
           var newStyle2 = newStyle1.replace('color', 'fill');
           classes[id].textStyles.push(newStyle2);
         }
-
         classes[id].styles.push(s);
       });
     }
   }
 };
+
 /**
  * Called by parser when a graph definition is found, stores the direction of the chart.
  * @param dir
  */
-
 var setDirection = function setDirection(dir) {
   direction = dir;
-
   if (direction.match(/.*</)) {
     direction = 'RL';
   }
-
   if (direction.match(/.*\^/)) {
     direction = 'BT';
   }
-
   if (direction.match(/.*>/)) {
     direction = 'LR';
   }
-
   if (direction.match(/.*v/)) {
     direction = 'TB';
   }
 };
+
 /**
  * Called by parser when a special node is found, e.g. a clickable element.
  * @param ids Comma separated list of ids
  * @param className Class to add
  */
-
 var setClass = function setClass(ids, className) {
   ids.split(',').forEach(function (_id) {
     // let id = version === 'gen-2' ? lookUpDomId(_id) : _id;
-    var id = _id; // if (_id[0].match(/\d/)) id = MERMAID_DOM_ID_PREFIX + id;
-
+    var id = _id;
+    // if (_id[0].match(/\d/)) id = MERMAID_DOM_ID_PREFIX + id;
     if (typeof vertices[id] !== 'undefined') {
       vertices[id].classes.push(className);
     }
-
     if (typeof subGraphLookup[id] !== 'undefined') {
       subGraphLookup[id].classes.push(className);
     }
   });
 };
-
 var setTooltip = function setTooltip(ids, tooltip) {
   ids.split(',').forEach(function (id) {
     if (typeof tooltip !== 'undefined') {
@@ -9419,49 +8924,38 @@ var setTooltip = function setTooltip(ids, tooltip) {
     }
   });
 };
-
 var setClickFun = function setClickFun(id, functionName, functionArgs) {
-  var domId = lookUpDomId(id); // if (_id[0].match(/\d/)) id = MERMAID_DOM_ID_PREFIX + id;
-
+  var domId = lookUpDomId(id);
+  // if (_id[0].match(/\d/)) id = MERMAID_DOM_ID_PREFIX + id;
   if (_config__WEBPACK_IMPORTED_MODULE_2__["getConfig"]().securityLevel !== 'loose') {
     return;
   }
-
   if (typeof functionName === 'undefined') {
     return;
   }
-
   var argList = [];
-
   if (typeof functionArgs === 'string') {
     /* Splits functionArgs by ',', ignoring all ',' in double quoted strings */
     argList = functionArgs.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
-
     for (var i = 0; i < argList.length; i++) {
       var item = argList[i].trim();
       /* Removes all double quotes at the start and end of an argument */
-
       /* This preserves all starting and ending whitespace inside */
-
       if (item.charAt(0) === '"' && item.charAt(item.length - 1) === '"') {
         item = item.substr(1, item.length - 2);
       }
-
       argList[i] = item;
     }
   }
+
   /* if no arguments passed into callback, default to passing in id */
-
-
   if (argList.length === 0) {
     argList.push(id);
   }
-
   if (typeof vertices[id] !== 'undefined') {
     vertices[id].haveCallback = true;
     funs.push(function () {
       var elem = document.querySelector("[id=\"".concat(domId, "\"]"));
-
       if (elem !== null) {
         elem.addEventListener('click', function () {
           _utils__WEBPACK_IMPORTED_MODULE_1__["default"].runFunc.apply(_utils__WEBPACK_IMPORTED_MODULE_1__["default"], [functionName].concat(_toConsumableArray(argList)));
@@ -9470,13 +8964,12 @@ var setClickFun = function setClickFun(id, functionName, functionArgs) {
     });
   }
 };
+
 /**
  * Called by parser when a link is found. Adds the URL to the vertex data.
  * @param ids Comma separated list of ids
  * @param linkStr URL to create a link for
  */
-
-
 var setLink = function setLink(ids, linkStr, target) {
   ids.split(',').forEach(function (id) {
     if (typeof vertices[id] !== 'undefined') {
@@ -9489,13 +8982,13 @@ var setLink = function setLink(ids, linkStr, target) {
 var getTooltip = function getTooltip(id) {
   return tooltips[id];
 };
+
 /**
  * Called by parser when a click definition is found. Registers an event handler.
  * @param ids Comma separated list of ids
  * @param functionName Function to be called on click
  * @param tooltip Tooltip for the clickable element
  */
-
 var setClickEvent = function setClickEvent(ids, functionName, functionArgs) {
   ids.split(',').forEach(function (id) {
     setClickFun(id, functionName, functionArgs);
@@ -9514,44 +9007,40 @@ var getDirection = function getDirection() {
  * Retrieval function for fetching the found nodes after parsing has completed.
  * @returns {{}|*|vertices}
  */
-
 var getVertices = function getVertices() {
   return vertices;
 };
+
 /**
  * Retrieval function for fetching the found links after parsing has completed.
  * @returns {{}|*|edges}
  */
-
 var getEdges = function getEdges() {
   return edges;
 };
+
 /**
  * Retrieval function for fetching the found class definitions after parsing has completed.
  * @returns {{}|*|classes}
  */
-
 var getClasses = function getClasses() {
   return classes;
 };
-
 var setupToolTips = function setupToolTips(element) {
   var tooltipElem = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('.mermaidTooltip');
-
   if ((tooltipElem._groups || tooltipElem)[0][0] === null) {
     tooltipElem = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('body').append('div').attr('class', 'mermaidTooltip').style('opacity', 0);
   }
-
   var svg = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(element).select('svg');
   var nodes = svg.selectAll('g.node');
   nodes.on('mouseover', function () {
     var el = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(this);
-    var title = el.attr('title'); // Dont try to draw a tooltip if no data is provided
+    var title = el.attr('title');
 
+    // Dont try to draw a tooltip if no data is provided
     if (title === null) {
       return;
     }
-
     var rect = this.getBoundingClientRect();
     tooltipElem.transition().duration(200).style('opacity', '.9');
     tooltipElem.html(el.attr('title')).style('left', window.scrollX + rect.left + (rect.right - rect.left) / 2 + 'px').style('top', window.scrollY + rect.top - 14 + document.body.scrollTop + 'px');
@@ -9562,12 +9051,11 @@ var setupToolTips = function setupToolTips(element) {
     el.classed('hover', false);
   });
 };
-
 funs.push(setupToolTips);
+
 /**
  * Clears the internal graph db so that a new graph can be parsed.
  */
-
 var clear = function clear(ver) {
   vertices = {};
   classes = {};
@@ -9588,24 +9076,20 @@ var setGen = function setGen(ver) {
  *
  * @returns {string}
  */
-
 var defaultStyle = function defaultStyle() {
   return 'fill:#ffa;stroke: #f66; stroke-width: 3px; stroke-dasharray: 5, 5;fill:#ffa;stroke: #666;';
 };
+
 /**
  * Clears the internal graph db so that a new graph can be parsed.
  */
-
 var addSubGraph = function addSubGraph(_id, list, _title) {
   // console.log('addSubGraph', _id, list, _title);
   var id = _id.trim();
-
   var title = _title;
-
   if (_id === _title && _title.match(/\s/)) {
     id = undefined;
   }
-
   function uniq(a) {
     var prims = {
       boolean: {},
@@ -9614,19 +9098,15 @@ var addSubGraph = function addSubGraph(_id, list, _title) {
     };
     var objs = [];
     var dir; //  = unbdefined; direction.trim();
-
     var nodeList = a.filter(function (item) {
       var type = _typeof(item);
-
       if (item.stmt && item.stmt === 'dir') {
         dir = item.value;
         return false;
       }
-
       if (item.trim() === '') {
         return false;
       }
-
       if (type in prims) {
         return prims[type].hasOwnProperty(item) ? false : prims[type][item] = true; // eslint-disable-line
       } else {
@@ -9638,25 +9118,19 @@ var addSubGraph = function addSubGraph(_id, list, _title) {
       dir: dir
     };
   }
-
   var nodeList = [];
-
   var _uniq = uniq(nodeList.concat.apply(nodeList, list)),
-      nl = _uniq.nodeList,
-      dir = _uniq.dir;
-
+    nl = _uniq.nodeList,
+    dir = _uniq.dir;
   nodeList = nl;
-
   if (version === 'gen-1') {
     _logger__WEBPACK_IMPORTED_MODULE_5__["log"].warn('LOOKING UP');
-
     for (var i = 0; i < nodeList.length; i++) {
       nodeList[i] = lookUpDomId(nodeList[i]);
     }
   }
-
-  id = id || 'subGraph' + subCount; // if (id[0].match(/\d/)) id = lookUpDomId(id);
-
+  id = id || 'subGraph' + subCount;
+  // if (id[0].match(/\d/)) id = lookUpDomId(id);
   title = title || '';
   title = _common_common__WEBPACK_IMPORTED_MODULE_3__["default"].sanitizeText(title, config);
   subCount = subCount + 1;
@@ -9668,6 +9142,7 @@ var addSubGraph = function addSubGraph(_id, list, _title) {
     dir: dir
   };
   _logger__WEBPACK_IMPORTED_MODULE_5__["log"].info('Adding', subGraph.id, subGraph.nodes, subGraph.dir);
+
   /**
    * Deletes an id from all subgraphs
    */
@@ -9679,55 +9154,47 @@ var addSubGraph = function addSubGraph(_id, list, _title) {
   //     }
   //   });
   // };
+
   // // Removes the members of this subgraph from any other subgraphs, a node only belong to one subgraph
   // subGraph.nodes.forEach(_id => del(_id));
-  // Remove the members in the new subgraph if they already belong to another subgraph
 
+  // Remove the members in the new subgraph if they already belong to another subgraph
   subGraph.nodes = makeUniq(subGraph, subGraphs).nodes;
   subGraphs.push(subGraph);
   subGraphLookup[id] = subGraph;
   return id;
 };
-
 var getPosForId = function getPosForId(id) {
   for (var i = 0; i < subGraphs.length; i++) {
     if (subGraphs[i].id === id) {
       return i;
     }
   }
-
   return -1;
 };
-
 var secCount = -1;
 var posCrossRef = [];
-
 var indexNodes2 = function indexNodes2(id, pos) {
   var nodes = subGraphs[pos].nodes;
   secCount = secCount + 1;
-
   if (secCount > 2000) {
     return;
   }
-
-  posCrossRef[secCount] = pos; // Check if match
-
+  posCrossRef[secCount] = pos;
+  // Check if match
   if (subGraphs[pos].id === id) {
     return {
       result: true,
       count: 0
     };
   }
-
   var count = 0;
   var posCount = 1;
-
   while (count < nodes.length) {
-    var childPos = getPosForId(nodes[count]); // Ignore regular nodes (pos will be -1)
-
+    var childPos = getPosForId(nodes[count]);
+    // Ignore regular nodes (pos will be -1)
     if (childPos >= 0) {
       var res = indexNodes2(id, childPos);
-
       if (res.result) {
         return {
           result: true,
@@ -9737,22 +9204,18 @@ var indexNodes2 = function indexNodes2(id, pos) {
         posCount = posCount + res.count;
       }
     }
-
     count = count + 1;
   }
-
   return {
     result: false,
     count: posCount
   };
 };
-
 var getDepthFirstPos = function getDepthFirstPos(pos) {
   return posCrossRef[pos];
 };
 var indexNodes = function indexNodes() {
   secCount = -1;
-
   if (subGraphs.length > 0) {
     indexNodes2('none', subGraphs.length - 1, 0);
   }
@@ -9765,134 +9228,101 @@ var firstGraph = function firstGraph() {
     firstGraphFlag = false;
     return true;
   }
-
   return false;
 };
-
 var destructStartLink = function destructStartLink(_str) {
   var str = _str.trim();
-
   var type = 'arrow_open';
-
   switch (str[0]) {
     case '<':
       type = 'arrow_point';
       str = str.slice(1);
       break;
-
     case 'x':
       type = 'arrow_cross';
       str = str.slice(1);
       break;
-
     case 'o':
       type = 'arrow_circle';
       str = str.slice(1);
       break;
   }
-
   var stroke = 'normal';
-
   if (str.indexOf('=') !== -1) {
     stroke = 'thick';
   }
-
   if (str.indexOf('.') !== -1) {
     stroke = 'dotted';
   }
-
   return {
     type: type,
     stroke: stroke
   };
 };
-
 var countChar = function countChar(char, str) {
   var length = str.length;
   var count = 0;
-
   for (var i = 0; i < length; ++i) {
     if (str[i] === char) {
       ++count;
     }
   }
-
   return count;
 };
-
 var destructEndLink = function destructEndLink(_str) {
   var str = _str.trim();
-
   var line = str.slice(0, -1);
   var type = 'arrow_open';
-
   switch (str.slice(-1)) {
     case 'x':
       type = 'arrow_cross';
-
       if (str[0] === 'x') {
         type = 'double_' + type;
         line = line.slice(1);
       }
-
       break;
-
     case '>':
       type = 'arrow_point';
-
       if (str[0] === '<') {
         type = 'double_' + type;
         line = line.slice(1);
       }
-
       break;
-
     case 'o':
       type = 'arrow_circle';
-
       if (str[0] === 'o') {
         type = 'double_' + type;
         line = line.slice(1);
       }
-
       break;
   }
-
   var stroke = 'normal';
   var length = line.length - 1;
-
   if (line[0] === '=') {
     stroke = 'thick';
   }
-
   var dots = countChar('.', line);
-
   if (dots) {
     stroke = 'dotted';
     length = dots;
   }
-
   return {
     type: type,
     stroke: stroke,
     length: length
   };
 };
-
 var destructLink = function destructLink(_str, _startStr) {
   var info = destructEndLink(_str);
   var startInfo;
-
   if (_startStr) {
     startInfo = destructStartLink(_startStr);
-
     if (startInfo.stroke !== info.stroke) {
       return {
         type: 'INVALID',
         stroke: 'INVALID'
       };
     }
-
     if (startInfo.type === 'arrow_open') {
       // -- xyz -->  - take arrow type from ending
       startInfo.type = info.type;
@@ -9904,24 +9334,20 @@ var destructLink = function destructLink(_str, _startStr) {
       };
       startInfo.type = 'double_' + startInfo.type;
     }
-
     if (startInfo.type === 'double_arrow') {
       startInfo.type = 'double_arrow_point';
     }
-
     startInfo.length = info.length;
     return startInfo;
   }
-
   return info;
-}; // Todo optimizer this by caching existing nodes
+};
 
-
+// Todo optimizer this by caching existing nodes
 var exists = function exists(allSgs, _id) {
   var res = false;
   allSgs.forEach(function (sg) {
     var pos = sg.nodes.indexOf(_id);
-
     if (pos >= 0) {
       res = true;
     }
@@ -9931,8 +9357,6 @@ var exists = function exists(allSgs, _id) {
 /**
  * Deletes an id from all subgraphs
  */
-
-
 var makeUniq = function makeUniq(sg, allSubgraphs) {
   var res = [];
   sg.nodes.forEach(function (_id, pos) {
@@ -9944,7 +9368,6 @@ var makeUniq = function makeUniq(sg, allSubgraphs) {
     nodes: res
   };
 };
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   parseDirective: parseDirective,
   defaultConfig: function defaultConfig() {
@@ -10025,40 +9448,39 @@ __webpack_require__.r(__webpack_exports__);
 var conf = {};
 var setConf = function setConf(cnf) {
   var keys = Object.keys(cnf);
-
   for (var i = 0; i < keys.length; i++) {
     conf[keys[i]] = cnf[keys[i]];
   }
 };
+
 /**
  * Function that adds the vertices found during parsing to the graph to be rendered.
  * @param vert Object containing the vertices.
  * @param g The graph that is to be drawn.
  */
-
 var addVertices = function addVertices(vert, g, svgId) {
   var svg = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])("[id=\"".concat(svgId, "\"]"));
-  var keys = Object.keys(vert); // Iterate through each item in the vertex object (containing all the vertices found) in the graph definition
+  var keys = Object.keys(vert);
 
+  // Iterate through each item in the vertex object (containing all the vertices found) in the graph definition
   keys.forEach(function (id) {
     var vertex = vert[id];
+
     /**
      * Variable for storing the classes for the vertex
      * @type {string}
      */
-
     var classStr = 'default';
-
     if (vertex.classes.length > 0) {
       classStr = vertex.classes.join(' ');
     }
+    var styles = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["getStylesFromArray"])(vertex.styles);
 
-    var styles = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["getStylesFromArray"])(vertex.styles); // Use vertex id as text in the box if no text is provided by the graph definition
+    // Use vertex id as text in the box if no text is provided by the graph definition
+    var vertexText = vertex.text !== undefined ? vertex.text : vertex.id;
 
-    var vertexText = vertex.text !== undefined ? vertex.text : vertex.id; // We create a SVG label, either by delegating to addHtmlLabel or manually
-
+    // We create a SVG label, either by delegating to addHtmlLabel or manually
     var vertexNode;
-
     if (Object(_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels)) {
       // TODO: addHtmlLabel accepts a labelStyle. Do we possibly have that?
       var node = {
@@ -10072,7 +9494,6 @@ var addVertices = function addVertices(vert, g, svgId) {
       var svgLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
       svgLabel.setAttribute('style', styles.labelStyle.replace('color:', 'fill:'));
       var rows = vertexText.split(_common_common__WEBPACK_IMPORTED_MODULE_8__["default"].lineBreakRegex);
-
       for (var j = 0; j < rows.length; j++) {
         var tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
         tspan.setAttributeNS('http://www.w3.org/XML/1998/namespace', 'xml:space', 'preserve');
@@ -10081,84 +9502,65 @@ var addVertices = function addVertices(vert, g, svgId) {
         tspan.textContent = rows[j];
         svgLabel.appendChild(tspan);
       }
-
       vertexNode = svgLabel;
     }
-
     var radious = 0;
-    var _shape = ''; // Set the shape based parameters
-
+    var _shape = '';
+    // Set the shape based parameters
     switch (vertex.type) {
       case 'round':
         radious = 5;
         _shape = 'rect';
         break;
-
       case 'square':
         _shape = 'rect';
         break;
-
       case 'diamond':
         _shape = 'question';
         break;
-
       case 'hexagon':
         _shape = 'hexagon';
         break;
-
       case 'odd':
         _shape = 'rect_left_inv_arrow';
         break;
-
       case 'lean_right':
         _shape = 'lean_right';
         break;
-
       case 'lean_left':
         _shape = 'lean_left';
         break;
-
       case 'trapezoid':
         _shape = 'trapezoid';
         break;
-
       case 'inv_trapezoid':
         _shape = 'inv_trapezoid';
         break;
-
       case 'odd_right':
         _shape = 'rect_left_inv_arrow';
         break;
-
       case 'circle':
         _shape = 'circle';
         break;
-
       case 'ellipse':
         _shape = 'ellipse';
         break;
-
       case 'stadium':
         _shape = 'stadium';
         break;
-
       case 'subroutine':
         _shape = 'subroutine';
         break;
-
       case 'cylinder':
         _shape = 'cylinder';
         break;
-
       case 'group':
         _shape = 'rect';
         break;
-
       default:
         _shape = 'rect';
-    } // Add the node
-
-
+    }
+    // Add the node
     g.setNode(vertex.id, {
       labelStyle: styles.labelStyle,
       shape: _shape,
@@ -10195,30 +9597,29 @@ var addVertices = function addVertices(vert, g, svgId) {
     });
   });
 };
+
 /**
  * Add edges to graph based on parsed graph defninition
  * @param {Object} edges The edges to add to the graph
  * @param {Object} g The graph object
  */
-
 var addEdges = function addEdges(edges, g) {
   _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info('abc78 edges = ', edges);
   var cnt = 0;
   var linkIdCnt = {};
   var defaultStyle;
   var defaultLabelStyle;
-
   if (typeof edges.defaultStyle !== 'undefined') {
     var defaultStyles = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["getStylesFromArray"])(edges.defaultStyle);
     defaultStyle = defaultStyles.style;
     defaultLabelStyle = defaultStyles.labelStyle;
   }
-
   edges.forEach(function (edge) {
-    cnt++; // Identify Link
+    cnt++;
 
-    var linkIdBase = 'L-' + edge.start + '-' + edge.end; // count the links from+to the same node to give unique id
-
+    // Identify Link
+    var linkIdBase = 'L-' + edge.start + '-' + edge.end;
+    // count the links from+to the same node to give unique id
     if (typeof linkIdCnt[linkIdBase] === 'undefined') {
       linkIdCnt[linkIdBase] = 0;
       _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info('abc78 new entry', linkIdBase, linkIdCnt[linkIdBase]);
@@ -10226,7 +9627,6 @@ var addEdges = function addEdges(edges, g) {
       linkIdCnt[linkIdBase]++;
       _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info('abc78 new entry', linkIdBase, linkIdCnt[linkIdBase]);
     }
-
     var linkId = linkIdBase + '-' + linkIdCnt[linkIdBase];
     _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info('abc78 new link id to be used is', linkIdBase, linkId, linkIdCnt[linkIdBase]);
     var linkNameStart = 'LS-' + edge.start;
@@ -10235,84 +9635,70 @@ var addEdges = function addEdges(edges, g) {
       style: '',
       labelStyle: ''
     };
-    edgeData.minlen = edge.length || 1; //edgeData.id = 'id' + cnt;
-    // Set link type for rendering
+    edgeData.minlen = edge.length || 1;
+    //edgeData.id = 'id' + cnt;
 
+    // Set link type for rendering
     if (edge.type === 'arrow_open') {
       edgeData.arrowhead = 'none';
     } else {
       edgeData.arrowhead = 'normal';
-    } // Check of arrow types, placed here in order not to break old rendering
+    }
 
-
+    // Check of arrow types, placed here in order not to break old rendering
     edgeData.arrowTypeStart = 'arrow_open';
     edgeData.arrowTypeEnd = 'arrow_open';
-    /* eslint-disable no-fallthrough */
 
+    /* eslint-disable no-fallthrough */
     switch (edge.type) {
       case 'double_arrow_cross':
         edgeData.arrowTypeStart = 'arrow_cross';
-
       case 'arrow_cross':
         edgeData.arrowTypeEnd = 'arrow_cross';
         break;
-
       case 'double_arrow_point':
         edgeData.arrowTypeStart = 'arrow_point';
-
       case 'arrow_point':
         edgeData.arrowTypeEnd = 'arrow_point';
         break;
-
       case 'double_arrow_circle':
         edgeData.arrowTypeStart = 'arrow_circle';
-
       case 'arrow_circle':
         edgeData.arrowTypeEnd = 'arrow_circle';
         break;
     }
-
     var style = '';
     var labelStyle = '';
-
     switch (edge.stroke) {
       case 'normal':
         style = 'fill:none;';
-
         if (typeof defaultStyle !== 'undefined') {
           style = defaultStyle;
         }
-
         if (typeof defaultLabelStyle !== 'undefined') {
           labelStyle = defaultLabelStyle;
         }
-
         edgeData.thickness = 'normal';
         edgeData.pattern = 'solid';
         break;
-
       case 'dotted':
         edgeData.thickness = 'normal';
         edgeData.pattern = 'dotted';
         edgeData.style = 'fill:none;stroke-width:2px;stroke-dasharray:3;';
         break;
-
       case 'thick':
         edgeData.thickness = 'thick';
         edgeData.pattern = 'solid';
         edgeData.style = 'stroke-width: 3.5px;fill:none;';
         break;
     }
-
     if (typeof edge.style !== 'undefined') {
       var styles = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["getStylesFromArray"])(edge.style);
       style = styles.style;
       labelStyle = styles.labelStyle;
     }
-
     edgeData.style = edgeData.style += style;
     edgeData.labelStyle = edgeData.labelStyle += labelStyle;
-
     if (typeof edge.interpolate !== 'undefined') {
       edgeData.curve = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["interpolateToCurve"])(edge.interpolate, d3__WEBPACK_IMPORTED_MODULE_1__["curveLinear"]);
     } else if (typeof edges.defaultInterpolate !== 'undefined') {
@@ -10320,7 +9706,6 @@ var addEdges = function addEdges(edges, g) {
     } else {
       edgeData.curve = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["interpolateToCurve"])(conf.curve, d3__WEBPACK_IMPORTED_MODULE_1__["curveLinear"]);
     }
-
     if (typeof edge.text === 'undefined') {
       if (typeof edge.style !== 'undefined') {
         edgeData.arrowheadStyle = 'fill: #333';
@@ -10328,48 +9713,46 @@ var addEdges = function addEdges(edges, g) {
     } else {
       edgeData.arrowheadStyle = 'fill: #333';
       edgeData.labelpos = 'c';
-    } // if (evaluate(getConfig().flowchart.htmlLabels) && false) {
+    }
+    // if (evaluate(getConfig().flowchart.htmlLabels) && false) {
     //   // eslint-disable-line
     //   edgeData.labelType = 'html';
     //   edgeData.label = `<span id="L-${linkId}" class="edgeLabel L-${linkNameStart}' L-${linkNameEnd}">${edge.text}</span>`;
     // } else {
-
-
     edgeData.labelType = 'text';
     edgeData.label = edge.text.replace(_common_common__WEBPACK_IMPORTED_MODULE_8__["default"].lineBreakRegex, '\n');
-
     if (typeof edge.style === 'undefined') {
       edgeData.style = edgeData.style || 'stroke: #333; stroke-width: 1.5px;fill:none;';
     }
-
-    edgeData.labelStyle = edgeData.labelStyle.replace('color:', 'fill:'); // }
+    edgeData.labelStyle = edgeData.labelStyle.replace('color:', 'fill:');
+    // }
 
     edgeData.id = linkId;
-    edgeData.classes = 'flowchart-link ' + linkNameStart + ' ' + linkNameEnd; // Add the edge to the graph
+    edgeData.classes = 'flowchart-link ' + linkNameStart + ' ' + linkNameEnd;
 
+    // Add the edge to the graph
     g.setEdge(edge.start, edge.end, edgeData, cnt);
   });
 };
+
 /**
  * Returns the all the styles from classDef statements in the graph definition.
  * @returns {object} classDef styles
  */
-
 var getClasses = function getClasses(text) {
   _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info('Extracting classes');
   _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].clear();
   var parser = _parser_flow__WEBPACK_IMPORTED_MODULE_3___default.a.parser;
   parser.yy = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"];
-
   try {
     // Parse the graph definition
     parser.parse(text);
   } catch (e) {
     return;
   }
-
   return _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].getClasses();
 };
+
 /**
  * Draws a flowchart in the tag with id: id based on the graph definition in text.
  * @param text
@@ -10381,24 +9764,25 @@ var draw = function draw(text, id) {
   _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].clear();
   _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].setGen('gen-2');
   var parser = _parser_flow__WEBPACK_IMPORTED_MODULE_3___default.a.parser;
-  parser.yy = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"]; // Parse the graph definition
-  // try {
+  parser.yy = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"];
 
-  parser.parse(text); // } catch (err) {
+  // Parse the graph definition
+  // try {
+  parser.parse(text);
+  // } catch (err) {
   // log.debug('Parsing failed');
   // }
+
   // Fetch the default direction, use TD if none was found
-
   var dir = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].getDirection();
-
   if (typeof dir === 'undefined') {
     dir = 'TD';
   }
-
   var conf = Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart;
   var nodeSpacing = conf.nodeSpacing || 50;
-  var rankSpacing = conf.rankSpacing || 50; // Create the input mermaid.graph
+  var rankSpacing = conf.rankSpacing || 50;
 
+  // Create the input mermaid.graph
   var g = new graphlib__WEBPACK_IMPORTED_MODULE_0___default.a.Graph({
     multigraph: true,
     compound: true
@@ -10414,38 +9798,37 @@ var draw = function draw(text, id) {
   var subG;
   var subGraphs = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].getSubGraphs();
   _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info('Subgraphs - ', subGraphs);
-
   for (var _i = subGraphs.length - 1; _i >= 0; _i--) {
     subG = subGraphs[_i];
     _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info('Subgraph - ', subG);
     _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].addVertex(subG.id, subG.title, 'group', undefined, subG.classes, subG.dir);
-  } // Fetch the verices/nodes and edges/links from the parsed graph definition
+  }
 
-
+  // Fetch the verices/nodes and edges/links from the parsed graph definition
   var vert = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].getVertices();
   var edges = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].getEdges();
   _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info(edges);
   var i = 0;
-
   for (i = subGraphs.length - 1; i >= 0; i--) {
     // for (let i = 0; i < subGraphs.length; i++) {
     subG = subGraphs[i];
     Object(d3__WEBPACK_IMPORTED_MODULE_1__["selectAll"])('cluster').append('text');
-
     for (var j = 0; j < subG.nodes.length; j++) {
       _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info('Setting up subgraphs', subG.nodes[j], subG.id);
       g.setParent(subG.nodes[j], subG.id);
     }
   }
-
   addVertices(vert, g, id);
-  addEdges(edges, g); // Add custom shapes
+  addEdges(edges, g);
+
+  // Add custom shapes
   // flowChartShapes.addToRenderV2(addShape);
+
   // Set up an SVG group so that we can translate the final graph.
-
   var svg = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])("[id=\"".concat(id, "\"]"));
-  svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink'); // Run the renderer. This is what draws the final graph.
+  svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink');
 
+  // Run the renderer. This is what draws the final graph.
   var element = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])('#' + id + ' g');
   Object(_dagre_wrapper_index_js__WEBPACK_IMPORTED_MODULE_5__["render"])(element, g, ['point', 'circle', 'cross'], 'flowchart', id);
   var padding = conf.diagramPadding;
@@ -10455,58 +9838,54 @@ var draw = function draw(text, id) {
   _logger__WEBPACK_IMPORTED_MODULE_7__["log"].debug("new ViewBox 0 0 ".concat(width, " ").concat(height), "translate(".concat(padding - g._label.marginx, ", ").concat(padding - g._label.marginy, ")"));
   Object(_utils__WEBPACK_IMPORTED_MODULE_9__["configureSvgSize"])(svg, height, width, conf.useMaxWidth);
   svg.attr('viewBox', "0 0 ".concat(width, " ").concat(height));
-  svg.select('g').attr('transform', "translate(".concat(padding - g._label.marginx, ", ").concat(padding - svgBounds.y, ")")); // Index nodes
+  svg.select('g').attr('transform', "translate(".concat(padding - g._label.marginx, ", ").concat(padding - svgBounds.y, ")"));
 
-  _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].indexNodes('subGraph' + i); // Add label rects for non html labels
+  // Index nodes
+  _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].indexNodes('subGraph' + i);
 
+  // Add label rects for non html labels
   if (!conf.htmlLabels) {
     var labels = document.querySelectorAll('[id="' + id + '"] .edgeLabel .label');
-
     for (var k = 0; k < labels.length; k++) {
-      var label = labels[k]; // Get dimensions of label
+      var label = labels[k];
 
+      // Get dimensions of label
       var dim = label.getBBox();
       var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
       rect.setAttribute('rx', 0);
       rect.setAttribute('ry', 0);
       rect.setAttribute('width', dim.width);
-      rect.setAttribute('height', dim.height); // rect.setAttribute('style', 'fill:#e8e8e8;');
+      rect.setAttribute('height', dim.height);
+      // rect.setAttribute('style', 'fill:#e8e8e8;');
 
       label.insertBefore(rect, label.firstChild);
     }
-  } // If node has a link, wrap it in an anchor SVG object.
+  }
 
-
+  // If node has a link, wrap it in an anchor SVG object.
   var keys = Object.keys(vert);
   keys.forEach(function (key) {
     var vertex = vert[key];
-
     if (vertex.link) {
       var node = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])('#' + id + ' [id="' + key + '"]');
-
       if (node) {
         var link = document.createElementNS('http://www.w3.org/2000/svg', 'a');
         link.setAttributeNS('http://www.w3.org/2000/svg', 'class', vertex.classes.join(' '));
         link.setAttributeNS('http://www.w3.org/2000/svg', 'href', vertex.link);
         link.setAttributeNS('http://www.w3.org/2000/svg', 'rel', 'noopener');
-
         if (vertex.linkTarget) {
           link.setAttributeNS('http://www.w3.org/2000/svg', 'target', vertex.linkTarget);
         }
-
         var linkNode = node.insert(function () {
           return link;
         }, ':first-child');
         var shape = node.select('.label-container');
-
         if (shape) {
           linkNode.append(function () {
             return shape.node();
           });
         }
-
         var _label = node.select('.label');
-
         if (_label) {
           linkNode.append(function () {
             return _label.node();
@@ -10570,40 +9949,39 @@ __webpack_require__.r(__webpack_exports__);
 var conf = {};
 var setConf = function setConf(cnf) {
   var keys = Object.keys(cnf);
-
   for (var i = 0; i < keys.length; i++) {
     conf[keys[i]] = cnf[keys[i]];
   }
 };
+
 /**
  * Function that adds the vertices found in the graph definition to the graph to be rendered.
  * @param vert Object containing the vertices.
  * @param g The graph that is to be drawn.
  */
-
 var addVertices = function addVertices(vert, g, svgId) {
   var svg = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])("[id=\"".concat(svgId, "\"]"));
-  var keys = Object.keys(vert); // Iterate through each item in the vertex object (containing all the vertices found) in the graph definition
+  var keys = Object.keys(vert);
 
+  // Iterate through each item in the vertex object (containing all the vertices found) in the graph definition
   keys.forEach(function (id) {
     var vertex = vert[id];
+
     /**
      * Variable for storing the classes for the vertex
      * @type {string}
      */
-
     var classStr = 'default';
-
     if (vertex.classes.length > 0) {
       classStr = vertex.classes.join(' ');
     }
+    var styles = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["getStylesFromArray"])(vertex.styles);
 
-    var styles = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["getStylesFromArray"])(vertex.styles); // Use vertex id as text in the box if no text is provided by the graph definition
+    // Use vertex id as text in the box if no text is provided by the graph definition
+    var vertexText = vertex.text !== undefined ? vertex.text : vertex.id;
 
-    var vertexText = vertex.text !== undefined ? vertex.text : vertex.id; // We create a SVG label, either by delegating to addHtmlLabel or manually
-
+    // We create a SVG label, either by delegating to addHtmlLabel or manually
     var vertexNode;
-
     if (Object(_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels)) {
       // TODO: addHtmlLabel accepts a labelStyle. Do we possibly have that?
       var node = {
@@ -10617,7 +9995,6 @@ var addVertices = function addVertices(vert, g, svgId) {
       var svgLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
       svgLabel.setAttribute('style', styles.labelStyle.replace('color:', 'fill:'));
       var rows = vertexText.split(_common_common__WEBPACK_IMPORTED_MODULE_8__["default"].lineBreakRegex);
-
       for (var j = 0; j < rows.length; j++) {
         var tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
         tspan.setAttributeNS('http://www.w3.org/XML/1998/namespace', 'xml:space', 'preserve');
@@ -10626,84 +10003,65 @@ var addVertices = function addVertices(vert, g, svgId) {
         tspan.textContent = rows[j];
         svgLabel.appendChild(tspan);
       }
-
       vertexNode = svgLabel;
     }
-
     var radious = 0;
-    var _shape = ''; // Set the shape based parameters
-
+    var _shape = '';
+    // Set the shape based parameters
     switch (vertex.type) {
       case 'round':
         radious = 5;
         _shape = 'rect';
         break;
-
       case 'square':
         _shape = 'rect';
         break;
-
       case 'diamond':
         _shape = 'question';
         break;
-
       case 'hexagon':
         _shape = 'hexagon';
         break;
-
       case 'odd':
         _shape = 'rect_left_inv_arrow';
         break;
-
       case 'lean_right':
         _shape = 'lean_right';
         break;
-
       case 'lean_left':
         _shape = 'lean_left';
         break;
-
       case 'trapezoid':
         _shape = 'trapezoid';
         break;
-
       case 'inv_trapezoid':
         _shape = 'inv_trapezoid';
         break;
-
       case 'odd_right':
         _shape = 'rect_left_inv_arrow';
         break;
-
       case 'circle':
         _shape = 'circle';
         break;
-
       case 'ellipse':
         _shape = 'ellipse';
         break;
-
       case 'stadium':
         _shape = 'stadium';
         break;
-
       case 'subroutine':
         _shape = 'subroutine';
         break;
-
       case 'cylinder':
         _shape = 'cylinder';
         break;
-
       case 'group':
         _shape = 'rect';
         break;
-
       default:
         _shape = 'rect';
-    } // Add the node
-
-
+    }
+    // Add the node
     _logger__WEBPACK_IMPORTED_MODULE_7__["log"].warn('Adding node', vertex.id, vertex.domId);
     g.setNode(_flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(vertex.id), {
       labelType: 'svg',
@@ -10718,40 +10076,38 @@ var addVertices = function addVertices(vert, g, svgId) {
     });
   });
 };
+
 /**
  * Add edges to graph based on parsed graph defninition
  * @param {Object} edges The edges to add to the graph
  * @param {Object} g The graph object
  */
-
 var addEdges = function addEdges(edges, g) {
   var cnt = 0;
   var defaultStyle;
   var defaultLabelStyle;
-
   if (typeof edges.defaultStyle !== 'undefined') {
     var defaultStyles = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["getStylesFromArray"])(edges.defaultStyle);
     defaultStyle = defaultStyles.style;
     defaultLabelStyle = defaultStyles.labelStyle;
   }
-
   edges.forEach(function (edge) {
-    cnt++; // Identify Link
+    cnt++;
 
+    // Identify Link
     var linkId = 'L-' + edge.start + '-' + edge.end;
     var linkNameStart = 'LS-' + edge.start;
     var linkNameEnd = 'LE-' + edge.end;
-    var edgeData = {}; // Set link type for rendering
+    var edgeData = {};
 
+    // Set link type for rendering
     if (edge.type === 'arrow_open') {
       edgeData.arrowhead = 'none';
     } else {
       edgeData.arrowhead = 'normal';
     }
-
     var style = '';
     var labelStyle = '';
-
     if (typeof edge.style !== 'undefined') {
       var styles = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["getStylesFromArray"])(edge.style);
       style = styles.style;
@@ -10760,30 +10116,23 @@ var addEdges = function addEdges(edges, g) {
       switch (edge.stroke) {
         case 'normal':
           style = 'fill:none';
-
           if (typeof defaultStyle !== 'undefined') {
             style = defaultStyle;
           }
-
           if (typeof defaultLabelStyle !== 'undefined') {
             labelStyle = defaultLabelStyle;
           }
-
           break;
-
         case 'dotted':
           style = 'fill:none;stroke-width:2px;stroke-dasharray:3;';
           break;
-
         case 'thick':
           style = ' stroke-width: 3.5px;fill:none';
           break;
       }
     }
-
     edgeData.style = style;
     edgeData.labelStyle = labelStyle;
-
     if (typeof edge.interpolate !== 'undefined') {
       edgeData.curve = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["interpolateToCurve"])(edge.interpolate, d3__WEBPACK_IMPORTED_MODULE_1__["curveLinear"]);
     } else if (typeof edges.defaultInterpolate !== 'undefined') {
@@ -10791,7 +10140,6 @@ var addEdges = function addEdges(edges, g) {
     } else {
       edgeData.curve = Object(_utils__WEBPACK_IMPORTED_MODULE_9__["interpolateToCurve"])(conf.curve, d3__WEBPACK_IMPORTED_MODULE_1__["curveLinear"]);
     }
-
     if (typeof edge.text === 'undefined') {
       if (typeof edge.style !== 'undefined') {
         edgeData.arrowheadStyle = 'fill: #333';
@@ -10799,7 +10147,6 @@ var addEdges = function addEdges(edges, g) {
     } else {
       edgeData.arrowheadStyle = 'fill: #333';
       edgeData.labelpos = 'c';
-
       if (Object(_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels)) {
         edgeData.labelType = 'html';
         edgeData.label = "<span id=\"L-".concat(linkId, "\" class=\"edgeLabel L-").concat(linkNameStart, "' L-").concat(linkNameEnd, "\">").concat(edge.text.replace(/fa[lrsb]?:fa-[\w-]+/g, function (s) {
@@ -10808,70 +10155,69 @@ var addEdges = function addEdges(edges, g) {
       } else {
         edgeData.labelType = 'text';
         edgeData.label = edge.text.replace(_common_common__WEBPACK_IMPORTED_MODULE_8__["default"].lineBreakRegex, '\n');
-
         if (typeof edge.style === 'undefined') {
           edgeData.style = edgeData.style || 'stroke: #333; stroke-width: 1.5px;fill:none';
         }
-
         edgeData.labelStyle = edgeData.labelStyle.replace('color:', 'fill:');
       }
     }
-
     edgeData.id = linkId;
     edgeData.class = linkNameStart + ' ' + linkNameEnd;
-    edgeData.minlen = edge.length || 1; // Add the edge to the graph
+    edgeData.minlen = edge.length || 1;
 
+    // Add the edge to the graph
     g.setEdge(_flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(edge.start), _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(edge.end), edgeData, cnt);
   });
 };
+
 /**
  * Returns the all the styles from classDef statements in the graph definition.
  * @returns {object} classDef styles
  */
-
 var getClasses = function getClasses(text) {
   _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info('Extracting classes');
   _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].clear();
-
   try {
     var parser = _parser_flow__WEBPACK_IMPORTED_MODULE_3___default.a.parser;
-    parser.yy = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"]; // Parse the graph definition
+    parser.yy = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"];
 
+    // Parse the graph definition
     parser.parse(text);
     return _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].getClasses();
   } catch (e) {
     return;
   }
 };
+
 /**
  * Draws a flowchart in the tag with id: id based on the graph definition in text.
  * @param text
  * @param id
  */
-
 var draw = function draw(text, id) {
   _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info('Drawing flowchart');
   _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].clear();
   _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].setGen('gen-1');
   var parser = _parser_flow__WEBPACK_IMPORTED_MODULE_3___default.a.parser;
-  parser.yy = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"]; // Parse the graph definition
-  // try {
+  parser.yy = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"];
 
-  parser.parse(text); // } catch (err) {
+  // Parse the graph definition
+  // try {
+  parser.parse(text);
+  // } catch (err) {
   // log.debug('Parsing failed');
   // }
+
   // Fetch the default direction, use TD if none was found
-
   var dir = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].getDirection();
-
   if (typeof dir === 'undefined') {
     dir = 'TD';
   }
-
   var conf = Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart;
   var nodeSpacing = conf.nodeSpacing || 50;
-  var rankSpacing = conf.rankSpacing || 50; // Create the input mermaid.graph
+  var rankSpacing = conf.rankSpacing || 50;
 
+  // Create the input mermaid.graph
   var g = new graphlib__WEBPACK_IMPORTED_MODULE_0___default.a.Graph({
     multigraph: true,
     compound: true
@@ -10886,53 +10232,53 @@ var draw = function draw(text, id) {
   });
   var subG;
   var subGraphs = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].getSubGraphs();
-
   for (var _i = subGraphs.length - 1; _i >= 0; _i--) {
     subG = subGraphs[_i];
     _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].addVertex(subG.id, subG.title, 'group', undefined, subG.classes);
-  } // Fetch the verices/nodes and edges/links from the parsed graph definition
+  }
 
-
+  // Fetch the verices/nodes and edges/links from the parsed graph definition
   var vert = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].getVertices();
   _logger__WEBPACK_IMPORTED_MODULE_7__["log"].warn('Get vertices', vert);
   var edges = _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].getEdges();
   var i = 0;
-
   for (i = subGraphs.length - 1; i >= 0; i--) {
     subG = subGraphs[i];
     Object(d3__WEBPACK_IMPORTED_MODULE_1__["selectAll"])('cluster').append('text');
-
     for (var j = 0; j < subG.nodes.length; j++) {
       _logger__WEBPACK_IMPORTED_MODULE_7__["log"].warn('Setting subgraph', subG.nodes[j], _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(subG.nodes[j]), _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(subG.id));
       g.setParent(_flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(subG.nodes[j]), _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(subG.id));
     }
   }
-
   addVertices(vert, g, id);
-  addEdges(edges, g); // Create the renderer
+  addEdges(edges, g);
 
+  // Create the renderer
   var Render = dagre_d3__WEBPACK_IMPORTED_MODULE_5___default.a.render;
-  var render = new Render(); // Add custom shapes
+  var render = new Render();
 
-  _flowChartShapes__WEBPACK_IMPORTED_MODULE_10__["default"].addToRender(render); // Add our custom arrow - an empty arrowhead
+  // Add custom shapes
+  _flowChartShapes__WEBPACK_IMPORTED_MODULE_10__["default"].addToRender(render);
 
+  // Add our custom arrow - an empty arrowhead
   render.arrows().none = function normal(parent, id, edge, type) {
     var marker = parent.append('marker').attr('id', id).attr('viewBox', '0 0 10 10').attr('refX', 9).attr('refY', 5).attr('markerUnits', 'strokeWidth').attr('markerWidth', 8).attr('markerHeight', 6).attr('orient', 'auto');
     var path = marker.append('path').attr('d', 'M 0 0 L 0 0 L 0 0 z');
     dagre_d3__WEBPACK_IMPORTED_MODULE_5___default.a.util.applyStyle(path, edge[type + 'Style']);
-  }; // Override normal arrowhead defined in d3. Remove style & add class to allow css styling.
+  };
 
-
+  // Override normal arrowhead defined in d3. Remove style & add class to allow css styling.
   render.arrows().normal = function normal(parent, id) {
     var marker = parent.append('marker').attr('id', id).attr('viewBox', '0 0 10 10').attr('refX', 9).attr('refY', 5).attr('markerUnits', 'strokeWidth').attr('markerWidth', 8).attr('markerHeight', 6).attr('orient', 'auto');
     marker.append('path').attr('d', 'M 0 0 L 10 5 L 0 10 z').attr('class', 'arrowheadPath').style('stroke-width', 1).style('stroke-dasharray', '1,0');
-  }; // Set up an SVG group so that we can translate the final graph.
+  };
 
-
+  // Set up an SVG group so that we can translate the final graph.
   var svg = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])("[id=\"".concat(id, "\"]"));
   svg.attr('xmlns:xlink', 'http://www.w3.org/1999/xlink');
-  _logger__WEBPACK_IMPORTED_MODULE_7__["log"].warn(g); // Run the renderer. This is what draws the final graph.
+  _logger__WEBPACK_IMPORTED_MODULE_7__["log"].warn(g);
 
+  // Run the renderer. This is what draws the final graph.
   var element = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])('#' + id + ' g');
   render(element, g);
   element.selectAll('g.node').attr('title', function () {
@@ -10942,17 +10288,19 @@ var draw = function draw(text, id) {
   var svgBounds = svg.node().getBBox();
   var width = svgBounds.width + padding * 2;
   var height = svgBounds.height + padding * 2;
-  Object(_utils__WEBPACK_IMPORTED_MODULE_9__["configureSvgSize"])(svg, height, width, conf.useMaxWidth); // Ensure the viewBox includes the whole svgBounds area with extra space for padding
+  Object(_utils__WEBPACK_IMPORTED_MODULE_9__["configureSvgSize"])(svg, height, width, conf.useMaxWidth);
 
+  // Ensure the viewBox includes the whole svgBounds area with extra space for padding
   var vBox = "".concat(svgBounds.x - padding, " ").concat(svgBounds.y - padding, " ").concat(width, " ").concat(height);
   _logger__WEBPACK_IMPORTED_MODULE_7__["log"].debug("viewBox ".concat(vBox));
-  svg.attr('viewBox', vBox); // Index nodes
+  svg.attr('viewBox', vBox);
 
-  _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].indexNodes('subGraph' + i); // reposition labels
+  // Index nodes
+  _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].indexNodes('subGraph' + i);
 
+  // reposition labels
   for (i = 0; i < subGraphs.length; i++) {
     subG = subGraphs[i];
-
     if (subG.title !== 'undefined') {
       var clusterRects = document.querySelectorAll('#' + id + ' [id="' + _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(subG.id) + '"] rect');
       var clusterEl = document.querySelectorAll('#' + id + ' [id="' + _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(subG.id) + '"]');
@@ -10963,63 +10311,56 @@ var draw = function draw(text, id) {
       var te = cluster.select('.label');
       te.attr('transform', "translate(".concat(xPos + _width / 2, ", ").concat(yPos + 14, ")"));
       te.attr('id', id + 'Text');
-
       for (var _j = 0; _j < subG.classes.length; _j++) {
         clusterEl[0].classList.add(subG.classes[_j]);
       }
     }
-  } // Add label rects for non html labels
+  }
 
-
+  // Add label rects for non html labels
   if (!Object(_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(conf.htmlLabels) || true) {
     // eslint-disable-line
     var labels = document.querySelectorAll('[id="' + id + '"] .edgeLabel .label');
-
     for (var k = 0; k < labels.length; k++) {
-      var label = labels[k]; // Get dimensions of label
+      var label = labels[k];
 
+      // Get dimensions of label
       var dim = label.getBBox();
       var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
       rect.setAttribute('rx', 0);
       rect.setAttribute('ry', 0);
       rect.setAttribute('width', dim.width);
-      rect.setAttribute('height', dim.height); // rect.setAttribute('style', 'fill:#e8e8e8;');
+      rect.setAttribute('height', dim.height);
+      // rect.setAttribute('style', 'fill:#e8e8e8;');
 
       label.insertBefore(rect, label.firstChild);
     }
-  } // If node has a link, wrap it in an anchor SVG object.
+  }
 
-
+  // If node has a link, wrap it in an anchor SVG object.
   var keys = Object.keys(vert);
   keys.forEach(function (key) {
     var vertex = vert[key];
-
     if (vertex.link) {
       var node = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])('#' + id + ' [id="' + _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(key) + '"]');
-
       if (node) {
         var link = document.createElementNS('http://www.w3.org/2000/svg', 'a');
         link.setAttributeNS('http://www.w3.org/2000/svg', 'class', vertex.classes.join(' '));
         link.setAttributeNS('http://www.w3.org/2000/svg', 'href', vertex.link);
         link.setAttributeNS('http://www.w3.org/2000/svg', 'rel', 'noopener');
-
         if (vertex.linkTarget) {
           link.setAttributeNS('http://www.w3.org/2000/svg', 'target', vertex.linkTarget);
         }
-
         var linkNode = node.insert(function () {
           return link;
         }, ':first-child');
         var shape = node.select('.label-container');
-
         if (shape) {
           linkNode.append(function () {
             return shape.node();
           });
         }
-
         var _label = node.select('.label');
-
         if (_label) {
           linkNode.append(function () {
             return _label.node();
@@ -12084,7 +11425,6 @@ __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
   return ".label {\n    font-family: ".concat(options.fontFamily, ";\n    color: ").concat(options.nodeTextColor || options.textColor, ";\n  }\n  .cluster-label text {\n    fill: ").concat(options.titleColor, ";\n  }\n  .cluster-label span {\n    color: ").concat(options.titleColor, ";\n  }\n\n  .label text,span {\n    fill: ").concat(options.nodeTextColor || options.textColor, ";\n    color: ").concat(options.nodeTextColor || options.textColor, ";\n  }\n\n  .node rect,\n  .node circle,\n  .node ellipse,\n  .node polygon,\n  .node path {\n    fill: ").concat(options.mainBkg, ";\n    stroke: ").concat(options.nodeBorder, ";\n    stroke-width: 1px;\n  }\n\n  .node .label {\n    text-align: center;\n  }\n  .node.clickable {\n    cursor: pointer;\n  }\n\n  .arrowheadPath {\n    fill: ").concat(options.arrowheadColor, ";\n  }\n\n  .edgePath .path {\n    stroke: ").concat(options.lineColor, ";\n    stroke-width: 1.5px;\n  }\n\n  .flowchart-link {\n    stroke: ").concat(options.lineColor, ";\n    fill: none;\n  }\n\n  .edgeLabel {\n    background-color: ").concat(options.edgeLabelBackground, ";\n    rect {\n      opacity: 0.5;\n      background-color: ").concat(options.edgeLabelBackground, ";\n      fill: ").concat(options.edgeLabelBackground, ";\n    }\n    text-align: center;\n  }\n\n  .cluster rect {\n    fill: ").concat(options.clusterBkg, ";\n    stroke: ").concat(options.clusterBorder, ";\n    stroke-width: 1px;\n  }\n\n  .cluster text {\n    fill: ").concat(options.titleColor, ";\n  }\n\n  .cluster span {\n    color: ").concat(options.titleColor, ";\n  }\n  // .cluster div {\n  //   color: ").concat(options.titleColor, ";\n  // }\n\n  div.mermaidTooltip {\n    position: absolute;\n    text-align: center;\n    max-width: 200px;\n    padding: 2px;\n    font-family: ").concat(options.fontFamily, ";\n    font-size: 12px;\n    background: ").concat(options.tertiaryColor, ";\n    border: 1px solid ").concat(options.border2, ";\n    border-radius: 2px;\n    pointer-events: none;\n    z-index: 100;\n  }\n");
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -12132,18 +11472,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config */ "./src/config.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils */ "./src/utils.js");
 /* harmony import */ var _mermaidAPI__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../mermaidAPI */ "./src/mermaidAPI.js");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
 
 
@@ -12161,8 +11495,9 @@ var currentSection = '';
 var tags = ['active', 'done', 'crit', 'milestone'];
 var funs = [];
 var inclusiveEndDates = false;
-var topAxis = false; // The serial order of the task in the script
+var topAxis = false;
 
+// The serial order of the task in the script
 var lastOrder = 0;
 var parseDirective = function parseDirective(statement, context, type) {
   _mermaidAPI__WEBPACK_IMPORTED_MODULE_5__["default"].parseDirective(this, statement, context, type);
@@ -12238,28 +11573,22 @@ var getTasks = function getTasks() {
   var allItemsPricessed = compileTasks();
   var maxDepth = 10;
   var iterationCount = 0;
-
   while (!allItemsPricessed && iterationCount < maxDepth) {
     allItemsPricessed = compileTasks();
     iterationCount++;
   }
-
   tasks = rawTasks;
   return tasks;
 };
-
 var isInvalidDate = function isInvalidDate(date, dateFormat, excludes) {
   if (date.isoWeekday() >= 6 && excludes.indexOf('weekends') >= 0) {
     return true;
   }
-
   if (excludes.indexOf(date.format('dddd').toLowerCase()) >= 0) {
     return true;
   }
-
   return excludes.indexOf(date.format(dateFormat.trim())) >= 0;
 };
-
 var checkTaskDates = function checkTaskDates(task, dateFormat, excludes) {
   if (!excludes.length || task.manualEndTime) return;
   var startTime = moment_mini__WEBPACK_IMPORTED_MODULE_0___default()(task.startTime, dateFormat, true);
@@ -12269,40 +11598,32 @@ var checkTaskDates = function checkTaskDates(task, dateFormat, excludes) {
   task.endTime = endTime.toDate();
   task.renderEndTime = renderEndTime;
 };
-
 var fixTaskDates = function fixTaskDates(startTime, endTime, dateFormat, excludes) {
   var invalid = false;
   var renderEndTime = null;
-
   while (startTime <= endTime) {
     if (!invalid) {
       renderEndTime = endTime.toDate();
     }
-
     invalid = isInvalidDate(startTime, dateFormat, excludes);
-
     if (invalid) {
       endTime.add(1, 'd');
     }
-
     startTime.add(1, 'd');
   }
-
   return renderEndTime;
 };
-
 var getStartDate = function getStartDate(prevTime, dateFormat, str) {
-  str = str.trim(); // Test for after
+  str = str.trim();
 
+  // Test for after
   var re = /^after\s+([\d\w- ]+)/;
   var afterStatement = re.exec(str.trim());
-
   if (afterStatement !== null) {
     // check all after ids and take the latest
     var latestEndingTask = null;
     afterStatement[1].split(' ').forEach(function (id) {
       var task = findTaskById(id);
-
       if (typeof task !== 'undefined') {
         if (!latestEndingTask) {
           latestEndingTask = task;
@@ -12313,7 +11634,6 @@ var getStartDate = function getStartDate(prevTime, dateFormat, str) {
         }
       }
     });
-
     if (!latestEndingTask) {
       var dt = new Date();
       dt.setHours(0, 0, 0, 0);
@@ -12321,78 +11641,66 @@ var getStartDate = function getStartDate(prevTime, dateFormat, str) {
     } else {
       return latestEndingTask.endTime;
     }
-  } // Check for actual date set
+  }
 
-
+  // Check for actual date set
   var mDate = moment_mini__WEBPACK_IMPORTED_MODULE_0___default()(str, dateFormat.trim(), true);
-
   if (mDate.isValid()) {
     return mDate.toDate();
   } else {
     _logger__WEBPACK_IMPORTED_MODULE_2__["log"].debug('Invalid date:' + str);
     _logger__WEBPACK_IMPORTED_MODULE_2__["log"].debug('With date format:' + dateFormat.trim());
-  } // Default date - now
+  }
 
-
+  // Default date - now
   return new Date();
 };
-
 var durationToDate = function durationToDate(durationStatement, relativeTime) {
   if (durationStatement !== null) {
     switch (durationStatement[2]) {
       case 's':
         relativeTime.add(durationStatement[1], 'seconds');
         break;
-
       case 'm':
         relativeTime.add(durationStatement[1], 'minutes');
         break;
-
       case 'h':
         relativeTime.add(durationStatement[1], 'hours');
         break;
-
       case 'd':
         relativeTime.add(durationStatement[1], 'days');
         break;
-
       case 'w':
         relativeTime.add(durationStatement[1], 'weeks');
         break;
     }
-  } // Default date - now
-
-
+  }
+  // Default date - now
   return relativeTime.toDate();
 };
-
 var getEndDate = function getEndDate(prevTime, dateFormat, str, inclusive) {
   inclusive = inclusive || false;
-  str = str.trim(); // Check for actual date
+  str = str.trim();
 
+  // Check for actual date
   var mDate = moment_mini__WEBPACK_IMPORTED_MODULE_0___default()(str, dateFormat.trim(), true);
-
   if (mDate.isValid()) {
     if (inclusive) {
       mDate.add(1, 'd');
     }
-
     return mDate.toDate();
   }
-
   return durationToDate(/^([\d]+)([wdhms])/.exec(str.trim()), moment_mini__WEBPACK_IMPORTED_MODULE_0___default()(prevTime));
 };
-
 var taskCnt = 0;
-
 var parseId = function parseId(idStr) {
   if (typeof idStr === 'undefined') {
     taskCnt = taskCnt + 1;
     return 'task' + taskCnt;
   }
-
   return idStr;
-}; // id, startDate, endDate
+};
+// id, startDate, endDate
 // id, startDate, length
 // id, after x, endDate
 // id, after x, length
@@ -12403,76 +11711,62 @@ var parseId = function parseId(idStr) {
 // endDate
 // length
 
-
 var compileData = function compileData(prevTask, dataStr) {
   var ds;
-
   if (dataStr.substr(0, 1) === ':') {
     ds = dataStr.substr(1, dataStr.length);
   } else {
     ds = dataStr;
   }
-
   var data = ds.split(',');
-  var task = {}; // Get tags like active, done, crit and milestone
+  var task = {};
 
+  // Get tags like active, done, crit and milestone
   getTaskTags(data, task, tags);
-
   for (var i = 0; i < data.length; i++) {
     data[i] = data[i].trim();
   }
-
   var endTimeData = '';
-
   switch (data.length) {
     case 1:
       task.id = parseId();
       task.startTime = prevTask.endTime;
       endTimeData = data[0];
       break;
-
     case 2:
       task.id = parseId();
       task.startTime = getStartDate(undefined, dateFormat, data[0]);
       endTimeData = data[1];
       break;
-
     case 3:
       task.id = parseId(data[0]);
       task.startTime = getStartDate(undefined, dateFormat, data[1]);
       endTimeData = data[2];
       break;
-
     default:
   }
-
   if (endTimeData) {
     task.endTime = getEndDate(task.startTime, dateFormat, endTimeData, inclusiveEndDates);
     task.manualEndTime = moment_mini__WEBPACK_IMPORTED_MODULE_0___default()(endTimeData, 'YYYY-MM-DD', true).isValid();
     checkTaskDates(task, dateFormat, excludes);
   }
-
   return task;
 };
-
 var parseData = function parseData(prevTaskId, dataStr) {
   var ds;
-
   if (dataStr.substr(0, 1) === ':') {
     ds = dataStr.substr(1, dataStr.length);
   } else {
     ds = dataStr;
   }
-
   var data = ds.split(',');
-  var task = {}; // Get tags like active, done, crit and milestone
+  var task = {};
 
+  // Get tags like active, done, crit and milestone
   getTaskTags(data, task, tags);
-
   for (var i = 0; i < data.length; i++) {
     data[i] = data[i].trim();
   }
-
   switch (data.length) {
     case 1:
       task.id = parseId();
@@ -12484,7 +11778,6 @@ var parseData = function parseData(prevTaskId, dataStr) {
         data: data[0]
       };
       break;
-
     case 2:
       task.id = parseId();
       task.startTime = {
@@ -12495,7 +11788,6 @@ var parseData = function parseData(prevTaskId, dataStr) {
         data: data[1]
       };
       break;
-
     case 3:
       task.id = parseId(data[0]);
       task.startTime = {
@@ -12506,13 +11798,10 @@ var parseData = function parseData(prevTaskId, dataStr) {
         data: data[2]
       };
       break;
-
     default:
   }
-
   return task;
 };
-
 var lastTask;
 var lastTaskID;
 var rawTasks = [];
@@ -12542,8 +11831,8 @@ var addTask = function addTask(descr, data) {
   rawTask.order = lastOrder;
   lastOrder++;
   var pos = rawTasks.push(rawTask);
-  lastTaskID = rawTask.id; // Store cross ref
-
+  lastTaskID = rawTask.id;
+  // Store cross ref
   taskDb[rawTask.id] = pos - 1;
 };
 var findTaskById = function findTaskById(id) {
@@ -12569,12 +11858,10 @@ var addTaskOrg = function addTaskOrg(descr, data) {
   lastTask = newTask;
   tasks.push(newTask);
 };
-
 var compileTasks = function compileTasks() {
   var compileTask = function compileTask(pos) {
     var task = rawTasks[pos];
     var startTime = '';
-
     switch (rawTasks[pos].raw.startTime.type) {
       case 'prevTaskEnd':
         {
@@ -12582,56 +11869,43 @@ var compileTasks = function compileTasks() {
           task.startTime = prevTask.endTime;
           break;
         }
-
       case 'getStartDate':
         startTime = getStartDate(undefined, dateFormat, rawTasks[pos].raw.startTime.startData);
-
         if (startTime) {
           rawTasks[pos].startTime = startTime;
         }
-
         break;
     }
-
     if (rawTasks[pos].startTime) {
       rawTasks[pos].endTime = getEndDate(rawTasks[pos].startTime, dateFormat, rawTasks[pos].raw.endTime.data, inclusiveEndDates);
-
       if (rawTasks[pos].endTime) {
         rawTasks[pos].processed = true;
         rawTasks[pos].manualEndTime = moment_mini__WEBPACK_IMPORTED_MODULE_0___default()(rawTasks[pos].raw.endTime.data, 'YYYY-MM-DD', true).isValid();
         checkTaskDates(rawTasks[pos], dateFormat, excludes);
       }
     }
-
     return rawTasks[pos].processed;
   };
-
   var allProcessed = true;
-
   for (var i = 0; i < rawTasks.length; i++) {
     compileTask(i);
     allProcessed = allProcessed && rawTasks[i].processed;
   }
-
   return allProcessed;
 };
+
 /**
  * Called by parser when a link is found. Adds the URL to the vertex data.
  * @param ids Comma separated list of ids
  * @param linkStr URL to create a link for
  */
-
-
 var setLink = function setLink(ids, _linkStr) {
   var linkStr = _linkStr;
-
   if (_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"]().securityLevel !== 'loose') {
     linkStr = Object(_braintree_sanitize_url__WEBPACK_IMPORTED_MODULE_1__["sanitizeUrl"])(_linkStr);
   }
-
   ids.split(',').forEach(function (id) {
     var rawTask = findTaskById(id);
-
     if (typeof rawTask !== 'undefined') {
       pushFun(id, function () {
         window.open(linkStr, '_self');
@@ -12640,77 +11914,63 @@ var setLink = function setLink(ids, _linkStr) {
   });
   setClass(ids, 'clickable');
 };
+
 /**
  * Called by parser when a special node is found, e.g. a clickable element.
  * @param ids Comma separated list of ids
  * @param className Class to add
  */
-
 var setClass = function setClass(ids, className) {
   ids.split(',').forEach(function (id) {
     var rawTask = findTaskById(id);
-
     if (typeof rawTask !== 'undefined') {
       rawTask.classes.push(className);
     }
   });
 };
-
 var setClickFun = function setClickFun(id, functionName, functionArgs) {
   if (_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"]().securityLevel !== 'loose') {
     return;
   }
-
   if (typeof functionName === 'undefined') {
     return;
   }
-
   var argList = [];
-
   if (typeof functionArgs === 'string') {
     /* Splits functionArgs by ',', ignoring all ',' in double quoted strings */
     argList = functionArgs.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
-
     for (var i = 0; i < argList.length; i++) {
       var item = argList[i].trim();
       /* Removes all double quotes at the start and end of an argument */
-
       /* This preserves all starting and ending whitespace inside */
-
       if (item.charAt(0) === '"' && item.charAt(item.length - 1) === '"') {
         item = item.substr(1, item.length - 2);
       }
-
       argList[i] = item;
     }
   }
+
   /* if no arguments passed into callback, default to passing in id */
-
-
   if (argList.length === 0) {
     argList.push(id);
   }
-
   var rawTask = findTaskById(id);
-
   if (typeof rawTask !== 'undefined') {
     pushFun(id, function () {
       _utils__WEBPACK_IMPORTED_MODULE_4__["default"].runFunc.apply(_utils__WEBPACK_IMPORTED_MODULE_4__["default"], [functionName].concat(_toConsumableArray(argList)));
     });
   }
 };
+
 /**
  * The callbackFunction is executed in a click event bound to the task with the specified id or the task's assigned text
  * @param id The task's id
  * @param callbackFunction A function to be executed when clicked on the task or the task's text
  */
-
-
 var pushFun = function pushFun(id, callbackFunction) {
   funs.push(function () {
     // const elem = d3.select(element).select(`[id="${id}"]`)
     var elem = document.querySelector("[id=\"".concat(id, "\"]"));
-
     if (elem !== null) {
       elem.addEventListener('click', function () {
         callbackFunction();
@@ -12720,7 +11980,6 @@ var pushFun = function pushFun(id, callbackFunction) {
   funs.push(function () {
     // const elem = d3.select(element).select(`[id="${id}-text"]`)
     var elem = document.querySelector("[id=\"".concat(id, "-text\"]"));
-
     if (elem !== null) {
       elem.addEventListener('click', function () {
         callbackFunction();
@@ -12728,25 +11987,24 @@ var pushFun = function pushFun(id, callbackFunction) {
     }
   });
 };
+
 /**
  * Called by parser when a click definition is found. Registers an event handler.
  * @param ids Comma separated list of ids
  * @param functionName Function to be called on click
  * @param functionArgs Function args the function should be called with
  */
-
-
 var setClickEvent = function setClickEvent(ids, functionName, functionArgs) {
   ids.split(',').forEach(function (id) {
     setClickFun(id, functionName, functionArgs);
   });
   setClass(ids, 'clickable');
 };
+
 /**
  * Binds all functions previously added to fun (specified through click) to the element
  * @param element
  */
-
 var bindFunctions = function bindFunctions(element) {
   funs.forEach(function (fun) {
     fun(element);
@@ -12783,16 +12041,13 @@ var bindFunctions = function bindFunctions(element) {
   bindFunctions: bindFunctions,
   durationToDate: durationToDate
 });
-
 function getTaskTags(data, task, tags) {
   var matchFound = true;
-
   while (matchFound) {
     matchFound = false;
     tags.forEach(function (t) {
       var pattern = '^\\s*' + t + '\\s*$';
       var regex = new RegExp(pattern);
-
       if (data[0].match(regex)) {
         task[t] = true;
         data.shift(1);
@@ -12830,7 +12085,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 _parser_gantt__WEBPACK_IMPORTED_MODULE_1__["parser"].yy = _ganttDb__WEBPACK_IMPORTED_MODULE_3__["default"];
-var setConf = function setConf() {// const keys = Object.keys(cnf);
+var setConf = function setConf() {
+  // const keys = Object.keys(cnf);
   // keys.forEach(function(key) {
   //   conf[key] = cnf[key];
   // });
@@ -12842,58 +12098,52 @@ var draw = function draw(text, id) {
   _parser_gantt__WEBPACK_IMPORTED_MODULE_1__["parser"].parse(text);
   var elem = document.getElementById(id);
   w = elem.parentElement.offsetWidth;
-
   if (typeof w === 'undefined') {
     w = 1200;
   }
-
   if (typeof conf.useWidth !== 'undefined') {
     w = conf.useWidth;
   }
+  var taskArray = _parser_gantt__WEBPACK_IMPORTED_MODULE_1__["parser"].yy.getTasks();
 
-  var taskArray = _parser_gantt__WEBPACK_IMPORTED_MODULE_1__["parser"].yy.getTasks(); // Set height based on number of tasks
+  // Set height based on number of tasks
+  var h = taskArray.length * (conf.barHeight + conf.barGap) + 2 * conf.topPadding;
 
-  var h = taskArray.length * (conf.barHeight + conf.barGap) + 2 * conf.topPadding; // Set viewBox
-
+  // Set viewBox
   elem.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
-  var svg = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id=\"".concat(id, "\"]")); // Set timescale
+  var svg = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id=\"".concat(id, "\"]"));
 
+  // Set timescale
   var timeScale = Object(d3__WEBPACK_IMPORTED_MODULE_0__["scaleTime"])().domain([Object(d3__WEBPACK_IMPORTED_MODULE_0__["min"])(taskArray, function (d) {
     return d.startTime;
   }), Object(d3__WEBPACK_IMPORTED_MODULE_0__["max"])(taskArray, function (d) {
     return d.endTime;
   })]).rangeRound([0, w - conf.leftPadding - conf.rightPadding]);
   var categories = [];
-
   for (var i = 0; i < taskArray.length; i++) {
     categories.push(taskArray[i].type);
   }
-
   var catsUnfiltered = categories; // for vert labels
 
   categories = checkUnique(categories);
-
   function taskCompare(a, b) {
     var taskA = a.startTime;
     var taskB = b.startTime;
     var result = 0;
-
     if (taskA > taskB) {
       result = 1;
     } else if (taskA < taskB) {
       result = -1;
     }
-
     return result;
-  } // Sort the task array using the above taskCompare() so that
+  }
+
+  // Sort the task array using the above taskCompare() so that
   // tasks are created based on their order of startTime
-
-
   taskArray.sort(taskCompare);
   makeGant(taskArray, w, h);
   Object(_utils__WEBPACK_IMPORTED_MODULE_5__["configureSvgSize"])(svg, h, w, conf.useMaxWidth);
   svg.append('text').text(_parser_gantt__WEBPACK_IMPORTED_MODULE_1__["parser"].yy.getTitle()).attr('x', w / 2).attr('y', conf.titleTopMargin).attr('class', 'titleText');
-
   function makeGant(tasks, pageWidth, pageHeight) {
     var barHeight = conf.barHeight;
     var gap = barHeight + conf.barGap;
@@ -12905,7 +12155,6 @@ var draw = function draw(text, id) {
     vertLabels(gap, topPadding, leftPadding, barHeight, colorScale);
     drawToday(leftPadding, topPadding, pageWidth, pageHeight);
   }
-
   function drawRects(theArray, theGap, theTopPad, theSidePad, theBarHeight, theColorScale, w) {
     // Draw background rects covering the entire width of the graph, these form the section rows.
     svg.append('g').selectAll('rect').data(theArray).enter().append('rect').attr('x', 0).attr('y', function (d, i) {
@@ -12920,10 +12169,10 @@ var draw = function draw(text, id) {
           return 'section section' + _i % conf.numberSectionStyles;
         }
       }
-
       return 'section section0';
-    }); // Draw the rects representing the tasks
+    });
 
+    // Draw the rects representing the tasks
     var rectangles = svg.append('g').selectAll('rect').data(theArray).enter();
     rectangles.append('rect').attr('id', function (d) {
       return d.id;
@@ -12931,7 +12180,6 @@ var draw = function draw(text, id) {
       if (d.milestone) {
         return timeScale(d.startTime) + theSidePad + 0.5 * (timeScale(d.endTime) - timeScale(d.startTime)) - 0.5 * theBarHeight;
       }
-
       return timeScale(d.startTime) + theSidePad;
     }).attr('y', function (d, i) {
       // Ignore the incoming i value and use our order instead
@@ -12941,7 +12189,6 @@ var draw = function draw(text, id) {
       if (d.milestone) {
         return theBarHeight;
       }
-
       return timeScale(d.renderEndTime || d.endTime) - timeScale(d.startTime);
     }).attr('height', theBarHeight).attr('transform-origin', function (d, i) {
       // Ignore the incoming i value and use our order instead
@@ -12950,21 +12197,16 @@ var draw = function draw(text, id) {
     }).attr('class', function (d) {
       var res = 'task';
       var classStr = '';
-
       if (d.classes.length > 0) {
         classStr = d.classes.join(' ');
       }
-
       var secNum = 0;
-
       for (var _i2 = 0; _i2 < categories.length; _i2++) {
         if (d.type === categories[_i2]) {
           secNum = _i2 % conf.numberSectionStyles;
         }
       }
-
       var taskClass = '';
-
       if (d.active) {
         if (d.crit) {
           taskClass += ' activeCrit';
@@ -12982,20 +12224,18 @@ var draw = function draw(text, id) {
           taskClass += ' crit';
         }
       }
-
       if (taskClass.length === 0) {
         taskClass = ' task';
       }
-
       if (d.milestone) {
         taskClass = ' milestone ' + taskClass;
       }
-
       taskClass += secNum;
       taskClass += ' ' + classStr;
       return res + taskClass;
-    }); // Append task labels
+    });
 
+    // Append task labels
     rectangles.append('text').attr('id', function (d) {
       return d.id + '-text';
     }).text(function (d) {
@@ -13003,17 +12243,15 @@ var draw = function draw(text, id) {
     }).attr('font-size', conf.fontSize).attr('x', function (d) {
       var startX = timeScale(d.startTime);
       var endX = timeScale(d.renderEndTime || d.endTime);
-
       if (d.milestone) {
         startX += 0.5 * (timeScale(d.endTime) - timeScale(d.startTime)) - 0.5 * theBarHeight;
       }
-
       if (d.milestone) {
         endX = startX + theBarHeight;
       }
+      var textWidth = this.getBBox().width;
 
-      var textWidth = this.getBBox().width; // Check id text width > width of rectangle
-
+      // Check id text width > width of rectangle
       if (textWidth > endX - startX) {
         if (endX + textWidth + 1.5 * conf.leftPadding > w) {
           return startX + theSidePad - 5;
@@ -13030,28 +12268,21 @@ var draw = function draw(text, id) {
     }).attr('text-height', theBarHeight).attr('class', function (d) {
       var startX = timeScale(d.startTime);
       var endX = timeScale(d.endTime);
-
       if (d.milestone) {
         endX = startX + theBarHeight;
       }
-
       var textWidth = this.getBBox().width;
       var classStr = '';
-
       if (d.classes.length > 0) {
         classStr = d.classes.join(' ');
       }
-
       var secNum = 0;
-
       for (var _i3 = 0; _i3 < categories.length; _i3++) {
         if (d.type === categories[_i3]) {
           secNum = _i3 % conf.numberSectionStyles;
         }
       }
-
       var taskType = '';
-
       if (d.active) {
         if (d.crit) {
           taskType = 'activeCritText' + secNum;
@@ -13059,7 +12290,6 @@ var draw = function draw(text, id) {
           taskType = 'activeText' + secNum;
         }
       }
-
       if (d.done) {
         if (d.crit) {
           taskType = taskType + ' doneCritText' + secNum;
@@ -13071,12 +12301,11 @@ var draw = function draw(text, id) {
           taskType = taskType + ' critText' + secNum;
         }
       }
-
       if (d.milestone) {
         taskType += ' milestoneText';
-      } // Check id text width > width of rectangle
+      }
 
-
+      // Check id text width > width of rectangle
       if (textWidth > endX - startX) {
         if (endX + textWidth + 1.5 * conf.leftPadding > w) {
           return classStr + ' taskTextOutsideLeft taskTextOutside' + secNum + ' ' + taskType;
@@ -13088,32 +12317,27 @@ var draw = function draw(text, id) {
       }
     });
   }
-
   function makeGrid(theSidePad, theTopPad, w, h) {
     var bottomXAxis = Object(d3__WEBPACK_IMPORTED_MODULE_0__["axisBottom"])(timeScale).tickSize(-h + theTopPad + conf.gridLineStartPadding).tickFormat(Object(d3__WEBPACK_IMPORTED_MODULE_0__["timeFormat"])(_parser_gantt__WEBPACK_IMPORTED_MODULE_1__["parser"].yy.getAxisFormat() || conf.axisFormat || '%Y-%m-%d'));
     svg.append('g').attr('class', 'grid').attr('transform', 'translate(' + theSidePad + ', ' + (h - 50) + ')').call(bottomXAxis).selectAll('text').style('text-anchor', 'middle').attr('fill', '#000').attr('stroke', 'none').attr('font-size', 10).attr('dy', '1em');
-
     if (_ganttDb__WEBPACK_IMPORTED_MODULE_3__["default"].topAxisEnabled() || conf.topAxis) {
       var topXAxis = Object(d3__WEBPACK_IMPORTED_MODULE_0__["axisTop"])(timeScale).tickSize(-h + theTopPad + conf.gridLineStartPadding).tickFormat(Object(d3__WEBPACK_IMPORTED_MODULE_0__["timeFormat"])(_parser_gantt__WEBPACK_IMPORTED_MODULE_1__["parser"].yy.getAxisFormat() || conf.axisFormat || '%Y-%m-%d'));
-      svg.append('g').attr('class', 'grid').attr('transform', 'translate(' + theSidePad + ', ' + theTopPad + ')').call(topXAxis).selectAll('text').style('text-anchor', 'middle').attr('fill', '#000').attr('stroke', 'none').attr('font-size', 10); // .attr('dy', '1em');
+      svg.append('g').attr('class', 'grid').attr('transform', 'translate(' + theSidePad + ', ' + theTopPad + ')').call(topXAxis).selectAll('text').style('text-anchor', 'middle').attr('fill', '#000').attr('stroke', 'none').attr('font-size', 10);
+      // .attr('dy', '1em');
     }
   }
-
   function vertLabels(theGap, theTopPad) {
     var numOccurances = [];
     var prevGap = 0;
-
     for (var _i4 = 0; _i4 < categories.length; _i4++) {
       numOccurances[_i4] = [categories[_i4], getCount(categories[_i4], catsUnfiltered)];
     }
-
     svg.append('g') // without doing this, impossible to put grid lines behind text
     .selectAll('text').data(numOccurances).enter().append(function (d) {
       var rows = d[0].split(_common_common__WEBPACK_IMPORTED_MODULE_2__["default"].lineBreakRegex);
       var dy = -(rows.length - 1) / 2;
       var svgLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
       svgLabel.setAttribute('dy', dy + 'em');
-
       for (var j = 0; j < rows.length; j++) {
         var tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
         tspan.setAttribute('alignment-baseline', 'central');
@@ -13122,7 +12346,6 @@ var draw = function draw(text, id) {
         tspan.textContent = rows[j];
         svgLabel.appendChild(tspan);
       }
-
       return svgLabel;
     }).attr('x', 10).attr('y', function (d, i) {
       if (i > 0) {
@@ -13139,33 +12362,27 @@ var draw = function draw(text, id) {
           return 'sectionTitle sectionTitle' + _i5 % conf.numberSectionStyles;
         }
       }
-
       return 'sectionTitle';
     });
   }
-
   function drawToday(theSidePad, theTopPad, w, h) {
     var todayMarker = _ganttDb__WEBPACK_IMPORTED_MODULE_3__["default"].getTodayMarker();
-
     if (todayMarker === 'off') {
       return;
     }
-
     var todayG = svg.append('g').attr('class', 'today');
     var today = new Date();
     var todayLine = todayG.append('line');
     todayLine.attr('x1', timeScale(today) + theSidePad).attr('x2', timeScale(today) + theSidePad).attr('y1', conf.titleTopMargin).attr('y2', h - conf.titleTopMargin).attr('class', 'today');
-
     if (todayMarker !== '') {
       todayLine.attr('style', todayMarker.replace(/,/g, ';'));
     }
-  } // from this stackexchange question: http://stackoverflow.com/questions/1890203/unique-for-arrays-in-javascript
+  }
 
-
+  // from this stackexchange question: http://stackoverflow.com/questions/1890203/unique-for-arrays-in-javascript
   function checkUnique(arr) {
     var hash = {};
     var result = [];
-
     for (var _i6 = 0, l = arr.length; _i6 < l; ++_i6) {
       if (!hash.hasOwnProperty(arr[_i6])) {
         // eslint-disable-line
@@ -13174,24 +12391,20 @@ var draw = function draw(text, id) {
         result.push(arr[_i6]);
       }
     }
-
     return result;
-  } // from this stackexchange question: http://stackoverflow.com/questions/14227981/count-how-many-strings-in-an-array-have-duplicates-in-the-same-array
+  }
 
-
+  // from this stackexchange question: http://stackoverflow.com/questions/14227981/count-how-many-strings-in-an-array-have-duplicates-in-the-same-array
   function getCounts(arr) {
     var i = arr.length; // const to loop over
-
     var obj = {}; // obj to store results
-
     while (i) {
       obj[arr[--i]] = (obj[arr[i]] || 0) + 1; // count occurrences
     }
-
     return obj;
-  } // get specific from everything
+  }
 
-
+  // get specific from everything
   function getCount(word, arr) {
     return getCounts(arr)[word] || 0;
   }
@@ -13987,7 +13200,6 @@ __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
   return "\n  .mermaid-main-font {\n    font-family: \"trebuchet ms\", verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n  }\n\n  .section {\n    stroke: none;\n    opacity: 0.2;\n  }\n\n  .section0 {\n    fill: ".concat(options.sectionBkgColor, ";\n  }\n\n  .section2 {\n    fill: ").concat(options.sectionBkgColor2, ";\n  }\n\n  .section1,\n  .section3 {\n    fill: ").concat(options.altSectionBkgColor, ";\n    opacity: 0.2;\n  }\n\n  .sectionTitle0 {\n    fill: ").concat(options.titleColor, ";\n  }\n\n  .sectionTitle1 {\n    fill: ").concat(options.titleColor, ";\n  }\n\n  .sectionTitle2 {\n    fill: ").concat(options.titleColor, ";\n  }\n\n  .sectionTitle3 {\n    fill: ").concat(options.titleColor, ";\n  }\n\n  .sectionTitle {\n    text-anchor: start;\n    // font-size: ").concat(options.ganttFontSize, ";\n    // text-height: 14px;\n    font-family: 'trebuchet ms', verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n\n  }\n\n\n  /* Grid and axis */\n\n  .grid .tick {\n    stroke: ").concat(options.gridColor, ";\n    opacity: 0.8;\n    shape-rendering: crispEdges;\n    text {\n      font-family: ").concat(options.fontFamily, ";\n      fill: ").concat(options.textColor, ";\n    }\n  }\n\n  .grid path {\n    stroke-width: 0;\n  }\n\n\n  /* Today line */\n\n  .today {\n    fill: none;\n    stroke: ").concat(options.todayLineColor, ";\n    stroke-width: 2px;\n  }\n\n\n  /* Task styling */\n\n  /* Default task */\n\n  .task {\n    stroke-width: 2;\n  }\n\n  .taskText {\n    text-anchor: middle;\n    font-family: 'trebuchet ms', verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n  }\n\n  // .taskText:not([font-size]) {\n  //   font-size: ").concat(options.ganttFontSize, ";\n  // }\n\n  .taskTextOutsideRight {\n    fill: ").concat(options.taskTextDarkColor, ";\n    text-anchor: start;\n    // font-size: ").concat(options.ganttFontSize, ";\n    font-family: 'trebuchet ms', verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n\n  }\n\n  .taskTextOutsideLeft {\n    fill: ").concat(options.taskTextDarkColor, ";\n    text-anchor: end;\n    // font-size: ").concat(options.ganttFontSize, ";\n  }\n\n  /* Special case clickable */\n  .task.clickable {\n    cursor: pointer;\n  }\n  .taskText.clickable {\n    cursor: pointer;\n    fill: ").concat(options.taskTextClickableColor, " !important;\n    font-weight: bold;\n  }\n\n  .taskTextOutsideLeft.clickable {\n    cursor: pointer;\n    fill: ").concat(options.taskTextClickableColor, " !important;\n    font-weight: bold;\n  }\n\n  .taskTextOutsideRight.clickable {\n    cursor: pointer;\n    fill: ").concat(options.taskTextClickableColor, " !important;\n    font-weight: bold;\n  }\n\n  /* Specific task settings for the sections*/\n\n  .taskText0,\n  .taskText1,\n  .taskText2,\n  .taskText3 {\n    fill: ").concat(options.taskTextColor, ";\n  }\n\n  .task0,\n  .task1,\n  .task2,\n  .task3 {\n    fill: ").concat(options.taskBkgColor, ";\n    stroke: ").concat(options.taskBorderColor, ";\n  }\n\n  .taskTextOutside0,\n  .taskTextOutside2\n  {\n    fill: ").concat(options.taskTextOutsideColor, ";\n  }\n\n  .taskTextOutside1,\n  .taskTextOutside3 {\n    fill: ").concat(options.taskTextOutsideColor, ";\n  }\n\n\n  /* Active task */\n\n  .active0,\n  .active1,\n  .active2,\n  .active3 {\n    fill: ").concat(options.activeTaskBkgColor, ";\n    stroke: ").concat(options.activeTaskBorderColor, ";\n  }\n\n  .activeText0,\n  .activeText1,\n  .activeText2,\n  .activeText3 {\n    fill: ").concat(options.taskTextDarkColor, " !important;\n  }\n\n\n  /* Completed task */\n\n  .done0,\n  .done1,\n  .done2,\n  .done3 {\n    stroke: ").concat(options.doneTaskBorderColor, ";\n    fill: ").concat(options.doneTaskBkgColor, ";\n    stroke-width: 2;\n  }\n\n  .doneText0,\n  .doneText1,\n  .doneText2,\n  .doneText3 {\n    fill: ").concat(options.taskTextDarkColor, " !important;\n  }\n\n\n  /* Tasks on the critical line */\n\n  .crit0,\n  .crit1,\n  .crit2,\n  .crit3 {\n    stroke: ").concat(options.critBorderColor, ";\n    fill: ").concat(options.critBkgColor, ";\n    stroke-width: 2;\n  }\n\n  .activeCrit0,\n  .activeCrit1,\n  .activeCrit2,\n  .activeCrit3 {\n    stroke: ").concat(options.critBorderColor, ";\n    fill: ").concat(options.activeTaskBkgColor, ";\n    stroke-width: 2;\n  }\n\n  .doneCrit0,\n  .doneCrit1,\n  .doneCrit2,\n  .doneCrit3 {\n    stroke: ").concat(options.critBorderColor, ";\n    fill: ").concat(options.doneTaskBkgColor, ";\n    stroke-width: 2;\n    cursor: pointer;\n    shape-rendering: crispEdges;\n  }\n\n  .milestone {\n    transform: rotate(45deg) scale(0.8,0.8);\n  }\n\n  .milestoneText {\n    font-style: italic;\n  }\n  .doneCritText0,\n  .doneCritText1,\n  .doneCritText2,\n  .doneCritText3 {\n    fill: ").concat(options.taskTextDarkColor, " !important;\n  }\n\n  .activeCritText0,\n  .activeCritText1,\n  .activeCritText2,\n  .activeCritText3 {\n    fill: ").concat(options.taskTextDarkColor, " !important;\n  }\n\n  .titleText {\n    text-anchor: middle;\n    font-size: 18px;\n    fill: ").concat(options.textColor, "    ;\n    font-family: 'trebuchet ms', verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n  }\n");
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -14030,20 +13242,16 @@ var branches = {
 var curBranch = 'master';
 var direction = 'LR';
 var seq = 0;
-
 function getId() {
   return Object(_utils__WEBPACK_IMPORTED_MODULE_1__["random"])({
     length: 7
   });
 }
-
 function isfastforwardable(currentCommit, otherCommit) {
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Entering isfastforwardable:', currentCommit.id, otherCommit.id);
-
   while (currentCommit.seq <= otherCommit.seq && currentCommit !== otherCommit) {
     // only if other branch has more commits
     if (otherCommit.parent == null) break;
-
     if (Array.isArray(otherCommit.parent)) {
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('In merge commit:', otherCommit.parent);
       return isfastforwardable(currentCommit, commits[otherCommit.parent[0]]) || isfastforwardable(currentCommit, commits[otherCommit.parent[1]]);
@@ -14051,32 +13259,26 @@ function isfastforwardable(currentCommit, otherCommit) {
       otherCommit = commits[otherCommit.parent];
     }
   }
-
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug(currentCommit.id, otherCommit.id);
   return currentCommit.id === otherCommit.id;
 }
-
 function isReachableFrom(currentCommit, otherCommit) {
   var currentSeq = currentCommit.seq;
   var otherSeq = otherCommit.seq;
   if (currentSeq > otherSeq) return isfastforwardable(otherCommit, currentCommit);
   return false;
 }
-
 function uniqBy(list, fn) {
   var recordMap = Object.create(null);
   return list.reduce(function (out, item) {
     var key = fn(item);
-
     if (!recordMap[key]) {
       recordMap[key] = true;
       out.push(item);
     }
-
     return out;
   }, []);
 }
-
 var setDirection = function setDirection(dir) {
   direction = dir;
 };
@@ -14085,7 +13287,6 @@ var setOptions = function setOptions(rawOptString) {
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('options str', rawOptString);
   rawOptString = rawOptString && rawOptString.trim();
   rawOptString = rawOptString || '{}';
-
   try {
     options = JSON.parse(rawOptString);
   } catch (e) {
@@ -14114,12 +13315,10 @@ var branch = function branch(name) {
 var merge = function merge(otherBranch) {
   var currentCommit = commits[branches[curBranch]];
   var otherCommit = commits[branches[otherBranch]];
-
   if (isReachableFrom(currentCommit, otherCommit)) {
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Already merged');
     return;
   }
-
   if (isfastforwardable(currentCommit, otherCommit)) {
     branches[curBranch] = branches[otherBranch];
     head = commits[branches[curBranch]];
@@ -14135,7 +13334,6 @@ var merge = function merge(otherBranch) {
     commits[_commit.id] = _commit;
     branches[curBranch] = _commit.id;
   }
-
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug(branches);
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('in mergeBranch');
 };
@@ -14151,32 +13349,26 @@ var reset = function reset(commitRef) {
   var parentCount = parseInt(commitRef.split(':')[1]);
   var commit = ref === 'HEAD' ? head : commits[branches[ref]];
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug(commit, parentCount);
-
   while (parentCount > 0) {
     commit = commits[commit.parent];
     parentCount--;
-
     if (!commit) {
       var err = 'Critical error - unique parent commit not found during reset';
       _logger__WEBPACK_IMPORTED_MODULE_0__["log"].error(err);
       throw err;
     }
   }
-
   head = commit;
   branches[curBranch] = commit.id;
 };
-
 function upsert(arr, key, newval) {
   var index = arr.indexOf(key);
-
   if (index === -1) {
     arr.push(newval);
   } else {
     arr.splice(index, 1, newval);
   }
 }
-
 function prettyPrintCommitHistory(commitArr) {
   var commit = commitArr.reduce(function (out, commit) {
     if (out.seq > commit.seq) return out;
@@ -14191,13 +13383,10 @@ function prettyPrintCommitHistory(commitArr) {
     }
   });
   var label = [line, commit.id, commit.seq];
-
   for (var _branch in branches) {
     if (branches[_branch] === commit.id) label.push(_branch);
   }
-
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug(label.join(' '));
-
   if (Array.isArray(commit.parent)) {
     var newCommit = commits[commit.parent[0]];
     upsert(commitArr, commit, newCommit);
@@ -14208,13 +13397,11 @@ function prettyPrintCommitHistory(commitArr) {
     var nextCommit = commits[commit.parent];
     upsert(commitArr, commit, nextCommit);
   }
-
   commitArr = uniqBy(commitArr, function (c) {
     return c.id;
   });
   prettyPrintCommitHistory(commitArr);
 }
-
 var prettyPrint = function prettyPrint() {
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug(commits);
   var node = getCommitsArray()[0];
@@ -14231,14 +13418,12 @@ var clear = function clear() {
 };
 var getBranchesAsObjArray = function getBranchesAsObjArray() {
   var branchArr = [];
-
   for (var _branch2 in branches) {
     branchArr.push({
       name: _branch2,
       commit: commits[branches[_branch2]]
     });
   }
-
   return branchArr;
 };
 var getBranches = function getBranches() {
@@ -14337,12 +13522,10 @@ var apiConfig = {};
 var setConf = function setConf(c) {
   apiConfig = c;
 };
-
 function svgCreateDefs(svg) {
   svg.append('defs').append('g').attr('id', 'def-commit').append('circle').attr('r', config.nodeRadius).attr('cx', 0).attr('cy', 0);
   svg.select('#def-commit').append('foreignObject').attr('width', config.nodeLabel.width).attr('height', config.nodeLabel.height).attr('x', config.nodeLabel.x).attr('y', config.nodeLabel.y).attr('class', 'node-label').attr('requiredFeatures', 'http://www.w3.org/TR/SVG11/feature#Extensibility').append('p').html('');
 }
-
 function svgDrawLine(svg, points, colorIdx, interpolate) {
   var curve = Object(_utils__WEBPACK_IMPORTED_MODULE_4__["interpolateToCurve"])(interpolate, d3__WEBPACK_IMPORTED_MODULE_0__["curveBasis"]);
   var color = config.branchColors[colorIdx % config.branchColors.length];
@@ -14352,9 +13535,9 @@ function svgDrawLine(svg, points, colorIdx, interpolate) {
     return Math.round(d.y);
   }).curve(curve);
   svg.append('svg:path').attr('d', lineGen(points)).style('stroke', color).style('stroke-width', config.lineStrokeWidth).style('fill', 'none');
-} // Pass in the element and its pre-transform coords
+}
 
-
+// Pass in the element and its pre-transform coords
 function getElementCoords(element, coords) {
   coords = coords || element.node().getBBox();
   var ctm = element.node().getCTM();
@@ -14367,12 +13550,10 @@ function getElementCoords(element, coords) {
     height: coords.height
   };
 }
-
 function svgDrawLineForCommits(svg, fromId, toId, direction, color) {
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('svgDrawLineForCommits: ', fromId, toId);
   var fromBbox = getElementCoords(svg.select('#node-' + fromId + ' circle'));
   var toBbox = getElementCoords(svg.select('#node-' + toId + ' circle'));
-
   switch (direction) {
     case 'LR':
       // (toBbox)
@@ -14413,9 +13594,7 @@ function svgDrawLineForCommits(svg, fromId, toId, direction, color) {
           y: toBbox.top + toBbox.height / 2
         }], color);
       }
-
       break;
-
     case 'BT':
       //      +           (fromBbox)
       //      |
@@ -14456,28 +13635,22 @@ function svgDrawLineForCommits(svg, fromId, toId, direction, color) {
           y: toBbox.top
         }], color);
       }
-
       break;
   }
 }
-
 function cloneNode(svg, selector) {
   return svg.select(selector).node().cloneNode(true);
 }
-
 function renderCommitHistory(svg, commitid, branches, direction) {
   var commit;
   var numCommits = Object.keys(allCommitsDict).length;
-
   if (typeof commitid === 'string') {
     do {
       commit = allCommitsDict[commitid];
       _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('in renderCommitHistory', commit.id, commit.seq);
-
       if (svg.select('#node-' + commitid).size() > 0) {
         return;
       }
-
       svg.append(function () {
         return cloneNode(svg, '#def-commit');
       }).attr('class', 'commit').attr('id', function () {
@@ -14486,35 +13659,28 @@ function renderCommitHistory(svg, commitid, branches, direction) {
         switch (direction) {
           case 'LR':
             return 'translate(' + (commit.seq * config.nodeSpacing + config.leftMargin) + ', ' + branchNum * config.branchOffset + ')';
-
           case 'BT':
             return 'translate(' + (branchNum * config.branchOffset + config.leftMargin) + ', ' + (numCommits - commit.seq) * config.nodeSpacing + ')';
         }
       }).attr('fill', config.nodeFillColor).attr('stroke', config.nodeStrokeColor).attr('stroke-width', config.nodeStrokeWidth);
       var branch = void 0;
-
       for (var branchName in branches) {
         if (branches[branchName].commit === commit) {
           branch = branches[branchName];
           break;
         }
       }
-
       if (branch) {
         _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('found branch ', branch.name);
         svg.select('#node-' + commit.id + ' p').append('xhtml:span').attr('class', 'branch-label').text(branch.name + ', ');
       }
-
       svg.select('#node-' + commit.id + ' p').append('xhtml:span').attr('class', 'commit-id').text(commit.id);
-
       if (commit.message !== '' && direction === 'BT') {
         svg.select('#node-' + commit.id + ' p').append('xhtml:span').attr('class', 'commit-msg').text(', ' + commit.message);
       }
-
       commitid = commit.parent;
     } while (commitid && allCommitsDict[commitid]);
   }
-
   if (Array.isArray(commitid)) {
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('found merge commmit', commitid);
     renderCommitHistory(svg, commitid[0], branches, direction);
@@ -14523,10 +13689,8 @@ function renderCommitHistory(svg, commitid, branches, direction) {
     branchNum--;
   }
 }
-
 function renderLines(svg, commit, direction, branchColor) {
   branchColor = branchColor || 0;
-
   while (commit.seq > 0 && !commit.lineDrawn) {
     if (typeof commit.parent === 'string') {
       svgDrawLineForCommits(svg, commit.id, commit.parent, direction, branchColor);
@@ -14541,38 +13705,33 @@ function renderLines(svg, commit, direction, branchColor) {
     }
   }
 }
-
 var draw = function draw(txt, id, ver) {
   try {
     var parser = _parser_gitGraph__WEBPACK_IMPORTED_MODULE_2___default.a.parser;
     parser.yy = _gitGraphAst__WEBPACK_IMPORTED_MODULE_1__["default"];
     parser.yy.clear();
-    _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('in gitgraph renderer', txt + '\n', 'id:', id, ver); // Parse the graph definition
-
+    _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('in gitgraph renderer', txt + '\n', 'id:', id, ver);
+    // Parse the graph definition
     parser.parse(txt + '\n');
     config = Object.assign(config, apiConfig, _gitGraphAst__WEBPACK_IMPORTED_MODULE_1__["default"].getOptions());
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('effective options', config);
     var direction = _gitGraphAst__WEBPACK_IMPORTED_MODULE_1__["default"].getDirection();
     allCommitsDict = _gitGraphAst__WEBPACK_IMPORTED_MODULE_1__["default"].getCommits();
     var branches = _gitGraphAst__WEBPACK_IMPORTED_MODULE_1__["default"].getBranchesAsObjArray();
-
     if (direction === 'BT') {
       config.nodeLabel.x = branches.length * config.branchOffset;
       config.nodeLabel.width = '100%';
       config.nodeLabel.y = -1 * 2 * config.nodeRadius;
     }
-
     var svg = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id=\"".concat(id, "\"]"));
     svgCreateDefs(svg);
     branchNum = 1;
-
     for (var branch in branches) {
       var v = branches[branch];
       renderCommitHistory(svg, v.commit.id, branches, direction);
       renderLines(svg, v.commit, direction);
       branchNum++;
     }
-
     svg.attr('height', function () {
       if (direction === 'BT') return Object.keys(allCommitsDict).length * config.nodeSpacing;
       return (branches.length + 1) * config.branchOffset;
@@ -15308,7 +14467,6 @@ __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles() {
   return "\n  .commit-id,\n  .commit-msg,\n  .branch-label {\n    fill: lightgrey;\n    color: lightgrey;\n    font-family: 'trebuchet ms', verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n  }\n";
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -15345,7 +14503,9 @@ var setInfo = function setInfo(inf) {
 };
 var getInfo = function getInfo() {
   return info;
-}; // export const parseError = (err, hash) => {
+};
+
+// export const parseError = (err, hash) => {
 //   global.mermaidAPI.parseError(err, hash)
 // }
 
@@ -15353,8 +14513,8 @@ var getInfo = function getInfo() {
   setMessage: setMessage,
   getMessage: getMessage,
   setInfo: setInfo,
-  getInfo: getInfo // parseError
-
+  getInfo: getInfo
+  // parseError
 });
 
 /***/ }),
@@ -15390,27 +14550,28 @@ var setConf = function setConf(cnf) {
     conf[key] = cnf[key];
   });
 };
+
 /**
  * Draws a an info picture in the tag with id: id based on the graph definition in text.
  * @param text
  * @param id
  */
-
 var draw = function draw(txt, id, ver) {
   try {
     var parser = _parser_info__WEBPACK_IMPORTED_MODULE_2___default.a.parser;
     parser.yy = _infoDb__WEBPACK_IMPORTED_MODULE_1__["default"];
-    _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Renering info diagram\n' + txt); // Parse the graph definition
-
+    _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Renering info diagram\n' + txt);
+    // Parse the graph definition
     parser.parse(txt);
-    _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Parsed info diagram'); // Fetch the default direction, use TD if none was found
-
+    _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Parsed info diagram');
+    // Fetch the default direction, use TD if none was found
     var svg = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('#' + id);
     var g = svg.append('g');
     g.append('text') // text label for the x axis
     .attr('x', 100).attr('y', 40).attr('class', 'version').attr('font-size', '32px').style('text-anchor', 'middle').text('v ' + ver);
     svg.attr('height', 100);
-    svg.attr('width', 400); // svg.attr('viewBox', '0 0 300 150');
+    svg.attr('width', 400);
+    // svg.attr('viewBox', '0 0 300 150');
   } catch (e) {
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].error('Error while rendering info diagram');
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].error(e.message);
@@ -16068,7 +15229,6 @@ __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles() {
   return "";
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -16770,34 +15930,27 @@ var showData = false;
 var parseDirective = function parseDirective(statement, context, type) {
   _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].parseDirective(this, statement, context, type);
 };
-
 var addSection = function addSection(id, value) {
   if (typeof sections[id] === 'undefined') {
     sections[id] = value;
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Added new section :', id);
   }
 };
-
 var getSections = function getSections() {
   return sections;
 };
-
 var setTitle = function setTitle(txt) {
   title = txt;
 };
-
 var setShowData = function setShowData(toggle) {
   showData = toggle;
 };
-
 var getShowData = function getShowData() {
   return showData;
 };
-
 var getTitle = function getTitle() {
   return title;
 };
-
 var cleanupValue = function cleanupValue(value) {
   if (value.substring(0, 1) === ':') {
     value = value.substring(1).trim();
@@ -16806,15 +15959,14 @@ var cleanupValue = function cleanupValue(value) {
     return Number(value.trim());
   }
 };
-
 var clear = function clear() {
   sections = {};
   title = '';
   showData = false;
-}; // export const parseError = (err, hash) => {
+};
+// export const parseError = (err, hash) => {
 //   global.mermaidAPI.parseError(err, hash)
 // }
-
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   parseDirective: parseDirective,
@@ -16828,8 +15980,8 @@ var clear = function clear() {
   setTitle: setTitle,
   getTitle: getTitle,
   setShowData: setShowData,
-  getShowData: getShowData // parseError
-
+  getShowData: getShowData
+  // parseError
 });
 
 /***/ }),
@@ -16862,12 +16014,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var conf = _config__WEBPACK_IMPORTED_MODULE_5__["getConfig"]();
+
 /**
  * Draws a Pie Chart with the data given in text.
  * @param text
  * @param id
  */
-
 var width;
 var height = 450;
 var draw = function draw(txt, id) {
@@ -16875,31 +16027,29 @@ var draw = function draw(txt, id) {
     conf = _config__WEBPACK_IMPORTED_MODULE_5__["getConfig"]();
     var parser = _parser_pie__WEBPACK_IMPORTED_MODULE_2___default.a.parser;
     parser.yy = _pieDb__WEBPACK_IMPORTED_MODULE_1__["default"];
-    _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Rendering info diagram\n' + txt); // Parse the Pie Chart definition
-
+    _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Rendering info diagram\n' + txt);
+    // Parse the Pie Chart definition
     parser.yy.clear();
     parser.parse(txt);
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Parsed info diagram');
     var elem = document.getElementById(id);
     width = elem.parentElement.offsetWidth;
-
     if (typeof width === 'undefined') {
       width = 1200;
     }
-
     if (typeof conf.useWidth !== 'undefined') {
       width = conf.useWidth;
     }
-
     if (typeof conf.pie.useWidth !== 'undefined') {
       width = conf.pie.useWidth;
     }
-
     var diagram = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('#' + id);
-    Object(_utils__WEBPACK_IMPORTED_MODULE_4__["configureSvgSize"])(diagram, height, width, conf.pie.useMaxWidth); // Set viewBox
+    Object(_utils__WEBPACK_IMPORTED_MODULE_4__["configureSvgSize"])(diagram, height, width, conf.pie.useMaxWidth);
 
-    elem.setAttribute('viewBox', '0 0 ' + width + ' ' + height); // Fetch the default direction, use TD if none was found
+    // Set viewBox
+    elem.setAttribute('viewBox', '0 0 ' + width + ' ' + height);
 
+    // Fetch the default direction, use TD if none was found
     var margin = 40;
     var legendRectSize = 18;
     var legendSpacing = 4;
@@ -16911,22 +16061,27 @@ var draw = function draw(txt, id) {
       sum += data[key];
     });
     var themeVariables = conf.themeVariables;
-    var myGeneratedColors = [themeVariables.pie1, themeVariables.pie2, themeVariables.pie3, themeVariables.pie4, themeVariables.pie5, themeVariables.pie6, themeVariables.pie7, themeVariables.pie8, themeVariables.pie9, themeVariables.pie10, themeVariables.pie11, themeVariables.pie12]; // Set the color scale
+    var myGeneratedColors = [themeVariables.pie1, themeVariables.pie2, themeVariables.pie3, themeVariables.pie4, themeVariables.pie5, themeVariables.pie6, themeVariables.pie7, themeVariables.pie8, themeVariables.pie9, themeVariables.pie10, themeVariables.pie11, themeVariables.pie12];
 
-    var color = Object(d3__WEBPACK_IMPORTED_MODULE_0__["scaleOrdinal"])().domain(data).range(myGeneratedColors); // Compute the position of each group on the pie:
+    // Set the color scale
+    var color = Object(d3__WEBPACK_IMPORTED_MODULE_0__["scaleOrdinal"])().domain(data).range(myGeneratedColors);
 
+    // Compute the position of each group on the pie:
     var pie = Object(d3__WEBPACK_IMPORTED_MODULE_0__["pie"])().value(function (d) {
       return d.value;
     });
-    var dataReady = pie(Object(d3__WEBPACK_IMPORTED_MODULE_0__["entries"])(data)); // Shape helper to build arcs:
+    var dataReady = pie(Object(d3__WEBPACK_IMPORTED_MODULE_0__["entries"])(data));
 
-    var arcGenerator = Object(d3__WEBPACK_IMPORTED_MODULE_0__["arc"])().innerRadius(0).outerRadius(radius); // Build the pie chart: each part of the pie is a path that we build using the arc function.
+    // Shape helper to build arcs:
+    var arcGenerator = Object(d3__WEBPACK_IMPORTED_MODULE_0__["arc"])().innerRadius(0).outerRadius(radius);
 
+    // Build the pie chart: each part of the pie is a path that we build using the arc function.
     svg.selectAll('mySlices').data(dataReady).enter().append('path').attr('d', arcGenerator).attr('fill', function (d) {
       return color(d.data.key);
-    }).attr('class', 'pieCircle'); // Now add the percentage.
-    // Use the centroid method to get the best coordinates.
+    }).attr('class', 'pieCircle');
 
+    // Now add the percentage.
+    // Use the centroid method to get the best coordinates.
     svg.selectAll('mySlices').data(dataReady.filter(function (value) {
       return value.data.value !== 0;
     })).enter().append('text').text(function (d) {
@@ -16934,8 +16089,9 @@ var draw = function draw(txt, id) {
     }).attr('transform', function (d) {
       return 'translate(' + arcGenerator.centroid(d) + ')';
     }).style('text-anchor', 'middle').attr('class', 'slice');
-    svg.append('text').text(parser.yy.getTitle()).attr('x', 0).attr('y', -(height - 50) / 2).attr('class', 'pieTitleText'); // Add the legends/annotations for each section
+    svg.append('text').text(parser.yy.getTitle()).attr('x', 0).attr('y', -(height - 50) / 2).attr('class', 'pieTitleText');
 
+    // Add the legends/annotations for each section
     var legend = svg.selectAll('.legend').data(color.domain()).enter().append('g').attr('class', 'legend').attr('transform', function (d, i) {
       var height = legendRectSize + legendSpacing;
       var offset = height * color.domain().length / 2;
@@ -16976,7 +16132,6 @@ __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
   return "\n  .pieCircle{\n    stroke: ".concat(options.pieStrokeColor, ";\n    stroke-width : ").concat(options.pieStrokeWidth, ";\n    opacity : ").concat(options.pieOpacity, ";\n  }\n  .pieTitleText {\n    text-anchor: middle;\n    font-size: ").concat(options.pieTitleTextSize, ";\n    fill: ").concat(options.pieTitleTextColor, ";\n    font-family: ").concat(options.fontFamily, ";\n  }\n  .slice {\n    font-family: ").concat(options.fontFamily, ";\n    fill: ").concat(options.pieSectionTextColor, ";\n    font-size:").concat(options.pieSectionTextSize, ";\n    // fill: white;\n  }\n  .legend text {\n    fill: ").concat(options.pieLegendTextColor, ";\n    font-family: ").concat(options.fontFamily, ";\n    font-size: ").concat(options.pieLegendTextSize, ";\n  }\n");
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -17844,7 +16999,6 @@ var Relationships = {
 var parseDirective = function parseDirective(statement, context, type) {
   _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].parseDirective(this, statement, context, type);
 };
-
 var addRequirement = function addRequirement(name, type) {
   if (typeof requirements[name] === 'undefined') {
     requirements[name] = {
@@ -17856,39 +17010,32 @@ var addRequirement = function addRequirement(name, type) {
       verifyMethod: latestRequirement.verifyMethod
     };
   }
-
   latestRequirement = {};
   return requirements[name];
 };
-
 var getRequirements = function getRequirements() {
   return requirements;
 };
-
 var setNewReqId = function setNewReqId(id) {
   if (typeof latestRequirement != 'undefined') {
     latestRequirement.id = id;
   }
 };
-
 var setNewReqText = function setNewReqText(text) {
   if (typeof latestRequirement != 'undefined') {
     latestRequirement.text = text;
   }
 };
-
 var setNewReqRisk = function setNewReqRisk(risk) {
   if (typeof latestRequirement != 'undefined') {
     latestRequirement.risk = risk;
   }
 };
-
 var setNewReqVerifyMethod = function setNewReqVerifyMethod(verifyMethod) {
   if (typeof latestRequirement != 'undefined') {
     latestRequirement.verifyMethod = verifyMethod;
   }
 };
-
 var addElement = function addElement(name) {
   if (typeof elements[name] === 'undefined') {
     elements[name] = {
@@ -17898,27 +17045,22 @@ var addElement = function addElement(name) {
     };
     _logger__WEBPACK_IMPORTED_MODULE_1__["log"].info('Added new requirement: ', name);
   }
-
   latestElement = {};
   return elements[name];
 };
-
 var getElements = function getElements() {
   return elements;
 };
-
 var setNewElementType = function setNewElementType(type) {
   if (typeof latestElement != 'undefined') {
     latestElement.type = type;
   }
 };
-
 var setNewElementDocRef = function setNewElementDocRef(docRef) {
   if (typeof latestElement != 'undefined') {
     latestElement.docRef = docRef;
   }
 };
-
 var addRelationship = function addRelationship(type, src, dst) {
   relations.push({
     type: type,
@@ -17926,11 +17068,9 @@ var addRelationship = function addRelationship(type, src, dst) {
     dst: dst
   });
 };
-
 var getRelationships = function getRelationships() {
   return relations;
 };
-
 var clear = function clear() {
   relations = [];
   latestRequirement = {};
@@ -17938,7 +17078,6 @@ var clear = function clear() {
   latestElement = {};
   elements = {};
 };
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   RequirementType: RequirementType,
   RiskLevel: RiskLevel,
@@ -17978,19 +17117,21 @@ var ReqMarkers = {
   CONTAINS: 'contains',
   ARROW: 'arrow'
 };
-
 var insertLineEndings = function insertLineEndings(parentNode, conf) {
   var containsNode = parentNode.append('defs').append('marker').attr('id', ReqMarkers.CONTAINS + '_line_ending').attr('refX', 0).attr('refY', conf.line_height / 2).attr('markerWidth', conf.line_height).attr('markerHeight', conf.line_height).attr('orient', 'auto').append('g');
-  containsNode.append('circle').attr('cx', conf.line_height / 2).attr('cy', conf.line_height / 2).attr('r', conf.line_height / 2) // .attr('stroke', conf.rect_border_color)
+  containsNode.append('circle').attr('cx', conf.line_height / 2).attr('cy', conf.line_height / 2).attr('r', conf.line_height / 2)
+  // .attr('stroke', conf.rect_border_color)
   // .attr('stroke-width', 1)
   .attr('fill', 'none');
-  containsNode.append('line').attr('x1', 0).attr('x2', conf.line_height).attr('y1', conf.line_height / 2).attr('y2', conf.line_height / 2) // .attr('stroke', conf.rect_border_color)
+  containsNode.append('line').attr('x1', 0).attr('x2', conf.line_height).attr('y1', conf.line_height / 2).attr('y2', conf.line_height / 2)
+  // .attr('stroke', conf.rect_border_color)
   .attr('stroke-width', 1);
-  containsNode.append('line').attr('y1', 0).attr('y2', conf.line_height).attr('x1', conf.line_height / 2).attr('x2', conf.line_height / 2) // .attr('stroke', conf.rect_border_color)
+  containsNode.append('line').attr('y1', 0).attr('y2', conf.line_height).attr('x1', conf.line_height / 2).attr('x2', conf.line_height / 2)
+  // .attr('stroke', conf.rect_border_color)
   .attr('stroke-width', 1);
-  parentNode.append('defs').append('marker').attr('id', ReqMarkers.ARROW + '_line_ending').attr('refX', conf.line_height).attr('refY', 0.5 * conf.line_height).attr('markerWidth', conf.line_height).attr('markerHeight', conf.line_height).attr('orient', 'auto').append('path').attr('d', "M0,0\n      L".concat(conf.line_height, ",").concat(conf.line_height / 2, "\n      M").concat(conf.line_height, ",").concat(conf.line_height / 2, "\n      L0,").concat(conf.line_height)).attr('stroke-width', 1); // .attr('stroke', conf.rect_border_color);
+  parentNode.append('defs').append('marker').attr('id', ReqMarkers.ARROW + '_line_ending').attr('refX', conf.line_height).attr('refY', 0.5 * conf.line_height).attr('markerWidth', conf.line_height).attr('markerHeight', conf.line_height).attr('orient', 'auto').append('path').attr('d', "M0,0\n      L".concat(conf.line_height, ",").concat(conf.line_height / 2, "\n      M").concat(conf.line_height, ",").concat(conf.line_height / 2, "\n      L0,").concat(conf.line_height)).attr('stroke-width', 1);
+  // .attr('stroke', conf.rect_border_color);
 };
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   ReqMarkers: ReqMarkers,
   insertLineEndings: insertLineEndings
@@ -18026,8 +17167,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _requirementMarkers__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./requirementMarkers */ "./src/diagrams/requirement/requirementMarkers.js");
 
 
- // import * as configApi from '../../config';
 
+// import * as configApi from '../../config';
 
 
 
@@ -18040,25 +17181,21 @@ var setConf = function setConf(cnf) {
   if (typeof cnf === 'undefined') {
     return;
   }
-
   var keys = Object.keys(cnf);
-
   for (var i = 0; i < keys.length; i++) {
     conf[keys[i]] = cnf[keys[i]];
   }
 };
-
 var newRectNode = function newRectNode(parentNode, id) {
   return parentNode.insert('rect', '#' + id).attr('class', 'req reqBox').attr('x', 0).attr('y', 0).attr('width', conf.rect_min_width + 'px').attr('height', conf.rect_min_height + 'px');
 };
-
 var newTitleNode = function newTitleNode(parentNode, id, txts) {
   var x = conf.rect_min_width / 2;
-  var title = parentNode.append('text').attr('class', 'req reqLabel reqTitle').attr('id', id).attr('x', x).attr('y', conf.rect_padding).attr('dominant-baseline', 'hanging'); // .attr(
+  var title = parentNode.append('text').attr('class', 'req reqLabel reqTitle').attr('id', id).attr('x', x).attr('y', conf.rect_padding).attr('dominant-baseline', 'hanging');
+  // .attr(
   //   'style',
   //   'font-family: ' + configApi.getConfig().fontFamily + '; font-size: ' + conf.fontSize + 'px'
   // )
-
   var i = 0;
   txts.forEach(function (textStr) {
     if (i == 0) {
@@ -18066,7 +17203,6 @@ var newTitleNode = function newTitleNode(parentNode, id, txts) {
     } else {
       title.append('tspan').attr('text-anchor', 'middle').attr('x', conf.rect_min_width / 2).attr('dy', conf.line_height * 0.75).text(textStr);
     }
-
     i++;
   });
   var yPadding = 1.5 * conf.rect_padding;
@@ -18078,9 +17214,9 @@ var newTitleNode = function newTitleNode(parentNode, id, txts) {
     y: totalY
   };
 };
-
 var newBodyNode = function newBodyNode(parentNode, id, txts, yStart) {
-  var body = parentNode.append('text').attr('class', 'req reqLabel').attr('id', id).attr('x', conf.rect_padding).attr('y', yStart).attr('dominant-baseline', 'hanging'); // .attr(
+  var body = parentNode.append('text').attr('class', 'req reqLabel').attr('id', id).attr('x', conf.rect_padding).attr('y', yStart).attr('dominant-baseline', 'hanging');
+  // .attr(
   //   'style',
   //   'font-family: ' + configApi.getConfig().fontFamily + '; font-size: ' + conf.fontSize + 'px'
   // );
@@ -18090,7 +17226,6 @@ var newBodyNode = function newBodyNode(parentNode, id, txts, yStart) {
   var wrappedTxts = [];
   txts.forEach(function (textStr) {
     var currentTextLen = textStr.length;
-
     while (currentTextLen > charLimit && currentRow < 3) {
       var firstPart = textStr.substring(0, charLimit);
       textStr = textStr.substring(charLimit, textStr.length);
@@ -18098,14 +17233,12 @@ var newBodyNode = function newBodyNode(parentNode, id, txts, yStart) {
       wrappedTxts[wrappedTxts.length] = firstPart;
       currentRow++;
     }
-
     if (currentRow == 3) {
       var lastStr = wrappedTxts[wrappedTxts.length - 1];
       wrappedTxts[wrappedTxts.length - 1] = lastStr.substring(0, lastStr.length - 4) + '...';
     } else {
       wrappedTxts[wrappedTxts.length] = textStr;
     }
-
     currentRow = 0;
   });
   wrappedTxts.forEach(function (textStr) {
@@ -18113,45 +17246,46 @@ var newBodyNode = function newBodyNode(parentNode, id, txts, yStart) {
   });
   return body;
 };
-
 var addEdgeLabel = function addEdgeLabel(parentNode, svgPath, conf, txt) {
   // Find the half-way point
   var len = svgPath.node().getTotalLength();
-  var labelPoint = svgPath.node().getPointAtLength(len * 0.5); // Append a text node containing the label
+  var labelPoint = svgPath.node().getPointAtLength(len * 0.5);
 
+  // Append a text node containing the label
   var labelId = 'rel' + relCnt;
   relCnt++;
-  var labelNode = parentNode.append('text').attr('class', 'req relationshipLabel').attr('id', labelId).attr('x', labelPoint.x).attr('y', labelPoint.y).attr('text-anchor', 'middle').attr('dominant-baseline', 'middle') // .attr('style', 'font-family: ' + conf.fontFamily + '; font-size: ' + conf.fontSize + 'px')
-  .text(txt); // Figure out how big the opaque 'container' rectangle needs to be
+  var labelNode = parentNode.append('text').attr('class', 'req relationshipLabel').attr('id', labelId).attr('x', labelPoint.x).attr('y', labelPoint.y).attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+  // .attr('style', 'font-family: ' + conf.fontFamily + '; font-size: ' + conf.fontSize + 'px')
+  .text(txt);
 
-  var labelBBox = labelNode.node().getBBox(); // Insert the opaque rectangle before the text label
+  // Figure out how big the opaque 'container' rectangle needs to be
+  var labelBBox = labelNode.node().getBBox();
 
+  // Insert the opaque rectangle before the text label
   parentNode.insert('rect', '#' + labelId).attr('class', 'req reqLabelBox').attr('x', labelPoint.x - labelBBox.width / 2).attr('y', labelPoint.y - labelBBox.height / 2).attr('width', labelBBox.width).attr('height', labelBBox.height).attr('fill', 'white').attr('fill-opacity', '85%');
 };
-
 var drawRelationshipFromLayout = function drawRelationshipFromLayout(svg, rel, g, insert) {
   // Find the edge relating to this relationship
-  var edge = g.edge(elementString(rel.src), elementString(rel.dst)); // Get a function that will generate the line path
+  var edge = g.edge(elementString(rel.src), elementString(rel.dst));
 
+  // Get a function that will generate the line path
   var lineFunction = Object(d3__WEBPACK_IMPORTED_MODULE_0__["line"])().x(function (d) {
     return d.x;
   }).y(function (d) {
     return d.y;
-  }); // Insert the line at the right place
+  });
 
+  // Insert the line at the right place
   var svgPath = svg.insert('path', '#' + insert).attr('class', 'er relationshipLine').attr('d', lineFunction(edge.points)).attr('fill', 'none');
-
   if (rel.type == _requirementDb__WEBPACK_IMPORTED_MODULE_7__["default"].Relationships.CONTAINS) {
     svgPath.attr('marker-start', 'url(' + _common_common__WEBPACK_IMPORTED_MODULE_5__["default"].getUrl(conf.arrowMarkerAbsolute) + '#' + rel.type + '_line_ending' + ')');
   } else {
     svgPath.attr('stroke-dasharray', '10,7');
     svgPath.attr('marker-end', 'url(' + _common_common__WEBPACK_IMPORTED_MODULE_5__["default"].getUrl(conf.arrowMarkerAbsolute) + '#' + _requirementMarkers__WEBPACK_IMPORTED_MODULE_8__["default"].ReqMarkers.ARROW + '_line_ending' + ')');
   }
-
   addEdgeLabel(svg, svgPath, conf, "<<".concat(rel.type, ">>"));
   return;
 };
-
 var drawReqs = function drawReqs(reqs, graph, svgNode) {
   Object.keys(reqs).forEach(function (reqName) {
     var req = reqs[reqName];
@@ -18165,8 +17299,9 @@ var drawReqs = function drawReqs(reqs, graph, svgNode) {
     nodes.push(titleNodeInfo.titleNode);
     var bodyNode = newBodyNode(groupNode, reqName + '_body', ["Id: ".concat(req.id), "Text: ".concat(req.text), "Risk: ".concat(req.risk), "Verification: ".concat(req.verifyMethod)], titleNodeInfo.y);
     nodes.push(bodyNode);
-    var rectBBox = rectNode.node().getBBox(); // Add the entity to the graph
+    var rectBBox = rectNode.node().getBBox();
 
+    // Add the entity to the graph
     graph.setNode(reqName, {
       width: rectBBox.width,
       height: rectBBox.height,
@@ -18187,8 +17322,9 @@ var drawElements = function drawElements(els, graph, svgNode) {
     nodes.push(titleNodeInfo.titleNode);
     var bodyNode = newBodyNode(groupNode, textId + '_body', ["Type: ".concat(el.type || 'Not Specified'), "Doc Ref: ".concat(el.docRef || 'None')], titleNodeInfo.y);
     nodes.push(bodyNode);
-    var rectBBox = rectNode.node().getBBox(); // Add the entity to the graph
+    var rectBBox = rectNode.node().getBBox();
 
+    // Add the entity to the graph
     graph.setNode(id, {
       width: rectBBox.width,
       height: rectBBox.height,
@@ -18197,7 +17333,6 @@ var drawElements = function drawElements(els, graph, svgNode) {
     });
   });
 };
-
 var addRelationships = function addRelationships(relationships, g) {
   relationships.forEach(function (r) {
     var src = elementString(r.src);
@@ -18208,7 +17343,6 @@ var addRelationships = function addRelationships(relationships, g) {
   });
   return relationships;
 };
-
 var adjustEntities = function adjustEntities(svgNode, graph) {
   graph.nodes().forEach(function (v) {
     if (typeof v !== 'undefined' && typeof graph.node(v) !== 'undefined') {
@@ -18218,11 +17352,9 @@ var adjustEntities = function adjustEntities(svgNode, graph) {
   });
   return;
 };
-
 var elementString = function elementString(str) {
   return str.replace(/\s/g, '').replace(/\./g, '_');
 };
-
 var draw = function draw(text, id) {
   _parser_requirementDiagram__WEBPACK_IMPORTED_MODULE_6__["parser"].yy = _requirementDb__WEBPACK_IMPORTED_MODULE_7__["default"];
   _parser_requirementDiagram__WEBPACK_IMPORTED_MODULE_6__["parser"].yy.clear();
@@ -18253,8 +17385,9 @@ var draw = function draw(text, id) {
   adjustEntities(svg, g);
   relationships.forEach(function (rel) {
     drawRelationshipFromLayout(svg, rel, g, id);
-  }); // svg.attr('height', '500px');
+  });
 
+  // svg.attr('height', '500px');
   var padding = conf.rect_padding;
   var svgBounds = svg.node().getBBox();
   var width = svgBounds.width + padding * 2;
@@ -18280,9 +17413,8 @@ var draw = function draw(text, id) {
 __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
   return "\n\n  marker {\n    fill: ".concat(options.relationColor, ";\n    stroke: ").concat(options.relationColor, ";\n  }\n\n  marker.cross {\n    stroke: ").concat(options.lineColor, ";\n  }\n\n  svg {\n    font-family: ").concat(options.fontFamily, ";\n    font-size: ").concat(options.fontSize, ";\n  }\n\n  .reqBox {\n    fill: ").concat(options.requirementBackground, ";\n    fill-opacity: 100%;\n    stroke: ").concat(options.requirementBorderColor, ";\n    stroke-width: ").concat(options.requirementBorderSize, ";\n  }\n  \n  .reqTitle, .reqLabel{\n    fill:  ").concat(options.requirementTextColor, ";\n  }\n  .reqLabelBox {\n    fill: ").concat(options.relationLabelBackground, ";\n    fill-opacity: 100%;\n  }\n\n  .req-title-line {\n    stroke: ").concat(options.requirementBorderColor, ";\n    stroke-width: ").concat(options.requirementBorderSize, ";\n  }\n  .relationshipLine {\n    stroke: ").concat(options.relationColor, ";\n    stroke-width: 1;\n  }\n  .relationshipLabel {\n    fill: ").concat(options.relationLabelColor, ";\n  }\n\n");
-}; // fill', conf.rect_fill)
-
-
+};
+// fill', conf.rect_fill)
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -19200,50 +18332,43 @@ var parseDirective = function parseDirective(statement, context, type) {
 var addActor = function addActor(id, name, description) {
   // Don't allow description nulling
   var old = actors[id];
-  if (old && name === old.name && description == null) return; // Don't allow null descriptions, either
+  if (old && name === old.name && description == null) return;
 
+  // Don't allow null descriptions, either
   if (description == null || description.text == null) {
     description = {
       text: name,
       wrap: null
     };
   }
-
   actors[id] = {
     name: name,
     description: description.text,
     wrap: description.wrap === undefined && autoWrap() || !!description.wrap,
     prevActor: prevActor
   };
-
   if (prevActor && actors[prevActor]) {
     actors[prevActor].nextActor = id;
   }
-
   prevActor = id;
 };
-
 var activationCount = function activationCount(part) {
   var i;
   var count = 0;
-
   for (i = 0; i < messages.length; i++) {
     if (messages[i].type === LINETYPE.ACTIVE_START) {
       if (messages[i].from.actor === part) {
         count++;
       }
     }
-
     if (messages[i].type === LINETYPE.ACTIVE_END) {
       if (messages[i].from.actor === part) {
         count--;
       }
     }
   }
-
   return count;
 };
-
 var addMessage = function addMessage(idFrom, idTo, message, answer) {
   messages.push({
     from: idFrom,
@@ -19259,10 +18384,8 @@ var addSignal = function addSignal(idFrom, idTo) {
     wrap: undefined
   };
   var messageType = arguments.length > 3 ? arguments[3] : undefined;
-
   if (messageType === LINETYPE.ACTIVE_END) {
     var cnt = activationCount(idFrom.actor);
-
     if (cnt < 1) {
       // Bail out as there is an activation signal from an inactive participant
       var error = new Error('Trying to inactivate an inactive participant (' + idFrom.actor + ')');
@@ -19281,7 +18404,6 @@ var addSignal = function addSignal(idFrom, idTo) {
       throw error;
     }
   }
-
   messages.push({
     from: idFrom,
     to: idTo,
@@ -19327,7 +18449,6 @@ var clear = function clear() {
 };
 var parseMessage = function parseMessage(str) {
   var _str = str.trim();
-
   var message = {
     text: _str.replace(/^[:]?(?:no)?wrap:/, '').trim(),
     wrap: _str.match(/^[:]?wrap:/) !== null ? true : _str.match(/^[:]?nowrap:/) !== null ? false : undefined
@@ -19375,8 +18496,9 @@ var addNote = function addNote(actor, placement, message) {
     placement: placement,
     message: message.text,
     wrap: message.wrap === undefined && autoWrap() || !!message.wrap
-  }; // Coerce actor into a [to, from, ...] array
+  };
 
+  // Coerce actor into a [to, from, ...] array
   var actors = [].concat(actor, actor);
   notes.push(note);
   messages.push({
@@ -19402,71 +18524,54 @@ var apply = function apply(param) {
       case 'addActor':
         addActor(param.actor, param.actor, param.description);
         break;
-
       case 'activeStart':
         addSignal(param.actor, undefined, undefined, param.signalType);
         break;
-
       case 'activeEnd':
         addSignal(param.actor, undefined, undefined, param.signalType);
         break;
-
       case 'addNote':
         addNote(param.actor, param.placement, param.text);
         break;
-
       case 'addMessage':
         addSignal(param.from, param.to, param.msg, param.signalType);
         break;
-
       case 'loopStart':
         addSignal(undefined, undefined, param.loopText, param.signalType);
         break;
-
       case 'loopEnd':
         addSignal(undefined, undefined, undefined, param.signalType);
         break;
-
       case 'rectStart':
         addSignal(undefined, undefined, param.color, param.signalType);
         break;
-
       case 'rectEnd':
         addSignal(undefined, undefined, undefined, param.signalType);
         break;
-
       case 'optStart':
         addSignal(undefined, undefined, param.optText, param.signalType);
         break;
-
       case 'optEnd':
         addSignal(undefined, undefined, undefined, param.signalType);
         break;
-
       case 'altStart':
         addSignal(undefined, undefined, param.altText, param.signalType);
         break;
-
       case 'else':
         addSignal(undefined, undefined, param.altText, param.signalType);
         break;
-
       case 'altEnd':
         addSignal(undefined, undefined, undefined, param.signalType);
         break;
-
       case 'setTitle':
         setTitle(param.text);
         break;
-
       case 'parStart':
         addSignal(undefined, undefined, param.parText, param.signalType);
         break;
-
       case 'and':
         addSignal(undefined, undefined, param.parText, param.signalType);
         break;
-
       case 'parEnd':
         addSignal(undefined, undefined, undefined, param.signalType);
         break;
@@ -19526,6 +18631,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sequenceDb__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sequenceDb */ "./src/diagrams/sequence/sequenceDb.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../config */ "./src/config.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../utils */ "./src/utils.js");
+/* eslint-disable no-undef */
 
 
 
@@ -19621,47 +18727,32 @@ var bounds = {
   },
   updateBounds: function updateBounds(startx, starty, stopx, stopy) {
     var _self = this;
-
     var cnt = 0;
-
     function updateFn(type) {
       return function updateItemBounds(item) {
-        cnt++; // The loop sequenceItems is a stack so the biggest margins in the beginning of the sequenceItems
-
+        cnt++;
+        // The loop sequenceItems is a stack so the biggest margins in the beginning of the sequenceItems
         var n = _self.sequenceItems.length - cnt + 1;
-
         _self.updateVal(item, 'starty', starty - n * conf.boxMargin, Math.min);
-
         _self.updateVal(item, 'stopy', stopy + n * conf.boxMargin, Math.max);
-
         _self.updateVal(bounds.data, 'startx', startx - n * conf.boxMargin, Math.min);
-
         _self.updateVal(bounds.data, 'stopx', stopx + n * conf.boxMargin, Math.max);
-
         if (!(type === 'activation')) {
           _self.updateVal(item, 'startx', startx - n * conf.boxMargin, Math.min);
-
           _self.updateVal(item, 'stopx', stopx + n * conf.boxMargin, Math.max);
-
           _self.updateVal(bounds.data, 'starty', starty - n * conf.boxMargin, Math.min);
-
           _self.updateVal(bounds.data, 'stopy', stopy + n * conf.boxMargin, Math.max);
         }
       };
     }
-
     this.sequenceItems.forEach(updateFn());
     this.activations.forEach(updateFn('activation'));
   },
   insert: function insert(startx, starty, stopx, stopy) {
     var _startx = Math.min(startx, stopx);
-
     var _stopx = Math.max(startx, stopx);
-
     var _starty = Math.min(starty, stopy);
-
     var _stopy = Math.max(starty, stopy);
-
     this.updateVal(bounds.data, 'startx', _startx, Math.min);
     this.updateVal(bounds.data, 'starty', _starty, Math.min);
     this.updateVal(bounds.data, 'stopx', _stopx, Math.max);
@@ -19744,12 +18835,12 @@ var bounds = {
     };
   }
 };
+
 /**
  * Draws an note in the diagram with the attached line
  * @param elem - The diagram to draw to.
  * @param noteModel:{x: number, y: number, message: string, width: number} - startx: x axis start position, verticalPos: y axis position, messsage: the message to be shown, width: Set this with a custom width to override the default configured width.
  */
-
 var drawNote = function drawNote(elem, noteModel) {
   bounds.bumpVerticalPos(conf.boxMargin);
   noteModel.height = conf.boxMargin;
@@ -19788,7 +18879,6 @@ var drawNote = function drawNote(elem, noteModel) {
   bounds.insert(noteModel.startx, noteModel.starty, noteModel.stopx, noteModel.stopy);
   bounds.models.addNote(noteModel);
 };
-
 var messageFont = function messageFont(cnf) {
   return {
     fontFamily: cnf.messageFontFamily,
@@ -19796,7 +18886,6 @@ var messageFont = function messageFont(cnf) {
     fontWeight: cnf.messageFontWeight
   };
 };
-
 var noteFont = function noteFont(cnf) {
   return {
     fontFamily: cnf.noteFontFamily,
@@ -19804,7 +18893,6 @@ var noteFont = function noteFont(cnf) {
     fontWeight: cnf.noteFontWeight
   };
 };
-
 var actorFont = function actorFont(cnf) {
   return {
     fontFamily: cnf.actorFontFamily,
@@ -19812,21 +18900,20 @@ var actorFont = function actorFont(cnf) {
     fontWeight: cnf.actorFontWeight
   };
 };
+
 /**
  * Draws a message
  * @param g - the parent of the message element
  * @param msgModel - the model containing fields describing a message
  */
-
-
 var drawMessage = function drawMessage(g, msgModel) {
   bounds.bumpVerticalPos(10);
   var startx = msgModel.startx,
-      stopx = msgModel.stopx,
-      starty = msgModel.starty,
-      message = msgModel.message,
-      type = msgModel.type,
-      sequenceIndex = msgModel.sequenceIndex;
+    stopx = msgModel.stopx,
+    starty = msgModel.starty,
+    message = msgModel.message,
+    type = msgModel.type,
+    sequenceIndex = msgModel.sequenceIndex;
   var lines = _common_common__WEBPACK_IMPORTED_MODULE_4__["default"].splitBreaks(message).length;
   var textDims = _utils__WEBPACK_IMPORTED_MODULE_7__["default"].calculateTextDimensions(message, messageFont(conf));
   var lineHeight = textDims.height / lines;
@@ -19850,10 +18937,8 @@ var drawMessage = function drawMessage(g, msgModel) {
   var totalOffset = textDims.height - 10;
   var textWidth = textDims.width;
   var line, lineStarty;
-
   if (startx === stopx) {
     lineStarty = bounds.getVerticalPos() + totalOffset;
-
     if (conf.rightAngles) {
       line = g.append('path').attr('d', "M  ".concat(startx, ",").concat(lineStarty, " H ").concat(startx + Math.max(conf.width / 2, textWidth / 2), " V ").concat(lineStarty + 25, " H ").concat(startx));
     } else {
@@ -19861,7 +18946,6 @@ var drawMessage = function drawMessage(g, msgModel) {
       lineStarty = bounds.getVerticalPos() + totalOffset;
       line = g.append('path').attr('d', 'M ' + startx + ',' + lineStarty + ' C ' + (startx + 60) + ',' + (lineStarty - 10) + ' ' + (startx + 60) + ',' + (lineStarty + 30) + ' ' + startx + ',' + (lineStarty + 20));
     }
-
     totalOffset += 30;
     var dx = Math.max(textWidth / 2, conf.width / 2);
     bounds.insert(startx - dx, bounds.getVerticalPos() - 10 + totalOffset, stopx + dx, bounds.getVerticalPos() + 30 + totalOffset);
@@ -19874,101 +18958,89 @@ var drawMessage = function drawMessage(g, msgModel) {
     line.attr('x2', stopx);
     line.attr('y2', lineStarty);
     bounds.insert(startx, lineStarty - 10, stopx, lineStarty);
-  } // Make an SVG Container
+  }
+  // Make an SVG Container
   // Draw the line
-
-
   if (type === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED || type === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED_CROSS || type === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED_POINT || type === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED_OPEN) {
     line.style('stroke-dasharray', '3, 3');
     line.attr('class', 'messageLine1');
   } else {
     line.attr('class', 'messageLine0').attr('onclick', 'javascript:umlLineText("' + message + '")');
   }
-
   var url = '';
-
   if (conf.arrowMarkerAbsolute) {
     url = window.location.protocol + '//' + window.location.host + window.location.pathname + window.location.search;
     url = url.replace(/\(/g, '\\(');
     url = url.replace(/\)/g, '\\)');
   }
-
   line.attr('stroke-width', 2);
   line.attr('stroke', 'none'); // handled by theme/css anyway
-
   line.style('fill', 'none'); // remove any fill colour
-
   if (type === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.SOLID || type === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED) {
     line.attr('marker-end', 'url(' + url + '#arrowhead)');
   }
-
   if (type === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.SOLID_POINT || type === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED_POINT) {
     line.attr('marker-end', 'url(' + url + '#filled-head)');
   }
-
   if (type === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.SOLID_CROSS || type === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED_CROSS) {
     line.attr('marker-end', 'url(' + url + '#crosshead)');
-  } // add node number
+  }
 
-
+  // add node number
   if (_sequenceDb__WEBPACK_IMPORTED_MODULE_5__["default"].showSequenceNumbers() || conf.showSequenceNumbers) {
     line.attr('marker-start', 'url(' + url + '#sequencenumber)');
     g.append('text').attr('x', startx).attr('y', lineStarty + 4).attr('font-family', 'sans-serif').attr('font-size', '12px').attr('text-anchor', 'middle').attr('textLength', '16px').attr('class', 'sequenceNumber').text(sequenceIndex);
   }
-
   bounds.bumpVerticalPos(totalOffset);
   msgModel.height += totalOffset;
   msgModel.stopy = msgModel.starty + msgModel.height;
   bounds.insert(msgModel.fromBounds, msgModel.starty, msgModel.toBounds, msgModel.stopy);
 };
-
 var drawActors = function drawActors(diagram, actors, actorKeys, verticalPos) {
   var actorIds = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : [];
   // Draw the actors
   var prevWidth = 0;
-  var prevMargin = 0; // const actorIds = ['PRODUCER', 'CLOUD', 'APPLICATION', 'READER', 'ENDPOINT'];
+  var prevMargin = 0;
+  // const actorIds = ['PRODUCER', 'CLOUD', 'APPLICATION', 'READER', 'ENDPOINT'];
 
   for (var i = 0; i < actorKeys.length; i++) {
-    var actor = actors[actorKeys[i]]; // Add some rendering data to the object
+    var actor = actors[actorKeys[i]];
 
+    // Add some rendering data to the object
     actor.width = actor.width || conf.width;
     actor.height = Math.max(actor.height || conf.height, conf.height);
     actor.margin = actor.margin || conf.actorMargin;
     actor.x = prevWidth + prevMargin;
-    actor.y = verticalPos; // Draw the box with the attached line
+    actor.y = verticalPos;
 
-    _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].drawActor(diagram, actor, conf, actorsIds.length > 0 ? actorIds[i] : 'unknown');
+    // Draw the box with the attached line
+    _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].drawActor(diagram, actor, conf, actorIds.length > 0 ? actorIds[i] : 'unknown');
     bounds.insert(actor.x, verticalPos, actor.x + actor.width, actor.height);
     prevWidth += actor.width;
     prevMargin += actor.margin;
     bounds.models.addActor(actor);
-  } // Add a margin between the actor boxes and the first arrow
+  }
 
-
+  // Add a margin between the actor boxes and the first arrow
   bounds.bumpVerticalPos(conf.height);
 };
 var setConf = function setConf(cnf) {
   Object(_utils__WEBPACK_IMPORTED_MODULE_7__["assignWithDepth"])(conf, cnf);
-
   if (cnf.fontFamily) {
     conf.actorFontFamily = conf.noteFontFamily = conf.messageFontFamily = cnf.fontFamily;
   }
-
   if (cnf.fontSize) {
     conf.actorFontSize = conf.noteFontSize = conf.messageFontSize = cnf.fontSize;
   }
-
   if (cnf.fontWeight) {
     conf.actorFontWeight = conf.noteFontWeight = conf.messageFontWeight = cnf.fontWeight;
   }
 };
-
 var actorActivations = function actorActivations(actor) {
   return bounds.activations.filter(function (activation) {
     return activation.actor === actor;
   });
 };
-
 var activationBounds = function activationBounds(actor, actors) {
   // handle multiple stacked activations for same actor
   var actorObj = actors[actor];
@@ -19981,43 +19053,43 @@ var activationBounds = function activationBounds(actor, actors) {
   }, actorObj.x + actorObj.width / 2);
   return [left, right];
 };
-
 function adjustLoopHeightForWrap(loopWidths, msg, preMargin, postMargin, addLoopFn) {
   bounds.bumpVerticalPos(preMargin);
   var heightAdjust = postMargin;
-
   if (msg.id && msg.message && loopWidths[msg.id]) {
     var loopWidth = loopWidths[msg.id].width;
     var textConf = messageFont(conf);
     msg.message = _utils__WEBPACK_IMPORTED_MODULE_7__["default"].wrapLabel("[".concat(msg.message, "]"), loopWidth - 2 * conf.wrapPadding, textConf);
     msg.width = loopWidth;
-    msg.wrap = true; // const lines = common.splitBreaks(msg.message).length;
+    msg.wrap = true;
 
+    // const lines = common.splitBreaks(msg.message).length;
     var textDims = _utils__WEBPACK_IMPORTED_MODULE_7__["default"].calculateTextDimensions(msg.message, textConf);
     var totalOffset = Math.max(textDims.height, conf.labelBoxHeight);
     heightAdjust = postMargin + totalOffset;
     _logger__WEBPACK_IMPORTED_MODULE_2__["log"].debug("".concat(totalOffset, " - ").concat(msg.message));
   }
-
   addLoopFn(msg);
   bounds.bumpVerticalPos(heightAdjust);
 }
+
 /**
  * Draws a sequenceDiagram in the tag with id: id based on the graph definition in text.
  * @param text
  * @param id
+ * @param participants
  */
-
-
-var draw = function draw(text, id, participants) {
+var draw = function draw(text, id) {
+  var participants = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
   conf = _config__WEBPACK_IMPORTED_MODULE_6__["getConfig"]().sequence;
   _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.clear();
   _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.setWrap(conf.wrap);
   _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].parse(text + '\n');
   bounds.init();
   _logger__WEBPACK_IMPORTED_MODULE_2__["log"].debug("C:".concat(JSON.stringify(conf, null, 2)));
-  var diagram = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id=\"".concat(id, "\"]")); // Fetch data from the parsing
+  var diagram = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id=\"".concat(id, "\"]"));
 
+  // Fetch data from the parsing
   var actors = _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.getActors();
   var actorKeys = _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.getActorKeys();
   var messages = _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.getMessages();
@@ -20025,121 +19097,103 @@ var draw = function draw(text, id, participants) {
   var maxMessageWidthPerActor = getMaxMessageWidthPerActor(actors, messages);
   conf.height = calculateActorMargins(actors, maxMessageWidthPerActor);
   drawActors(diagram, actors, actorKeys, 0, participants);
-  var loopWidths = calculateLoopBounds(messages, actors, maxMessageWidthPerActor); // The arrow head definition is attached to the svg once
+  var loopWidths = calculateLoopBounds(messages, actors, maxMessageWidthPerActor);
 
+  // The arrow head definition is attached to the svg once
   _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].insertArrowHead(diagram);
   _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].insertArrowCrossHead(diagram);
   _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].insertArrowFilledHead(diagram);
   _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].insertSequenceNumber(diagram);
-
   function activeEnd(msg, verticalPos) {
     var activationData = bounds.endActivation(msg);
-
     if (activationData.starty + 18 > verticalPos) {
       activationData.starty = verticalPos - 6;
       verticalPos += 12;
     }
-
     _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].drawActivation(diagram, activationData, verticalPos, conf, actorActivations(msg.from.actor).length);
     bounds.insert(activationData.startx, verticalPos - 10, activationData.stopx, verticalPos);
-  } // Draw the messages/signals
+  }
 
-
+  // Draw the messages/signals
   var sequenceIndex = 1;
   messages.forEach(function (msg) {
     var loopModel, noteModel, msgModel;
-
     switch (msg.type) {
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.NOTE:
         noteModel = msg.noteModel;
         drawNote(diagram, noteModel);
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.ACTIVE_START:
         bounds.newActivation(msg, diagram, actors);
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.ACTIVE_END:
         activeEnd(msg, bounds.getVerticalPos());
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.LOOP_START:
         adjustLoopHeightForWrap(loopWidths, msg, conf.boxMargin, conf.boxMargin + conf.boxTextMargin, function (message) {
           return bounds.newLoop(message);
         });
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.LOOP_END:
         loopModel = bounds.endLoop();
         _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].drawLoop(diagram, loopModel, 'loop', conf);
         bounds.bumpVerticalPos(loopModel.stopy - bounds.getVerticalPos());
         bounds.models.addLoop(loopModel);
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.RECT_START:
         adjustLoopHeightForWrap(loopWidths, msg, conf.boxMargin, conf.boxMargin, function (message) {
           return bounds.newLoop(undefined, message.message);
         });
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.RECT_END:
         loopModel = bounds.endLoop();
         _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].drawBackgroundRect(diagram, loopModel);
         bounds.models.addLoop(loopModel);
         bounds.bumpVerticalPos(loopModel.stopy - bounds.getVerticalPos());
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.OPT_START:
         adjustLoopHeightForWrap(loopWidths, msg, conf.boxMargin, conf.boxMargin + conf.boxTextMargin, function (message) {
           return bounds.newLoop(message);
         });
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.OPT_END:
         loopModel = bounds.endLoop();
         _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].drawLoop(diagram, loopModel, 'opt', conf);
         bounds.bumpVerticalPos(loopModel.stopy - bounds.getVerticalPos());
         bounds.models.addLoop(loopModel);
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.ALT_START:
         adjustLoopHeightForWrap(loopWidths, msg, conf.boxMargin, conf.boxMargin + conf.boxTextMargin, function (message) {
           return bounds.newLoop(message);
         });
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.ALT_ELSE:
         adjustLoopHeightForWrap(loopWidths, msg, conf.boxMargin + conf.boxTextMargin, conf.boxMargin, function (message) {
           return bounds.addSectionToLoop(message);
         });
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.ALT_END:
         loopModel = bounds.endLoop();
         _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].drawLoop(diagram, loopModel, 'alt', conf);
         bounds.bumpVerticalPos(loopModel.stopy - bounds.getVerticalPos());
         bounds.models.addLoop(loopModel);
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.PAR_START:
         adjustLoopHeightForWrap(loopWidths, msg, conf.boxMargin, conf.boxMargin + conf.boxTextMargin, function (message) {
           return bounds.newLoop(message);
         });
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.PAR_AND:
         adjustLoopHeightForWrap(loopWidths, msg, conf.boxMargin + conf.boxTextMargin, conf.boxMargin, function (message) {
           return bounds.addSectionToLoop(message);
         });
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.PAR_END:
         loopModel = bounds.endLoop();
         _svgDraw__WEBPACK_IMPORTED_MODULE_1__["default"].drawLoop(diagram, loopModel, 'par', conf);
         bounds.bumpVerticalPos(loopModel.stopy - bounds.getVerticalPos());
         bounds.models.addLoop(loopModel);
         break;
-
       default:
         try {
           // lastMsg = msg
@@ -20151,45 +19205,39 @@ var draw = function draw(text, id, participants) {
         } catch (e) {
           _logger__WEBPACK_IMPORTED_MODULE_2__["log"].error('error while drawing message', e);
         }
-
-    } // Increment sequence counter if msg.type is a line (and not another event like activation or note, etc)
-
-
+    }
+    // Increment sequence counter if msg.type is a line (and not another event like activation or note, etc)
     if ([_parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.SOLID_OPEN, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED_OPEN, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.SOLID, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.SOLID_CROSS, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED_CROSS, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.SOLID_POINT, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED_POINT].includes(msg.type)) {
       sequenceIndex++;
     }
   });
-
   if (conf.mirrorActors) {
     // Draw actors below diagram
     bounds.bumpVerticalPos(conf.boxMargin * 2);
-    drawActors(diagram, actors, actorKeys, bounds.getVerticalPos());
+    // drawActors(diagram, actors, actorKeys, bounds.getVerticalPos(), []);
+    drawActors(diagram, actors, actorKeys, bounds.getVerticalPos(), participants);
   }
-
   var _bounds$getBounds = bounds.getBounds(),
-      box = _bounds$getBounds.bounds; // Adjust line height of actor lines now that the height of the diagram is known
+    box = _bounds$getBounds.bounds;
 
-
+  // Adjust line height of actor lines now that the height of the diagram is known
   _logger__WEBPACK_IMPORTED_MODULE_2__["log"].debug('For line height fix Querying: #' + id + ' .actor-line');
   var actorLines = Object(d3__WEBPACK_IMPORTED_MODULE_0__["selectAll"])('#' + id + ' .actor-line');
   actorLines.attr('y2', box.stopy);
   var height = box.stopy - box.starty + 2 * conf.diagramMarginY;
-
   if (conf.mirrorActors) {
     height = height - conf.boxMargin + conf.bottomMarginAdj;
   }
-
   var width = box.stopx - box.startx + 2 * conf.diagramMarginX;
-
   if (title) {
     diagram.append('text').text(title).attr('x', (box.stopx - box.startx) / 2 - 2 * conf.diagramMarginX).attr('y', -25);
   }
-
   Object(_utils__WEBPACK_IMPORTED_MODULE_7__["configureSvgSize"])(diagram, height, width, conf.useMaxWidth);
   var extraVertForTitle = title ? 40 : 0;
   diagram.attr('viewBox', box.startx - conf.diagramMarginX + ' -' + (conf.diagramMarginY + extraVertForTitle) + ' ' + width + ' ' + (height + extraVertForTitle));
   _logger__WEBPACK_IMPORTED_MODULE_2__["log"].debug("models:", bounds.models);
 };
+
 /**
  * Retrieves the max message width of each actor, supports signals (messages, loops)
  * and notes.
@@ -20200,28 +19248,28 @@ var draw = function draw(text, id, participants) {
  * @param actors - The actors map
  * @param messages - A list of message objects to iterate
  */
-
 var getMaxMessageWidthPerActor = function getMaxMessageWidthPerActor(actors, messages) {
   var maxMessageWidthPerActor = {};
   messages.forEach(function (msg) {
     if (actors[msg.to] && actors[msg.from]) {
-      var actor = actors[msg.to]; // If this is the first actor, and the message is left of it, no need to calculate the margin
+      var actor = actors[msg.to];
 
+      // If this is the first actor, and the message is left of it, no need to calculate the margin
       if (msg.placement === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.PLACEMENT.LEFTOF && !actor.prevActor) {
-        return;
-      } // If this is the last actor, and the message is right of it, no need to calculate the margin
-
-
-      if (msg.placement === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.PLACEMENT.RIGHTOF && !actor.nextActor) {
         return;
       }
 
+      // If this is the last actor, and the message is right of it, no need to calculate the margin
+      if (msg.placement === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.PLACEMENT.RIGHTOF && !actor.nextActor) {
+        return;
+      }
       var isNote = msg.placement !== undefined;
       var isMessage = !isNote;
       var textFont = isNote ? noteFont(conf) : messageFont(conf);
       var wrappedMessage = msg.wrap ? _utils__WEBPACK_IMPORTED_MODULE_7__["default"].wrapLabel(msg.message, conf.width - 2 * conf.wrapPadding, textFont) : msg.message;
       var messageDimensions = _utils__WEBPACK_IMPORTED_MODULE_7__["default"].calculateTextDimensions(wrappedMessage, textFont);
       var messageWidth = messageDimensions.width + 2 * conf.wrapPadding;
+
       /*
        * The following scenarios should be supported:
        *
@@ -20238,7 +19286,6 @@ var getMaxMessageWidthPerActor = function getMaxMessageWidthPerActor(actors, mes
        *   - If the note is on the right of the actor, we should define the current actor
        *     margin
        */
-
       if (isMessage && msg.from === actor.nextActor) {
         maxMessageWidthPerActor[msg.to] = Math.max(maxMessageWidthPerActor[msg.to] || 0, messageWidth);
       } else if (isMessage && msg.from === actor.prevActor) {
@@ -20254,7 +19301,6 @@ var getMaxMessageWidthPerActor = function getMaxMessageWidthPerActor(actors, mes
         if (actor.prevActor) {
           maxMessageWidthPerActor[actor.prevActor] = Math.max(maxMessageWidthPerActor[actor.prevActor] || 0, messageWidth / 2);
         }
-
         if (actor.nextActor) {
           maxMessageWidthPerActor[msg.from] = Math.max(maxMessageWidthPerActor[msg.from] || 0, messageWidth / 2);
         }
@@ -20264,6 +19310,7 @@ var getMaxMessageWidthPerActor = function getMaxMessageWidthPerActor(actors, mes
   _logger__WEBPACK_IMPORTED_MODULE_2__["log"].debug('maxMessageWidthPerActor:', maxMessageWidthPerActor);
   return maxMessageWidthPerActor;
 };
+
 /**
  * This will calculate the optimal margin for each given actor, for a given
  * actor->messageWidth map.
@@ -20274,44 +19321,35 @@ var getMaxMessageWidthPerActor = function getMaxMessageWidthPerActor(actors, mes
  * @param actors - The actors map to calculate margins for
  * @param actorToMessageWidth - A map of actor key -> max message width it holds
  */
-
-
 var calculateActorMargins = function calculateActorMargins(actors, actorToMessageWidth) {
   var maxHeight = 0;
   Object.keys(actors).forEach(function (prop) {
     var actor = actors[prop];
-
     if (actor.wrap) {
       actor.description = _utils__WEBPACK_IMPORTED_MODULE_7__["default"].wrapLabel(actor.description, conf.width - 2 * conf.wrapPadding, actorFont(conf));
     }
-
     var actDims = _utils__WEBPACK_IMPORTED_MODULE_7__["default"].calculateTextDimensions(actor.description, actorFont(conf));
     actor.width = actor.wrap ? conf.width : Math.max(conf.width, actDims.width + 2 * conf.wrapPadding);
     actor.height = actor.wrap ? Math.max(actDims.height, conf.height) : conf.height;
     maxHeight = Math.max(maxHeight, actor.height);
   });
-
   for (var actorKey in actorToMessageWidth) {
     var actor = actors[actorKey];
-
     if (!actor) {
       continue;
     }
+    var nextActor = actors[actor.nextActor];
 
-    var nextActor = actors[actor.nextActor]; // No need to space out an actor that doesn't have a next link
-
+    // No need to space out an actor that doesn't have a next link
     if (!nextActor) {
       continue;
     }
-
     var messageWidth = actorToMessageWidth[actorKey];
     var actorWidth = messageWidth + conf.actorMargin - actor.width / 2 - nextActor.width / 2;
     actor.margin = Math.max(actorWidth, conf.actorMargin);
   }
-
   return Math.max(maxHeight, conf.height);
 };
-
 var buildNoteModel = function buildNoteModel(msg, actors) {
   var startx = actors[msg.from].x;
   var stopx = actors[msg.to].x;
@@ -20326,7 +19364,6 @@ var buildNoteModel = function buildNoteModel(msg, actors) {
     stopy: 0,
     message: msg.message
   };
-
   if (msg.placement === _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.PLACEMENT.RIGHTOF) {
     noteModel.width = shouldWrap ? Math.max(conf.width, textDimensions.width) : Math.max(actors[msg.from].width / 2 + actors[msg.to].width / 2, textDimensions.width + 2 * conf.noteMargin);
     noteModel.startx = startx + (actors[msg.from].width + conf.actorMargin) / 2;
@@ -20341,37 +19378,29 @@ var buildNoteModel = function buildNoteModel(msg, actors) {
     noteModel.width = Math.abs(startx + actors[msg.from].width / 2 - (stopx + actors[msg.to].width / 2)) + conf.actorMargin;
     noteModel.startx = startx < stopx ? startx + actors[msg.from].width / 2 - conf.actorMargin / 2 : stopx + actors[msg.to].width / 2 - conf.actorMargin / 2;
   }
-
   if (shouldWrap) {
     noteModel.message = _utils__WEBPACK_IMPORTED_MODULE_7__["default"].wrapLabel(msg.message, noteModel.width - 2 * conf.wrapPadding, noteFont(conf));
   }
-
   _logger__WEBPACK_IMPORTED_MODULE_2__["log"].debug("NM:[".concat(noteModel.startx, ",").concat(noteModel.stopx, ",").concat(noteModel.starty, ",").concat(noteModel.stopy, ":").concat(noteModel.width, ",").concat(noteModel.height, "=").concat(msg.message, "]"));
   return noteModel;
 };
-
 var buildMessageModel = function buildMessageModel(msg, actors) {
   var process = false;
-
   if ([_parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.SOLID_OPEN, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED_OPEN, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.SOLID, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.SOLID_CROSS, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED_CROSS, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.SOLID_POINT, _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.DOTTED_POINT].includes(msg.type)) {
     process = true;
   }
-
   if (!process) {
     return {};
   }
-
   var fromBounds = activationBounds(msg.from, actors);
   var toBounds = activationBounds(msg.to, actors);
   var fromIdx = fromBounds[0] <= toBounds[0] ? 1 : 0;
   var toIdx = fromBounds[0] < toBounds[0] ? 0 : 1;
   var allBounds = fromBounds.concat(toBounds);
   var boundedWidth = Math.abs(toBounds[toIdx] - fromBounds[fromIdx]);
-
   if (msg.wrap && msg.message) {
     msg.message = _utils__WEBPACK_IMPORTED_MODULE_7__["default"].wrapLabel(msg.message, Math.max(boundedWidth + 2 * conf.wrapPadding, conf.width), messageFont(conf));
   }
-
   var msgDims = _utils__WEBPACK_IMPORTED_MODULE_7__["default"].calculateTextDimensions(msg.message, messageFont(conf));
   return {
     width: Math.max(msg.wrap ? 0 : msgDims.width + 2 * conf.wrapPadding, boundedWidth + 2 * conf.wrapPadding, conf.width),
@@ -20387,7 +19416,6 @@ var buildMessageModel = function buildMessageModel(msg, actors) {
     toBounds: Math.max.apply(null, allBounds)
   };
 };
-
 var calculateLoopBounds = function calculateLoopBounds(messages, actors) {
   var loops = {};
   var stack = [];
@@ -20396,7 +19424,6 @@ var calculateLoopBounds = function calculateLoopBounds(messages, actors) {
     msg.id = _utils__WEBPACK_IMPORTED_MODULE_7__["default"].random({
       length: 10
     });
-
     switch (msg.type) {
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.LOOP_START:
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.ALT_START:
@@ -20410,7 +19437,6 @@ var calculateLoopBounds = function calculateLoopBounds(messages, actors) {
           width: 0
         });
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.ALT_ELSE:
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.PAR_AND:
         if (msg.message) {
@@ -20419,9 +19445,7 @@ var calculateLoopBounds = function calculateLoopBounds(messages, actors) {
           loops[msg.id] = current;
           stack.push(current);
         }
-
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.LOOP_END:
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.ALT_END:
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.OPT_END:
@@ -20429,7 +19453,6 @@ var calculateLoopBounds = function calculateLoopBounds(messages, actors) {
         current = stack.pop();
         loops[current.id] = current;
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.ACTIVE_START:
         {
           var actorRect = actors[msg.from ? msg.from.actor : msg.to.actor];
@@ -20444,7 +19467,6 @@ var calculateLoopBounds = function calculateLoopBounds(messages, actors) {
           bounds.activations.push(toAdd);
         }
         break;
-
       case _parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_3__["parser"].yy.LINETYPE.ACTIVE_END:
         {
           var lastActorActivationIdx = bounds.activations.map(function (a) {
@@ -20454,9 +19476,7 @@ var calculateLoopBounds = function calculateLoopBounds(messages, actors) {
         }
         break;
     }
-
     var isNote = msg.placement !== undefined;
-
     if (isNote) {
       noteModel = buildNoteModel(msg, actors);
       msg.noteModel = noteModel;
@@ -20469,11 +19489,9 @@ var calculateLoopBounds = function calculateLoopBounds(messages, actors) {
     } else {
       msgModel = buildMessageModel(msg, actors);
       msg.msgModel = msgModel;
-
       if (msgModel.startx && msgModel.stopx && stack.length > 0) {
         stack.forEach(function (stk) {
           current = stk;
-
           if (msgModel.startx === msgModel.stopx) {
             var from = actors[msg.from];
             var to = actors[msg.to];
@@ -20493,7 +19511,6 @@ var calculateLoopBounds = function calculateLoopBounds(messages, actors) {
   _logger__WEBPACK_IMPORTED_MODULE_2__["log"].debug('Loop type widths:', loops);
   return loops;
 };
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   bounds: bounds,
   drawActors: drawActors,
@@ -20515,7 +19532,6 @@ __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
   return ".actor {\n    stroke: ".concat(options.actorBorder, ";\n    fill: ").concat(options.actorBkg, ";\n  }\n\n  text.actor > tspan {\n    fill: ").concat(options.actorTextColor, ";\n    stroke: none;\n  }\n\n  .actor-line {\n    stroke: ").concat(options.actorLineColor, ";\n  }\n\n  .messageLine0 {\n    stroke-width: 1.5;\n    stroke-dasharray: none;\n    stroke: ").concat(options.signalColor, ";\n  }\n\n  .messageLine1 {\n    stroke-width: 1.5;\n    stroke-dasharray: 2, 2;\n    stroke: ").concat(options.signalColor, ";\n  }\n\n  #arrowhead path {\n    fill: ").concat(options.signalColor, ";\n    stroke: ").concat(options.signalColor, ";\n  }\n\n  .sequenceNumber {\n    fill: ").concat(options.sequenceNumberColor, ";\n  }\n\n  #sequencenumber {\n    fill: ").concat(options.signalColor, ";\n  }\n\n  #crosshead path {\n    fill: ").concat(options.signalColor, ";\n    stroke: ").concat(options.signalColor, ";\n  }\n\n  .messageText {\n    fill: ").concat(options.signalTextColor, ";\n    stroke: ").concat(options.signalTextColor, ";\n  }\n\n  .labelBox {\n    stroke: ").concat(options.labelBoxBorderColor, ";\n    fill: ").concat(options.labelBoxBkgColor, ";\n  }\n\n  .labelText, .labelText > tspan {\n    fill: ").concat(options.labelTextColor, ";\n    stroke: none;\n  }\n\n  .loopText, .loopText > tspan {\n    fill: ").concat(options.loopTextColor, ";\n    stroke: none;\n  }\n\n  .loopLine {\n    stroke-width: 2px;\n    stroke-dasharray: 2, 2;\n    stroke: ").concat(options.labelBoxBorderColor, ";\n    fill: ").concat(options.labelBoxBorderColor, ";\n  }\n\n  .note {\n    //stroke: #decc93;\n    stroke: ").concat(options.noteBorderColor, ";\n    fill: ").concat(options.noteBkgColor, ";\n  }\n\n  .noteText, .noteText > tspan {\n    fill: ").concat(options.noteTextColor, ";\n    stroke: none;\n  }\n\n  .activation0 {\n    fill: ").concat(options.activationBkgColor, ";\n    stroke: ").concat(options.activationBorderColor, ";\n  }\n\n  .activation1 {\n    fill: ").concat(options.activationBkgColor, ";\n    stroke: ").concat(options.activationBorderColor, ";\n  }\n\n  .activation2 {\n    fill: ").concat(options.activationBkgColor, ";\n    stroke: ").concat(options.activationBorderColor, ";\n  }\n");
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -20557,24 +19573,20 @@ var drawRect = function drawRect(elem, rectData) {
   rectElem.attr('rx', rectData.rx);
   rectElem.attr('onclick', 'javascript:addUMLListener("' + rectData.id + '")');
   rectElem.attr('ry', rectData.ry);
-
   if (typeof rectData.class !== 'undefined') {
     rectElem.attr('class', rectData.class);
   }
-
   return rectElem;
 };
 var drawText = function drawText(elem, textData) {
   var prevTextHeight = 0,
-      textHeight = 0;
+    textHeight = 0;
   var lines = textData.text.split(_common_common__WEBPACK_IMPORTED_MODULE_0__["default"].lineBreakRegex);
   var textElems = [];
   var dy = 0;
-
   var yfunc = function yfunc() {
     return textData.y;
   };
-
   if (typeof textData.valign !== 'undefined' && typeof textData.textMargin !== 'undefined' && textData.textMargin > 0) {
     switch (textData.valign) {
       case 'top':
@@ -20582,27 +19594,21 @@ var drawText = function drawText(elem, textData) {
         yfunc = function yfunc() {
           return Math.round(textData.y + textData.textMargin);
         };
-
         break;
-
       case 'middle':
       case 'center':
         yfunc = function yfunc() {
           return Math.round(textData.y + (prevTextHeight + textHeight + textData.textMargin) / 2);
         };
-
         break;
-
       case 'bottom':
       case 'end':
         yfunc = function yfunc() {
           return Math.round(textData.y + (prevTextHeight + textHeight + 2 * textData.textMargin) - textData.textMargin);
         };
-
         break;
     }
   }
-
   if (typeof textData.anchor !== 'undefined' && typeof textData.textMargin !== 'undefined' && typeof textData.width !== 'undefined') {
     switch (textData.anchor) {
       case 'left':
@@ -20612,7 +19618,6 @@ var drawText = function drawText(elem, textData) {
         textData.dominantBaseline = 'text-after-edge';
         textData.alignmentBaseline = 'middle';
         break;
-
       case 'middle':
       case 'center':
         textData.x = Math.round(textData.x + textData.width / 2);
@@ -20620,7 +19625,6 @@ var drawText = function drawText(elem, textData) {
         textData.dominantBaseline = 'middle';
         textData.alignmentBaseline = 'middle';
         break;
-
       case 'right':
       case 'end':
         textData.x = Math.round(textData.x + textData.width - textData.textMargin);
@@ -20630,76 +19634,59 @@ var drawText = function drawText(elem, textData) {
         break;
     }
   }
-
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i];
-
     if (typeof textData.textMargin !== 'undefined' && textData.textMargin === 0 && typeof textData.fontSize !== 'undefined') {
       dy = i * textData.fontSize;
     }
-
     var textElem = elem.append('text');
     textElem.attr('x', textData.x);
     textElem.attr('y', yfunc());
-
     if (typeof textData.anchor !== 'undefined') {
       textElem.attr('text-anchor', textData.anchor).attr('onclick', 'javascript:umlLineText("' + textData.text + '")').attr('dominant-baseline', textData.dominantBaseline).attr('alignment-baseline', textData.alignmentBaseline);
     }
-
     if (typeof textData.fontFamily !== 'undefined') {
       textElem.style('font-family', textData.fontFamily);
     }
-
     if (typeof textData.fontSize !== 'undefined') {
       textElem.style('font-size', textData.fontSize);
     }
-
     if (typeof textData.fontWeight !== 'undefined') {
       textElem.style('font-weight', textData.fontWeight);
     }
-
     if (typeof textData.fill !== 'undefined') {
       textElem.attr('fill', textData.fill);
     }
-
     if (typeof textData.class !== 'undefined') {
       textElem.attr('class', textData.class);
     }
-
     if (typeof textData.dy !== 'undefined') {
       textElem.attr('dy', textData.dy);
     } else if (dy !== 0) {
       textElem.attr('dy', dy);
     }
-
     if (textData.tspan) {
       var span = textElem.append('tspan');
       span.attr('x', textData.x);
-
       if (typeof textData.fill !== 'undefined') {
         span.attr('fill', textData.fill);
       }
-
       span.text(line);
     } else {
       textElem.text(line);
     }
-
     if (typeof textData.valign !== 'undefined' && typeof textData.textMargin !== 'undefined' && textData.textMargin > 0) {
       textHeight += (textElem._groups || textElem)[0][0].getBBox().height;
       prevTextHeight = textHeight;
     }
-
     textElems.push(textElem);
   }
-
   return textElems;
 };
 var drawLabel = function drawLabel(elem, txtObject) {
   function genPoints(x, y, width, height, cut) {
     return x + ',' + y + ' ' + (x + width) + ',' + y + ' ' + (x + width) + ',' + (y + height - cut) + ' ' + (x + width - cut * 1.2) + ',' + (y + height) + ' ' + x + ',' + (y + height);
   }
-
   var polygon = elem.append('polygon');
   polygon.attr('points', genPoints(txtObject.x, txtObject.y, txtObject.width, txtObject.height, 7));
   polygon.attr('class', 'labelBox');
@@ -20714,16 +19701,13 @@ var actorCnt = -1;
  * @param actor - The actor to draw.
  * @param conf - drawText implementation discriminator object
  */
-
 var drawActor = function drawActor(elem, actor, conf, id) {
   var center = actor.x + actor.width / 2;
   var g = elem.append('g');
-
   if (actor.y === 0) {
     actorCnt++;
     g.append('line').attr('id', 'actor' + actorCnt).attr('x1', center).attr('y1', 5).attr('x2', center).attr('y2', 2000).attr('class', 'actor-line ' + id).attr('stroke-width', '0.5px').attr('onclick', 'javascript:addUMLListener("' + id + '")').attr('stroke', '#999');
   }
-
   var rect = getNoteRect();
   rect.x = actor.x;
   rect.y = actor.y;
@@ -20735,7 +19719,6 @@ var drawActor = function drawActor(elem, actor, conf, id) {
   rect.rx = 3;
   rect.ry = 3;
   drawRect(g, rect);
-
   _drawTextCandidateFunc(conf)(actor.description, g, rect.x, rect.y, rect.width, rect.height, {
     class: 'actor',
     id: id
@@ -20752,18 +19735,17 @@ var anchorElement = function anchorElement(elem) {
  * @param conf - sequence diagram config object.
  * @param actorActivations - number of activations on the actor.
  */
-
 var drawActivation = function drawActivation(elem, bounds, verticalPos, conf, actorActivations) {
   var rect = getNoteRect();
   var g = bounds.anchored;
   rect.x = bounds.startx;
   rect.y = bounds.starty;
   rect.class = 'activation' + actorActivations % 3; // Will evaluate to 0, 1 or 2
-
   rect.width = bounds.stopx - bounds.startx;
   rect.height = verticalPos - bounds.starty;
   drawRect(g, rect);
 };
+
 /**
  * Draws a loop in the diagram
  * @param elem - elemenet to append the loop to.
@@ -20771,32 +19753,27 @@ var drawActivation = function drawActivation(elem, bounds, verticalPos, conf, ac
  * @param labelText - Text within the loop.
  * @param conf - diagrom configuration
  */
-
 var drawLoop = function drawLoop(elem, loopModel, labelText, conf) {
   var boxMargin = conf.boxMargin,
-      boxTextMargin = conf.boxTextMargin,
-      labelBoxHeight = conf.labelBoxHeight,
-      labelBoxWidth = conf.labelBoxWidth,
-      fontFamily = conf.messageFontFamily,
-      fontSize = conf.messageFontSize,
-      fontWeight = conf.messageFontWeight;
+    boxTextMargin = conf.boxTextMargin,
+    labelBoxHeight = conf.labelBoxHeight,
+    labelBoxWidth = conf.labelBoxWidth,
+    fontFamily = conf.messageFontFamily,
+    fontSize = conf.messageFontSize,
+    fontWeight = conf.messageFontWeight;
   var g = elem.append('g');
-
   var drawLoopLine = function drawLoopLine(startx, starty, stopx, stopy) {
     return g.append('line').attr('x1', startx).attr('y1', starty).attr('x2', stopx).attr('y2', stopy).attr('class', 'loopLine');
   };
-
   drawLoopLine(loopModel.startx, loopModel.starty, loopModel.stopx, loopModel.starty);
   drawLoopLine(loopModel.stopx, loopModel.starty, loopModel.stopx, loopModel.stopy);
   drawLoopLine(loopModel.startx, loopModel.stopy, loopModel.stopx, loopModel.stopy);
   drawLoopLine(loopModel.startx, loopModel.starty, loopModel.startx, loopModel.stopy);
-
   if (typeof loopModel.sections !== 'undefined') {
     loopModel.sections.forEach(function (item) {
       drawLoopLine(loopModel.startx, item.y, loopModel.stopx, item.y).style('stroke-dasharray', '3, 3');
     });
   }
-
   var txt = getTextObj();
   txt.text = labelText;
   txt.x = loopModel.startx;
@@ -20825,7 +19802,6 @@ var drawLoop = function drawLoop(elem, loopModel, labelText, conf) {
   txt.fontWeight = fontWeight;
   txt.wrap = true;
   var textElem = drawText(g, txt);
-
   if (typeof loopModel.sectionTitles !== 'undefined') {
     loopModel.sectionTitles.forEach(function (item, idx) {
       if (item.message) {
@@ -20850,16 +19826,15 @@ var drawLoop = function drawLoop(elem, loopModel, labelText, conf) {
       }
     });
   }
-
   loopModel.height = Math.round(loopModel.stopy - loopModel.starty);
   return g;
 };
+
 /**
  * Draws a background rectangle
  * @param elem diagram (reference for bounds)
  * @param bounds shape of the rectangle
  */
-
 var drawBackgroundRect = function drawBackgroundRect(elem, bounds) {
   var rectElem = drawRect(elem, {
     x: bounds.startx,
@@ -20874,35 +19849,35 @@ var drawBackgroundRect = function drawBackgroundRect(elem, bounds) {
 /**
  * Setup arrow head and define the marker. The result is appended to the svg.
  */
-
 var insertArrowHead = function insertArrowHead(elem) {
   elem.append('defs').append('marker').attr('id', 'arrowhead').attr('refX', 9).attr('refY', 5).attr('markerUnits', 'userSpaceOnUse').attr('markerWidth', 12).attr('markerHeight', 12).attr('orient', 'auto').append('path').attr('d', 'M 0 0 L 10 5 L 0 10 z'); // this is actual shape for arrowhead
 };
 /**
  * Setup arrow head and define the marker. The result is appended to the svg.
  */
-
 var insertArrowFilledHead = function insertArrowFilledHead(elem) {
   elem.append('defs').append('marker').attr('id', 'filled-head').attr('refX', 18).attr('refY', 7).attr('markerWidth', 20).attr('markerHeight', 28).attr('orient', 'auto').append('path').attr('d', 'M 18,7 L9,13 L14,7 L9,1 Z');
 };
 /**
  * Setup node number. The result is appended to the svg.
  */
-
 var insertSequenceNumber = function insertSequenceNumber(elem) {
-  elem.append('defs').append('marker').attr('id', 'sequencenumber').attr('refX', 15).attr('refY', 15).attr('markerWidth', 60).attr('markerHeight', 40).attr('orient', 'auto').append('circle').attr('cx', 15).attr('cy', 15).attr('r', 6); // .style("fill", '#f00');
+  elem.append('defs').append('marker').attr('id', 'sequencenumber').attr('refX', 15).attr('refY', 15).attr('markerWidth', 60).attr('markerHeight', 40).attr('orient', 'auto').append('circle').attr('cx', 15).attr('cy', 15).attr('r', 6);
+  // .style("fill", '#f00');
 };
 /**
  * Setup arrow head and define the marker. The result is appended to the svg.
  */
-
 var insertArrowCrossHead = function insertArrowCrossHead(elem) {
   var defs = elem.append('defs');
-  var marker = defs.append('marker').attr('id', 'crosshead').attr('markerWidth', 15).attr('markerHeight', 8).attr('orient', 'auto').attr('refX', 16).attr('refY', 4); // The arrow
+  var marker = defs.append('marker').attr('id', 'crosshead').attr('markerWidth', 15).attr('markerHeight', 8).attr('orient', 'auto').attr('refX', 16).attr('refY', 4);
 
-  marker.append('path').attr('fill', 'black').attr('stroke', '#000000').style('stroke-dasharray', '0, 0').attr('stroke-width', '1px').attr('d', 'M 9,2 V 6 L16,4 Z'); // The cross
+  // The arrow
+  marker.append('path').attr('fill', 'black').attr('stroke', '#000000').style('stroke-dasharray', '0, 0').attr('stroke-width', '1px').attr('d', 'M 9,2 V 6 L16,4 Z');
 
-  marker.append('path').attr('fill', 'none').attr('stroke', '#000000').style('stroke-dasharray', '0, 0').attr('stroke-width', '1px').attr('d', 'M 0,1 L 6,7 M 6,1 L 0,7'); // this is actual shape for arrowhead
+  // The cross
+  marker.append('path').attr('fill', 'none').attr('stroke', '#000000').style('stroke-dasharray', '0, 0').attr('stroke-width', '1px').attr('d', 'M 0,1 L 6,7 M 6,1 L 0,7');
+  // this is actual shape for arrowhead
 };
 var getTextObj = function getTextObj() {
   return {
@@ -20933,40 +19908,32 @@ var getNoteRect = function getNoteRect() {
     ry: 0
   };
 };
-
 var _drawTextCandidateFunc = function () {
   function byText(content, g, x, y, width, height, textAttrs) {
     var text = g.append('text').attr('x', x + width / 2).attr('y', y + height / 2 + 5).style('text-anchor', 'middle').text(content);
-
     _setTextAttrs(text, textAttrs);
   }
-
   function byTspan(content, g, x, y, width, height, textAttrs, conf) {
     var actorFontSize = conf.actorFontSize,
-        actorFontFamily = conf.actorFontFamily,
-        actorFontWeight = conf.actorFontWeight;
+      actorFontFamily = conf.actorFontFamily,
+      actorFontWeight = conf.actorFontWeight;
     var lines = content.split(_common_common__WEBPACK_IMPORTED_MODULE_0__["default"].lineBreakRegex);
-
     for (var i = 0; i < lines.length; i++) {
       var dy = i * actorFontSize - actorFontSize * (lines.length - 1) / 2;
       var text = g.append('text').attr('x', x + width / 2).attr('y', y).style('text-anchor', 'middle').attr('onclick', 'javascript:addUMLListener("' + textAttrs.id + '")').style('font-size', actorFontSize).style('font-weight', actorFontWeight).style('font-family', actorFontFamily);
       text.append('tspan').attr('x', x + width / 2).attr('dy', dy).text(lines[i]);
       text.attr('y', y + height / 2.0).attr('dominant-baseline', 'central').attr('alignment-baseline', 'central');
-
       _setTextAttrs(text, textAttrs);
     }
   }
-
   function byFo(content, g, x, y, width, height, textAttrs, conf) {
     var s = g.append('switch');
     var f = s.append('foreignObject').attr('x', x).attr('y', y).attr('width', width).attr('height', height);
     var text = f.append('div').style('display', 'table').style('height', '100%').style('width', '100%');
     text.append('div').style('display', 'table-cell').style('text-align', 'center').style('vertical-align', 'middle').text(content);
     byTspan(content, s, x, y, width, height, textAttrs, conf);
-
     _setTextAttrs(text, textAttrs);
   }
-
   function _setTextAttrs(toText, fromTextAttrsDict) {
     for (var key in fromTextAttrsDict) {
       if (fromTextAttrsDict.hasOwnProperty(key)) {
@@ -20975,12 +19942,10 @@ var _drawTextCandidateFunc = function () {
       }
     }
   }
-
   return function (conf) {
     return conf.textPlacement === 'fo' ? byFo : conf.textPlacement === 'old' ? byText : byTspan;
   };
 }();
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   drawRect: drawRect,
   drawText: drawText,
@@ -21909,11 +20874,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/common */ "./src/diagrams/common/common.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../config */ "./src/config.js");
 /* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../logger */ "./src/logger.js");
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+function _createForOfIteratorHelper(r, e) { var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (!t) { if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e && r && "number" == typeof r.length) { t && (r = t); var _n = 0, F = function F() {}; return { s: F, n: function n() { return _n >= r.length ? { done: !0 } : { done: !1, value: r[_n++] }; }, e: function e(r) { throw r; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var o, a = !0, u = !1; return { s: function s() { t = t.call(r); }, n: function n() { var r = t.next(); return a = r.done, r; }, e: function e(r) { u = !0, o = r; }, f: function f() { try { a || null == t.return || t.return(); } finally { if (u) throw o; } } }; }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
 
 
@@ -21921,49 +20884,48 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
- // let conf;
+
+// let conf;
 
 /**
  * Draws a start state as a black circle
  */
-
 var drawStartState = function drawStartState(g) {
-  return g.append('circle') // .style('stroke', 'black')
+  return g.append('circle')
+  // .style('stroke', 'black')
   // .style('fill', 'black')
   .attr('class', 'start-state').attr('r', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.sizeUnit).attr('cx', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.sizeUnit).attr('cy', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.sizeUnit);
 };
+
 /**
  * Draws a start state as a black circle
  */
-
 var drawDivider = function drawDivider(g) {
   return g.append('line').style('stroke', 'grey').style('stroke-dasharray', '3').attr('x1', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight).attr('class', 'divider').attr('x2', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight * 2).attr('y1', 0).attr('y2', 0);
 };
+
 /**
  * Draws a an end state as a black circle
  */
-
 var drawSimpleState = function drawSimpleState(g, stateDef) {
   var state = g.append('text').attr('x', 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('y', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight + 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('font-size', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.fontSize).attr('class', 'state-title').text(stateDef.id);
   var classBox = state.node().getBBox();
   g.insert('rect', ':first-child').attr('x', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('y', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('width', classBox.width + 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('height', classBox.height + 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('rx', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.radius);
   return state;
 };
+
 /**
  * Draws a state with descriptions
  * @param {*} g
  * @param {*} stateDef
  */
-
 var drawDescrState = function drawDescrState(g, stateDef) {
   var addTspan = function addTspan(textEl, txt, isFirst) {
     var tSpan = textEl.append('tspan').attr('x', 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).text(txt);
-
     if (!isFirst) {
       tSpan.attr('dy', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight);
     }
   };
-
   var title = g.append('text').attr('x', 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('y', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight + 1.3 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('font-size', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.fontSize).attr('class', 'state-title').text(stateDef.descriptions[0]);
   var titleBox = title.node().getBBox();
   var titleHeight = titleBox.height;
@@ -21976,30 +20938,29 @@ var drawDescrState = function drawDescrState(g, stateDef) {
       addTspan(description, descr, isSecond);
       isSecond = false;
     }
-
     isFirst = false;
   });
   var descrLine = g.append('line') // text label for the x axis
   .attr('x1', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('y1', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding + titleHeight + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.dividerMargin / 2).attr('y2', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding + titleHeight + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.dividerMargin / 2).attr('class', 'descr-divider');
   var descrBox = description.node().getBBox();
   var width = Math.max(descrBox.width, titleBox.width);
-  descrLine.attr('x2', width + 3 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding); // const classBox = title.node().getBBox();
+  descrLine.attr('x2', width + 3 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding);
+  // const classBox = title.node().getBBox();
 
   g.insert('rect', ':first-child').attr('x', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('y', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('width', width + 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('height', descrBox.height + titleHeight + 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('rx', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.radius);
   return g;
 };
+
 /**
  * Adds the creates a box around the existing content and adds a
  * panel for the id on top of the content.
  */
-
 /**
  * Function that creates an title row and a frame around a substate for a composit state diagram.
  * The function returns a new d3 svg object with updated width and height properties;
  * @param {*} g The d3 svg object for the substate to framed
  * @param {*} stateDef The info about the
  */
-
 var addTitleAndBox = function addTitleAndBox(g, stateDef, altBkg) {
   var pad = Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding;
   var dblPad = 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding;
@@ -22010,12 +20971,11 @@ var addTitleAndBox = function addTitleAndBox(g, stateDef, altBkg) {
   var titleBox = title.node().getBBox();
   var titleWidth = titleBox.width + dblPad;
   var width = Math.max(titleWidth, orgWidth); // + dblPad;
-
   if (width === orgWidth) {
     width = width + dblPad;
   }
-
-  var startX; // const lineY = 1 - getConfig().state.textHeight;
+  var startX;
+  // const lineY = 1 - getConfig().state.textHeight;
   // const descrLine = g
   //   .append('line') // text label for the x axis
   //   .attr('x1', 0)
@@ -22023,9 +20983,11 @@ var addTitleAndBox = function addTitleAndBox(g, stateDef, altBkg) {
   //   .attr('y2', lineY)
   //   .attr('class', 'descr-divider');
 
-  var graphBox = g.node().getBBox(); // descrLine.attr('x2', graphBox.width + getConfig().state.padding);
+  var graphBox = g.node().getBBox();
+  // descrLine.attr('x2', graphBox.width + getConfig().state.padding);
 
-  if (stateDef.doc) {// cnsole.warn(
+  if (stateDef.doc) {
+    // cnsole.warn(
     //   stateDef.id,
     //   'orgX: ',
     //   orgX,
@@ -22039,54 +21001,50 @@ var addTitleAndBox = function addTitleAndBox(g, stateDef, altBkg) {
     //   width
     // );
   }
-
   startX = orgX - pad;
-
   if (titleWidth > orgWidth) {
     startX = (orgWidth - width) / 2 + pad;
   }
-
   if (Math.abs(orgX - graphBox.x) < pad) {
     if (titleWidth > orgWidth) {
       startX = orgX - (titleWidth - orgWidth) / 2;
     }
   }
-
-  var lineY = 1 - Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight; // White color
-
+  var lineY = 1 - Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight;
+  // White color
   g.insert('rect', ':first-child').attr('x', startX).attr('y', lineY).attr('class', altBkg ? 'alt-composit' : 'composit').attr('width', width).attr('height', graphBox.height + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.titleShift + 1).attr('rx', '0');
   title.attr('x', startX + pad);
-  if (titleWidth <= orgWidth) title.attr('x', orgX + (width - dblPad) / 2 - titleWidth / 2 + pad); // Title background
+  if (titleWidth <= orgWidth) title.attr('x', orgX + (width - dblPad) / 2 - titleWidth / 2 + pad);
 
-  g.insert('rect', ':first-child').attr('x', startX).attr('y', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.titleShift - Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight - Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('width', width) // Just needs to be higher then the descr line, will be clipped by the white color box
-  .attr('height', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight * 3).attr('rx', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.radius); // Full background
+  // Title background
+  g.insert('rect', ':first-child').attr('x', startX).attr('y', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.titleShift - Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight - Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('width', width)
+  // Just needs to be higher then the descr line, will be clipped by the white color box
+  .attr('height', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight * 3).attr('rx', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.radius);
 
+  // Full background
   g.insert('rect', ':first-child').attr('x', startX).attr('y', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.titleShift - Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight - Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('width', width).attr('height', graphBox.height + 3 + 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.textHeight).attr('rx', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.radius);
   return g;
 };
-
 var drawEndState = function drawEndState(g) {
-  g.append('circle') // .style('stroke', 'black')
+  g.append('circle')
+  // .style('stroke', 'black')
   // .style('fill', 'white')
   .attr('class', 'end-state-outer').attr('r', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.sizeUnit + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.miniPadding).attr('cx', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.sizeUnit + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.miniPadding).attr('cy', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.sizeUnit + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.miniPadding);
-  return g.append('circle') // .style('stroke', 'black')
+  return g.append('circle')
+  // .style('stroke', 'black')
   // .style('fill', 'black')
   .attr('class', 'end-state-inner').attr('r', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.sizeUnit).attr('cx', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.sizeUnit + 2).attr('cy', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.sizeUnit + 2);
 };
-
 var drawForkJoinState = function drawForkJoinState(g, stateDef) {
   var width = Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.forkWidth;
   var height = Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.forkHeight;
-
   if (stateDef.parentId) {
     var tmp = width;
     width = height;
     height = tmp;
   }
-
   return g.append('rect').style('stroke', 'black').style('fill', 'black').attr('width', width).attr('height', height).attr('x', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('y', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding);
 };
-
 var drawText = function drawText(elem, textData) {
   // Remove and ignore br:s
   var nText = textData.text.replace(_common_common__WEBPACK_IMPORTED_MODULE_4__["default"].lineBreakRegex, ' ');
@@ -22095,48 +21053,37 @@ var drawText = function drawText(elem, textData) {
   textElem.attr('y', textData.y);
   textElem.style('text-anchor', textData.anchor);
   textElem.attr('fill', textData.fill);
-
   if (typeof textData.class !== 'undefined') {
     textElem.attr('class', textData.class);
   }
-
   var span = textElem.append('tspan');
   span.attr('x', textData.x + textData.textMargin * 2);
   span.attr('fill', textData.fill);
   span.text(nText);
   return textElem;
 };
-
 var _drawLongText = function _drawLongText(_text, x, y, g) {
   var textHeight = 0;
   var textElem = g.append('text');
   textElem.style('text-anchor', 'start');
   textElem.attr('class', 'noteText');
-
   var text = _text.replace(/\r\n/g, '<br/>');
-
   text = text.replace(/\n/g, '<br/>');
   var lines = text.split(_common_common__WEBPACK_IMPORTED_MODULE_4__["default"].lineBreakRegex);
   var tHeight = 1.25 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.noteMargin;
-
   var _iterator = _createForOfIteratorHelper(lines),
-      _step;
-
+    _step;
   try {
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
       var _line = _step.value;
-
       var txt = _line.trim();
-
       if (txt.length > 0) {
         var span = textElem.append('tspan');
         span.text(txt);
-
         if (tHeight === 0) {
           var textBounds = span.node().getBBox();
           tHeight += textBounds.height;
         }
-
         textHeight += tHeight;
         span.attr('x', x + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.noteMargin);
         span.attr('y', y + textHeight + 1.25 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.noteMargin);
@@ -22147,32 +21094,30 @@ var _drawLongText = function _drawLongText(_text, x, y, g) {
   } finally {
     _iterator.f();
   }
-
   return {
     textWidth: textElem.node().getBBox().width,
     textHeight: textHeight
   };
 };
+
 /**
  * Draws a note to the diagram
  * @param text - The text of the given note.
  * @param g - The element the note is attached to.
  */
 
-
 var drawNote = function drawNote(text, g) {
   g.attr('class', 'state-note');
   var note = g.append('rect').attr('x', 0).attr('y', Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding);
   var rectElem = g.append('g');
-
   var _drawLongText2 = _drawLongText(text, 0, 0, rectElem),
-      textWidth = _drawLongText2.textWidth,
-      textHeight = _drawLongText2.textHeight;
-
+    textWidth = _drawLongText2.textWidth,
+    textHeight = _drawLongText2.textHeight;
   note.attr('height', textHeight + 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.noteMargin);
   note.attr('width', textWidth + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.noteMargin * 2);
   return note;
 };
+
 /**
  * Starting point for drawing a state. The function finds out the specifics
  * about the state and renders with approprtiate function.
@@ -22199,8 +21144,8 @@ var drawState = function drawState(elem, stateDef) {
   var stateBox = g.node().getBBox();
   stateInfo.width = stateBox.width + 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding;
   stateInfo.height = stateBox.height + 2 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding;
-  _id_cache_js__WEBPACK_IMPORTED_MODULE_1__["default"].set(id, stateInfo); // stateCnt++;
-
+  _id_cache_js__WEBPACK_IMPORTED_MODULE_1__["default"].set(id, stateInfo);
+  // stateCnt++;
   return stateInfo;
 };
 var edgeCount = 0;
@@ -22209,24 +21154,22 @@ var drawEdge = function drawEdge(elem, path, relation) {
     switch (type) {
       case _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].relationType.AGGREGATION:
         return 'aggregation';
-
       case _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].relationType.EXTENSION:
         return 'extension';
-
       case _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].relationType.COMPOSITION:
         return 'composition';
-
       case _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].relationType.DEPENDENCY:
         return 'dependency';
     }
   };
-
   path.points = path.points.filter(function (p) {
     return !Number.isNaN(p.y);
-  }); // The data for our line
+  });
 
-  var lineData = path.points; // This is the accessor function we talked about above
+  // The data for our line
+  var lineData = path.points;
 
+  // This is the accessor function we talked about above
   var lineFunction = Object(d3__WEBPACK_IMPORTED_MODULE_0__["line"])().x(function (d) {
     return d.x;
   }).y(function (d) {
@@ -22234,46 +21177,36 @@ var drawEdge = function drawEdge(elem, path, relation) {
   }).curve(d3__WEBPACK_IMPORTED_MODULE_0__["curveBasis"]);
   var svgPath = elem.append('path').attr('d', lineFunction(lineData)).attr('id', 'edge' + edgeCount).attr('class', 'transition');
   var url = '';
-
   if (Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.arrowMarkerAbsolute) {
     url = window.location.protocol + '//' + window.location.host + window.location.pathname + window.location.search;
     url = url.replace(/\(/g, '\\(');
     url = url.replace(/\)/g, '\\)');
   }
-
   svgPath.attr('marker-end', 'url(' + url + '#' + getRelationType(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].relationType.DEPENDENCY) + 'End' + ')');
-
   if (typeof relation.title !== 'undefined') {
     var label = elem.append('g').attr('class', 'stateLabel');
-
     var _utils$calcLabelPosit = _utils__WEBPACK_IMPORTED_MODULE_3__["default"].calcLabelPosition(path.points),
-        x = _utils$calcLabelPosit.x,
-        y = _utils$calcLabelPosit.y;
-
+      x = _utils$calcLabelPosit.x,
+      y = _utils$calcLabelPosit.y;
     var rows = _common_common__WEBPACK_IMPORTED_MODULE_4__["default"].getRows(relation.title);
     var titleHeight = 0;
     var titleRows = [];
     var maxWidth = 0;
     var minX = 0;
-
     for (var i = 0; i <= rows.length; i++) {
       var title = label.append('text').attr('text-anchor', 'middle').text(rows[i]).attr('x', x).attr('y', y + titleHeight);
       var boundstmp = title.node().getBBox();
       maxWidth = Math.max(maxWidth, boundstmp.width);
       minX = Math.min(minX, boundstmp.x);
       _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info(boundstmp.x, x, y + titleHeight);
-
       if (titleHeight === 0) {
         var titleBox = title.node().getBBox();
         titleHeight = titleBox.height;
         _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info('Title height', titleHeight, y);
       }
-
       titleRows.push(title);
     }
-
     var boxHeight = titleHeight * rows.length;
-
     if (rows.length > 1) {
       var heightAdj = (rows.length - 1) * titleHeight * 0.5;
       titleRows.forEach(function (title, i) {
@@ -22281,10 +21214,12 @@ var drawEdge = function drawEdge(elem, path, relation) {
       });
       boxHeight = titleHeight * rows.length;
     }
-
     var bounds = label.node().getBBox();
     label.insert('rect', ':first-child').attr('class', 'box').attr('x', x - maxWidth / 2 - Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding / 2).attr('y', y - boxHeight / 2 - Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding / 2 - 3.5).attr('width', maxWidth + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding).attr('height', boxHeight + Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.padding);
-    _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info(bounds); //label.attr('transform', '0 -' + (bounds.y / 2));
+    _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info(bounds);
+
+    //label.attr('transform', '0 -' + (bounds.y / 2));
+
     // Debug points
     // path.points.forEach(point => {
     //   g.append('circle')
@@ -22301,7 +21236,6 @@ var drawEdge = function drawEdge(elem, path, relation) {
     //   .attr('cx', x)
     //   .attr('cy', y);
   }
-
   edgeCount++;
 };
 
@@ -22331,9 +21265,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils */ "./src/utils.js");
 /* harmony import */ var _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../mermaidAPI */ "./src/mermaidAPI.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config */ "./src/config.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 
 
 
@@ -22341,22 +21273,18 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 var clone = function clone(o) {
   return JSON.parse(JSON.stringify(o));
 };
-
 var rootDoc = [];
 var parseDirective = function parseDirective(statement, context, type) {
   _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].parseDirective(this, statement, context, type);
 };
-
 var setRootDoc = function setRootDoc(o) {
-  _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Setting root doc', o); // rootDoc = { id: 'root', doc: o };
-
+  _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Setting root doc', o);
+  // rootDoc = { id: 'root', doc: o };
   rootDoc = o;
 };
-
 var getRootDoc = function getRootDoc() {
   return rootDoc;
 };
-
 var docTranslator = function docTranslator(parent, node, first) {
   if (node.stmt === 'relation') {
     docTranslator(parent, node.state1, true);
@@ -22368,13 +21296,11 @@ var docTranslator = function docTranslator(parent, node, first) {
         node.start = first;
       }
     }
-
     if (node.doc) {
-      var doc = []; // Check for concurrency
-
+      var doc = [];
+      // Check for concurrency
       var i = 0;
       var currentDoc = [];
-
       for (i = 0; i < node.doc.length; i++) {
         if (node.doc[i].type === 'divider') {
           // debugger;
@@ -22385,9 +21311,9 @@ var docTranslator = function docTranslator(parent, node, first) {
         } else {
           currentDoc.push(node.doc[i]);
         }
-      } // If any divider was encountered
+      }
 
-
+      // If any divider was encountered
       if (doc.length > 0 && currentDoc.length > 0) {
         var _newNode = {
           stmt: 'state',
@@ -22398,14 +21324,12 @@ var docTranslator = function docTranslator(parent, node, first) {
         doc.push(clone(_newNode));
         node.doc = doc;
       }
-
       node.doc.forEach(function (docNode) {
         return docTranslator(node, docNode, true);
       });
     }
   }
 };
-
 var getRootDocV2 = function getRootDocV2() {
   docTranslator({
     id: 'root'
@@ -22416,23 +21340,21 @@ var getRootDocV2 = function getRootDocV2() {
   return {
     id: 'root',
     doc: rootDoc
-  }; // Here
+  };
+  // Here
 };
-
 var extract = function extract(_doc) {
   // const res = { states: [], relations: [] };
   var doc;
-
   if (_doc.doc) {
     doc = _doc.doc;
   } else {
     doc = _doc;
-  } // let doc = root.doc;
+  }
+  // let doc = root.doc;
   // if (!doc) {
   //   doc = root;
   // }
-
-
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info(doc);
   clear();
   _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Extract', doc);
@@ -22440,13 +21362,11 @@ var extract = function extract(_doc) {
     if (item.stmt === 'state') {
       addState(item.id, item.type, item.doc, item.description, item.note);
     }
-
     if (item.stmt === 'relation') {
       addRelation(item.state1.id, item.state2.id, item.description);
     }
   });
 };
-
 var newDoc = function newDoc() {
   return {
     relations: [],
@@ -22454,7 +21374,6 @@ var newDoc = function newDoc() {
     documents: {}
   };
 };
-
 var documents = {
   root: newDoc()
 };
@@ -22470,7 +21389,6 @@ var endCnt = 0; // eslint-disable-line
  * @param type
  * @param style
  */
-
 var addState = function addState(id, type, doc, descr, note) {
   if (typeof currentDocument.states[id] === 'undefined') {
     currentDocument.states[id] = {
@@ -22484,23 +21402,19 @@ var addState = function addState(id, type, doc, descr, note) {
     if (!currentDocument.states[id].doc) {
       currentDocument.states[id].doc = doc;
     }
-
     if (!currentDocument.states[id].type) {
       currentDocument.states[id].type = type;
     }
   }
-
   if (descr) {
     _logger__WEBPACK_IMPORTED_MODULE_0__["log"].info('Adding state ', id, descr);
     if (typeof descr === 'string') addDescription(id, descr.trim());
-
     if (_typeof(descr) === 'object') {
       descr.forEach(function (des) {
         return addDescription(id, des.trim());
       });
     }
   }
-
   if (note) currentDocument.states[id].note = note;
 };
 var clear = function clear() {
@@ -22511,7 +21425,6 @@ var clear = function clear() {
   currentDocument = documents.root;
   startCnt = 0;
   endCnt = 0; // eslint-disable-line
-
   classes = [];
 };
 var getState = function getState(id) {
@@ -22531,19 +21444,16 @@ var addRelation = function addRelation(_id1, _id2, title) {
   var id2 = _id2;
   var type1 = 'default';
   var type2 = 'default';
-
   if (_id1 === '[*]') {
     startCnt++;
     id1 = 'start' + startCnt;
     type1 = 'start';
   }
-
   if (_id2 === '[*]') {
     endCnt++;
     id2 = 'end' + startCnt;
     type2 = 'end';
   }
-
   addState(id1, type1);
   addState(id2, type2);
   currentDocument.relations.push({
@@ -22552,18 +21462,14 @@ var addRelation = function addRelation(_id1, _id2, title) {
     title: title
   });
 };
-
 var addDescription = function addDescription(id, _descr) {
   var theState = currentDocument.states[id];
   var descr = _descr;
-
   if (descr[0] === ':') {
     descr = descr.substr(1).trim();
   }
-
   theState.descriptions.push(descr);
 };
-
 var cleanupLabel = function cleanupLabel(label) {
   if (label.substring(0, 1) === ':') {
     return label.substr(2).trim();
@@ -22576,39 +21482,30 @@ var lineType = {
   DOTTED_LINE: 1
 };
 var dividerCnt = 0;
-
 var getDividerId = function getDividerId() {
   dividerCnt++;
   return 'divider-id-' + dividerCnt;
 };
-
 var classes = [];
-
 var getClasses = function getClasses() {
   return classes;
 };
-
 var direction = 'TB';
-
 var getDirection = function getDirection() {
   return direction;
 };
-
 var setDirection = function setDirection(dir) {
   direction = dir;
 };
-
 var relationType = {
   AGGREGATION: 0,
   EXTENSION: 1,
   COMPOSITION: 2,
   DEPENDENCY: 3
 };
-
 var trimColon = function trimColon(str) {
   return str && str[0] === ':' ? str.substr(1).trim() : str.trim();
 };
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   parseDirective: parseDirective,
   getConfig: function getConfig() {
@@ -22665,52 +21562,47 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import { evaluate } from '../common/common';
 
+// import { evaluate } from '../common/common';
 
 
 
 var conf = {};
 var setConf = function setConf(cnf) {
   var keys = Object.keys(cnf);
-
   for (var i = 0; i < keys.length; i++) {
     conf[keys[i]] = cnf[keys[i]];
   }
 };
 var nodeDb = {};
+
 /**
  * Returns the all the styles from classDef statements in the graph definition.
  * @returns {object} classDef styles
  */
-
 var getClasses = function getClasses(text) {
   _logger__WEBPACK_IMPORTED_MODULE_6__["log"].trace('Extracting classes');
   _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].clear();
   var parser = _parser_stateDiagram__WEBPACK_IMPORTED_MODULE_3___default.a.parser;
-  parser.yy = _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"]; // Parse the graph definition
+  parser.yy = _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"];
 
+  // Parse the graph definition
   parser.parse(text);
   return _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getClasses();
 };
-
 var setupNode = function setupNode(g, parent, node, altFlag) {
   // Add the node
   if (node.id !== 'root') {
     var shape = 'rect';
-
     if (node.start === true) {
       shape = 'start';
     }
-
     if (node.start === false) {
       shape = 'end';
     }
-
     if (node.type !== 'default') {
       shape = node.type;
     }
-
     if (!nodeDb[node.id]) {
       nodeDb[node.id] = {
         id: node.id,
@@ -22718,9 +21610,9 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
         description: node.id,
         classes: 'statediagram-state'
       };
-    } // Build of the array of description strings accordinging
+    }
 
-
+    // Build of the array of description strings accordinging
     if (node.description) {
       if (Array.isArray(nodeDb[node.id].description)) {
         // There already is an array of strings,add to it
@@ -22730,7 +21622,6 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
         if (nodeDb[node.id].description.length > 0) {
           // if there is a description already transformit to an array
           nodeDb[node.id].shape = 'rectWithTitle';
-
           if (nodeDb[node.id].description === node.id) {
             // If the previous description was the is, remove it
             nodeDb[node.id].description = [node.description];
@@ -22742,11 +21633,12 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
           nodeDb[node.id].description = node.description;
         }
       }
-    } // Save data for description and group so that for instance a statement without description overwrites
+    }
+
+    // Save data for description and group so that for instance a statement without description overwrites
     // one with description
+
     // group
-
-
     if (!nodeDb[node.id].type && node.doc) {
       _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info('Setting cluster for ', node.id, getDir(node));
       nodeDb[node.id].type = 'group';
@@ -22754,7 +21646,6 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
       nodeDb[node.id].shape = node.type === 'divider' ? 'divider' : 'roundedWithTitle';
       nodeDb[node.id].classes = nodeDb[node.id].classes + ' ' + (altFlag ? 'statediagram-cluster statediagram-cluster-alt' : 'statediagram-cluster');
     }
-
     var nodeData = {
       labelStyle: '',
       shape: nodeDb[node.id].shape,
@@ -22771,9 +21662,7 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
       domId: 'state-' + node.id + '-' + cnt,
       type: nodeDb[node.id].type,
       padding: 15 //getConfig().flowchart.padding
-
     };
-
     if (node.note) {
       // Todo: set random id
       var noteData = {
@@ -22788,7 +21677,6 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
         domId: 'state-' + node.id + '----note-' + cnt,
         type: nodeDb[node.id].type,
         padding: 15 //getConfig().flowchart.padding
-
       };
       var groupData = {
         labelStyle: '',
@@ -22802,7 +21690,6 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
         domId: 'state-' + node.id + '----parent-' + cnt,
         type: 'group',
         padding: 0 //getConfig().flowchart.padding
-
       };
       cnt++;
       g.setNode(node.id + '----parent', groupData);
@@ -22812,12 +21699,10 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
       g.setParent(noteData.id, node.id + '----parent');
       var from = node.id;
       var to = noteData.id;
-
       if (node.note.position === 'left of') {
         from = noteData.id;
         to = node.id;
       }
-
       g.setEdge(from, to, {
         arrowhead: 'none',
         arrowType: '',
@@ -22833,22 +21718,18 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
       g.setNode(node.id, nodeData);
     }
   }
-
   if (parent) {
     if (parent.id !== 'root') {
       _logger__WEBPACK_IMPORTED_MODULE_6__["log"].trace('Setting node ', node.id, ' to be child of its parent ', parent.id);
       g.setParent(node.id, parent.id);
     }
   }
-
   if (node.doc) {
     _logger__WEBPACK_IMPORTED_MODULE_6__["log"].trace('Adding nodes children ');
     setupDoc(g, node, node.doc, !altFlag);
   }
 };
-
 var cnt = 0;
-
 var setupDoc = function setupDoc(g, parent, doc, altFlag) {
   // cnt = 0;
   _logger__WEBPACK_IMPORTED_MODULE_6__["log"].trace('items', doc);
@@ -22878,20 +21759,16 @@ var setupDoc = function setupDoc(g, parent, doc, altFlag) {
     }
   });
 };
-
 var getDir = function getDir(nodes, defaultDir) {
   var dir = defaultDir || 'TB';
-
   if (nodes.doc) {
     for (var i = 0; i < nodes.doc.length; i++) {
       var node = nodes.doc[i];
-
       if (node.stmt === 'dir') {
         dir = node.value;
       }
     }
   }
-
   return dir;
 };
 /**
@@ -22899,30 +21776,29 @@ var getDir = function getDir(nodes, defaultDir) {
  * @param text
  * @param id
  */
-
-
 var draw = function draw(text, id) {
   _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info('Drawing state diagram (v2)', id);
   _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].clear();
   nodeDb = {};
   var parser = _parser_stateDiagram__WEBPACK_IMPORTED_MODULE_3___default.a.parser;
-  parser.yy = _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"]; // Parse the graph definition
+  parser.yy = _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"];
 
-  parser.parse(text); // Fetch the default direction, use TD if none was found
+  // Parse the graph definition
+  parser.parse(text);
 
+  // Fetch the default direction, use TD if none was found
   var dir = _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getDirection();
-
   if (typeof dir === 'undefined') {
     dir = 'LR';
   }
-
   var conf = Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().state;
   var nodeSpacing = conf.nodeSpacing || 50;
   var rankSpacing = conf.rankSpacing || 50;
   _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2());
   _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].extract(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2());
-  _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2()); // Create the input mermaid.graph
+  _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2());
 
+  // Create the input mermaid.graph
   var g = new graphlib__WEBPACK_IMPORTED_MODULE_0___default.a.Graph({
     multigraph: true,
     compound: true
@@ -22935,38 +21811,44 @@ var draw = function draw(text, id) {
   }).setDefaultEdgeLabel(function () {
     return {};
   });
-  setupNode(g, undefined, _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2(), true); // Set up an SVG group so that we can translate the final graph.
+  setupNode(g, undefined, _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2(), true);
 
-  var svg = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])("[id=\"".concat(id, "\"]")); // Run the renderer. This is what draws the final graph.
+  // Set up an SVG group so that we can translate the final graph.
+  var svg = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])("[id=\"".concat(id, "\"]"));
 
+  // Run the renderer. This is what draws the final graph.
   var element = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])('#' + id + ' g');
   Object(_dagre_wrapper_index_js__WEBPACK_IMPORTED_MODULE_5__["render"])(element, g, ['barb'], 'statediagram', id);
   var padding = 8;
   var bounds = svg.node().getBBox();
   var width = bounds.width + padding * 2;
-  var height = bounds.height + padding * 2; // Zoom in a bit
+  var height = bounds.height + padding * 2;
 
+  // Zoom in a bit
   svg.attr('class', 'statediagram');
   var svgBounds = svg.node().getBBox();
-  Object(_utils__WEBPACK_IMPORTED_MODULE_7__["configureSvgSize"])(svg, height, width * 1.75, conf.useMaxWidth); // Ensure the viewBox includes the whole svgBounds area with extra space for padding
+  Object(_utils__WEBPACK_IMPORTED_MODULE_7__["configureSvgSize"])(svg, height, width * 1.75, conf.useMaxWidth);
 
+  // Ensure the viewBox includes the whole svgBounds area with extra space for padding
   var vBox = "".concat(svgBounds.x - padding, " ").concat(svgBounds.y - padding, " ").concat(width, " ").concat(height);
   _logger__WEBPACK_IMPORTED_MODULE_6__["log"].debug("viewBox ".concat(vBox));
-  svg.attr('viewBox', vBox); // Add label rects for non html labels
+  svg.attr('viewBox', vBox);
+
+  // Add label rects for non html labels
   // if (!evaluate(conf.htmlLabels) || true) {
-
   var labels = document.querySelectorAll('[id="' + id + '"] .edgeLabel .label');
-
   for (var k = 0; k < labels.length; k++) {
-    var label = labels[k]; // Get dimensions of label
+    var label = labels[k];
 
+    // Get dimensions of label
     var dim = label.getBBox();
     var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
     rect.setAttribute('rx', 0);
     rect.setAttribute('ry', 0);
     rect.setAttribute('width', dim.width);
     rect.setAttribute('height', dim.height);
-    label.insertBefore(rect, label.firstChild); // }
+    label.insertBefore(rect, label.firstChild);
+    // }
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -23008,48 +21890,52 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import idCache from './id-cache';
+
+// import idCache from './id-cache';
 
 
 
+_parser_stateDiagram__WEBPACK_IMPORTED_MODULE_6__["parser"].yy = _stateDb__WEBPACK_IMPORTED_MODULE_4__["default"];
 
-_parser_stateDiagram__WEBPACK_IMPORTED_MODULE_6__["parser"].yy = _stateDb__WEBPACK_IMPORTED_MODULE_4__["default"]; // TODO Move conf object to main conf in mermaidAPI
-
+// TODO Move conf object to main conf in mermaidAPI
 var conf;
 var transformationLog = {};
-var setConf = function setConf() {}; // Todo optimize
+var setConf = function setConf() {};
+
+// Todo optimize
 
 /**
  * Setup arrow head and define the marker. The result is appended to the svg.
  */
-
 var insertMarkers = function insertMarkers(elem) {
   elem.append('defs').append('marker').attr('id', 'dependencyEnd').attr('refX', 19).attr('refY', 7).attr('markerWidth', 20).attr('markerHeight', 28).attr('orient', 'auto').append('path').attr('d', 'M 19,7 L9,13 L14,7 L9,1 Z');
 };
+
 /**
  * Draws a flowchart in the tag with id: id based on the graph definition in text.
  * @param text
  * @param id
  */
-
-
 var draw = function draw(text, id) {
   conf = Object(_config__WEBPACK_IMPORTED_MODULE_8__["getConfig"])().state;
   _parser_stateDiagram__WEBPACK_IMPORTED_MODULE_6__["parser"].yy.clear();
   _parser_stateDiagram__WEBPACK_IMPORTED_MODULE_6__["parser"].parse(text);
-  _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Rendering diagram ' + text); // Fetch the default direction, use TD if none was found
+  _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Rendering diagram ' + text);
 
+  // Fetch the default direction, use TD if none was found
   var diagram = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id='".concat(id, "']"));
-  insertMarkers(diagram); // Layout graph, Create a new directed graph
+  insertMarkers(diagram);
 
+  // Layout graph, Create a new directed graph
   var graph = new graphlib__WEBPACK_IMPORTED_MODULE_2___default.a.Graph({
     multigraph: true,
     compound: true,
     // acyclicer: 'greedy',
-    rankdir: 'RL' // ranksep: '20'
+    rankdir: 'RL'
+    // ranksep: '20'
+  });
 
-  }); // Default to assigning a new object as a label for each new edge.
-
+  // Default to assigning a new object as a label for each new edge.
   graph.setDefaultEdgeLabel(function () {
     return {};
   });
@@ -23058,17 +21944,16 @@ var draw = function draw(text, id) {
   var padding = conf.padding;
   var bounds = diagram.node().getBBox();
   var width = bounds.width + padding * 2;
-  var height = bounds.height + padding * 2; // zoom in a bit
+  var height = bounds.height + padding * 2;
 
+  // zoom in a bit
   var svgWidth = width * 1.75;
   Object(_utils__WEBPACK_IMPORTED_MODULE_9__["configureSvgSize"])(diagram, height, svgWidth, conf.useMaxWidth);
   diagram.attr('viewBox', "".concat(bounds.x - conf.padding, "  ").concat(bounds.y - conf.padding, " ") + width + ' ' + height);
 };
-
 var getLabelWidth = function getLabelWidth(text) {
   return text ? text.length * conf.fontSizeFactor : 1;
 };
-
 var renderDoc = function renderDoc(doc, diagram, parentId, altBkg) {
   // // Layout graph, Create a new directed graph
   var graph = new graphlib__WEBPACK_IMPORTED_MODULE_2___default.a.Graph({
@@ -23077,15 +21962,14 @@ var renderDoc = function renderDoc(doc, diagram, parentId, altBkg) {
   });
   var i;
   var edgeFreeDoc = true;
-
   for (i = 0; i < doc.length; i++) {
     if (doc[i].stmt === 'relation') {
       edgeFreeDoc = false;
       break;
     }
-  } // Set an object for the graph label
+  }
 
-
+  // Set an object for the graph label
   if (parentId) graph.setGraph({
     rankdir: 'LR',
     multigraph: true,
@@ -23094,9 +21978,9 @@ var renderDoc = function renderDoc(doc, diagram, parentId, altBkg) {
     ranker: 'tight-tree',
     ranksep: edgeFreeDoc ? 1 : conf.edgeLengthFactor,
     nodeSep: edgeFreeDoc ? 1 : 50,
-    isMultiGraph: true // ranksep: 5,
+    isMultiGraph: true
+    // ranksep: 5,
     // nodesep: 1
-
   });else {
     graph.setGraph({
       rankdir: 'TB',
@@ -23111,8 +21995,9 @@ var renderDoc = function renderDoc(doc, diagram, parentId, altBkg) {
       // ranker: 'network-simplex'
       isMultiGraph: true
     });
-  } // Default to assigning a new object as a label for each new edge.
+  }
 
+  // Default to assigning a new object as a label for each new edge.
   graph.setDefaultEdgeLabel(function () {
     return {};
   });
@@ -23121,20 +22006,15 @@ var renderDoc = function renderDoc(doc, diagram, parentId, altBkg) {
   var relations = _stateDb__WEBPACK_IMPORTED_MODULE_4__["default"].getRelations();
   var keys = Object.keys(states);
   var first = true;
-
   for (var _i = 0; _i < keys.length; _i++) {
     var stateDef = states[keys[_i]];
-
     if (parentId) {
       stateDef.parentId = parentId;
     }
-
     var node = void 0;
-
     if (stateDef.doc) {
       var sub = diagram.append('g').attr('id', stateDef.id).attr('class', 'stateGroup');
       node = renderDoc(stateDef.doc, sub, stateDef.id, !altBkg);
-
       if (first) {
         // first = false;
         sub = Object(_shapes__WEBPACK_IMPORTED_MODULE_7__["addTitleAndBox"])(sub, stateDef, altBkg);
@@ -23147,14 +22027,13 @@ var renderDoc = function renderDoc(doc, diagram, parentId, altBkg) {
       } else {
         // sub = addIdAndBox(sub, stateDef);
         var _boxBounds = sub.node().getBBox();
-
         node.width = _boxBounds.width;
-        node.height = _boxBounds.height; // transformationLog[stateDef.id] = { y: conf.compositTitleSize };
+        node.height = _boxBounds.height;
+        // transformationLog[stateDef.id] = { y: conf.compositTitleSize };
       }
     } else {
       node = Object(_shapes__WEBPACK_IMPORTED_MODULE_7__["drawState"])(diagram, stateDef, graph);
     }
-
     if (stateDef.note) {
       // Draw note note
       var noteDef = {
@@ -23163,17 +22042,17 @@ var renderDoc = function renderDoc(doc, diagram, parentId, altBkg) {
         note: stateDef.note,
         type: 'note'
       };
-      var note = Object(_shapes__WEBPACK_IMPORTED_MODULE_7__["drawState"])(diagram, noteDef, graph); // graph.setNode(node.id, node);
+      var note = Object(_shapes__WEBPACK_IMPORTED_MODULE_7__["drawState"])(diagram, noteDef, graph);
 
+      // graph.setNode(node.id, node);
       if (stateDef.note.position === 'left of') {
         graph.setNode(node.id + '-note', note);
         graph.setNode(node.id, node);
       } else {
         graph.setNode(node.id, node);
         graph.setNode(node.id + '-note', note);
-      } // graph.setNode(node.id);
-
-
+      }
+      // graph.setNode(node.id);
       graph.setParent(node.id, node.id + '-group');
       graph.setParent(node.id + '-note', node.id + '-group');
     } else {
@@ -23183,7 +22062,6 @@ var renderDoc = function renderDoc(doc, diagram, parentId, altBkg) {
       graph.setNode(node.id, node);
     }
   }
-
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Count=', graph.nodeCount(), graph);
   var cnt = 0;
   relations.forEach(function (relation) {
@@ -23209,16 +22087,13 @@ var renderDoc = function renderDoc(doc, diagram, parentId, altBkg) {
         var parent = divider.parentElement;
         var pWidth = 0;
         var pShift = 0;
-
         if (parent) {
           if (parent.parentElement) pWidth = parent.parentElement.getBBox().width;
           pShift = parseInt(parent.getAttribute('data-x-shift'), 10);
-
           if (Number.isNaN(pShift)) {
             pShift = 0;
           }
         }
-
         divider.setAttribute('x1', 0 - pShift + 8);
         divider.setAttribute('x2', pWidth - pShift - 8);
       });
@@ -23245,7 +22120,6 @@ var renderDoc = function renderDoc(doc, diagram, parentId, altBkg) {
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Doc rendered', stateInfo, graph);
   return stateInfo;
 };
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   setConf: setConf,
   draw: draw
@@ -23265,7 +22139,6 @@ __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
   return "\ndefs #statediagram-barbEnd {\n    fill: ".concat(options.transitionColor, ";\n    stroke: ").concat(options.transitionColor, ";\n  }\ng.stateGroup text {\n  fill: ").concat(options.nodeBorder, ";\n  stroke: none;\n  font-size: 10px;\n}\ng.stateGroup text {\n  fill: ").concat(options.textColor, ";\n  stroke: none;\n  font-size: 10px;\n\n}\ng.stateGroup .state-title {\n  font-weight: bolder;\n  fill: ").concat(options.stateLabelColor, ";\n}\n\ng.stateGroup rect {\n  fill: ").concat(options.mainBkg, ";\n  stroke: ").concat(options.nodeBorder, ";\n}\n\ng.stateGroup line {\n  stroke: ").concat(options.lineColor, ";\n  stroke-width: 1;\n}\n\n.transition {\n  stroke: ").concat(options.transitionColor, ";\n  stroke-width: 1;\n  fill: none;\n}\n\n.stateGroup .composit {\n  fill: ").concat(options.background, ";\n  border-bottom: 1px\n}\n\n.stateGroup .alt-composit {\n  fill: #e0e0e0;\n  border-bottom: 1px\n}\n\n.state-note {\n  stroke: ").concat(options.noteBorderColor, ";\n  fill: ").concat(options.noteBkgColor, ";\n\n  text {\n    fill: ").concat(options.noteTextColor, ";\n    stroke: none;\n    font-size: 10px;\n  }\n}\n\n.stateLabel .box {\n  stroke: none;\n  stroke-width: 0;\n  fill: ").concat(options.mainBkg, ";\n  opacity: 0.5;\n}\n\n.edgeLabel .label rect {\n  fill: ").concat(options.labelBackgroundColor, ";\n  opacity: 0.5;\n}\n.edgeLabel .label text {\n  fill: ").concat(options.transitionLabelColor || options.tertiaryTextColor, ";\n}\n.label div .edgeLabel {\n  color: ").concat(options.transitionLabelColor || options.tertiaryTextColor, ";\n}\n\n.stateLabel text {\n  fill: ").concat(options.stateLabelColor, ";\n  font-size: 10px;\n  font-weight: bold;\n}\n\n.node circle.state-start {\n  fill: ").concat(options.specialStateColor, ";\n  stroke: ").concat(options.specialStateColor, ";\n}\n\n.node .fork-join {\n  fill: ").concat(options.specialStateColor, ";\n  stroke: ").concat(options.specialStateColor, ";\n}\n\n.node circle.state-end {\n  fill: ").concat(options.innerEndBackground, ";\n  stroke: ").concat(options.background, ";\n  stroke-width: 1.5\n}\n.end-state-inner {\n  fill: ").concat(options.compositeBackground || options.background, ";\n  // stroke: ").concat(options.background, ";\n  stroke-width: 1.5\n}\n\n.node rect {\n  fill: ").concat(options.stateBkg || options.mainBkg, ";\n  stroke: ").concat(options.stateBorder || options.nodeBorder, ";\n  stroke-width: 1px;\n}\n.node polygon {\n  fill: ").concat(options.mainBkg, ";\n  stroke: ").concat(options.stateBorder || options.nodeBorder, ";;\n  stroke-width: 1px;\n}\n#statediagram-barbEnd {\n  fill: ").concat(options.lineColor, ";\n}\n\n.statediagram-cluster rect {\n  fill: ").concat(options.compositeTitleBackground, ";\n  stroke: ").concat(options.stateBorder || options.nodeBorder, ";\n  stroke-width: 1px;\n}\n\n.cluster-label, .nodeLabel {\n  color: ").concat(options.stateLabelColor, ";\n}\n\n.statediagram-cluster rect.outer {\n  rx: 5px;\n  ry: 5px;\n}\n.statediagram-state .divider {\n  stroke: ").concat(options.stateBorder || options.nodeBorder, ";\n}\n\n.statediagram-state .title-state {\n  rx: 5px;\n  ry: 5px;\n}\n.statediagram-cluster.statediagram-cluster .inner {\n  fill: ").concat(options.compositeBackground || options.background, ";\n}\n.statediagram-cluster.statediagram-cluster-alt .inner {\n  fill: ").concat(options.altBackground ? options.altBackground : '#efefef', ";\n}\n\n.statediagram-cluster .inner {\n  rx:0;\n  ry:0;\n}\n\n.statediagram-state rect.basic {\n  rx: 5px;\n  ry: 5px;\n}\n.statediagram-state rect.divider {\n  stroke-dasharray: 10,10;\n  fill: ").concat(options.altBackground ? options.altBackground : '#efefef', ";\n}\n\n.note-edge {\n  stroke-dasharray: 5;\n}\n\n.statediagram-note rect {\n  fill: ").concat(options.noteBkgColor, ";\n  stroke: ").concat(options.noteBorderColor, ";\n  stroke-width: 1px;\n  rx: 0;\n  ry: 0;\n}\n.statediagram-note rect {\n  fill: ").concat(options.noteBkgColor, ";\n  stroke: ").concat(options.noteBorderColor, ";\n  stroke-width: 1px;\n  rx: 0;\n  ry: 0;\n}\n\n.statediagram-note text {\n  fill: ").concat(options.noteTextColor, ";\n}\n\n.statediagram-note .nodeLabel {\n  color: ").concat(options.noteTextColor, ";\n}\n.statediagram .edgeLabel {\n  color: red; // ").concat(options.noteTextColor, ";\n}\n\n#dependencyStart, #dependencyEnd {\n  fill: ").concat(options.lineColor, ";\n  stroke: ").concat(options.lineColor, ";\n  stroke-width: 1;\n}\n");
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -23290,18 +22163,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addTaskOrg", function() { return addTaskOrg; });
 /* harmony import */ var _mermaidAPI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../mermaidAPI */ "./src/mermaidAPI.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../config */ "./src/config.js");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
 
 var title = '';
@@ -23336,16 +22203,13 @@ var getTasks = function getTasks() {
   var allItemsProcessed = compileTasks();
   var maxDepth = 100;
   var iterationCount = 0;
-
   while (!allItemsProcessed && iterationCount < maxDepth) {
     allItemsProcessed = compileTasks();
     iterationCount++;
   }
-
   tasks.push.apply(tasks, rawTasks);
   return tasks;
 };
-
 var updateActors = function updateActors() {
   var tempActors = [];
   tasks.forEach(function (task) {
@@ -23356,12 +22220,10 @@ var updateActors = function updateActors() {
   var unique = new Set(tempActors);
   return _toConsumableArray(unique).sort();
 };
-
 var addTask = function addTask(descr, taskData) {
   var pieces = taskData.substr(1).split(':');
   var score = 0;
   var peeps = [];
-
   if (pieces.length === 1) {
     score = Number(pieces[0]);
     peeps = [];
@@ -23369,7 +22231,6 @@ var addTask = function addTask(descr, taskData) {
     score = Number(pieces[0]);
     peeps = pieces[1].split(',');
   }
-
   var peopleList = peeps.map(function (s) {
     return s.trim();
   });
@@ -23392,26 +22253,20 @@ var addTaskOrg = function addTaskOrg(descr) {
   };
   tasks.push(newTask);
 };
-
 var compileTasks = function compileTasks() {
   var compileTask = function compileTask(pos) {
     return rawTasks[pos].processed;
   };
-
   var allProcessed = true;
-
   for (var i = 0; i < rawTasks.length; i++) {
     compileTask(i);
     allProcessed = allProcessed && rawTasks[i].processed;
   }
-
   return allProcessed;
 };
-
 var getActors = function getActors() {
   return updateActors();
 };
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   parseDirective: parseDirective,
   getConfig: function getConfig() {
@@ -23465,10 +22320,9 @@ var setConf = function setConf(cnf) {
   });
 };
 var actors = {};
-
 function drawActorLegend(diagram) {
-  var conf = Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().journey; // Draw the actors
-
+  var conf = Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().journey;
+  // Draw the actors
   var yPos = 60;
   Object.keys(actors).forEach(function (person) {
     var colour = actors[person];
@@ -23491,7 +22345,6 @@ function drawActorLegend(diagram) {
     yPos += 20;
   });
 }
-
 var conf = Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().journey;
 var LEFT_MARGIN = Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().journey.leftMargin;
 var draw = function draw(text, id) {
@@ -23505,11 +22358,7 @@ var draw = function draw(text, id) {
   var tasks = _parser_journey__WEBPACK_IMPORTED_MODULE_1__["parser"].yy.getTasks();
   var title = _parser_journey__WEBPACK_IMPORTED_MODULE_1__["parser"].yy.getTitle();
   var actorNames = _parser_journey__WEBPACK_IMPORTED_MODULE_1__["parser"].yy.getActors();
-
-  for (var member in actors) {
-    delete actors[member];
-  }
-
+  for (var member in actors) delete actors[member];
   var actorPos = 0;
   actorNames.forEach(function (actorName) {
     actors[actorName] = conf.actorColours[actorPos % conf.actorColours.length];
@@ -23519,15 +22368,14 @@ var draw = function draw(text, id) {
   bounds.insert(0, 0, LEFT_MARGIN, Object.keys(actors).length * 50);
   drawTasks(diagram, tasks, 0);
   var box = bounds.getBounds();
-
   if (title) {
     diagram.append('text').text(title).attr('x', LEFT_MARGIN).attr('font-size', '4ex').attr('font-weight', 'bold').attr('y', 25);
   }
-
   var height = box.stopy - box.starty + 2 * conf.diagramMarginY;
   var width = LEFT_MARGIN + box.stopx + 2 * conf.diagramMarginX;
-  Object(_utils__WEBPACK_IMPORTED_MODULE_5__["configureSvgSize"])(diagram, height, width, conf.useMaxWidth); // Draw activity line
+  Object(_utils__WEBPACK_IMPORTED_MODULE_5__["configureSvgSize"])(diagram, height, width, conf.useMaxWidth);
 
+  // Draw activity line
   diagram.append('line').attr('x1', LEFT_MARGIN).attr('y1', conf.height * 4) // One section head + one task + margins
   .attr('x2', width - LEFT_MARGIN - 4) // Subtract stroke width so arrow point is retained
   .attr('y2', conf.height * 4).attr('stroke-width', 4).attr('stroke', 'black').attr('marker-end', 'url(#arrowhead)');
@@ -23564,48 +22412,32 @@ var bounds = {
   },
   updateBounds: function updateBounds(startx, starty, stopx, stopy) {
     var conf = Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().journey;
-
     var _self = this;
-
     var cnt = 0;
-
     function updateFn(type) {
       return function updateItemBounds(item) {
-        cnt++; // The loop sequenceItems is a stack so the biggest margins in the beginning of the sequenceItems
-
+        cnt++;
+        // The loop sequenceItems is a stack so the biggest margins in the beginning of the sequenceItems
         var n = _self.sequenceItems.length - cnt + 1;
-
         _self.updateVal(item, 'starty', starty - n * conf.boxMargin, Math.min);
-
         _self.updateVal(item, 'stopy', stopy + n * conf.boxMargin, Math.max);
-
         _self.updateVal(bounds.data, 'startx', startx - n * conf.boxMargin, Math.min);
-
         _self.updateVal(bounds.data, 'stopx', stopx + n * conf.boxMargin, Math.max);
-
         if (!(type === 'activation')) {
           _self.updateVal(item, 'startx', startx - n * conf.boxMargin, Math.min);
-
           _self.updateVal(item, 'stopx', stopx + n * conf.boxMargin, Math.max);
-
           _self.updateVal(bounds.data, 'starty', starty - n * conf.boxMargin, Math.min);
-
           _self.updateVal(bounds.data, 'stopy', stopy + n * conf.boxMargin, Math.max);
         }
       };
     }
-
     this.sequenceItems.forEach(updateFn());
   },
   insert: function insert(startx, starty, stopx, stopy) {
     var _startx = Math.min(startx, stopx);
-
     var _stopx = Math.max(startx, stopx);
-
     var _starty = Math.min(starty, stopy);
-
     var _stopy = Math.max(starty, stopy);
-
     this.updateVal(bounds.data, 'startx', _startx, Math.min);
     this.updateVal(bounds.data, 'starty', _starty, Math.min);
     this.updateVal(bounds.data, 'stopx', _stopx, Math.max);
@@ -23633,11 +22465,11 @@ var drawTasks = function drawTasks(diagram, tasks, verticalPos) {
   var sectionNumber = 0;
   var fill = '#CCC';
   var colour = 'black';
-  var num = 0; // Draw the tasks
+  var num = 0;
 
+  // Draw the tasks
   for (var i = 0; i < tasks.length; i++) {
     var task = tasks[i];
-
     if (lastSection !== task.section) {
       fill = fills[sectionNumber % fills.length];
       num = sectionNumber % fills.length;
@@ -23653,17 +22485,17 @@ var drawTasks = function drawTasks(diagram, tasks, verticalPos) {
       _svgDraw__WEBPACK_IMPORTED_MODULE_3__["default"].drawSection(diagram, section, conf);
       lastSection = task.section;
       sectionNumber++;
-    } // Collect the actors involved in the task
+    }
 
-
+    // Collect the actors involved in the task
     var taskActors = task.people.reduce(function (acc, actorName) {
       if (actors[actorName]) {
         acc[actorName] = actors[actorName];
       }
-
       return acc;
-    }, {}); // Add some rendering data to the object
+    }, {});
 
+    // Add some rendering data to the object
     task.x = i * conf.taskMargin + i * conf.width + LEFT_MARGIN;
     task.y = taskPos;
     task.width = conf.diagramMarginX;
@@ -23671,8 +22503,9 @@ var drawTasks = function drawTasks(diagram, tasks, verticalPos) {
     task.colour = colour;
     task.fill = fill;
     task.num = num;
-    task.actors = taskActors; // Draw the box with the attached line
+    task.actors = taskActors;
 
+    // Draw the box with the attached line
     _svgDraw__WEBPACK_IMPORTED_MODULE_3__["default"].drawTask(diagram, task, conf);
     bounds.insert(task.x, task.y, task.x + task.width + conf.taskMargin, 300 + 5 * 30); // stopy is the length of the descenders.
   }
@@ -24378,7 +23211,6 @@ __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
   return ".label {\n    font-family: 'trebuchet ms', verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n    color: ".concat(options.textColor, ";\n  }\n  .mouth {\n    stroke: #666;\n  }\n\n  line {\n    stroke: ").concat(options.textColor, "\n  }\n\n  .legend {\n    fill: ").concat(options.textColor, ";\n  }\n\n  .label text {\n    fill: #333;\n  }\n  .label {\n    color: ").concat(options.textColor, "\n  }\n\n  .face {\n    fill: #FFF8DC;\n    stroke: #999;\n  }\n\n  .node rect,\n  .node circle,\n  .node ellipse,\n  .node polygon,\n  .node path {\n    fill: ").concat(options.mainBkg, ";\n    stroke: ").concat(options.nodeBorder, ";\n    stroke-width: 1px;\n  }\n\n  .node .label {\n    text-align: center;\n  }\n  .node.clickable {\n    cursor: pointer;\n  }\n\n  .arrowheadPath {\n    fill: ").concat(options.arrowheadColor, ";\n  }\n\n  .edgePath .path {\n    stroke: ").concat(options.lineColor, ";\n    stroke-width: 1.5px;\n  }\n\n  .flowchart-link {\n    stroke: ").concat(options.lineColor, ";\n    fill: none;\n  }\n\n  .edgeLabel {\n    background-color: ").concat(options.edgeLabelBackground, ";\n    rect {\n      opacity: 0.5;\n    }\n    text-align: center;\n  }\n\n  .cluster rect {\n  }\n\n  .cluster text {\n    fill: ").concat(options.titleColor, ";\n  }\n\n  div.mermaidTooltip {\n    position: absolute;\n    text-align: center;\n    max-width: 200px;\n    padding: 2px;\n    font-family: 'trebuchet ms', verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n    font-size: 12px;\n    background: ").concat(options.tertiaryColor, ";\n    border: 1px solid ").concat(options.border2, ";\n    border-radius: 2px;\n    pointer-events: none;\n    z-index: 100;\n  }\n\n  .task-type-0, .section-type-0  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType0) : '', ";\n  }\n  .task-type-1, .section-type-1  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType1) : '', ";\n  }\n  .task-type-2, .section-type-2  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType2) : '', ";\n  }\n  .task-type-3, .section-type-3  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType3) : '', ";\n  }\n  .task-type-4, .section-type-4  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType4) : '', ";\n  }\n  .task-type-5, .section-type-5  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType5) : '', ";\n  }\n  .task-type-6, .section-type-6  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType6) : '', ";\n  }\n  .task-type-7, .section-type-7  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType7) : '', ";\n  }\n");
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -24415,38 +23247,34 @@ var drawRect = function drawRect(elem, rectData) {
   rectElem.attr('height', rectData.height);
   rectElem.attr('rx', rectData.rx);
   rectElem.attr('ry', rectData.ry);
-
   if (typeof rectData.class !== 'undefined') {
     rectElem.attr('class', rectData.class);
   }
-
   return rectElem;
 };
 var drawFace = function drawFace(element, faceData) {
   var radius = 15;
   var circleElement = element.append('circle').attr('cx', faceData.cx).attr('cy', faceData.cy).attr('class', 'face').attr('r', radius).attr('stroke-width', 2).attr('overflow', 'visible');
-  var face = element.append('g'); //left eye
+  var face = element.append('g');
 
-  face.append('circle').attr('cx', faceData.cx - radius / 3).attr('cy', faceData.cy - radius / 3).attr('r', 1.5).attr('stroke-width', 2).attr('fill', '#666').attr('stroke', '#666'); //right eye
+  //left eye
+  face.append('circle').attr('cx', faceData.cx - radius / 3).attr('cy', faceData.cy - radius / 3).attr('r', 1.5).attr('stroke-width', 2).attr('fill', '#666').attr('stroke', '#666');
 
+  //right eye
   face.append('circle').attr('cx', faceData.cx + radius / 3).attr('cy', faceData.cy - radius / 3).attr('r', 1.5).attr('stroke-width', 2).attr('fill', '#666').attr('stroke', '#666');
-
   function smile(face) {
-    var arc = Object(d3__WEBPACK_IMPORTED_MODULE_0__["arc"])().startAngle(Math.PI / 2).endAngle(3 * (Math.PI / 2)).innerRadius(radius / 2).outerRadius(radius / 2.2); //mouth
-
+    var arc = Object(d3__WEBPACK_IMPORTED_MODULE_0__["arc"])().startAngle(Math.PI / 2).endAngle(3 * (Math.PI / 2)).innerRadius(radius / 2).outerRadius(radius / 2.2);
+    //mouth
     face.append('path').attr('class', 'mouth').attr('d', arc).attr('transform', 'translate(' + faceData.cx + ',' + (faceData.cy + 2) + ')');
   }
-
   function sad(face) {
-    var arc = Object(d3__WEBPACK_IMPORTED_MODULE_0__["arc"])().startAngle(3 * Math.PI / 2).endAngle(5 * (Math.PI / 2)).innerRadius(radius / 2).outerRadius(radius / 2.2); //mouth
-
+    var arc = Object(d3__WEBPACK_IMPORTED_MODULE_0__["arc"])().startAngle(3 * Math.PI / 2).endAngle(5 * (Math.PI / 2)).innerRadius(radius / 2).outerRadius(radius / 2.2);
+    //mouth
     face.append('path').attr('class', 'mouth').attr('d', arc).attr('transform', 'translate(' + faceData.cx + ',' + (faceData.cy + 7) + ')');
   }
-
   function ambivalent(face) {
     face.append('line').attr('class', 'mouth').attr('stroke', 2).attr('x1', faceData.cx - 5).attr('y1', faceData.cy + 7).attr('x2', faceData.cx + 5).attr('y2', faceData.cy + 7).attr('class', 'mouth').attr('stroke-width', '1px').attr('stroke', '#666');
   }
-
   if (faceData.score > 3) {
     smile(face);
   } else if (faceData.score < 3) {
@@ -24454,7 +23282,6 @@ var drawFace = function drawFace(element, faceData) {
   } else {
     ambivalent(face);
   }
-
   return circleElement;
 };
 var drawCircle = function drawCircle(element, circleData) {
@@ -24464,15 +23291,12 @@ var drawCircle = function drawCircle(element, circleData) {
   circleElement.attr('fill', circleData.fill);
   circleElement.attr('stroke', circleData.stroke);
   circleElement.attr('r', circleData.r);
-
   if (typeof circleElement.class !== 'undefined') {
     circleElement.attr('class', circleElement.class);
   }
-
   if (typeof circleData.title !== 'undefined') {
     circleElement.append('title').text(circleData.title);
   }
-
   return circleElement;
 };
 var drawText = function drawText(elem, textData) {
@@ -24483,11 +23307,9 @@ var drawText = function drawText(elem, textData) {
   textElem.attr('y', textData.y);
   textElem.attr('class', 'legend');
   textElem.style('text-anchor', textData.anchor);
-
   if (typeof textData.class !== 'undefined') {
     textElem.attr('class', textData.class);
   }
-
   var span = textElem.append('tspan');
   span.attr('x', textData.x + textData.textMargin * 2);
   span.text(nText);
@@ -24497,7 +23319,6 @@ var drawLabel = function drawLabel(elem, txtObject) {
   function genPoints(x, y, width, height, cut) {
     return x + ',' + y + ' ' + (x + width) + ',' + y + ' ' + (x + width) + ',' + (y + height - cut) + ' ' + (x + width - cut * 1.2) + ',' + (y + height) + ' ' + x + ',' + (y + height);
   }
-
   var polygon = elem.append('polygon');
   polygon.attr('points', genPoints(txtObject.x, txtObject.y, 50, 20, 7));
   polygon.attr('class', 'labelBox');
@@ -24517,7 +23338,6 @@ var drawSection = function drawSection(elem, section, conf) {
   rect.rx = 3;
   rect.ry = 3;
   drawRect(g, rect);
-
   _drawTextCandidateFunc(conf)(section.text, g, rect.x, rect.y, rect.width, rect.height, {
     class: 'journey-section section-type-' + section.num
   }, conf, section.colour);
@@ -24529,7 +23349,6 @@ var taskCount = -1;
  * @param task The task to render
  * @param conf The global configuration
  */
-
 var drawTask = function drawTask(elem, task, conf) {
   var center = task.x + conf.width / 2;
   var g = elem.append('g');
@@ -24565,17 +23384,16 @@ var drawTask = function drawTask(elem, task, conf) {
     drawCircle(g, circle);
     xPos += 10;
   });
-
   _drawTextCandidateFunc(conf)(task.task, g, rect.x, rect.y, rect.width, rect.height, {
     class: 'task'
   }, conf, task.colour);
 };
+
 /**
  * Draws a background rectangle
  * @param elem The html element
  * @param bounds The bounds of the drawing
  */
-
 var drawBackgroundRect = function drawBackgroundRect(elem, bounds) {
   var rectElem = drawRect(elem, {
     x: bounds.startx,
@@ -24611,40 +23429,33 @@ var getNoteRect = function getNoteRect() {
     ry: 0
   };
 };
-
 var _drawTextCandidateFunc = function () {
   function byText(content, g, x, y, width, height, textAttrs, colour) {
     var text = g.append('text').attr('x', x + width / 2).attr('y', y + height / 2 + 5).style('font-color', colour).style('text-anchor', 'middle').text(content);
-
     _setTextAttrs(text, textAttrs);
   }
-
   function byTspan(content, g, x, y, width, height, textAttrs, conf, colour) {
     var taskFontSize = conf.taskFontSize,
-        taskFontFamily = conf.taskFontFamily;
+      taskFontFamily = conf.taskFontFamily;
     var lines = content.split(/<br\s*\/?>/gi);
-
     for (var i = 0; i < lines.length; i++) {
       var dy = i * taskFontSize - taskFontSize * (lines.length - 1) / 2;
       var text = g.append('text').attr('x', x + width / 2).attr('y', y).attr('fill', colour).style('text-anchor', 'middle').style('font-size', taskFontSize).style('font-family', taskFontFamily);
       text.append('tspan').attr('x', x + width / 2).attr('dy', dy).text(lines[i]);
       text.attr('y', y + height / 2.0).attr('dominant-baseline', 'central').attr('alignment-baseline', 'central');
-
       _setTextAttrs(text, textAttrs);
     }
   }
-
   function byFo(content, g, x, y, width, height, textAttrs, conf) {
     var body = g.append('switch');
     var f = body.append('foreignObject').attr('x', x).attr('y', y).attr('width', width).attr('height', height).attr('position', 'fixed');
     var text = f.append('div').style('display', 'table').style('height', '100%').style('width', '100%');
-    text.append('div').attr('class', 'label').style('display', 'table-cell').style('text-align', 'center').style('vertical-align', 'middle') // .style('color', colour)
+    text.append('div').attr('class', 'label').style('display', 'table-cell').style('text-align', 'center').style('vertical-align', 'middle')
+    // .style('color', colour)
     .text(content);
     byTspan(content, body, x, y, width, height, textAttrs, conf);
-
     _setTextAttrs(text, textAttrs);
   }
-
   function _setTextAttrs(toText, fromTextAttrsDict) {
     for (var key in fromTextAttrsDict) {
       if (key in fromTextAttrsDict) {
@@ -24654,16 +23465,13 @@ var _drawTextCandidateFunc = function () {
       }
     }
   }
-
   return function (conf) {
     return conf.textPlacement === 'fo' ? byFo : conf.textPlacement === 'old' ? byText : byTspan;
   };
 }();
-
 var initGraphics = function initGraphics(graphics) {
   graphics.append('defs').append('marker').attr('id', 'arrowhead').attr('refX', 5).attr('refY', 2).attr('markerWidth', 6).attr('markerHeight', 4).attr('orient', 'auto').append('path').attr('d', 'M 0,0 V 4 L6,2 Z'); // this is actual shape for arrowhead
 };
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   drawRect: drawRect,
   drawCircle: drawCircle,
@@ -24705,12 +23513,12 @@ var setConf = function setConf(cnf) {
     conf[key] = cnf[key];
   });
 };
+
 /**
  * Draws a an info picture in the tag with id: id based on the graph definition in text.
  * @param text
  * @param id
  */
-
 var draw = function draw(id, ver) {
   try {
     _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('Renering svg for syntax error\n');
@@ -24772,49 +23580,35 @@ var log = {
 };
 var setLogLevel = function setLogLevel() {
   var level = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'fatal';
-
   if (isNaN(level)) {
     level = level.toLowerCase();
-
     if (LEVELS[level] !== undefined) {
       level = LEVELS[level];
     }
   }
-
   log.trace = function () {};
-
   log.debug = function () {};
-
   log.info = function () {};
-
   log.warn = function () {};
-
   log.error = function () {};
-
   log.fatal = function () {};
-
   if (level <= LEVELS.fatal) {
     log.fatal = console.error ? console.error.bind(console, format('FATAL'), 'color: orange') : console.log.bind(console, '\x1b[35m', format('FATAL'));
   }
-
   if (level <= LEVELS.error) {
     log.error = console.error ? console.error.bind(console, format('ERROR'), 'color: orange') : console.log.bind(console, '\x1b[31m', format('ERROR'));
   }
-
   if (level <= LEVELS.warn) {
     log.warn = console.warn ? console.warn.bind(console, format('WARN'), 'color: orange') : console.log.bind(console, "\x1B[33m", format('WARN'));
   }
-
   if (level <= LEVELS.info) {
     log.info = console.info // ? console.info.bind(console, '\x1b[34m', format('INFO'), 'color: blue')
     ? console.info.bind(console, format('INFO'), 'color: lightblue') : console.log.bind(console, '\x1b[34m', format('INFO'));
   }
-
   if (level <= LEVELS.debug) {
     log.debug = console.debug ? console.debug.bind(console, format('DEBUG'), 'color: lightgreen') : console.log.bind(console, '\x1b[32m', format('DEBUG'));
   }
 };
-
 var format = function format(level) {
   var time = moment_mini__WEBPACK_IMPORTED_MODULE_0___default()().format('ss.SSS');
   return "%c".concat(time, " : ").concat(level, " : ");
@@ -24845,6 +23639,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 /**
  * ## init
  * Function that goes through the document to find the chart definitions in there and render them.
@@ -24866,28 +23661,23 @@ __webpack_require__.r(__webpack_exports__);
  * Renders the mermaid diagrams
  * @param nodes a css selector or an array of nodes
  */
-
 var init = function init() {
   var _this = this;
-
-  var conf = _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].getConfig(); // console.log('Starting rendering diagrams (init) - mermaid.init', conf);
-
+  var conf = _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].getConfig();
+  // console.log('Starting rendering diagrams (init) - mermaid.init', conf);
   var nodes;
-
   if (arguments.length >= 2) {
     /*! sequence config was passed as #1 */
     if (typeof arguments[0] !== 'undefined') {
       mermaid.sequenceConfig = arguments[0];
     }
-
     nodes = arguments[1];
   } else {
     nodes = arguments[0];
-  } // if last argument is a function this is the callback function
+  }
 
-
+  // if last argument is a function this is the callback function
   var callback;
-
   if (typeof arguments[arguments.length - 1] === 'function') {
     callback = arguments[arguments.length - 1];
     _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('Callback function found');
@@ -24901,103 +23691,86 @@ var init = function init() {
       }
     }
   }
-
   nodes = nodes === undefined ? document.querySelectorAll('.mermaid') : typeof nodes === 'string' ? document.querySelectorAll(nodes) : nodes instanceof window.Node ? [nodes] : nodes; // Last case  - sequence config was passed pick next
 
   _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('Start On Load before: ' + mermaid.startOnLoad);
-
   if (typeof mermaid.startOnLoad !== 'undefined') {
     _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('Start On Load inner: ' + mermaid.startOnLoad);
     _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].updateSiteConfig({
       startOnLoad: mermaid.startOnLoad
     });
   }
-
   if (typeof mermaid.ganttConfig !== 'undefined') {
     _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].updateSiteConfig({
       gantt: mermaid.ganttConfig
     });
   }
-
   var idGeneratior = new _utils__WEBPACK_IMPORTED_MODULE_3__["default"].initIdGeneratior(conf.deterministicIds, conf.deterministicIDSeed);
   var txt;
-
-  var _loop = function _loop(i) {
+  var _loop = function _loop() {
     var element = nodes[i];
-    /*! Check if previously processed */
 
+    /*! Check if previously processed */
     if (!element.getAttribute('data-processed')) {
       element.setAttribute('data-processed', true);
     } else {
-      return "continue";
+      return 1; // continue
     }
+    var id = "mermaid-".concat(idGeneratior.next());
 
-    var id = "mermaid-".concat(idGeneratior.next()); // Fetch the graph definition including tags
+    // Fetch the graph definition including tags
+    txt = element.innerHTML;
 
-    txt = element.innerHTML; // transforms the html to pure text
-
+    // transforms the html to pure text
     txt = entity_decode_browser__WEBPACK_IMPORTED_MODULE_0___default()(txt).trim().replace(/<br\s*\/?>/gi, '<br/>');
     var init = _utils__WEBPACK_IMPORTED_MODULE_3__["default"].detectInit(txt);
-
     if (init) {
       _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('Detected early reinit: ', init);
     }
-
     try {
       _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].render(id, txt, function (svgCode, bindFunctions) {
         element.innerHTML = svgCode;
-
         if (typeof callback !== 'undefined') {
           callback(id);
         }
-
         if (bindFunctions) bindFunctions(element);
       }, element);
     } catch (e) {
       _logger__WEBPACK_IMPORTED_MODULE_1__["log"].warn('Syntax Error rendering');
       _logger__WEBPACK_IMPORTED_MODULE_1__["log"].warn(e);
-
       if (_this.parseError) {
         _this.parseError(e);
       }
     }
   };
-
   for (var i = 0; i < nodes.length; i++) {
-    var _ret = _loop(i);
-
-    if (_ret === "continue") continue;
+    if (_loop()) continue;
   }
 };
-
 var initialize = function initialize(config) {
   // mermaidAPI.reset();
   if (typeof config.mermaid !== 'undefined') {
     if (typeof config.mermaid.startOnLoad !== 'undefined') {
       mermaid.startOnLoad = config.mermaid.startOnLoad;
     }
-
     if (typeof config.mermaid.htmlLabels !== 'undefined') {
       mermaid.htmlLabels = config.mermaid.htmlLabels === 'false' || config.mermaid.htmlLabels === false ? false : true;
     }
   }
-
-  _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].initialize(config); // mermaidAPI.reset();
+  _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].initialize(config);
+  // mermaidAPI.reset();
 };
+
 /**
  * ##contentLoaded
  * Callback function that is called when page is loaded. This functions fetches configuration for mermaid rendering and
  * calls init for rendering the mermaid diagrams on the page.
  */
-
-
 var contentLoaded = function contentLoaded() {
   var config;
-
   if (mermaid.startOnLoad) {
     // No config found, do check API config
     config = _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].getConfig();
-
     if (config.startOnLoad) {
       mermaid.init();
     }
@@ -25005,14 +23778,12 @@ var contentLoaded = function contentLoaded() {
     if (typeof mermaid.startOnLoad === 'undefined') {
       _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('In start, no config');
       config = _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].getConfig();
-
       if (config.startOnLoad) {
         mermaid.init();
       }
     }
   }
 };
-
 if (typeof document !== 'undefined') {
   /*!
    * Wait for document loaded before starting the execution
@@ -25021,7 +23792,6 @@ if (typeof document !== 'undefined') {
     contentLoaded();
   }, false);
 }
-
 var mermaid = {
   startOnLoad: true,
   htmlLabels: true,
@@ -25106,8 +23876,7 @@ var _package_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpac
 /* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./styles */ "./src/styles.js");
 /* harmony import */ var _themes__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./themes */ "./src/themes/index.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./utils */ "./src/utils.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 /**
  *Edit this Page[![N|Solid](img/GitHub-Mark-32px.png)](https://github.com/mermaid-js/mermaid/blob/develop/src/mermaidAPI.js)
  *
@@ -25163,7 +23932,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 
 
- // import * as configApi from './config';
+
+// import * as configApi from './config';
 // // , {
 // //   setConfig,
 // //   configApi.getConfig,
@@ -25176,93 +23946,75 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 
 
-
-
 function parse(text) {
   var cnf = _config__WEBPACK_IMPORTED_MODULE_3__["getConfig"]();
   var graphInit = _utils__WEBPACK_IMPORTED_MODULE_44__["default"].detectInit(text, cnf);
-
   if (graphInit) {
     reinitialize(graphInit);
     _logger__WEBPACK_IMPORTED_MODULE_41__["log"].debug('reinit ', graphInit);
   }
-
   var graphType = _utils__WEBPACK_IMPORTED_MODULE_44__["default"].detectType(text, cnf);
   var parser;
   _logger__WEBPACK_IMPORTED_MODULE_41__["log"].debug('Type ' + graphType);
-
   switch (graphType) {
     case 'git':
       parser = _diagrams_git_parser_gitGraph__WEBPACK_IMPORTED_MODULE_20___default.a;
       parser.parser.yy = _diagrams_git_gitGraphAst__WEBPACK_IMPORTED_MODULE_18__["default"];
       break;
-
     case 'flowchart':
       _diagrams_flowchart_flowDb__WEBPACK_IMPORTED_MODULE_11__["default"].clear();
       parser = _diagrams_flowchart_parser_flow__WEBPACK_IMPORTED_MODULE_14___default.a;
       parser.parser.yy = _diagrams_flowchart_flowDb__WEBPACK_IMPORTED_MODULE_11__["default"];
       break;
-
     case 'flowchart-v2':
       _diagrams_flowchart_flowDb__WEBPACK_IMPORTED_MODULE_11__["default"].clear();
       parser = _diagrams_flowchart_parser_flow__WEBPACK_IMPORTED_MODULE_14___default.a;
       parser.parser.yy = _diagrams_flowchart_flowDb__WEBPACK_IMPORTED_MODULE_11__["default"];
       break;
-
     case 'sequence':
       parser = _diagrams_sequence_parser_sequenceDiagram__WEBPACK_IMPORTED_MODULE_30___default.a;
       parser.parser.yy = _diagrams_sequence_sequenceDb__WEBPACK_IMPORTED_MODULE_31__["default"];
       break;
-
     case 'gantt':
       parser = _diagrams_gantt_parser_gantt__WEBPACK_IMPORTED_MODULE_17___default.a;
       parser.parser.yy = _diagrams_gantt_ganttDb__WEBPACK_IMPORTED_MODULE_15__["default"];
       break;
-
     case 'class':
       parser = _diagrams_class_parser_classDiagram__WEBPACK_IMPORTED_MODULE_7___default.a;
       parser.parser.yy = _diagrams_class_classDb__WEBPACK_IMPORTED_MODULE_4__["default"];
       break;
-
     case 'classDiagram':
       parser = _diagrams_class_parser_classDiagram__WEBPACK_IMPORTED_MODULE_7___default.a;
       parser.parser.yy = _diagrams_class_classDb__WEBPACK_IMPORTED_MODULE_4__["default"];
       break;
-
     case 'state':
       parser = _diagrams_state_parser_stateDiagram__WEBPACK_IMPORTED_MODULE_33___default.a;
       parser.parser.yy = _diagrams_state_stateDb__WEBPACK_IMPORTED_MODULE_34__["default"];
       break;
-
     case 'stateDiagram':
       parser = _diagrams_state_parser_stateDiagram__WEBPACK_IMPORTED_MODULE_33___default.a;
       parser.parser.yy = _diagrams_state_stateDb__WEBPACK_IMPORTED_MODULE_34__["default"];
       break;
-
     case 'info':
       _logger__WEBPACK_IMPORTED_MODULE_41__["log"].debug('info info info');
       parser = _diagrams_info_parser_info__WEBPACK_IMPORTED_MODULE_23___default.a;
       parser.parser.yy = _diagrams_info_infoDb__WEBPACK_IMPORTED_MODULE_21__["default"];
       break;
-
     case 'pie':
       _logger__WEBPACK_IMPORTED_MODULE_41__["log"].debug('pie');
       parser = _diagrams_pie_parser_pie__WEBPACK_IMPORTED_MODULE_24___default.a;
       parser.parser.yy = _diagrams_pie_pieDb__WEBPACK_IMPORTED_MODULE_25__["default"];
       break;
-
     case 'er':
       _logger__WEBPACK_IMPORTED_MODULE_41__["log"].debug('er');
       parser = _diagrams_er_parser_erDiagram__WEBPACK_IMPORTED_MODULE_10___default.a;
       parser.parser.yy = _diagrams_er_erDb__WEBPACK_IMPORTED_MODULE_8__["default"];
       break;
-
     case 'journey':
       _logger__WEBPACK_IMPORTED_MODULE_41__["log"].debug('Journey');
       parser = _diagrams_user_journey_parser_journey__WEBPACK_IMPORTED_MODULE_39___default.a;
       parser.parser.yy = _diagrams_user_journey_journeyDb__WEBPACK_IMPORTED_MODULE_37__["default"];
       break;
-
     case 'requirement':
     case 'requirementDiagram':
       _logger__WEBPACK_IMPORTED_MODULE_41__["log"].debug('RequirementDiagram');
@@ -25270,9 +24022,7 @@ function parse(text) {
       parser.parser.yy = _diagrams_requirement_requirementDb__WEBPACK_IMPORTED_MODULE_28__["default"];
       break;
   }
-
   parser.parser.yy.graphType = graphType;
-
   parser.parser.yy.parseError = function (str, hash) {
     var error = {
       str: str,
@@ -25280,11 +24030,9 @@ function parse(text) {
     };
     throw error;
   };
-
   parser.parse(text);
   return parser;
 }
-
 var encodeEntities = function encodeEntities(text) {
   var txt = text;
   txt = txt.replace(/style.*:\S*#.*;/g, function (s) {
@@ -25298,7 +24046,6 @@ var encodeEntities = function encodeEntities(text) {
   txt = txt.replace(/#\w+;/g, function (s) {
     var innerTxt = s.substring(1, s.length - 1);
     var isInt = /^\+?\d+$/.test(innerTxt);
-
     if (isInt) {
       return 'ﬂ°°' + innerTxt + '¶ß';
     } else {
@@ -25341,76 +24088,68 @@ var decodeEntities = function decodeEntities(text) {
  * @param container selector to element in which a div with the graph temporarily will be inserted. In one is
  * provided a hidden div will be inserted in the body of the page instead. The element will be removed when rendering is
  * completed.
+ * @param participants
  */
-
-var render = function render(id, _txt, cb, container, participants) {
+var render = function render(id, _txt, cb, container) {
+  var participants = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : [];
   _config__WEBPACK_IMPORTED_MODULE_3__["reset"]();
   var txt = _txt;
   var graphInit = _utils__WEBPACK_IMPORTED_MODULE_44__["default"].detectInit(txt);
-
   if (graphInit) {
     _config__WEBPACK_IMPORTED_MODULE_3__["addDirective"](graphInit);
-  } // else {
+  }
+  // else {
   //   configApi.reset();
   //   const siteConfig = configApi.getSiteConfig();
   //   configApi.addDirective(siteConfig);
   // }
   // console.warn('Render fetching config');
 
-
-  var cnf = _config__WEBPACK_IMPORTED_MODULE_3__["getConfig"](); // Check the maximum allowed text size
-
+  var cnf = _config__WEBPACK_IMPORTED_MODULE_3__["getConfig"]();
+  // Check the maximum allowed text size
   if (_txt.length > cnf.maxTextSize) {
     txt = 'graph TB;a[Maximum text size in diagram exceeded];style a fill:#faa';
   }
-
   if (typeof container !== 'undefined') {
     container.innerHTML = '';
     Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(container).append('div').attr('id', 'd' + id).attr('style', 'font-family: ' + cnf.fontFamily).append('svg').attr('id', id).attr('width', '100%').attr('xmlns', 'http://www.w3.org/2000/svg').append('g');
   } else {
     var existingSvg = document.getElementById(id);
-
     if (existingSvg) {
       existingSvg.remove();
     }
-
     var _element = document.querySelector('#' + 'd' + id);
-
     if (_element) {
       _element.remove();
     }
-
     Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('body').append('div').attr('id', 'd' + id).append('svg').attr('id', id).attr('width', '100%').attr('xmlns', 'http://www.w3.org/2000/svg').append('g');
   }
-
   window.txt = txt;
   txt = encodeEntities(txt);
   var element = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('#d' + id).node();
-  var graphType = _utils__WEBPACK_IMPORTED_MODULE_44__["default"].detectType(txt, cnf); // insert inline style into svg
+  var graphType = _utils__WEBPACK_IMPORTED_MODULE_44__["default"].detectType(txt, cnf);
 
+  // insert inline style into svg
   var svg = element.firstChild;
   var firstChild = svg.firstChild;
-  var userStyles = ''; // user provided theme CSS
-
+  var userStyles = '';
+  // user provided theme CSS
   if (cnf.themeCSS !== undefined) {
     userStyles += "\n".concat(cnf.themeCSS);
-  } // user provided theme CSS
-
-
+  }
+  // user provided theme CSS
   if (cnf.fontFamily !== undefined) {
     userStyles += "\n:root { --mermaid-font-family: ".concat(cnf.fontFamily, "}");
-  } // user provided theme CSS
-
-
+  }
+  // user provided theme CSS
   if (cnf.altFontFamily !== undefined) {
     userStyles += "\n:root { --mermaid-alt-font-family: ".concat(cnf.altFontFamily, "}");
-  } // classDef
+  }
 
-
+  // classDef
   if (graphType === 'flowchart' || graphType === 'flowchart-v2' || graphType === 'graph') {
     var classes = _diagrams_flowchart_flowRenderer__WEBPACK_IMPORTED_MODULE_12__["default"].getClasses(txt);
     var htmlLabels = cnf.htmlLabels || cnf.flowchart.htmlLabels;
-
     for (var className in classes) {
       if (htmlLabels) {
         userStyles += "\n.".concat(className, " > * { ").concat(classes[className].styles.join(' !important; '), " !important; }");
@@ -25421,20 +24160,23 @@ var render = function render(id, _txt, cb, container, participants) {
         userStyles += "\n.".concat(className, " polygon { ").concat(classes[className].styles.join(' !important; '), " !important; }");
         userStyles += "\n.".concat(className, " ellipse { ").concat(classes[className].styles.join(' !important; '), " !important; }");
         userStyles += "\n.".concat(className, " circle { ").concat(classes[className].styles.join(' !important; '), " !important; }");
-
         if (classes[className].textStyles) {
           userStyles += "\n.".concat(className, " tspan { ").concat(classes[className].textStyles.join(' !important; '), " !important; }");
         }
       }
     }
-  } // log.warn(cnf.themeVariables);
+  }
 
+  // log.warn(cnf.themeVariables);
 
   var stylis = new stylis__WEBPACK_IMPORTED_MODULE_1___default.a();
   var rules = stylis("#".concat(id), Object(_styles__WEBPACK_IMPORTED_MODULE_42__["default"])(graphType, userStyles, cnf.themeVariables));
   var style1 = document.createElement('style');
   style1.innerHTML = rules;
-  svg.insertBefore(style1, firstChild); // Verify that the generated svgs are ok before removing this
+  svg.insertBefore(style1, firstChild);
+
+  // Verify that the generated svgs are ok before removing this
+
   // const style2 = document.createElement('style');
   // const cs = window.getComputedStyle(svg);
   // style2.innerHTML = `#d${id} * {
@@ -25452,22 +24194,18 @@ var render = function render(id, _txt, cb, container, participants) {
         _diagrams_git_gitGraphRenderer__WEBPACK_IMPORTED_MODULE_19__["default"].setConf(cnf.git);
         _diagrams_git_gitGraphRenderer__WEBPACK_IMPORTED_MODULE_19__["default"].draw(txt, id, false);
         break;
-
       case 'flowchart':
         cnf.flowchart.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
         _diagrams_flowchart_flowRenderer__WEBPACK_IMPORTED_MODULE_12__["default"].setConf(cnf.flowchart);
         _diagrams_flowchart_flowRenderer__WEBPACK_IMPORTED_MODULE_12__["default"].draw(txt, id, false);
         break;
-
       case 'flowchart-v2':
         cnf.flowchart.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
         _diagrams_flowchart_flowRenderer_v2__WEBPACK_IMPORTED_MODULE_13__["default"].setConf(cnf.flowchart);
         _diagrams_flowchart_flowRenderer_v2__WEBPACK_IMPORTED_MODULE_13__["default"].draw(txt, id, false);
         break;
-
       case 'sequence':
         cnf.sequence.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
-
         if (cnf.sequenceDiagram) {
           // backwards compatibility
           _diagrams_sequence_sequenceRenderer__WEBPACK_IMPORTED_MODULE_32__["default"].setConf(Object.assign(cnf.sequence, cnf.sequenceDiagram));
@@ -25475,62 +24213,51 @@ var render = function render(id, _txt, cb, container, participants) {
         } else {
           _diagrams_sequence_sequenceRenderer__WEBPACK_IMPORTED_MODULE_32__["default"].setConf(cnf.sequence);
         }
-
         _diagrams_sequence_sequenceRenderer__WEBPACK_IMPORTED_MODULE_32__["default"].draw(txt, id, participants);
         break;
-
       case 'gantt':
         cnf.gantt.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
         _diagrams_gantt_ganttRenderer__WEBPACK_IMPORTED_MODULE_16__["default"].setConf(cnf.gantt);
         _diagrams_gantt_ganttRenderer__WEBPACK_IMPORTED_MODULE_16__["default"].draw(txt, id);
         break;
-
       case 'class':
         cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
         _diagrams_class_classRenderer__WEBPACK_IMPORTED_MODULE_5__["default"].setConf(cnf.class);
         _diagrams_class_classRenderer__WEBPACK_IMPORTED_MODULE_5__["default"].draw(txt, id);
         break;
-
       case 'classDiagram':
         cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
         _diagrams_class_classRenderer_v2__WEBPACK_IMPORTED_MODULE_6__["default"].setConf(cnf.class);
         _diagrams_class_classRenderer_v2__WEBPACK_IMPORTED_MODULE_6__["default"].draw(txt, id);
         break;
-
       case 'state':
         cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
         _diagrams_state_stateRenderer__WEBPACK_IMPORTED_MODULE_35__["default"].setConf(cnf.state);
         _diagrams_state_stateRenderer__WEBPACK_IMPORTED_MODULE_35__["default"].draw(txt, id);
         break;
-
       case 'stateDiagram':
         cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
         _diagrams_state_stateRenderer_v2__WEBPACK_IMPORTED_MODULE_36__["default"].setConf(cnf.state);
         _diagrams_state_stateRenderer_v2__WEBPACK_IMPORTED_MODULE_36__["default"].draw(txt, id);
         break;
-
       case 'info':
         cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
         _diagrams_info_infoRenderer__WEBPACK_IMPORTED_MODULE_22__["default"].setConf(cnf.class);
         _diagrams_info_infoRenderer__WEBPACK_IMPORTED_MODULE_22__["default"].draw(txt, id, _package_json__WEBPACK_IMPORTED_MODULE_2__.version);
         break;
-
       case 'pie':
         //cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
         //pieRenderer.setConf(cnf.pie);
         _diagrams_pie_pieRenderer__WEBPACK_IMPORTED_MODULE_26__["default"].draw(txt, id, _package_json__WEBPACK_IMPORTED_MODULE_2__.version);
         break;
-
       case 'er':
         _diagrams_er_erRenderer__WEBPACK_IMPORTED_MODULE_9__["default"].setConf(cnf.er);
         _diagrams_er_erRenderer__WEBPACK_IMPORTED_MODULE_9__["default"].draw(txt, id, _package_json__WEBPACK_IMPORTED_MODULE_2__.version);
         break;
-
       case 'journey':
         _diagrams_user_journey_journeyRenderer__WEBPACK_IMPORTED_MODULE_38__["default"].setConf(cnf.journey);
         _diagrams_user_journey_journeyRenderer__WEBPACK_IMPORTED_MODULE_38__["default"].draw(txt, id, _package_json__WEBPACK_IMPORTED_MODULE_2__.version);
         break;
-
       case 'requirement':
         _diagrams_requirement_requirementRenderer__WEBPACK_IMPORTED_MODULE_29__["default"].setConf(cnf.requirement);
         _diagrams_requirement_requirementRenderer__WEBPACK_IMPORTED_MODULE_29__["default"].draw(txt, id, _package_json__WEBPACK_IMPORTED_MODULE_2__.version);
@@ -25541,8 +24268,9 @@ var render = function render(id, _txt, cb, container, participants) {
     _errorRenderer__WEBPACK_IMPORTED_MODULE_40__["default"].draw(id, _package_json__WEBPACK_IMPORTED_MODULE_2__.version);
     throw e;
   }
+  Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id=\"".concat(id, "\"]")).selectAll('foreignobject > *').attr('xmlns', 'http://www.w3.org/1999/xhtml');
 
-  Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id=\"".concat(id, "\"]")).selectAll('foreignobject > *').attr('xmlns', 'http://www.w3.org/1999/xhtml'); // if (cnf.arrowMarkerAbsolute) {
+  // if (cnf.arrowMarkerAbsolute) {
   //   url =
   //     window.location.protocol +
   //     '//' +
@@ -25552,71 +24280,57 @@ var render = function render(id, _txt, cb, container, participants) {
   //   url = url.replace(/\(/g, '\\(');
   //   url = url.replace(/\)/g, '\\)');
   // }
-  // Fix for when the base tag is used
 
+  // Fix for when the base tag is used
   var svgCode = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('#d' + id).node().innerHTML;
   _logger__WEBPACK_IMPORTED_MODULE_41__["log"].debug('cnf.arrowMarkerAbsolute', cnf.arrowMarkerAbsolute);
-
   if (!cnf.arrowMarkerAbsolute || cnf.arrowMarkerAbsolute === 'false') {
     svgCode = svgCode.replace(/marker-end="url\(.*?#/g, 'marker-end="url(#', 'g');
   }
+  svgCode = decodeEntities(svgCode);
 
-  svgCode = decodeEntities(svgCode); // Fix for when the br tag is used
-
+  // Fix for when the br tag is used
   svgCode = svgCode.replace(/<br>/g, '<br/>');
-
   if (typeof cb !== 'undefined') {
     switch (graphType) {
       case 'flowchart':
       case 'flowchart-v2':
         cb(svgCode, _diagrams_flowchart_flowDb__WEBPACK_IMPORTED_MODULE_11__["default"].bindFunctions);
         break;
-
       case 'gantt':
         cb(svgCode, _diagrams_gantt_ganttDb__WEBPACK_IMPORTED_MODULE_15__["default"].bindFunctions);
         break;
-
       case 'class':
       case 'classDiagram':
         cb(svgCode, _diagrams_class_classDb__WEBPACK_IMPORTED_MODULE_4__["default"].bindFunctions);
         break;
-
       default:
         cb(svgCode);
     }
   } else {
     _logger__WEBPACK_IMPORTED_MODULE_41__["log"].debug('CB = undefined!');
   }
-
   var node = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('#d' + id).node();
-
   if (node !== null && typeof node.remove === 'function') {
     Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('#d' + id).node().remove();
   }
-
   return svgCode;
 };
-
 var currentDirective = {};
-
 var parseDirective = function parseDirective(p, statement, context, type) {
   try {
     if (statement !== undefined) {
       statement = statement.trim();
-
       switch (context) {
         case 'open_directive':
           currentDirective = {};
           break;
-
         case 'type_directive':
           currentDirective.type = statement.toLowerCase();
           break;
-
         case 'arg_directive':
           currentDirective.args = JSON.parse(statement);
           break;
-
         case 'close_directive':
           handleDirective(p, currentDirective, type);
           currentDirective = null;
@@ -25628,10 +24342,8 @@ var parseDirective = function parseDirective(p, statement, context, type) {
     _logger__WEBPACK_IMPORTED_MODULE_41__["log"].error(error.message);
   }
 };
-
 var handleDirective = function handleDirective(p, directive, type) {
   _logger__WEBPACK_IMPORTED_MODULE_41__["log"].debug("Directive type=".concat(directive.type, " with args:"), directive.args);
-
   switch (directive.type) {
     case 'init':
     case 'initialize':
@@ -25641,7 +24353,6 @@ var handleDirective = function handleDirective(p, directive, type) {
             if (type === 'flowchart-v2') {
               type = 'flowchart';
             }
-
             directive.args[type] = directive.args[prop];
             delete directive.args[prop];
           }
@@ -25650,45 +24361,39 @@ var handleDirective = function handleDirective(p, directive, type) {
         _config__WEBPACK_IMPORTED_MODULE_3__["addDirective"](directive.args);
         break;
       }
-
     case 'wrap':
     case 'nowrap':
       if (p && p['setWrap']) {
         p.setWrap(directive.type === 'wrap');
       }
-
       break;
-
     default:
       _logger__WEBPACK_IMPORTED_MODULE_41__["log"].warn("Unhandled directive: source: '%%{".concat(directive.type, ": ").concat(JSON.stringify(directive.args ? directive.args : {}), "}%%"), directive);
       break;
   }
 };
-
 function updateRendererConfigs(conf) {
   // Todo remove, all diagrams should get config on demoand from the config object, no need for this
   _diagrams_git_gitGraphRenderer__WEBPACK_IMPORTED_MODULE_19__["default"].setConf(conf.git);
   _diagrams_flowchart_flowRenderer__WEBPACK_IMPORTED_MODULE_12__["default"].setConf(conf.flowchart);
   _diagrams_flowchart_flowRenderer_v2__WEBPACK_IMPORTED_MODULE_13__["default"].setConf(conf.flowchart);
-
   if (typeof conf['sequenceDiagram'] !== 'undefined') {
     _diagrams_sequence_sequenceRenderer__WEBPACK_IMPORTED_MODULE_32__["default"].setConf(Object(_utils__WEBPACK_IMPORTED_MODULE_44__["assignWithDepth"])(conf.sequence, conf['sequenceDiagram']));
   }
-
   _diagrams_sequence_sequenceRenderer__WEBPACK_IMPORTED_MODULE_32__["default"].setConf(conf.sequence);
   _diagrams_gantt_ganttRenderer__WEBPACK_IMPORTED_MODULE_16__["default"].setConf(conf.gantt);
   _diagrams_class_classRenderer__WEBPACK_IMPORTED_MODULE_5__["default"].setConf(conf.class);
   _diagrams_state_stateRenderer__WEBPACK_IMPORTED_MODULE_35__["default"].setConf(conf.state);
   _diagrams_state_stateRenderer_v2__WEBPACK_IMPORTED_MODULE_36__["default"].setConf(conf.state);
-  _diagrams_info_infoRenderer__WEBPACK_IMPORTED_MODULE_22__["default"].setConf(conf.class); // pieRenderer.setConf(conf.class);
-
+  _diagrams_info_infoRenderer__WEBPACK_IMPORTED_MODULE_22__["default"].setConf(conf.class);
+  // pieRenderer.setConf(conf.class);
   _diagrams_er_erRenderer__WEBPACK_IMPORTED_MODULE_9__["default"].setConf(conf.er);
   _diagrams_user_journey_journeyRenderer__WEBPACK_IMPORTED_MODULE_38__["default"].setConf(conf.journey);
   _diagrams_requirement_requirementRenderer__WEBPACK_IMPORTED_MODULE_29__["default"].setConf(conf.requirement);
   _errorRenderer__WEBPACK_IMPORTED_MODULE_40__["default"].setConf(conf.class);
 }
-
-function reinitialize() {// `mermaidAPI.reinitialize: v${pkg.version}`,
+function reinitialize() {
+  // `mermaidAPI.reinitialize: v${pkg.version}`,
   //   JSON.stringify(options),
   //   options.themeVariables.primaryColor;
   // // if (options.theme && theme[options.theme]) {
@@ -25701,9 +24406,9 @@ function reinitialize() {// `mermaidAPI.reinitialize: v${pkg.version}`,
   // setLogLevel(config.logLevel);
   // log.debug('mermaidAPI.reinitialize: ', config);
 }
-
 function initialize(options) {
   // console.warn(`mermaidAPI.initialize: v${pkg.version} `, options);
+
   // Handle legacy location of font-family configuration
   if (options && options.fontFamily) {
     if (!options.themeVariables) {
@@ -25717,23 +24422,20 @@ function initialize(options) {
         };
       }
     }
-  } // Set default options
-
-
+  }
+  // Set default options
   _config__WEBPACK_IMPORTED_MODULE_3__["saveConfigFromInitilize"](options);
-
   if (options && options.theme && _themes__WEBPACK_IMPORTED_MODULE_43__["default"][options.theme]) {
     // Todo merge with user options
     options.themeVariables = _themes__WEBPACK_IMPORTED_MODULE_43__["default"][options.theme].getThemeVariables(options.themeVariables);
   } else {
     if (options) options.themeVariables = _themes__WEBPACK_IMPORTED_MODULE_43__["default"].default.getThemeVariables(options.themeVariables);
   }
-
   var config = _typeof(options) === 'object' ? _config__WEBPACK_IMPORTED_MODULE_3__["setSiteConfig"](options) : _config__WEBPACK_IMPORTED_MODULE_3__["getSiteConfig"]();
   updateRendererConfigs(config);
-  Object(_logger__WEBPACK_IMPORTED_MODULE_41__["setLogLevel"])(config.logLevel); // log.debug('mermaidAPI.initialize: ', config);
+  Object(_logger__WEBPACK_IMPORTED_MODULE_41__["setLogLevel"])(config.logLevel);
+  // log.debug('mermaidAPI.initialize: ', config);
 }
-
 var mermaidAPI = Object.freeze({
   render: render,
   parse: parse,
@@ -25746,7 +24448,8 @@ var mermaidAPI = Object.freeze({
   updateSiteConfig: _config__WEBPACK_IMPORTED_MODULE_3__["updateSiteConfig"],
   reset: function reset() {
     // console.warn('reset');
-    _config__WEBPACK_IMPORTED_MODULE_3__["reset"](); // const siteConfig = configApi.getSiteConfig();
+    _config__WEBPACK_IMPORTED_MODULE_3__["reset"]();
+    // const siteConfig = configApi.getSiteConfig();
     // updateRendererConfigs(siteConfig);
   },
   globalReset: function globalReset() {
@@ -25876,12 +24579,10 @@ var themes = {
 var calcThemeVariables = function calcThemeVariables(theme, userOverRides) {
   return theme.calcColors(userOverRides);
 };
-
 var getStyles = function getStyles(type, userStyles, options) {
   //console.warn('options in styles: ', options);
   return " {\n    font-family: ".concat(options.fontFamily, ";\n    font-size: ").concat(options.fontSize, ";\n    fill: ").concat(options.textColor, "\n  }\n\n  /* Classes common for multiple diagrams */\n\n  .error-icon {\n    fill: ").concat(options.errorBkgColor, ";\n  }\n  .error-text {\n    fill: ").concat(options.errorTextColor, ";\n    stroke: ").concat(options.errorTextColor, ";\n  }\n\n  .edge-thickness-normal {\n    stroke-width: 2px;\n  }\n  .edge-thickness-thick {\n    stroke-width: 3.5px\n  }\n  .edge-pattern-solid {\n    stroke-dasharray: 0;\n  }\n\n  .edge-pattern-dashed{\n    stroke-dasharray: 3;\n  }\n  .edge-pattern-dotted {\n    stroke-dasharray: 2;\n  }\n\n  .marker {\n    fill: ").concat(options.lineColor, ";\n    stroke: ").concat(options.lineColor, ";\n  }\n  .marker.cross {\n    stroke: ").concat(options.lineColor, ";\n  }\n\n  svg {\n    font-family: ").concat(options.fontFamily, ";\n    font-size: ").concat(options.fontSize, ";\n  }\n\n  ").concat(themes[type](options), "\n\n  ").concat(userStyles, "\n");
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
 
 /***/ }),
@@ -25938,56 +24639,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! khroma */ "khroma");
 /* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(khroma__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./theme-helpers */ "./src/themes/theme-helpers.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
 
 var Theme = /*#__PURE__*/function () {
   function Theme() {
     _classCallCheck(this, Theme);
-
     /** # Base variables */
-
     /** * background - used to know what the background color is of the diagram. This is used for deducing colors for istance line color. Defaulr value is #f4f4f4. */
     this.background = '#f4f4f4';
-    this.darkMode = false; // this.background = '#0c0c0c';
-    // this.darkMode = true;
+    this.darkMode = false;
 
-    this.primaryColor = '#fff4dd'; // this.background = '#0c0c0c';
+    // this.background = '#0c0c0c';
+    // this.darkMode = true;
+    this.primaryColor = '#fff4dd';
+    // this.background = '#0c0c0c';
     // this.primaryColor = '#1f1f00';
 
     this.noteBkgColor = '#fff5ad';
-    this.noteTextColor = '#333'; // dark
+    this.noteTextColor = '#333';
+
+    // dark
+
     // this.primaryColor = '#034694';
     // this.primaryColor = '#f2ee7e';
     // this.primaryColor = '#9f33be';
     // this.primaryColor = '#f0fff0';
     // this.primaryColor = '#fa255e';
     // this.primaryColor = '#ECECFF';
+
     // this.secondaryColor = '#c39ea0';
     // this.tertiaryColor = '#f8e5e5';
+
     // this.secondaryColor = '#dfdfde';
     // this.tertiaryColor = '#CCCCFF';
 
     this.fontFamily = '"trebuchet ms", verdana, arial, sans-serif';
-    this.fontSize = '16px'; // this.updateColors();
+    this.fontSize = '16px';
+    // this.updateColors();
   }
-
-  _createClass(Theme, [{
+  return _createClass(Theme, [{
     key: "updateColors",
     value: function updateColors() {
       // The || is to make sure that if the variable has been defiend by a user override that value is to be used
 
       /* Main */
       this.primaryTextColor = this.primaryTextColor || (this.darkMode ? '#ddd' : '#333'); // invert(this.primaryColor);
-
       this.secondaryColor = this.secondaryColor || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
         h: -120
       });
@@ -26005,8 +24707,8 @@ var Theme = /*#__PURE__*/function () {
       this.tertiaryTextColor = this.tertiaryTextColor || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.tertiaryColor);
       this.lineColor = this.lineColor || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.background);
       this.textColor = this.textColor || this.primaryTextColor;
-      /* Flowchart variables */
 
+      /* Flowchart variables */
       this.nodeBkg = this.nodeBkg || this.primaryColor;
       this.mainBkg = this.mainBkg || this.primaryColor;
       this.nodeBorder = this.nodeBorder || this.primaryBorderColor;
@@ -26017,8 +24719,8 @@ var Theme = /*#__PURE__*/function () {
       this.edgeLabelBackground = this.edgeLabelBackground || (this.darkMode ? Object(khroma__WEBPACK_IMPORTED_MODULE_0__["darken"])(this.secondaryColor, 30) : this.secondaryColor);
       this.nodeTextColor = this.nodeTextColor || this.primaryTextColor;
       /* Sequence Diagram variables */
-      // this.actorBorder = lighten(this.border1, 0.5);
 
+      // this.actorBorder = lighten(this.border1, 0.5);
       this.actorBorder = this.actorBorder || this.primaryBorderColor;
       this.actorBkg = this.actorBkg || this.mainBkg;
       this.actorTextColor = this.actorTextColor || this.primaryTextColor;
@@ -26032,6 +24734,7 @@ var Theme = /*#__PURE__*/function () {
       this.activationBorderColor = this.activationBorderColor || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["darken"])(this.secondaryColor, 10);
       this.activationBkgColor = this.activationBkgColor || this.secondaryColor;
       this.sequenceNumberColor = this.sequenceNumberColor || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.lineColor);
+
       /* Gantt chart variables */
 
       this.sectionBkgColor = this.sectionBkgColor || this.tertiaryColor;
@@ -26054,12 +24757,11 @@ var Theme = /*#__PURE__*/function () {
       this.taskTextColor = this.taskTextColor || this.primaryTextColor;
       this.taskTextDarkColor = this.taskTextDarkColor || this.textColor;
       this.taskTextClickableColor = this.taskTextClickableColor || '#003163';
-      /* state colors */
 
+      /* state colors */
       this.transitionColor = this.transitionColor || this.lineColor;
       this.transitionLabelColor = this.transitionLabelColor || this.textColor;
       /* The color of the text tables of the tstates*/
-
       this.stateLabelColor = this.stateLabelColor || this.stateBkg || this.primaryTextColor;
       this.stateBkg = this.stateBkg || this.mainBkg;
       this.labelBackgroundColor = this.labelBackgroundColor || this.stateBkg;
@@ -26072,11 +24774,11 @@ var Theme = /*#__PURE__*/function () {
       this.errorTextColor = this.errorTextColor || this.tertiaryTextColor;
       this.transitionColor = this.transitionColor || this.lineColor;
       this.specialStateColor = this.lineColor;
+
       /* class */
-
       this.classText = this.classText || this.textColor;
-      /* user-journey */
 
+      /* user-journey */
       this.fillType0 = this.fillType0 || this.primaryColor;
       this.fillType1 = this.fillType1 || this.secondaryColor;
       this.fillType2 = this.fillType2 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
@@ -26097,8 +24799,8 @@ var Theme = /*#__PURE__*/function () {
       this.fillType7 = this.fillType7 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
         h: 128
       });
-      /* pie */
 
+      /* pie */
       this.pie1 = this.pie1 || this.primaryColor;
       this.pie2 = this.pie2 || this.secondaryColor;
       this.pie3 = this.pie3 || this.tertiaryColor;
@@ -26144,8 +24846,8 @@ var Theme = /*#__PURE__*/function () {
       this.pieStrokeColor = this.pieStrokeColor || 'black';
       this.pieStrokeWidth = this.pieStrokeWidth || '2px';
       this.pieOpacity = this.pieOpacity || '0.7';
-      /* requirement-diagram */
 
+      /* requirement-diagram */
       this.requirementBackground = this.requirementBackground || this.primaryColor;
       this.requirementBorderColor = this.requirementBorderColor || this.primaryBorderColor;
       this.requirementBorderSize = this.requirementBorderSize || this.primaryBorderColor;
@@ -26158,30 +24860,27 @@ var Theme = /*#__PURE__*/function () {
     key: "calculate",
     value: function calculate(overrides) {
       var _this = this;
-
       if (_typeof(overrides) !== 'object') {
         // Calculate colors form base colors
         this.updateColors();
         return;
       }
+      var keys = Object.keys(overrides);
 
-      var keys = Object.keys(overrides); // Copy values from overrides, this is mainly for base colors
-
+      // Copy values from overrides, this is mainly for base colors
       keys.forEach(function (k) {
         _this[k] = overrides[k];
-      }); // Calculate colors form base colors
+      });
 
-      this.updateColors(); // Copy values from overrides again in case of an override of derived value
-
+      // Calculate colors form base colors
+      this.updateColors();
+      // Copy values from overrides again in case of an override of derived value
       keys.forEach(function (k) {
         _this[k] = overrides[k];
       });
     }
   }]);
-
-  return Theme;
 }();
-
 var getThemeVariables = function getThemeVariables(userOverrides) {
   var theme = new Theme();
   theme.calculate(userOverrides);
@@ -26203,21 +24902,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! khroma */ "khroma");
 /* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(khroma__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./theme-helpers */ "./src/themes/theme-helpers.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
 
 var Theme = /*#__PURE__*/function () {
   function Theme() {
     _classCallCheck(this, Theme);
-
     this.background = '#333';
     this.primaryColor = '#1f2020';
     this.secondaryColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["lighten"])(this.primaryColor, 16);
@@ -26253,6 +24948,7 @@ var Theme = /*#__PURE__*/function () {
     this.defaultLinkColor = 'calculated';
     this.titleColor = '#F9FFFE';
     this.edgeLabelBackground = 'calculated';
+
     /* Sequence Diagram variables */
 
     this.actorBorder = 'calculated';
@@ -26271,6 +24967,7 @@ var Theme = /*#__PURE__*/function () {
     this.activationBorderColor = 'calculated';
     this.activationBkgColor = 'calculated';
     this.sequenceNumberColor = 'black';
+
     /* Gantt chart variables */
 
     this.sectionBkgColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["darken"])('#EAE8D9', 30);
@@ -26291,14 +24988,13 @@ var Theme = /*#__PURE__*/function () {
     this.critBkgColor = '#E83737';
     this.taskTextDarkColor = 'calculated';
     this.todayLineColor = '#DB5757';
-    /* state colors */
 
+    /* state colors */
     this.labelColor = 'calculated';
     this.errorBkgColor = '#a44141';
     this.errorTextColor = '#ddd';
   }
-
-  _createClass(Theme, [{
+  return _createClass(Theme, [{
     key: "updateColors",
     value: function updateColors() {
       this.secondBkg = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["lighten"])(this.mainBkg, 16);
@@ -26312,6 +25008,7 @@ var Theme = /*#__PURE__*/function () {
       this.clusterBorder = this.border2;
       this.defaultLinkColor = this.lineColor;
       this.edgeLabelBackground = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["lighten"])(this.labelBackground, 25);
+
       /* Sequence Diagram variables */
 
       this.actorBorder = this.border1;
@@ -26329,6 +25026,7 @@ var Theme = /*#__PURE__*/function () {
       this.noteTextColor = this.secondaryTextColor;
       this.activationBorderColor = this.border1;
       this.activationBkgColor = this.secondBkg;
+
       /* Gantt chart variables */
 
       this.altSectionBkgColor = this.background;
@@ -26339,8 +25037,8 @@ var Theme = /*#__PURE__*/function () {
       this.gridColor = this.mainContrastColor;
       this.doneTaskBkgColor = this.mainContrastColor;
       this.taskTextDarkColor = this.darkTextColor;
-      /* state colors */
 
+      /* state colors */
       this.transitionColor = this.transitionColor || this.lineColor;
       this.transitionLabelColor = this.transitionLabelColor || this.textColor;
       this.stateLabelColor = this.stateLabelColor || this.stateBkg || this.primaryTextColor;
@@ -26375,8 +25073,8 @@ var Theme = /*#__PURE__*/function () {
       this.fillType7 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
         h: 128
       });
-      /* pie */
 
+      /* pie */
       this.pie1 = this.pie1 || '#0b0000';
       this.pie2 = this.pie2 || '#4d1037';
       this.pie3 = this.pie3 || '#3f5258';
@@ -26398,11 +25096,11 @@ var Theme = /*#__PURE__*/function () {
       this.pieStrokeColor = this.pieStrokeColor || 'black';
       this.pieStrokeWidth = this.pieStrokeWidth || '2px';
       this.pieOpacity = this.pieOpacity || '0.7';
+
       /* class */
-
       this.classText = this.primaryTextColor;
-      /* requirement-diagram */
 
+      /* requirement-diagram */
       this.requirementBackground = this.requirementBackground || this.primaryColor;
       this.requirementBorderColor = this.requirementBorderColor || this.primaryBorderColor;
       this.requirementBorderSize = this.requirementBorderSize || this.primaryBorderColor;
@@ -26415,30 +25113,27 @@ var Theme = /*#__PURE__*/function () {
     key: "calculate",
     value: function calculate(overrides) {
       var _this = this;
-
       if (_typeof(overrides) !== 'object') {
         // Calculate colors form base colors
         this.updateColors();
         return;
       }
+      var keys = Object.keys(overrides);
 
-      var keys = Object.keys(overrides); // Copy values from overrides, this is mainly for base colors
-
+      // Copy values from overrides, this is mainly for base colors
       keys.forEach(function (k) {
         _this[k] = overrides[k];
-      }); // Calculate colors form base colors
+      });
 
-      this.updateColors(); // Copy values from overrides again in case of an override of derived value
-
+      // Calculate colors form base colors
+      this.updateColors();
+      // Copy values from overrides again in case of an override of derived value
       keys.forEach(function (k) {
         _this[k] = overrides[k];
       });
     }
   }]);
-
-  return Theme;
 }();
-
 var getThemeVariables = function getThemeVariables(userOverrides) {
   var theme = new Theme();
   theme.calculate(userOverrides);
@@ -26460,21 +25155,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! khroma */ "khroma");
 /* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(khroma__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./theme-helpers */ "./src/themes/theme-helpers.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
 
 var Theme = /*#__PURE__*/function () {
   function Theme() {
     _classCallCheck(this, Theme);
-
     /* Base variables */
     this.background = '#f4f4f4';
     this.primaryColor = '#ECECFF';
@@ -26487,7 +25178,8 @@ var Theme = /*#__PURE__*/function () {
     });
     this.primaryBorderColor = Object(_theme_helpers__WEBPACK_IMPORTED_MODULE_1__["mkBorder"])(this.primaryColor, this.darkMode);
     this.secondaryBorderColor = Object(_theme_helpers__WEBPACK_IMPORTED_MODULE_1__["mkBorder"])(this.secondaryColor, this.darkMode);
-    this.tertiaryBorderColor = Object(_theme_helpers__WEBPACK_IMPORTED_MODULE_1__["mkBorder"])(this.tertiaryColor, this.darkMode); // this.noteBorderColor = mkBorder(this.noteBkgColor, this.darkMode);
+    this.tertiaryBorderColor = Object(_theme_helpers__WEBPACK_IMPORTED_MODULE_1__["mkBorder"])(this.tertiaryColor, this.darkMode);
+    // this.noteBorderColor = mkBorder(this.noteBkgColor, this.darkMode);
 
     this.primaryTextColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.primaryColor);
     this.secondaryTextColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.secondaryColor);
@@ -26505,6 +25197,7 @@ var Theme = /*#__PURE__*/function () {
     this.fontSize = '16px';
     this.labelBackground = '#e8e8e8';
     this.textColor = '#333';
+
     /* Flowchart variables */
 
     this.nodeBkg = 'calculated';
@@ -26514,6 +25207,7 @@ var Theme = /*#__PURE__*/function () {
     this.defaultLinkColor = 'calculated';
     this.titleColor = 'calculated';
     this.edgeLabelBackground = 'calculated';
+
     /* Sequence Diagram variables */
 
     this.actorBorder = 'calculated';
@@ -26532,6 +25226,7 @@ var Theme = /*#__PURE__*/function () {
     this.activationBorderColor = '#666';
     this.activationBkgColor = '#f4f4f4';
     this.sequenceNumberColor = 'white';
+
     /* Gantt chart variables */
 
     this.sectionBkgColor = 'calculated';
@@ -26570,29 +25265,29 @@ var Theme = /*#__PURE__*/function () {
     this.critBorderColor = '#ff8888';
     this.critBkgColor = 'red';
     this.todayLineColor = 'red';
-    /* state colors */
 
+    /* state colors */
     this.labelColor = 'black';
     this.errorBkgColor = '#552222';
     this.errorTextColor = '#552222';
     this.updateColors();
   }
-
-  _createClass(Theme, [{
+  return _createClass(Theme, [{
     key: "updateColors",
     value: function updateColors() {
       /* Flowchart variables */
+
       this.nodeBkg = this.mainBkg;
       this.nodeBorder = this.border1; // border 1
-
       this.clusterBkg = this.secondBkg;
       this.clusterBorder = this.border2;
       this.defaultLinkColor = this.lineColor;
       this.titleColor = this.textColor;
       this.edgeLabelBackground = this.labelBackground;
-      /* Sequence Diagram variables */
-      // this.actorBorder = lighten(this.border1, 0.5);
 
+      /* Sequence Diagram variables */
+
+      // this.actorBorder = lighten(this.border1, 0.5);
       this.actorBorder = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["lighten"])(this.border1, 23);
       this.actorBkg = this.mainBkg;
       this.labelBoxBkgColor = this.actorBkg;
@@ -26603,12 +25298,13 @@ var Theme = /*#__PURE__*/function () {
       this.loopTextColor = this.actorTextColor;
       this.noteBorderColor = this.border2;
       this.noteTextColor = this.actorTextColor;
+
       /* Gantt chart variables */
 
       this.taskTextColor = this.taskTextLightColor;
       this.taskTextOutsideColor = this.taskTextDarkColor;
-      /* state colors */
 
+      /* state colors */
       this.transitionColor = this.transitionColor || this.lineColor;
       this.transitionLabelColor = this.transitionLabelColor || this.textColor;
       this.stateLabelColor = this.stateLabelColor || this.stateBkg || this.primaryTextColor;
@@ -26624,10 +25320,8 @@ var Theme = /*#__PURE__*/function () {
       this.errorTextColor = this.errorTextColor || this.tertiaryTextColor;
       this.transitionColor = this.transitionColor || this.lineColor;
       /* class */
-
       this.classText = this.primaryTextColor;
       /* journey */
-
       this.fillType0 = this.primaryColor;
       this.fillType1 = this.secondaryColor;
       this.fillType2 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
@@ -26648,8 +25342,8 @@ var Theme = /*#__PURE__*/function () {
       this.fillType7 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
         h: 128
       });
-      /* pie */
 
+      /* pie */
       this.pie1 = this.pie1 || this.primaryColor;
       this.pie2 = this.pie2 || this.secondaryColor;
       this.pie3 = this.pie3 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.tertiaryColor, {
@@ -26697,8 +25391,8 @@ var Theme = /*#__PURE__*/function () {
       this.pieStrokeColor = this.pieStrokeColor || 'black';
       this.pieStrokeWidth = this.pieStrokeWidth || '2px';
       this.pieOpacity = this.pieOpacity || '0.7';
-      /* requirement-diagram */
 
+      /* requirement-diagram */
       this.requirementBackground = this.requirementBackground || this.primaryColor;
       this.requirementBorderColor = this.requirementBorderColor || this.primaryBorderColor;
       this.requirementBorderSize = this.requirementBorderSize || this.primaryBorderColor;
@@ -26711,30 +25405,27 @@ var Theme = /*#__PURE__*/function () {
     key: "calculate",
     value: function calculate(overrides) {
       var _this = this;
-
       if (_typeof(overrides) !== 'object') {
         // Calculate colors form base colors
         this.updateColors();
         return;
       }
+      var keys = Object.keys(overrides);
 
-      var keys = Object.keys(overrides); // Copy values from overrides, this is mainly for base colors
-
+      // Copy values from overrides, this is mainly for base colors
       keys.forEach(function (k) {
         _this[k] = overrides[k];
-      }); // Calculate colors form base colors
+      });
 
-      this.updateColors(); // Copy values from overrides again in case of an override of derived value
-
+      // Calculate colors form base colors
+      this.updateColors();
+      // Copy values from overrides again in case of an override of derived value
       keys.forEach(function (k) {
         _this[k] = overrides[k];
       });
     }
   }]);
-
-  return Theme;
 }();
-
 var getThemeVariables = function getThemeVariables(userOverrides) {
   var theme = new Theme();
   theme.calculate(userOverrides);
@@ -26756,21 +25447,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! khroma */ "khroma");
 /* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(khroma__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./theme-helpers */ "./src/themes/theme-helpers.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
 
 var Theme = /*#__PURE__*/function () {
   function Theme() {
     _classCallCheck(this, Theme);
-
     /* Base vales */
     this.background = '#f4f4f4';
     this.primaryColor = '#cde498';
@@ -26793,8 +25480,8 @@ var Theme = /*#__PURE__*/function () {
     this.tertiaryTextColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.primaryColor);
     this.lineColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.background);
     this.textColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.background);
-    /* Flowchart variables */
 
+    /* Flowchart variables */
     this.nodeBkg = 'calculated';
     this.nodeBorder = 'calculated';
     this.clusterBkg = 'calculated';
@@ -26802,6 +25489,7 @@ var Theme = /*#__PURE__*/function () {
     this.defaultLinkColor = 'calculated';
     this.titleColor = '#333';
     this.edgeLabelBackground = '#e8e8e8';
+
     /* Sequence Diagram variables */
 
     this.actorBorder = 'calculated';
@@ -26820,6 +25508,7 @@ var Theme = /*#__PURE__*/function () {
     this.activationBorderColor = '#666';
     this.activationBkgColor = '#f4f4f4';
     this.sequenceNumberColor = 'white';
+
     /* Gantt chart variables */
 
     this.sectionBkgColor = '#6eaa49';
@@ -26840,22 +25529,23 @@ var Theme = /*#__PURE__*/function () {
     this.critBorderColor = '#ff8888';
     this.critBkgColor = 'red';
     this.todayLineColor = 'red';
-    /* state colors */
 
+    /* state colors */
     this.labelColor = 'black';
     this.errorBkgColor = '#552222';
     this.errorTextColor = '#552222';
   }
-
-  _createClass(Theme, [{
+  return _createClass(Theme, [{
     key: "updateColors",
     value: function updateColors() {
       /* Flowchart variables */
+
       this.nodeBkg = this.mainBkg;
       this.nodeBorder = this.border1;
       this.clusterBkg = this.secondBkg;
       this.clusterBorder = this.border2;
       this.defaultLinkColor = this.lineColor;
+
       /* Sequence Diagram variables */
 
       this.actorBorder = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["darken"])(this.mainBkg, 20);
@@ -26865,6 +25555,7 @@ var Theme = /*#__PURE__*/function () {
       this.loopTextColor = this.actorTextColor;
       this.noteBorderColor = this.border2;
       this.noteTextColor = this.actorTextColor;
+
       /* Gantt chart variables */
 
       this.taskBorderColor = this.border1;
@@ -26872,8 +25563,8 @@ var Theme = /*#__PURE__*/function () {
       this.taskTextOutsideColor = this.taskTextDarkColor;
       this.activeTaskBorderColor = this.taskBorderColor;
       this.activeTaskBkgColor = this.mainBkg;
-      /* state colors */
 
+      /* state colors */
       this.transitionColor = this.transitionColor || this.lineColor;
       this.transitionLabelColor = this.transitionLabelColor || this.textColor;
       this.stateLabelColor = this.stateLabelColor || this.stateBkg || this.primaryTextColor;
@@ -26889,10 +25580,8 @@ var Theme = /*#__PURE__*/function () {
       this.errorTextColor = this.errorTextColor || this.tertiaryTextColor;
       this.transitionColor = this.transitionColor || this.lineColor;
       /* class */
-
       this.classText = this.primaryTextColor;
       /* journey */
-
       this.fillType0 = this.primaryColor;
       this.fillType1 = this.secondaryColor;
       this.fillType2 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
@@ -26913,8 +25602,8 @@ var Theme = /*#__PURE__*/function () {
       this.fillType7 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
         h: 128
       });
-      /* pie */
 
+      /* pie */
       this.pie1 = this.pie1 || this.primaryColor;
       this.pie2 = this.pie2 || this.secondaryColor;
       this.pie3 = this.pie3 || this.tertiaryColor;
@@ -26961,8 +25650,8 @@ var Theme = /*#__PURE__*/function () {
       this.pieStrokeColor = this.pieStrokeColor || 'black';
       this.pieStrokeWidth = this.pieStrokeWidth || '2px';
       this.pieOpacity = this.pieOpacity || '0.7';
-      /* requirement-diagram */
 
+      /* requirement-diagram */
       this.requirementBackground = this.requirementBackground || this.primaryColor;
       this.requirementBorderColor = this.requirementBorderColor || this.primaryBorderColor;
       this.requirementBorderSize = this.requirementBorderSize || this.primaryBorderColor;
@@ -26975,30 +25664,27 @@ var Theme = /*#__PURE__*/function () {
     key: "calculate",
     value: function calculate(overrides) {
       var _this = this;
-
       if (_typeof(overrides) !== 'object') {
         // Calculate colors form base colors
         this.updateColors();
         return;
       }
+      var keys = Object.keys(overrides);
 
-      var keys = Object.keys(overrides); // Copy values from overrides, this is mainly for base colors
-
+      // Copy values from overrides, this is mainly for base colors
       keys.forEach(function (k) {
         _this[k] = overrides[k];
-      }); // Calculate colors form base colors
+      });
 
-      this.updateColors(); // Copy values from overrides again in case of an override of derived value
-
+      // Calculate colors form base colors
+      this.updateColors();
+      // Copy values from overrides again in case of an override of derived value
       keys.forEach(function (k) {
         _this[k] = overrides[k];
       });
     }
   }]);
-
-  return Theme;
 }();
-
 var getThemeVariables = function getThemeVariables(userOverrides) {
   var theme = new Theme();
   theme.calculate(userOverrides);
@@ -27045,40 +25731,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! khroma */ "khroma");
 /* harmony import */ var khroma__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(khroma__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./theme-helpers */ "./src/themes/theme-helpers.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 
- // const Color = require ( 'khroma/dist/color' ).default
+// const Color = require ( 'khroma/dist/color' ).default
 // Color.format.hex.stringify(Color.parse('hsl(210, 66.6666666667%, 95%)')); // => "#EAF2FB"
-
 var Theme = /*#__PURE__*/function () {
   function Theme() {
     _classCallCheck(this, Theme);
-
     this.primaryColor = '#eee';
     this.contrast = '#707070';
     this.secondaryColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["lighten"])(this.contrast, 55);
-    this.background = '#ffffff'; // this.secondaryColor = adjust(this.primaryColor, { h: 120 });
+    this.background = '#ffffff';
 
+    // this.secondaryColor = adjust(this.primaryColor, { h: 120 });
     this.tertiaryColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
       h: -160
     });
     this.primaryBorderColor = Object(_theme_helpers__WEBPACK_IMPORTED_MODULE_1__["mkBorder"])(this.primaryColor, this.darkMode);
     this.secondaryBorderColor = Object(_theme_helpers__WEBPACK_IMPORTED_MODULE_1__["mkBorder"])(this.secondaryColor, this.darkMode);
-    this.tertiaryBorderColor = Object(_theme_helpers__WEBPACK_IMPORTED_MODULE_1__["mkBorder"])(this.tertiaryColor, this.darkMode); // this.noteBorderColor = mkBorder(this.noteBkgColor, this.darkMode);
+    this.tertiaryBorderColor = Object(_theme_helpers__WEBPACK_IMPORTED_MODULE_1__["mkBorder"])(this.tertiaryColor, this.darkMode);
+    // this.noteBorderColor = mkBorder(this.noteBkgColor, this.darkMode);
 
     this.primaryTextColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.primaryColor);
     this.secondaryTextColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.secondaryColor);
     this.tertiaryTextColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.tertiaryColor);
     this.lineColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.background);
-    this.textColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.background); // this.altBackground = lighten(this.contrast, 55);
+    this.textColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.background);
 
+    // this.altBackground = lighten(this.contrast, 55);
     this.mainBkg = '#eee';
     this.secondBkg = 'calculated';
     this.lineColor = '#666';
@@ -27091,6 +25778,7 @@ var Theme = /*#__PURE__*/function () {
     this.arrowheadColor = '#333333';
     this.fontFamily = '"trebuchet ms", verdana, arial, sans-serif';
     this.fontSize = '16px';
+
     /* Flowchart variables */
 
     this.nodeBkg = 'calculated';
@@ -27100,6 +25788,7 @@ var Theme = /*#__PURE__*/function () {
     this.defaultLinkColor = 'calculated';
     this.titleColor = 'calculated';
     this.edgeLabelBackground = 'white';
+
     /* Sequence Diagram variables */
 
     this.actorBorder = 'calculated';
@@ -27118,6 +25807,7 @@ var Theme = /*#__PURE__*/function () {
     this.activationBorderColor = '#666';
     this.activationBkgColor = '#f4f4f4';
     this.sequenceNumberColor = 'white';
+
     /* Gantt chart variables */
 
     this.sectionBkgColor = 'calculated';
@@ -27138,18 +25828,18 @@ var Theme = /*#__PURE__*/function () {
     this.critBkgColor = 'calculated';
     this.critBorderColor = 'calculated';
     this.todayLineColor = 'calculated';
-    /* state colors */
 
+    /* state colors */
     this.labelColor = 'black';
     this.errorBkgColor = '#552222';
     this.errorTextColor = '#552222';
   }
-
-  _createClass(Theme, [{
+  return _createClass(Theme, [{
     key: "updateColors",
     value: function updateColors() {
       this.secondBkg = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["lighten"])(this.contrast, 55);
       this.border2 = this.contrast;
+
       /* Flowchart variables */
 
       this.nodeBkg = this.mainBkg;
@@ -27158,6 +25848,7 @@ var Theme = /*#__PURE__*/function () {
       this.clusterBorder = this.border2;
       this.defaultLinkColor = this.lineColor;
       this.titleColor = this.text;
+
       /* Sequence Diagram variables */
 
       this.actorBorder = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["lighten"])(this.border1, 23);
@@ -27173,6 +25864,7 @@ var Theme = /*#__PURE__*/function () {
       this.noteBorderColor = '#999';
       this.noteBkgColor = '#666';
       this.noteTextColor = '#fff';
+
       /* Gantt chart variables */
 
       this.sectionBkgColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["lighten"])(this.contrast, 30);
@@ -27190,8 +25882,8 @@ var Theme = /*#__PURE__*/function () {
       this.critBkgColor = this.critical;
       this.critBorderColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["darken"])(this.critBkgColor, 10);
       this.todayLineColor = this.critBkgColor;
-      /* state colors */
 
+      /* state colors */
       this.transitionColor = this.transitionColor || '#000';
       this.transitionLabelColor = this.transitionLabelColor || this.textColor;
       this.stateLabelColor = this.stateLabelColor || this.stateBkg || this.primaryTextColor;
@@ -27205,11 +25897,10 @@ var Theme = /*#__PURE__*/function () {
       this.specialStateColor = '#222';
       this.errorBkgColor = this.errorBkgColor || this.tertiaryColor;
       this.errorTextColor = this.errorTextColor || this.tertiaryTextColor;
-      /* class */
 
+      /* class */
       this.classText = this.primaryTextColor;
       /* journey */
-
       this.fillType0 = this.primaryColor;
       this.fillType1 = this.secondaryColor;
       this.fillType2 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
@@ -27229,8 +25920,9 @@ var Theme = /*#__PURE__*/function () {
       });
       this.fillType7 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
         h: 128
-      }); // /* pie */
+      });
 
+      // /* pie */
       this.pie1 = this.pie1 || '#F4F4F4';
       this.pie2 = this.pie2 || '#555';
       this.pie3 = this.pie3 || '#BBB';
@@ -27251,7 +25943,9 @@ var Theme = /*#__PURE__*/function () {
       this.pieLegendTextColor = this.pieLegendTextColor || this.taskTextDarkColor;
       this.pieStrokeColor = this.pieStrokeColor || 'black';
       this.pieStrokeWidth = this.pieStrokeWidth || '2px';
-      this.pieOpacity = this.pieOpacity || '0.7'; // this.pie1 = this.pie1 || '#212529';
+      this.pieOpacity = this.pieOpacity || '0.7';
+
+      // this.pie1 = this.pie1 || '#212529';
       // this.pie2 = this.pie2 || '#343A40';
       // this.pie3 = this.pie3 || '#495057';
       // this.pie4 = this.pie4 || '#6C757D';
@@ -27265,7 +25959,6 @@ var Theme = /*#__PURE__*/function () {
       // this.pie12 = this.pie12 || adjust(this.primaryColor, { h: 120, l: -10 });
 
       /* requirement-diagram */
-
       this.requirementBackground = this.requirementBackground || this.primaryColor;
       this.requirementBorderColor = this.requirementBorderColor || this.primaryBorderColor;
       this.requirementBorderSize = this.requirementBorderSize || this.primaryBorderColor;
@@ -27278,30 +25971,27 @@ var Theme = /*#__PURE__*/function () {
     key: "calculate",
     value: function calculate(overrides) {
       var _this = this;
-
       if (_typeof(overrides) !== 'object') {
         // Calculate colors form base colors
         this.updateColors();
         return;
       }
+      var keys = Object.keys(overrides);
 
-      var keys = Object.keys(overrides); // Copy values from overrides, this is mainly for base colors
-
+      // Copy values from overrides, this is mainly for base colors
       keys.forEach(function (k) {
         _this[k] = overrides[k];
-      }); // Calculate colors form base colors
+      });
 
-      this.updateColors(); // Copy values from overrides again in case of an override of derived value
-
+      // Calculate colors form base colors
+      this.updateColors();
+      // Copy values from overrides again in case of an override of derived value
       keys.forEach(function (k) {
         _this[k] = overrides[k];
       });
     }
   }]);
-
-  return Theme;
 }();
-
 var getThemeVariables = function getThemeVariables(userOverrides) {
   var theme = new Theme();
   theme.calculate(userOverrides);
@@ -27346,35 +26036,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _diagrams_common_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./diagrams/common/common */ "./src/diagrams/common/common.js");
 /* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./logger */ "./src/logger.js");
 var _this = undefined;
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _createForOfIteratorHelper(r, e) { var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (!t) { if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e && r && "number" == typeof r.length) { t && (r = t); var _n = 0, F = function F() {}; return { s: F, n: function n() { return _n >= r.length ? { done: !0 } : { done: !1, value: r[_n++] }; }, e: function e(r) { throw r; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var o, a = !0, u = !1; return { s: function s() { t = t.call(r); }, n: function n() { var r = t.next(); return a = r.done, r; }, e: function e(r) { u = !0, o = r; }, f: function f() { try { a || null == t.return || t.return(); } finally { if (u) throw o; } } }; }
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
 
 
 
- // import cryptoRandomString from 'crypto-random-string';
+// import cryptoRandomString from 'crypto-random-string';
+
 // Effectively an enum of the supported curve types, accessible by name
-
 var d3CurveTypes = {
   curveBasis: d3__WEBPACK_IMPORTED_MODULE_1__["curveBasis"],
   curveBasisClosed: d3__WEBPACK_IMPORTED_MODULE_1__["curveBasisClosed"],
@@ -27391,6 +26072,7 @@ var d3CurveTypes = {
 var directive = /[%]{2}[{]\s*(?:(?:(\w+)\s*:|(\w+))\s*(?:(?:(\w+))|((?:(?![}][%]{2}).|\r?\n)*))?\s*)(?:[}][%]{2})?/gi;
 var directiveWithoutOpen = /\s*(?:(?:(\w+)(?=:):|(\w+))\s*(?:(?:(\w+))|((?:(?![}][%]{2}).|\r?\n)*))?\s*)(?:[}][%]{2})?/gi;
 var anyComment = /\s*%%.*\n/gm;
+
 /**
  * @function detectInit
  * Detects the init config object from the text
@@ -27421,11 +26103,9 @@ var anyComment = /\s*%%.*\n/gm;
  * @param {string} text The text defining the graph
  * @returns {object} the json object representing the init passed to mermaid.initialize()
  */
-
 var detectInit = function detectInit(text, cnf) {
   var inits = detectDirective(text, /(?:init\b)|(?:initialize\b)/);
   var results = {};
-
   if (Array.isArray(inits)) {
     var args = inits.map(function (init) {
       return init.args;
@@ -27434,7 +26114,6 @@ var detectInit = function detectInit(text, cnf) {
   } else {
     results = inits.args;
   }
-
   if (results) {
     var type = detectType(text, cnf);
     ['config'].forEach(function (prop) {
@@ -27442,15 +26121,14 @@ var detectInit = function detectInit(text, cnf) {
         if (type === 'flowchart-v2') {
           type = 'flowchart';
         }
-
         results[type] = results[prop];
         delete results[prop];
       }
     });
   }
-
   return results;
 };
+
 /**
  * @function detectDirective
  * Detects the directive from the text. Text can be single line or multiline. If type is null or omitted
@@ -27472,26 +26150,21 @@ var detectInit = function detectInit(text, cnf) {
  * @returns {object | Array} An object or Array representing the directive(s): { type: string, args: object|null } matched by the input type
  *          if a single directive was found, that directive object will be returned.
  */
-
 var detectDirective = function detectDirective(text) {
   var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-
   try {
     var commentWithoutDirectives = new RegExp("[%]{2}(?![{]".concat(directiveWithoutOpen.source, ")(?=[}][%]{2}).*\n"), 'ig');
     text = text.trim().replace(commentWithoutDirectives, '').replace(/'/gm, '"');
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug("Detecting diagram directive".concat(type !== null ? ' type:' + type : '', " based on the text:").concat(text));
     var match,
-        result = [];
-
+      result = [];
     while ((match = directive.exec(text)) !== null) {
       // This is necessary to avoid infinite loops with zero-width matches
       if (match.index === directive.lastIndex) {
         directive.lastIndex++;
       }
-
       if (match && !type || type && match[1] && match[1].match(type) || type && match[2] && match[2].match(type)) {
         var _type = match[1] ? match[1] : match[2];
-
         var args = match[3] ? match[3].trim() : match[4] ? JSON.parse(match[4].trim()) : null;
         result.push({
           type: _type,
@@ -27499,14 +26172,12 @@ var detectDirective = function detectDirective(text) {
         });
       }
     }
-
     if (result.length === 0) {
       result.push({
         type: text,
         args: null
       });
     }
-
     return result.length === 1 ? result[0] : result;
   } catch (error) {
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].error("ERROR: ".concat(error.message, " - Unable to parse directive\n      ").concat(type !== null ? ' type:' + type : '', " based on the text:").concat(text));
@@ -27516,6 +26187,7 @@ var detectDirective = function detectDirective(text) {
     };
   }
 };
+
 /**
  * @function detectType
  * Detects the type of the graph text. Takes into consideration the possible existence of an %%init
@@ -27535,78 +26207,60 @@ var detectDirective = function detectDirective(text) {
  * @param {string} text The text defining the graph
  * @returns {string} A graph definition key
  */
-
 var detectType = function detectType(text, cnf) {
   text = text.replace(directive, '').replace(anyComment, '\n');
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Detecting diagram type based on the text ' + text);
-
   if (text.match(/^\s*sequenceDiagram/)) {
     return 'sequence';
   }
-
   if (text.match(/^\s*gantt/)) {
     return 'gantt';
   }
-
   if (text.match(/^\s*classDiagram-v2/)) {
     return 'classDiagram';
   }
-
   if (text.match(/^\s*classDiagram/)) {
     if (cnf && cnf.class && cnf.class.defaultRenderer === 'dagre-wrapper') return 'classDiagram';
     return 'class';
   }
-
   if (text.match(/^\s*stateDiagram-v2/)) {
     return 'stateDiagram';
   }
-
   if (text.match(/^\s*stateDiagram/)) {
     if (cnf && cnf.class && cnf.state.defaultRenderer === 'dagre-wrapper') return 'stateDiagram';
     return 'state';
   }
-
   if (text.match(/^\s*gitGraph/)) {
     return 'git';
   }
-
   if (text.match(/^\s*flowchart/)) {
     return 'flowchart-v2';
   }
-
   if (text.match(/^\s*info/)) {
     return 'info';
   }
-
   if (text.match(/^\s*pie/)) {
     return 'pie';
   }
-
   if (text.match(/^\s*erDiagram/)) {
     return 'er';
   }
-
   if (text.match(/^\s*journey/)) {
     return 'journey';
   }
-
   if (text.match(/^\s*requirement/) || text.match(/^\s*requirementDiagram/)) {
     return 'requirement';
   }
-
   if (cnf && cnf.flowchart && cnf.flowchart.defaultRenderer === 'dagre-wrapper') return 'flowchart-v2';
   return 'flowchart';
 };
-
 var memoize = function memoize(fn, resolver) {
   var cache = {};
   return function () {
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
-
     var n = resolver ? resolver.apply(_this, args) : args[0];
-
     if (n in cache) {
       return cache[n];
     } else {
@@ -27616,6 +26270,7 @@ var memoize = function memoize(fn, resolver) {
     }
   };
 };
+
 /**
  * @function isSubstringInArray
  * Detects whether a substring in present in a given array
@@ -27623,73 +26278,61 @@ var memoize = function memoize(fn, resolver) {
  * @param {array} arr The array to search
  * @returns {number} the array index containing the substring or -1 if not present
  **/
-
-
 var isSubstringInArray = function isSubstringInArray(str, arr) {
   for (var i = 0; i < arr.length; i++) {
     if (arr[i].match(str)) return i;
   }
-
   return -1;
 };
 var interpolateToCurve = function interpolateToCurve(interpolate, defaultCurve) {
   if (!interpolate) {
     return defaultCurve;
   }
-
   var curveName = "curve".concat(interpolate.charAt(0).toUpperCase() + interpolate.slice(1));
   return d3CurveTypes[curveName] || defaultCurve;
 };
 var formatUrl = function formatUrl(linkStr, config) {
   var url = linkStr.trim();
-
   if (url) {
     if (config.securityLevel !== 'loose') {
       return Object(_braintree_sanitize_url__WEBPACK_IMPORTED_MODULE_0__["sanitizeUrl"])(url);
     }
-
     return url;
   }
 };
 var runFunc = function runFunc(functionName) {
   var _obj;
-
   var arrPaths = functionName.split('.');
   var len = arrPaths.length - 1;
   var fnName = arrPaths[len];
   var obj = window;
-
   for (var i = 0; i < len; i++) {
     obj = obj[arrPaths[i]];
     if (!obj) return;
   }
-
   for (var _len2 = arguments.length, params = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
     params[_key2 - 1] = arguments[_key2];
   }
-
   (_obj = obj)[fnName].apply(_obj, params);
 };
-
 var distance = function distance(p1, p2) {
   return p1 && p2 ? Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2)) : 0;
 };
-
 var traverseEdge = function traverseEdge(points) {
   var prevPoint;
   var totalDistance = 0;
   points.forEach(function (point) {
     totalDistance += distance(point, prevPoint);
     prevPoint = point;
-  }); // Traverse half of total distance along points
+  });
 
+  // Traverse half of total distance along points
   var remainingDistance = totalDistance / 2;
   var center = undefined;
   prevPoint = undefined;
   points.forEach(function (point) {
     if (prevPoint && !center) {
       var vectorDistance = distance(point, prevPoint);
-
       if (vectorDistance < remainingDistance) {
         remainingDistance -= vectorDistance;
       } else {
@@ -27701,7 +26344,6 @@ var traverseEdge = function traverseEdge(points) {
           x: point.x,
           y: point.y
         };
-
         if (distanceRatio > 0 && distanceRatio < 1) {
           center = {
             x: (1 - distanceRatio) * prevPoint.x + distanceRatio * point.x,
@@ -27710,31 +26352,26 @@ var traverseEdge = function traverseEdge(points) {
         }
       }
     }
-
     prevPoint = point;
   });
   return center;
 };
-
 var calcLabelPosition = function calcLabelPosition(points) {
   return traverseEdge(points);
 };
-
 var calcCardinalityPosition = function calcCardinalityPosition(isRelationTypePresent, points, initialPosition) {
   var prevPoint;
   var totalDistance = 0; // eslint-disable-line
-
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('our points', points);
-
   if (points[0] !== initialPosition) {
     points = points.reverse();
   }
-
   points.forEach(function (point) {
     totalDistance += distance(point, prevPoint);
     prevPoint = point;
-  }); // Traverse only 25 total distance along points to find cardinality point
+  });
 
+  // Traverse only 25 total distance along points to find cardinality point
   var distanceToCardinalityPoint = 25;
   var remainingDistance = distanceToCardinalityPoint;
   var center;
@@ -27742,7 +26379,6 @@ var calcCardinalityPosition = function calcCardinalityPosition(isRelationTypePre
   points.forEach(function (point) {
     if (prevPoint && !center) {
       var vectorDistance = distance(point, prevPoint);
-
       if (vectorDistance < remainingDistance) {
         remainingDistance -= vectorDistance;
       } else {
@@ -27754,7 +26390,6 @@ var calcCardinalityPosition = function calcCardinalityPosition(isRelationTypePre
           x: point.x,
           y: point.y
         };
-
         if (distanceRatio > 0 && distanceRatio < 1) {
           center = {
             x: (1 - distanceRatio) * prevPoint.x + distanceRatio * point.x,
@@ -27763,44 +26398,40 @@ var calcCardinalityPosition = function calcCardinalityPosition(isRelationTypePre
         }
       }
     }
-
     prevPoint = point;
-  }); // if relation is present (Arrows will be added), change cardinality point off-set distance (d)
-
-  var d = isRelationTypePresent ? 10 : 5; //Calculate Angle for x and y axis
-
+  });
+  // if relation is present (Arrows will be added), change cardinality point off-set distance (d)
+  var d = isRelationTypePresent ? 10 : 5;
+  //Calculate Angle for x and y axis
   var angle = Math.atan2(points[0].y - center.y, points[0].x - center.x);
   var cardinalityPosition = {
     x: 0,
     y: 0
-  }; //Calculation cardinality position using angle, center point on the line/curve but pendicular and with offset-distance
-
+  };
+  //Calculation cardinality position using angle, center point on the line/curve but pendicular and with offset-distance
   cardinalityPosition.x = Math.sin(angle) * d + (points[0].x + center.x) / 2;
   cardinalityPosition.y = -Math.cos(angle) * d + (points[0].y + center.y) / 2;
   return cardinalityPosition;
 };
+
 /**
  * position ['start_left', 'start_right', 'end_left', 'end_right']
  */
-
-
 var calcTerminalLabelPosition = function calcTerminalLabelPosition(terminalMarkerSize, position, _points) {
   // Todo looking to faster cloning method
   var points = JSON.parse(JSON.stringify(_points));
   var prevPoint;
   var totalDistance = 0; // eslint-disable-line
-
   _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('our points', points);
-
   if (position !== 'start_left' && position !== 'start_right') {
     points = points.reverse();
   }
-
   points.forEach(function (point) {
     totalDistance += distance(point, prevPoint);
     prevPoint = point;
-  }); // Traverse only 25 total distance along points to find cardinality point
+  });
 
+  // Traverse only 25 total distance along points to find cardinality point
   var distanceToCardinalityPoint = 25;
   var remainingDistance = distanceToCardinalityPoint;
   var center;
@@ -27808,7 +26439,6 @@ var calcTerminalLabelPosition = function calcTerminalLabelPosition(terminalMarke
   points.forEach(function (point) {
     if (prevPoint && !center) {
       var vectorDistance = distance(point, prevPoint);
-
       if (vectorDistance < remainingDistance) {
         remainingDistance -= vectorDistance;
       } else {
@@ -27820,7 +26450,6 @@ var calcTerminalLabelPosition = function calcTerminalLabelPosition(terminalMarke
           x: point.x,
           y: point.y
         };
-
         if (distanceRatio > 0 && distanceRatio < 1) {
           center = {
             x: (1 - distanceRatio) * prevPoint.x + distanceRatio * point.x,
@@ -27829,43 +26458,38 @@ var calcTerminalLabelPosition = function calcTerminalLabelPosition(terminalMarke
         }
       }
     }
-
     prevPoint = point;
-  }); // if relation is present (Arrows will be added), change cardinality point off-set distance (d)
-
-  var d = 10; //Calculate Angle for x and y axis
-
+  });
+  // if relation is present (Arrows will be added), change cardinality point off-set distance (d)
+  var d = 10;
+  //Calculate Angle for x and y axis
   var angle = Math.atan2(points[0].y - center.y, points[0].x - center.x);
   var cardinalityPosition = {
     x: 0,
     y: 0
-  }; //Calculation cardinality position using angle, center point on the line/curve but pendicular and with offset-distance
+  };
+
+  //Calculation cardinality position using angle, center point on the line/curve but pendicular and with offset-distance
 
   cardinalityPosition.x = Math.sin(angle) * d + (points[0].x + center.x) / 2;
   cardinalityPosition.y = -Math.cos(angle) * d + (points[0].y + center.y) / 2;
-
   if (position === 'start_left') {
     cardinalityPosition.x = Math.sin(angle + Math.PI) * d + (points[0].x + center.x) / 2;
     cardinalityPosition.y = -Math.cos(angle + Math.PI) * d + (points[0].y + center.y) / 2;
   }
-
   if (position === 'end_right') {
     cardinalityPosition.x = Math.sin(angle - Math.PI) * d + (points[0].x + center.x) / 2 - 5;
     cardinalityPosition.y = -Math.cos(angle - Math.PI) * d + (points[0].y + center.y) / 2 - 5;
   }
-
   if (position === 'end_left') {
     cardinalityPosition.x = Math.sin(angle) * d + (points[0].x + center.x) / 2 - 5;
     cardinalityPosition.y = -Math.cos(angle) * d + (points[0].y + center.y) / 2 - 5;
   }
-
   return cardinalityPosition;
 };
-
 var getStylesFromArray = function getStylesFromArray(arr) {
   var style = '';
   var labelStyle = '';
-
   for (var i = 0; i < arr.length; i++) {
     if (typeof arr[i] !== 'undefined') {
       // add text properties to label style definition
@@ -27876,7 +26500,6 @@ var getStylesFromArray = function getStylesFromArray(arr) {
       }
     }
   }
-
   return {
     style: style,
     labelStyle: labelStyle
@@ -27887,22 +26510,19 @@ var generateId = function generateId() {
   cnt++;
   return 'id-' + Math.random().toString(36).substr(2, 12) + '-' + cnt;
 };
-
 function makeid(length) {
   var result = '';
   var characters = '0123456789abcdef';
   var charactersLength = characters.length;
-
   for (var i = 0; i < length; i++) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
-
   return result;
 }
-
 var random = function random(options) {
   return makeid(options.length);
 };
+
 /**
  * @function assignWithDepth
  * Extends the functionality of {@link ObjectConstructor.assign} with the ability to merge arbitrary-depth objects
@@ -27929,15 +26549,13 @@ var random = function random(options) {
  * clobber: should dissimilar types clobber (default: { depth: 2, clobber: false })
  * @returns {*}
  */
-
 var assignWithDepth = function assignWithDepth(dst, src, config) {
   var _Object$assign = Object.assign({
-    depth: 2,
-    clobber: false
-  }, config),
-      depth = _Object$assign.depth,
-      clobber = _Object$assign.clobber;
-
+      depth: 2,
+      clobber: false
+    }, config),
+    depth = _Object$assign.depth,
+    clobber = _Object$assign.clobber;
   if (Array.isArray(src) && !Array.isArray(dst)) {
     src.forEach(function (s) {
       return assignWithDepth(dst, s, config);
@@ -27951,7 +26569,6 @@ var assignWithDepth = function assignWithDepth(dst, src, config) {
     });
     return dst;
   }
-
   if (typeof dst === 'undefined' || depth <= 0) {
     if (dst !== undefined && dst !== null && _typeof(dst) === 'object' && _typeof(src) === 'object') {
       return Object.assign(dst, src);
@@ -27959,14 +26576,12 @@ var assignWithDepth = function assignWithDepth(dst, src, config) {
       return src;
     }
   }
-
   if (typeof src !== 'undefined' && _typeof(dst) === 'object' && _typeof(src) === 'object') {
     Object.keys(src).forEach(function (key) {
       if (_typeof(src[key]) === 'object' && (dst[key] === undefined || _typeof(dst[key]) === 'object')) {
         if (dst[key] === undefined) {
           dst[key] = Array.isArray(src[key]) ? [] : {};
         }
-
         dst[key] = assignWithDepth(dst[key], src[key], {
           depth: depth - 1,
           clobber: clobber
@@ -27976,7 +26591,6 @@ var assignWithDepth = function assignWithDepth(dst, src, config) {
       }
     });
   }
-
   return dst;
 };
 var getTextObj = function getTextObj() {
@@ -28005,11 +26619,9 @@ var drawSimpleText = function drawSimpleText(elem, textData) {
   textElem.style('font-size', textData.fontSize);
   textElem.style('font-weight', textData.fontWeight);
   textElem.attr('fill', textData.fill);
-
   if (typeof textData.class !== 'undefined') {
     textElem.attr('class', textData.class);
   }
-
   var span = textElem.append('tspan');
   span.attr('x', textData.x + textData.textMargin * 2);
   span.attr('fill', textData.fill);
@@ -28020,30 +26632,25 @@ var wrapLabel = memoize(function (label, maxWidth, config) {
   if (!label) {
     return label;
   }
-
   config = Object.assign({
     fontSize: 12,
     fontWeight: 400,
     fontFamily: 'Arial',
     joinWith: '<br/>'
   }, config);
-
   if (_diagrams_common_common__WEBPACK_IMPORTED_MODULE_2__["default"].lineBreakRegex.test(label)) {
     return label;
   }
-
   var words = label.split(' ');
   var completedLines = [];
   var nextLine = '';
   words.forEach(function (word, index) {
     var wordLength = calculateTextWidth("".concat(word, " "), config);
     var nextLineLength = calculateTextWidth(nextLine, config);
-
     if (wordLength > maxWidth) {
       var _breakString = breakString(word, maxWidth, '-', config),
-          hyphenatedStrings = _breakString.hyphenatedStrings,
-          remainingWord = _breakString.remainingWord;
-
+        hyphenatedStrings = _breakString.hyphenatedStrings,
+        remainingWord = _breakString.remainingWord;
       completedLines.push.apply(completedLines, [nextLine].concat(_toConsumableArray(hyphenatedStrings)));
       nextLine = remainingWord;
     } else if (nextLineLength + wordLength >= maxWidth) {
@@ -28052,10 +26659,8 @@ var wrapLabel = memoize(function (label, maxWidth, config) {
     } else {
       nextLine = [nextLine, word].filter(Boolean).join(' ');
     }
-
     var currentWord = index + 1;
     var isLastWord = currentWord === words.length;
-
     if (isLastWord) {
       completedLines.push(nextLine);
     }
@@ -28081,7 +26686,6 @@ var breakString = memoize(function (word, maxWidth) {
   characters.forEach(function (character, index) {
     var nextLine = "".concat(currentLine).concat(character);
     var lineWidth = calculateTextWidth(nextLine, config);
-
     if (lineWidth >= maxWidth) {
       var currentCharacter = index + 1;
       var isLastLine = characters.length === currentCharacter;
@@ -28101,6 +26705,7 @@ var breakString = memoize(function (word, maxWidth) {
   var config = arguments.length > 3 ? arguments[3] : undefined;
   return "".concat(word, "-").concat(maxWidth, "-").concat(hyphenCharacter, "-").concat(config.fontSize, "-").concat(config.fontWeight, "-").concat(config.fontFamily);
 });
+
 /**
  * This calculates the text's height, taking into account the wrap breaks and
  * both the statically configured height, width, and the length of the text (in pixels).
@@ -28112,7 +26717,6 @@ var breakString = memoize(function (word, maxWidth) {
  * @param text the text to measure
  * @param config - the config for fontSize, fontFamily, and fontWeight all impacting the resulting size
  */
-
 var calculateTextHeight = function calculateTextHeight(text, config) {
   config = Object.assign({
     fontSize: 12,
@@ -28122,6 +26726,7 @@ var calculateTextHeight = function calculateTextHeight(text, config) {
   }, config);
   return calculateTextDimensions(text, config).height;
 };
+
 /**
  * This calculates the width of the given text, font size and family.
  *
@@ -28129,7 +26734,6 @@ var calculateTextHeight = function calculateTextHeight(text, config) {
  * @param text - The text to calculate the width of
  * @param config - the config for fontSize, fontFamily, and fontWeight all impacting the resulting size
  */
-
 var calculateTextWidth = function calculateTextWidth(text, config) {
   config = Object.assign({
     fontSize: 12,
@@ -28138,6 +26742,7 @@ var calculateTextWidth = function calculateTextWidth(text, config) {
   }, config);
   return calculateTextDimensions(text, config).width;
 };
+
 /**
  * This calculates the dimensions of the given text, font size, font family, font weight, and margins.
  *
@@ -28145,7 +26750,6 @@ var calculateTextWidth = function calculateTextWidth(text, config) {
  * @param text - The text to calculate the width of
  * @param config - the config for fontSize, fontFamily, fontWeight, and margin all impacting the resulting size
  */
-
 var calculateTextDimensions = memoize(function (text, config) {
   config = Object.assign({
     fontSize: 12,
@@ -28153,26 +26757,25 @@ var calculateTextDimensions = memoize(function (text, config) {
     fontFamily: 'Arial'
   }, config);
   var _config = config,
-      fontSize = _config.fontSize,
-      fontFamily = _config.fontFamily,
-      fontWeight = _config.fontWeight;
-
+    fontSize = _config.fontSize,
+    fontFamily = _config.fontFamily,
+    fontWeight = _config.fontWeight;
   if (!text) {
     return {
       width: 0,
       height: 0
     };
-  } // We can't really know if the user supplied font family will render on the user agent;
+  }
+
+  // We can't really know if the user supplied font family will render on the user agent;
   // thus, we'll take the max width between the user supplied font family, and a default
   // of sans-serif.
-
-
   var fontFamilies = ['sans-serif', fontFamily];
   var lines = text.split(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_2__["default"].lineBreakRegex);
   var dims = [];
-  var body = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])('body'); // We don't want to leak DOM elements - if a removal operation isn't available
+  var body = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])('body');
+  // We don't want to leak DOM elements - if a removal operation isn't available
   // for any reason, do not continue.
-
   if (!body.remove) {
     return {
       width: 0,
@@ -28180,9 +26783,7 @@ var calculateTextDimensions = memoize(function (text, config) {
       lineHeight: 0
     };
   }
-
   var g = body.append('svg');
-
   for (var _i = 0, _fontFamilies = fontFamilies; _i < _fontFamilies.length; _i++) {
     var _fontFamily = _fontFamilies[_i];
     var cheight = 0;
@@ -28191,10 +26792,8 @@ var calculateTextDimensions = memoize(function (text, config) {
       height: 0,
       lineHeight: 0
     };
-
     var _iterator = _createForOfIteratorHelper(lines),
-        _step;
-
+      _step;
     try {
       for (_iterator.s(); !(_step = _iterator.n()).done;) {
         var line = _step.value;
@@ -28212,21 +26811,17 @@ var calculateTextDimensions = memoize(function (text, config) {
     } finally {
       _iterator.f();
     }
-
     dims.push(dim);
   }
-
   g.remove();
   var index = isNaN(dims[1].height) || isNaN(dims[1].width) || isNaN(dims[1].lineHeight) || dims[0].height > dims[1].height && dims[0].width > dims[1].width && dims[0].lineHeight > dims[1].lineHeight ? 0 : 1;
   return dims[index];
 }, function (text, config) {
   return "".concat(text, "-").concat(config.fontSize, "-").concat(config.fontWeight, "-").concat(config.fontFamily);
 });
-
 var d3Attrs = function d3Attrs(d3Elem, attrs) {
   var _iterator2 = _createForOfIteratorHelper(attrs),
-      _step2;
-
+    _step2;
   try {
     for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
       var attr = _step2.value;
@@ -28238,18 +26833,15 @@ var d3Attrs = function d3Attrs(d3Elem, attrs) {
     _iterator2.f();
   }
 };
-
 var calculateSvgSizeAttrs = function calculateSvgSizeAttrs(height, width, useMaxWidth) {
   var attrs = new Map();
   attrs.set('height', height);
-
   if (useMaxWidth) {
     attrs.set('width', '100%');
     attrs.set('style', "max-width: ".concat(width, "px;"));
   } else {
     attrs.set('width', width);
   }
-
   return attrs;
 };
 var configureSvgSize = function configureSvgSize(svgElem, height, width, useMaxWidth) {
@@ -28259,21 +26851,17 @@ var configureSvgSize = function configureSvgSize(svgElem, height, width, useMaxW
 var initIdGeneratior = /*#__PURE__*/function () {
   function iterator(deterministic, seed) {
     _classCallCheck(this, iterator);
-
     this.deterministic = deterministic;
     this.seed = seed;
     this.count = seed ? seed.length : 0;
   }
-
-  _createClass(iterator, [{
+  return _createClass(iterator, [{
     key: "next",
     value: function next() {
       if (!this.deterministic) return Date.now();
       return this.count++;
     }
   }]);
-
-  return iterator;
 }();
 /* harmony default export */ __webpack_exports__["default"] = ({
   assignWithDepth: assignWithDepth,
