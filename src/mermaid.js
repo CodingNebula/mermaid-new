@@ -193,7 +193,6 @@ const mermaid = {
 
   init,
   initialize,
-
   contentLoaded
 };
 
